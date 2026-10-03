@@ -24,7 +24,7 @@ export default function Header() {
           <a href={h('#features')}><T k="nav.features">Features</T></a>
           <a href={asset('/get-app/')} aria-current={!onHome ? 'page' : undefined}><T k="nav.apps">Apps</T></a>
           <a href={h('#tools')}><T k="nav.tools">Free tools</T></a>
-          <a href={h('#creators')}><T k="nav.creators">Creators</T></a>
+          <a href={asset('/creators/')}><T k="nav.creators">Creators</T></a>
           <a href={asset('/design/')}><T k="nav.dash">Dashboard</T></a>
         </nav>
         <span className="grow" />
