@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
 import SocialProof from "@/components/SocialProof";
 import Templates from "@/components/Templates";
 import Features from "@/components/Features";
@@ -13,7 +12,6 @@ export default function HomePage() {
   return (
     <main className="bg-[#f8fafc] text-slate-900">
       <Header />
-      <Hero />
       <SocialProof />
       <Templates />
       <Features />
