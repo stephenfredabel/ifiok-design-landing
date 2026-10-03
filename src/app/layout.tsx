@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { LangProvider } from "@/i18n/LangProvider";
 
 export const metadata: Metadata = {
   title: "Ifiok Design | Design it. We print it.",
@@ -28,7 +29,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <script dangerouslySetInnerHTML={{ __html: themeBoot }} />
       </head>
-      <body>{children}</body>
+      <body>
+        <LangProvider>{children}</LangProvider>
+      </body>
     </html>
   );
 }
