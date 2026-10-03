@@ -1,10 +1,39 @@
 'use client';
 
-import { ArrowRight, ChevronRight, ExternalLink, LayoutGrid, List, Plus, Search } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, ExternalLink, FolderOpen, LayoutGrid, List, Plus, Search, Smartphone, Cloud, Eye, Type as TypeIcon } from 'lucide-react';
+import { useCallback, useEffect, useRef } from 'react';
 import { useMemo, useState } from 'react';
 import { DesignCard, OrderCard, StagePill, TemplateCard } from './parts';
-import { QUICK, STAGES, TEMPLATES, TEMPLATE_CATS, TOOL_LINKS, USER, formatById, naira, type Design, type NavItem, type Order, type Stage, type Template } from './data';
+import { ACCOUNT_ROWS, QUICK, STAGES, TEMPLATES, TEMPLATE_CATS, TOOL_LINKS, USER, formatById, naira, type Design, type NavItem, type Order, type Stage, type Template } from './data';
 import Thumb from './Thumb';
+
+/** One horizontal line that swipes on touch and shows arrow buttons on wider screens. */
+function ScrollRow({ label, children }: { label: string; children: React.ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [edge, setEdge] = useState<{ l: boolean; r: boolean }>({ l: false, r: false });
+  const measure = useCallback(() => {
+    const el = ref.current;
+    if (!el) return;
+    setEdge({ l: el.scrollLeft > 4, r: el.scrollLeft + el.clientWidth < el.scrollWidth - 4 });
+  }, []);
+  useEffect(() => {
+    measure();
+    const el = ref.current;
+    if (!el) return;
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    el.addEventListener('scroll', measure, { passive: true });
+    return () => { ro.disconnect(); el.removeEventListener('scroll', measure); };
+  }, [measure]);
+  const by = (dir: 1 | -1) => ref.current?.scrollBy({ left: dir * ref.current.clientWidth * 0.7, behavior: 'smooth' });
+  return (
+    <div className="srow" data-l={edge.l ? '' : undefined} data-r={edge.r ? '' : undefined}>
+      <button type="button" className="srow-btn l" aria-label="Scroll left" onClick={() => by(-1)} tabIndex={edge.l ? 0 : -1}><ChevronLeft aria-hidden="true" /></button>
+      <div className="srow-track" ref={ref} role="list" aria-label={label}>{children}</div>
+      <button type="button" className="srow-btn r" aria-label="Scroll right" onClick={() => by(1)} tabIndex={edge.r ? 0 : -1}><ChevronRight aria-hidden="true" /></button>
+    </div>
+  );
+}
 
 type Ops = { openDetail: (id: string) => void; duplicate: (id: string) => void; remove: (id: string) => void };
 
@@ -16,12 +45,12 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
     <div className="view">
       <section className="hero-d">
         <div className="hero-glow" aria-hidden="true" />
-        <p className="hero-hi">Welcome back, {USER.name}</p>
+        <p className="hero-hi">Welcome back, {USER.first}</p>
         <h1>What will you design today?</h1>
         <button type="button" className="hero-search" onClick={openPalette}>
           <Search aria-hidden="true" /><span>Search designs, templates and tools</span><kbd>/</kbd>
         </button>
-        <div className="quick" role="list" aria-label="Start a new design">
+        <ScrollRow label="Start a new design">
           {QUICK.map((id) => {
             const f = formatById(id);
             return (
@@ -31,7 +60,30 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
               </button>
             );
           })}
-        </div>
+          <button type="button" role="listitem" className="quick-i" onClick={() => newFrom({})}>
+            <span className="quick-ic custom" aria-hidden="true"><Plus /></span>
+            <span>Custom size</span>
+          </button>
+        </ScrollRow>
+      </section>
+
+      <section className="actions" aria-label="Bring something in">
+        <a className="act-tile" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer">
+          <span className="act-ic" aria-hidden="true"><FolderOpen /></span>
+          <span><b>Open a file</b><small>PDF, PowerPoint, images</small></span>
+        </a>
+        <button type="button" className="act-tile" onClick={() => go('templates')}>
+          <span className="act-ic" aria-hidden="true"><LayoutGrid /></span>
+          <span><b>Template gallery</b><small>530+ free templates</small></span>
+        </button>
+        <a className="act-tile" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer">
+          <span className="act-ic" aria-hidden="true"><Eye /></span>
+          <span><b>View CorelDRAW</b><small>Open .cdr without CorelDRAW</small></span>
+        </a>
+        <a className="act-tile" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer">
+          <span className="act-ic" aria-hidden="true"><TypeIcon /></span>
+          <span><b>Offline fonts</b><small>Add fonts for use without data</small></span>
+        </a>
       </section>
 
       <section className="blk">
@@ -81,17 +133,22 @@ export function ProjectsView({ designs, ops, newFrom }: { designs: Design[]; ops
   const [stage, setStage] = useState<'all' | Stage>('all');
   const [sort, setSort] = useState<'recent' | 'name'>('recent');
   const [layout, setLayout] = useState<'grid' | 'list'>('grid');
+  const [where, setWhere] = useState<'cloud' | 'phone'>('cloud');
   const shown = useMemo(() => {
     const n = q.trim().toLowerCase();
-    const list = designs.filter((d) => (stage === 'all' || d.stage === stage) && (!n || (d.name + ' ' + formatById(d.formatId).label).toLowerCase().includes(n)));
+    const list = designs.filter((d) => (where === 'cloud' || d.device) && (stage === 'all' || d.stage === stage) && (!n || (d.name + ' ' + formatById(d.formatId).label).toLowerCase().includes(n)));
     return sort === 'name' ? [...list].sort((a, b) => a.name.localeCompare(b.name)) : list;
-  }, [designs, q, stage, sort]);
+  }, [designs, q, stage, sort, where]);
   return (
     <div className="view">
       <header className="view-h">
-        <div><h1>My files</h1><p className="muted">{designs.length} designs</p></div>
+        <div><h1>My files</h1><p className="muted">{shown.length} of {designs.length} designs</p></div>
         <button type="button" className="btn-p" onClick={() => newFrom({})}><Plus aria-hidden="true" />New design</button>
       </header>
+      <div className="seg wide" role="group" aria-label="Where your files are">
+        <button type="button" aria-pressed={where === 'cloud'} onClick={() => setWhere('cloud')}><Cloud aria-hidden="true" />&nbsp;All files</button>
+        <button type="button" aria-pressed={where === 'phone'} onClick={() => setWhere('phone')}><Smartphone aria-hidden="true" />&nbsp;On this phone</button>
+      </div>
       <div className="bar">
         <label className="search"><Search aria-hidden="true" /><input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search your designs" aria-label="Search your designs" /></label>
         <label className="sel"><span className="sr">Sort</span>
@@ -178,3 +235,28 @@ export function PlaceholderView({ item }: { item: NavItem }) {
   );
 }
 
+
+export function AccountView() {
+  return (
+    <div className="view narrow">
+      <section className="acct-card">
+        <span className="avatar big">{USER.initial}</span>
+        <div><h1>{USER.first}</h1><p className="muted">{USER.email}</p></div>
+      </section>
+      <p className="side-h">Account</p>
+      <ul className="acct-list">
+        {ACCOUNT_ROWS.map(({ label, blurb, Icon, href }) => (
+          <li key={label}>
+            <a href={href} target="_blank" rel="noopener noreferrer">
+              <span className="acct-ic" aria-hidden="true"><Icon /></span>
+              <span><b>{label}</b><small>{blurb}</small></span>
+              <ChevronRight aria-hidden="true" />
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p className="side-h">My orders</p>
+      <a className="acct-orders" href="#orders">Orders &amp; prints <ChevronRight aria-hidden="true" /></a>
+    </div>
+  );
+}

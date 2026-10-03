@@ -1,6 +1,6 @@
 import {
   Bot, Brush, FileText, FolderOpen, Headphones, Home, Image as ImageIcon, LayoutGrid, Link2, type LucideIcon,
-  Package, QrCode, Settings, Upload, GraduationCap, BookOpen,
+  Package, QrCode, Settings, Upload, GraduationCap, BookOpen, CreditCard, Flag, IdCard, Plus, ScrollText, ShieldCheck, Database, Users, Sparkles, StickyNote,
 } from 'lucide-react';
 
 /* Everything on this page is sample data. Real designs, orders and templates come from the live app. */
@@ -31,7 +31,7 @@ export const naira = (n: number) => '₦' + Math.round(n).toLocaleString('en-NG'
 export const priceFor = (f: Format, qty: number) => f.base + f.per * Math.pow(qty / f.qty, -0.12) * Math.max(0, qty - 1);
 export const sizeLabel = (f: Format) => `${f.w}" × ${f.h}"`;
 
-export type Design = { id: string; name: string; formatId: string; accent: string; headline: string; sub: string; stage: Stage; edited: string; warn?: string };
+export type Design = { id: string; name: string; formatId: string; accent: string; headline: string; sub: string; stage: Stage; edited: string; warn?: string; device?: boolean };
 
 export const STAGES: { id: Stage; label: string }[] = [
   { id: 'draft', label: 'Draft' },
@@ -42,12 +42,12 @@ export const STAGES: { id: Stage; label: string }[] = [
 ];
 
 export const SAMPLE_DESIGNS: Design[] = [
-  { id: 'd1', name: 'Okafor Bakes — business card', formatId: 'card', accent: '#0B7A7F', headline: 'Adaeze Okafor', sub: 'Founder · Okafor Bakes', stage: 'ready', edited: '2 hours ago' },
+  { id: 'd1', name: 'Okafor Bakes — business card', formatId: 'card', accent: '#0B7A7F', headline: 'Adaeze Okafor', sub: 'Founder · Okafor Bakes', stage: 'ready', edited: '2 hours ago', device: true },
   { id: 'd2', name: 'Grand Opening — flyer', formatId: 'flyer-a5', accent: '#B6322B', headline: 'GRAND OPENING', sub: 'Saturday 12 July · 10am', stage: 'printing', edited: 'Yesterday' },
   { id: 'd3', name: 'Mega Sale — flex banner', formatId: 'banner', accent: '#E11D2E', headline: 'MEGA SALE', sub: 'Up to 40% off · Balogun Market', stage: 'delivery', edited: '3 days ago' },
-  { id: 'd4', name: 'Staff ID — Okafor Bakes', formatId: 'id', accent: '#1F3A8A', headline: 'Chidi Eze', sub: 'Production · OKB-0041', stage: 'draft', edited: '4 days ago', warn: 'Photo is under 300 DPI at this size' },
+  { id: 'd4', name: 'Staff ID — Okafor Bakes', formatId: 'id', accent: '#1F3A8A', headline: 'Chidi Eze', sub: 'Production · OKB-0041', stage: 'draft', edited: '4 days ago', warn: 'Photo is under 300 DPI at this size', device: true },
   { id: 'd5', name: 'Thanksgiving Service — programme', formatId: 'flyer-a4', accent: '#1C2F6E', headline: 'Thanksgiving Service', sub: 'Sunday 9am · Surulere', stage: 'delivered', edited: 'Last week' },
-  { id: 'd6', name: 'Ade & Funmi — invitation', formatId: 'invite', accent: '#7A1D4A', headline: 'Ade & Funmi', sub: 'Traditional wedding', stage: 'draft', edited: '2 weeks ago' },
+  { id: 'd6', name: 'Ade & Funmi — invitation', formatId: 'invite', accent: '#7A1D4A', headline: 'Ade & Funmi', sub: 'Traditional wedding', stage: 'draft', edited: '2 weeks ago', device: true },
   { id: 'd7', name: 'Mama Tolu Stores — receipt book', formatId: 'receipt', accent: '#8A6100', headline: 'Mama Tolu Stores', sub: 'No. 0001', stage: 'delivered', edited: '3 weeks ago' },
   { id: 'd8', name: 'Class of 2026 — T-shirt', formatId: 'tshirt', accent: '#0F3D3E', headline: 'CLASS OF 2026', sub: 'Faculty of Arts', stage: 'ready', edited: 'Last month' },
 ];
@@ -110,4 +110,25 @@ export const TOOL_LINKS = [
   { label: 'QR generator', href: 'https://ifiok.ng/tools/qr-code-generator', Icon: QrCode },
 ];
 
-export const USER = { name: 'Stephenfredabel', initial: 'S' };
+export const USER = { name: 'Stephenfredabel', first: 'Stephen', email: 'stephenfredabel@gmail.com', initial: 'S' };
+
+/** Tiles for the phone home screen, with the size shown under each name. */
+export const START_TILES: { id: string; label: string; sub: string; Icon: LucideIcon }[] = [
+  { id: 'card', label: 'Business card', sub: '3.5 × 2 in', Icon: CreditCard },
+  { id: 'flyer-a5', label: 'Flyer', sub: 'A5', Icon: FileText },
+  { id: 'banner', label: 'Banner', sub: '6 × 3 ft', Icon: Flag },
+  { id: 'poster', label: 'Poster', sub: 'A3', Icon: ImageIcon },
+  { id: 'sticker', label: 'Sticker', sub: '3 × 3 in', Icon: StickyNote },
+  { id: 'id', label: 'ID card', sub: 'CR80', Icon: IdCard },
+  { id: 'letterhead', label: 'Letterhead', sub: 'A4', Icon: ScrollText },
+  { id: 'custom', label: 'Custom size', sub: 'Any', Icon: Plus },
+];
+
+export const ACCOUNT_ROWS: { label: string; blurb: string; Icon: LucideIcon; href: string }[] = [
+  { label: 'Account & security', blurb: 'Password, active sessions, delete account', Icon: ShieldCheck, href: 'https://designs.ifiok.ng' },
+  { label: 'Data & storage', blurb: 'Export or correct your data, clear cache', Icon: Database, href: 'https://designs.ifiok.ng' },
+  { label: 'Connected accounts', blurb: 'Google account, Google Drive, AI keys', Icon: Link2, href: 'https://designs.ifiok.ng' },
+  { label: 'People', blurb: 'Share your designs', Icon: Users, href: 'https://designs.ifiok.ng' },
+  { label: 'AI usage', blurb: 'See how much AI you have used this month', Icon: Sparkles, href: 'https://designs.ifiok.ng' },
+  { label: 'My Creator Dashboard', blurb: 'Submit templates, track earnings, request payouts', Icon: GraduationCap, href: 'https://ifiok.ng/design/creators' },
+];
