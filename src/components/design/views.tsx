@@ -1,9 +1,9 @@
 'use client';
 
-import { ArrowRight, ChevronRight, ExternalLink, LayoutGrid, List, Plus, Search } from 'lucide-react';
+import { ArrowRight, ChevronRight, ExternalLink, FolderOpen, LayoutGrid, List, Plus, Search, Smartphone, Cloud, Eye, Type as TypeIcon } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { DesignCard, OrderCard, StagePill, TemplateCard } from './parts';
-import { QUICK, STAGES, TEMPLATES, TEMPLATE_CATS, TOOL_LINKS, USER, formatById, naira, type Design, type NavItem, type Order, type Stage, type Template } from './data';
+import { ACCOUNT_ROWS, QUICK, START_TILES, STAGES, TEMPLATES, TEMPLATE_CATS, TOOL_LINKS, USER, formatById, naira, type Design, type NavItem, type Order, type Stage, type Template } from './data';
 import Thumb from './Thumb';
 
 type Ops = { openDetail: (id: string) => void; duplicate: (id: string) => void; remove: (id: string) => void };
@@ -14,9 +14,9 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
   const active = orders.filter((o) => o.stage !== 'delivered');
   return (
     <div className="view">
-      <section className="hero-d">
+      <section className="hero-d d-only">
         <div className="hero-glow" aria-hidden="true" />
-        <p className="hero-hi">Welcome back, {USER.name}</p>
+        <p className="hero-hi">Welcome back, {USER.first}</p>
         <h1>What will you design today?</h1>
         <button type="button" className="hero-search" onClick={openPalette}>
           <Search aria-hidden="true" /><span>Search designs, templates and tools</span><kbd>/</kbd>
@@ -31,6 +31,30 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
               </button>
             );
           })}
+        </div>
+      </section>
+
+      <section className="m-home" aria-label="Start a design">
+        <h1>Welcome back, {USER.first}</h1>
+        <p className="muted">What do you want to design today?</p>
+        <button type="button" className="m-search" onClick={openPalette}>
+          <Search aria-hidden="true" /><span>Search designs, templates and tools</span>
+        </button>
+        <h2 className="m-h">Start a new design</h2>
+        <div className="m-tiles">
+          {START_TILES.map(({ id, label, sub, Icon }) => (
+            <button key={id} type="button" className="m-tile" onClick={() => newFrom(id === 'custom' ? {} : { formatId: id })}>
+              <span className="m-ic" aria-hidden="true"><Icon /></span>
+              <b>{label}</b>
+              <small>{sub}</small>
+            </button>
+          ))}
+        </div>
+        <div className="m-more">
+          <a className="m-chip" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer"><FolderOpen aria-hidden="true" />Open a file</a>
+          <button type="button" className="m-chip" onClick={() => go('templates')}><LayoutGrid aria-hidden="true" />Template gallery</button>
+          <a className="m-chip" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer"><Eye aria-hidden="true" />View CorelDRAW</a>
+          <a className="m-chip" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer"><TypeIcon aria-hidden="true" />Fonts for offline use</a>
         </div>
       </section>
 
@@ -81,17 +105,22 @@ export function ProjectsView({ designs, ops, newFrom }: { designs: Design[]; ops
   const [stage, setStage] = useState<'all' | Stage>('all');
   const [sort, setSort] = useState<'recent' | 'name'>('recent');
   const [layout, setLayout] = useState<'grid' | 'list'>('grid');
+  const [where, setWhere] = useState<'cloud' | 'phone'>('cloud');
   const shown = useMemo(() => {
     const n = q.trim().toLowerCase();
-    const list = designs.filter((d) => (stage === 'all' || d.stage === stage) && (!n || (d.name + ' ' + formatById(d.formatId).label).toLowerCase().includes(n)));
+    const list = designs.filter((d) => (where === 'cloud' || d.device) && (stage === 'all' || d.stage === stage) && (!n || (d.name + ' ' + formatById(d.formatId).label).toLowerCase().includes(n)));
     return sort === 'name' ? [...list].sort((a, b) => a.name.localeCompare(b.name)) : list;
-  }, [designs, q, stage, sort]);
+  }, [designs, q, stage, sort, where]);
   return (
     <div className="view">
       <header className="view-h">
-        <div><h1>My files</h1><p className="muted">{designs.length} designs</p></div>
+        <div><h1>My files</h1><p className="muted">{shown.length} of {designs.length} designs</p></div>
         <button type="button" className="btn-p" onClick={() => newFrom({})}><Plus aria-hidden="true" />New design</button>
       </header>
+      <div className="seg wide" role="group" aria-label="Where your files are">
+        <button type="button" aria-pressed={where === 'cloud'} onClick={() => setWhere('cloud')}><Cloud aria-hidden="true" />&nbsp;All files</button>
+        <button type="button" aria-pressed={where === 'phone'} onClick={() => setWhere('phone')}><Smartphone aria-hidden="true" />&nbsp;On this phone</button>
+      </div>
       <div className="bar">
         <label className="search"><Search aria-hidden="true" /><input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search your designs" aria-label="Search your designs" /></label>
         <label className="sel"><span className="sr">Sort</span>
@@ -178,3 +207,28 @@ export function PlaceholderView({ item }: { item: NavItem }) {
   );
 }
 
+
+export function AccountView() {
+  return (
+    <div className="view narrow">
+      <section className="acct-card">
+        <span className="avatar big">{USER.initial}</span>
+        <div><h1>{USER.first}</h1><p className="muted">{USER.email}</p></div>
+      </section>
+      <p className="side-h">Account</p>
+      <ul className="acct-list">
+        {ACCOUNT_ROWS.map(({ label, blurb, Icon, href }) => (
+          <li key={label}>
+            <a href={href} target="_blank" rel="noopener noreferrer">
+              <span className="acct-ic" aria-hidden="true"><Icon /></span>
+              <span><b>{label}</b><small>{blurb}</small></span>
+              <ChevronRight aria-hidden="true" />
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p className="side-h">My orders</p>
+      <a className="acct-orders" href="#orders">Orders &amp; prints <ChevronRight aria-hidden="true" /></a>
+    </div>
+  );
+}

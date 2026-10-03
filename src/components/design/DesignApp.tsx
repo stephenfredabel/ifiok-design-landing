@@ -7,11 +7,11 @@ import { Mark } from '@/components/Mark';
 import { asset } from '@/lib/asset';
 import { DetailPanel, NewDesignDialog, Palette, Toast, type NewDesignSeed } from './overlays';
 import { EDITOR } from './parts';
-import { HomeView, OrdersView, PlaceholderView, ProjectsView, TemplatesView } from './views';
+import { AccountView, HomeView, OrdersView, PlaceholderView, ProjectsView, TemplatesView } from './views';
 import { NAV, SAMPLE_DESIGNS, SAMPLE_ORDERS, USER, formatById, type Design, type NavItem, type Template } from './data';
 import './design.css';
 
-const VIEWS = new Set(NAV.map((n) => n.id));
+const VIEWS = new Set([...NAV.map((n) => n.id), 'account']);
 const STORE = 'ifiok.dsg.v1';
 type ToastState = { msg: string; href?: string; label?: string; action?: () => void } | null;
 
@@ -122,11 +122,11 @@ export default function DesignApp() {
           <Search aria-hidden="true" /><span>Search your designs, templates…</span><kbd>/</kbd>
         </button>
         <span className="grow" />
-        <button type="button" className="btn-p top-new" onClick={() => setSeed({})}><Plus aria-hidden="true" /><span>New design</span></button>
+        <button type="button" className="btn-p top-new d-only" onClick={() => setSeed({})}><Plus aria-hidden="true" /><span>New design</span></button>
         <a className="ib hide-s" href={asset('/get-app/')} aria-label="All Ifiok apps" title="All Ifiok apps"><LayoutGrid aria-hidden="true" /></a>
         <button type="button" className="ib hide-s" aria-label="Notifications" onClick={() => say({ msg: 'You are all caught up.' })}><Bell aria-hidden="true" /></button>
-        <ThemeToggle />
-        <span className="avatar" title={USER.name}>{USER.initial}</span>
+        <span className="d-only"><ThemeToggle /></span>
+        <button type="button" className="avatar" title="Account" aria-label="Account" onClick={() => go('account')}>{USER.initial}</button>
       </header>
 
       <div className="d-scrim" data-open={drawer ? '' : undefined} onClick={() => setDrawer(false)} />
@@ -136,6 +136,7 @@ export default function DesignApp() {
           <button type="button" className="ib" aria-label="Close menu" onClick={() => setDrawer(false)}><X aria-hidden="true" /></button>
         </div>
         <button type="button" className="rail-new" onClick={() => { setDrawer(false); setSeed({}); }}><Plus aria-hidden="true" /><span className="nv-l">Create</span></button>
+        <div className="rail-theme"><span>Theme</span><ThemeToggle /></div>
         <nav>
           {groups.map((g) => (
             <div className="nv-g" key={g.id}>
@@ -151,14 +152,15 @@ export default function DesignApp() {
         {view === 'projects' && <ProjectsView designs={designs} ops={ops} newFrom={newFrom} />}
         {view === 'templates' && <TemplatesView useTemplate={useTemplate} />}
         {view === 'orders' && <OrdersView orders={SAMPLE_ORDERS} designs={designs} ops={ops} />}
-        {!['home', 'projects', 'templates', 'orders'].includes(view) && item && <PlaceholderView item={item} />}
+        {view === 'account' && <AccountView />}
+        {!['home', 'projects', 'templates', 'orders', 'account'].includes(view) && item && <PlaceholderView item={item} />}
         <p className="sample-note">Sample data. Your real designs, orders and templates load from the live app.</p>
       </main>
 
       <nav className="d-tabs" aria-label="Main">
-        {([['home', 'Home'], ['projects', 'Files']] as const).map(([id, label]) => { const n = NAV.find((x) => x.id === id)!; return <button key={id} type="button" aria-current={view === id ? 'page' : undefined} onClick={() => go(id)}><n.Icon aria-hidden="true" /><span>{label}</span></button>; })}
+        {([['home', 'Home'], ['templates', 'Templates']] as const).map(([id, label]) => { const n = NAV.find((x) => x.id === id)!; return <button key={id} type="button" aria-current={view === id ? 'page' : undefined} onClick={() => go(id)}><span className="pill"><n.Icon aria-hidden="true" /></span><span>{label}</span></button>; })}
         <button type="button" className="fab" aria-label="New design" onClick={() => setSeed({})}><Plus aria-hidden="true" /></button>
-        {([['templates', 'Templates'], ['orders', 'Orders']] as const).map(([id, label]) => { const n = NAV.find((x) => x.id === id)!; return <button key={id} type="button" aria-current={view === id ? 'page' : undefined} onClick={() => go(id)}><n.Icon aria-hidden="true" /><span>{label}</span></button>; })}
+        {([['projects', 'Files'], ['orders', 'Orders']] as const).map(([id, label]) => { const n = NAV.find((x) => x.id === id)!; return <button key={id} type="button" aria-current={view === id ? 'page' : undefined} onClick={() => go(id)}><span className="pill"><n.Icon aria-hidden="true" /></span><span>{label}</span></button>; })}
       </nav>
 
       <NewDesignDialog seed={seed} onClose={() => setSeed(null)} onCreate={create} />
