@@ -1,10 +1,39 @@
 'use client';
 
-import { ArrowRight, ChevronRight, ExternalLink, FolderOpen, LayoutGrid, List, Plus, Search, Smartphone, Cloud, Eye, Type as TypeIcon } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, ExternalLink, FolderOpen, LayoutGrid, List, Plus, Search, Smartphone, Cloud, Eye, Type as TypeIcon } from 'lucide-react';
+import { useCallback, useEffect, useRef } from 'react';
 import { useMemo, useState } from 'react';
 import { DesignCard, OrderCard, StagePill, TemplateCard } from './parts';
-import { ACCOUNT_ROWS, QUICK, START_TILES, STAGES, TEMPLATES, TEMPLATE_CATS, TOOL_LINKS, USER, formatById, naira, type Design, type NavItem, type Order, type Stage, type Template } from './data';
+import { ACCOUNT_ROWS, QUICK, STAGES, TEMPLATES, TEMPLATE_CATS, TOOL_LINKS, USER, formatById, naira, type Design, type NavItem, type Order, type Stage, type Template } from './data';
 import Thumb from './Thumb';
+
+/** One horizontal line that swipes on touch and shows arrow buttons on wider screens. */
+function ScrollRow({ label, children }: { label: string; children: React.ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [edge, setEdge] = useState<{ l: boolean; r: boolean }>({ l: false, r: false });
+  const measure = useCallback(() => {
+    const el = ref.current;
+    if (!el) return;
+    setEdge({ l: el.scrollLeft > 4, r: el.scrollLeft + el.clientWidth < el.scrollWidth - 4 });
+  }, []);
+  useEffect(() => {
+    measure();
+    const el = ref.current;
+    if (!el) return;
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    el.addEventListener('scroll', measure, { passive: true });
+    return () => { ro.disconnect(); el.removeEventListener('scroll', measure); };
+  }, [measure]);
+  const by = (dir: 1 | -1) => ref.current?.scrollBy({ left: dir * ref.current.clientWidth * 0.7, behavior: 'smooth' });
+  return (
+    <div className="srow" data-l={edge.l ? '' : undefined} data-r={edge.r ? '' : undefined}>
+      <button type="button" className="srow-btn l" aria-label="Scroll left" onClick={() => by(-1)} tabIndex={edge.l ? 0 : -1}><ChevronLeft aria-hidden="true" /></button>
+      <div className="srow-track" ref={ref} role="list" aria-label={label}>{children}</div>
+      <button type="button" className="srow-btn r" aria-label="Scroll right" onClick={() => by(1)} tabIndex={edge.r ? 0 : -1}><ChevronRight aria-hidden="true" /></button>
+    </div>
+  );
+}
 
 type Ops = { openDetail: (id: string) => void; duplicate: (id: string) => void; remove: (id: string) => void };
 
@@ -14,14 +43,14 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
   const active = orders.filter((o) => o.stage !== 'delivered');
   return (
     <div className="view">
-      <section className="hero-d d-only">
+      <section className="hero-d">
         <div className="hero-glow" aria-hidden="true" />
         <p className="hero-hi">Welcome back, {USER.first}</p>
         <h1>What will you design today?</h1>
         <button type="button" className="hero-search" onClick={openPalette}>
           <Search aria-hidden="true" /><span>Search designs, templates and tools</span><kbd>/</kbd>
         </button>
-        <div className="quick" role="list" aria-label="Start a new design">
+        <ScrollRow label="Start a new design">
           {QUICK.map((id) => {
             const f = formatById(id);
             return (
@@ -31,31 +60,30 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
               </button>
             );
           })}
-        </div>
+          <button type="button" role="listitem" className="quick-i" onClick={() => newFrom({})}>
+            <span className="quick-ic custom" aria-hidden="true"><Plus /></span>
+            <span>Custom size</span>
+          </button>
+        </ScrollRow>
       </section>
 
-      <section className="m-home" aria-label="Start a design">
-        <h1>Welcome back, {USER.first}</h1>
-        <p className="muted">What do you want to design today?</p>
-        <button type="button" className="m-search" onClick={openPalette}>
-          <Search aria-hidden="true" /><span>Search designs, templates and tools</span>
+      <section className="actions" aria-label="Bring something in">
+        <a className="act-tile" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer">
+          <span className="act-ic" aria-hidden="true"><FolderOpen /></span>
+          <span><b>Open a file</b><small>PDF, PowerPoint, images</small></span>
+        </a>
+        <button type="button" className="act-tile" onClick={() => go('templates')}>
+          <span className="act-ic" aria-hidden="true"><LayoutGrid /></span>
+          <span><b>Template gallery</b><small>530+ free templates</small></span>
         </button>
-        <h2 className="m-h">Start a new design</h2>
-        <div className="m-tiles">
-          {START_TILES.map(({ id, label, sub, Icon }) => (
-            <button key={id} type="button" className="m-tile" onClick={() => newFrom(id === 'custom' ? {} : { formatId: id })}>
-              <span className="m-ic" aria-hidden="true"><Icon /></span>
-              <b>{label}</b>
-              <small>{sub}</small>
-            </button>
-          ))}
-        </div>
-        <div className="m-more">
-          <a className="m-chip" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer"><FolderOpen aria-hidden="true" />Open a file</a>
-          <button type="button" className="m-chip" onClick={() => go('templates')}><LayoutGrid aria-hidden="true" />Template gallery</button>
-          <a className="m-chip" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer"><Eye aria-hidden="true" />View CorelDRAW</a>
-          <a className="m-chip" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer"><TypeIcon aria-hidden="true" />Fonts for offline use</a>
-        </div>
+        <a className="act-tile" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer">
+          <span className="act-ic" aria-hidden="true"><Eye /></span>
+          <span><b>View CorelDRAW</b><small>Open .cdr without CorelDRAW</small></span>
+        </a>
+        <a className="act-tile" href="https://designs.ifiok.ng" target="_blank" rel="noopener noreferrer">
+          <span className="act-ic" aria-hidden="true"><TypeIcon /></span>
+          <span><b>Offline fonts</b><small>Add fonts for use without data</small></span>
+        </a>
       </section>
 
       <section className="blk">
