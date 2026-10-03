@@ -1,15 +1,33 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ifiok Design | Design smarter. Print faster.",
+  title: "Ifiok Design | Design it. We print it.",
   description:
-    "Create brand assets, marketing materials, and print-ready designs with Ifiok Design.",
+    "Design business cards, flyers, ID cards and posters at real print size, see the price in naira while you work, and order delivery across Nigeria.",
 };
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
+// Runs before first paint so a saved light or dark choice never flashes the other theme.
+const themeBoot = `try{var t=localStorage.getItem('ifiok.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap"
+        />
+        <script dangerouslySetInnerHTML={{ __html: themeBoot }} />
+      </head>
       <body>{children}</body>
     </html>
   );
