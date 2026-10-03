@@ -13,7 +13,7 @@ export default function Footer() {
           <a href={`${home}#features`}><T k="nav.features">Features</T></a>
           <a href={asset('/get-app/')}><T k="nav.apps">Apps</T></a>
           <a href={`${home}#tools`}><T k="nav.tools">Free tools</T></a>
-          <a href={`${home}#creators`}><T k="nav.creators">Creators</T></a>
+          <a href={asset('/creators/')}><T k="nav.creators">Creators</T></a>
         </nav>
         <span>© Ifiok</span>
       </div>
