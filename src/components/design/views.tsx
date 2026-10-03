@@ -8,7 +8,7 @@ import { ACCOUNT_ROWS, QUICK, STAGES, TEMPLATES, TEMPLATE_CATS, TOOL_LINKS, USER
 import Thumb from './Thumb';
 
 /** One horizontal line that swipes on touch and shows arrow buttons on wider screens. */
-function ScrollRow({ label, children }: { label: string; children: React.ReactNode }) {
+export function ScrollRow({ label, children }: { label: string; children: React.ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
   const [edge, setEdge] = useState<{ l: boolean; r: boolean }>({ l: false, r: false });
   const measure = useCallback(() => {

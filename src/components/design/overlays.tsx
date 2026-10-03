@@ -7,7 +7,7 @@ import { EDITOR, Stepper, StagePill } from './parts';
 import { FORMATS, NAV, TEMPLATES, TOOL_LINKS, formatById, naira, priceFor, sizeLabel, type Design } from './data';
 
 /** Keeps keyboard focus inside an open overlay and returns it on close. */
-function useFocusTrap(active: boolean, onClose: () => void) {
+export function useFocusTrap(active: boolean, onClose: () => void) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (!active) return;
