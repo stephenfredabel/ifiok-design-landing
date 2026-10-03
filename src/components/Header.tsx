@@ -1,6 +1,8 @@
 'use client';
 
 import { Globe } from 'lucide-react';
+import { usePathname } from 'next/navigation';
+import { asset } from '@/lib/asset';
 import { useEffect, useRef, useState } from 'react';
 import { ACTIVE_LANGS, SOON_LANGS, T, useLang } from '@/i18n/LangProvider';
 import { Mark } from './Mark';
@@ -10,6 +12,8 @@ export default function Header() {
   const { lang, setLang } = useLang();
   const [open, setOpen] = useState(false);
   const wrap = useRef<HTMLDivElement>(null);
+  const onHome = usePathname() === '/';
+  const h = (hash: string) => (onHome ? hash : `${asset('/')}${hash}`);
 
   useEffect(() => {
     if (!open) return;
@@ -28,17 +32,17 @@ export default function Header() {
   return (
     <header className="hdr">
       <div className="wrap">
-        <a className="logo" href="#top">
+        <a className="logo" href={h('#top')}>
           <Mark />
           Ifiok Design
         </a>
         <nav className="mainnav" aria-label="Main">
-          <a href="#print"><T k="nav.print">Printing</T></a>
-          <a href="#templates"><T k="nav.templates">Templates</T></a>
-          <a href="#features"><T k="nav.features">Features</T></a>
-          <a href="#app"><T k="nav.app">Mobile app</T></a>
-          <a href="#tools"><T k="nav.tools">Free tools</T></a>
-          <a href="#creators"><T k="nav.creators">Creators</T></a>
+          <a href={h('#print')}><T k="nav.print">Printing</T></a>
+          <a href={h('#templates')}><T k="nav.templates">Templates</T></a>
+          <a href={h('#features')}><T k="nav.features">Features</T></a>
+          <a href={asset('/get-app/')} aria-current={!onHome ? 'page' : undefined}><T k="nav.apps">Apps</T></a>
+          <a href={h('#tools')}><T k="nav.tools">Free tools</T></a>
+          <a href={h('#creators')}><T k="nav.creators">Creators</T></a>
         </nav>
         <span className="grow" />
         <ThemeToggle />

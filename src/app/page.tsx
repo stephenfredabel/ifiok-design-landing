@@ -3,15 +3,15 @@ import CutSlider from '@/components/CutSlider';
 import Editor from '@/components/Editor';
 import FeatureTabs from '@/components/FeatureTabs';
 import Header from '@/components/Header';
-import { Mark } from '@/components/Mark';
-import { LangProvider, T, TH } from '@/i18n/LangProvider';
+import Footer from '@/components/Footer';
+import { T, TH } from '@/i18n/LangProvider';
 import { asset } from '@/lib/asset';
 
 const APP = 'https://designs.ifiok.ng/editor';
 
 export default function HomePage() {
   return (
-    <LangProvider>
+    <>
       <Header />
       <main id="top">
         {/* hero */}
@@ -239,19 +239,7 @@ export default function HomePage() {
         </div>
       </main>
 
-      <footer>
-        <div className="wrap">
-          <a className="logo" href="#top"><Mark style={{ width: 19 }} />Ifiok Design</a>
-          <nav aria-label="Footer">
-            <a href="#templates"><T k="nav.templates">Templates</T></a>
-            <a href="#features"><T k="nav.features">Features</T></a>
-            <a href="#app"><T k="nav.app">Mobile app</T></a>
-            <a href="#tools"><T k="nav.tools">Free tools</T></a>
-            <a href="#creators"><T k="nav.creators">Creators</T></a>
-          </nav>
-          <span>© Ifiok</span>
-        </div>
-      </footer>
-    </LangProvider>
+      <Footer />
+    </>
   );
 }
