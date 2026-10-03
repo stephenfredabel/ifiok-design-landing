@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  transition: all 0.2s ease;
+}
+
+@layer utilities {
+  .container-shell {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .brand-teal {
+    color: #008080;
+  }
+
+  .brand-gold {
+    color: #eab308;
+  }
+
+  .bg-brand-teal {
+    background-color: #008080;
+  }
+
+  .bg-brand-gold {
+    background-color: #eab308;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .primary-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-[#008080] px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(0,128,128,0.25)] hover:bg-[#006d6d] active:scale-[0.98];
+  }
+
+  .secondary-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-[#008080] bg-white px-5 py-3 text-sm font-semibold text-[#008080] hover:bg-[#008080] hover:text-white;
+  }
+
+  .ghost-btn {
+    @apply inline-flex items-center gap-2 text-sm font-semibold text-[#008080] hover:text-[#006d6d];
+  }
+
+  .section-title {
+    @apply text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl;
+  }
+
+  .section-copy {
+    @apply mt-4 max-w-2xl text-lg text-slate-600;
+  }
+
+  .glass-card {
+    @apply rounded-2xl border border-slate-200 bg-white/80 shadow-[0_18px_50px_rgba(15,23,42,0.08)] backdrop-blur-sm;
+  }
+}
