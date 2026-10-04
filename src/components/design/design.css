@@ -461,3 +461,36 @@
 .d-app .nv-b { font-size: 11px; }
 .d-app .menu-pop > * { min-height: 44px; }
 .d-app .cd-link, .d-app .linkbtn { min-height: 40px; display: inline-flex; align-items: center; }
+
+/* ───────── apps launcher (nine-dots menu) ───────── */
+.d-app .apps-menu { position: relative; flex: none; }
+.d-app .am-scrim { display: none; }
+.d-app .am-pop { position: absolute; z-index: 45; right: -40px; top: calc(100% + 6px); width: 340px; padding: 14px; border: 1px solid var(--line-2); border-radius: 18px; background: var(--panel); color: var(--tx); box-shadow: 0 24px 60px var(--shadow); }
+.d-app .am-h { margin: 0 4px 10px; font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--tx3); font-weight: 700; }
+.d-app .am-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; }
+.d-app .am-app { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 12px 6px 10px; border-radius: 14px; text-align: center; min-height: 92px; color: var(--tx); min-width: 0; }
+.d-app a.am-app:hover, .d-app a.am-app:focus-visible { background: var(--hover); }
+.d-app .am-app b { font-size: 13px; line-height: 1.2; font-weight: 700; overflow-wrap: anywhere; }
+.d-app .am-app small { font-size: 11.5px; color: var(--tx3); font-weight: 600; }
+.d-app .am-app small.here { color: var(--teal-text); }
+.d-app .am-app.is-here { background: rgba(11, 122, 127, 0.14); }
+.d-app .am-app.off { opacity: 0.5; cursor: not-allowed; }
+.d-app .am-ic { width: 48px; height: 48px; border-radius: 12px; object-fit: cover; flex: none; }
+.d-app .am-ic.tile { display: grid; place-items: center; color: #fff; }
+.d-app .am-ic.tile svg { width: 24px; height: 24px; }
+.d-app .am-all { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; min-height: 44px; padding: 0 12px; border-radius: 12px; border: 1px solid var(--line-2); font-weight: 700; font-size: 14px; }
+.d-app .am-all:hover { background: var(--hover); }
+.d-app .am-all svg { width: 16px; height: 16px; }
+.d-app .tile.img { object-fit: cover; background: none; box-shadow: none; }
+@media (max-width: 639px) {
+  .d-app .am-scrim { display: block; position: fixed; inset: 0; z-index: 44; background: rgba(4, 12, 12, 0.55); }
+  .d-app .am-pop { position: fixed; z-index: 46; left: 0; right: 0; bottom: 0; top: auto; width: auto; border-radius: 22px 22px 0 0; padding: 16px 14px calc(16px + env(safe-area-inset-bottom, 0px)); max-height: 80dvh; overflow-y: auto; }
+  .d-app .am-app { min-height: 104px; }
+}
+
+/* longer translations: segmented controls may shrink and wrap instead of overflowing a phone */
+.d-app .seg{ max-width: 100%; }
+.d-app .seg.wide{ align-self: stretch; }
+.d-app .seg.wide button{ flex: 1 1 0; min-width: 0; justify-content: center; text-align: center; line-height: 1.15; height: auto; min-height: 42px; padding: 6px 10px; }
+.d-app .stage{ white-space: normal; max-width: 100%; line-height: 1.2; text-align: left; }
+.d-app .stage i{ flex: none; }

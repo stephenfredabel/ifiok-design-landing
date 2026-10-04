@@ -3,6 +3,7 @@
 import { Globe } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { ACTIVE_LANGS, SOON_LANGS, T, useLang } from '@/i18n/LangProvider';
+import { tr } from '@/i18n/tr';
 
 /** Globe button that opens the language list. Shared by the site header and the dashboard. */
 export default function LangMenu({ className = 'iconbtn' }: { className?: string }) {
@@ -26,12 +27,12 @@ export default function LangMenu({ className = 'iconbtn' }: { className?: string
 
   return (
     <div className="lang" ref={wrap} data-open={open ? '' : undefined}>
-      <button type="button" className={className} aria-haspopup="true" aria-expanded={open} aria-label="Language" onClick={() => setOpen((o) => !o)}>
+      <button type="button" className={className} aria-haspopup="true" aria-expanded={open} aria-label={tr("Language")} onClick={() => setOpen((o) => !o)}>
         <Globe aria-hidden="true" />
         <span>{lang.toUpperCase()}</span>
       </button>
       <menu>
-        <li className="grp">Available</li>
+        <li className="grp">{tr("Available")}</li>
         {ACTIVE_LANGS.map((l) => (
           <li key={l.code}>
             <button
@@ -50,9 +51,9 @@ export default function LangMenu({ className = 'iconbtn' }: { className?: string
         <li className="grp"><T k="lang.more">More African languages — coming soon</T></li>
         {SOON_LANGS.map((l) => (
           <li key={l.code}>
-            <button type="button" disabled aria-disabled="true" title="Coming soon">
+            <button type="button" disabled aria-disabled="true" title={tr("Coming soon")}>
               {l.label}
-              <span className="soon-tag">soon</span>
+              <span className="soon-tag">{tr("soon")}</span>
             </button>
           </li>
         ))}

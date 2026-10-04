@@ -23,6 +23,9 @@ export const FORMATS: Format[] = [
   { id: 'letterhead', label: 'Letterhead', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0.125, qty: 100, step: 50, base: 5000, per: 160, note: 'A4 company paper' },
   { id: 'receipt', label: 'Receipt book', kind: 'receipt', w: 5.8, h: 8.3, unit: 'in', bleed: 0.125, qty: 10, step: 5, base: 3500, per: 2200, note: 'Numbered, duplicate sheets' },
   { id: 'tshirt', label: 'T-shirt print', kind: 'tshirt', w: 11, h: 14, unit: 'in', bleed: 0, qty: 12, step: 6, base: 4000, per: 2500, note: 'Front print area' },
+  { id: 'cv', label: 'CV / Resume', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0.125, qty: 10, step: 5, base: 1500, per: 150, note: 'A4, one or two pages' },
+  { id: 'cover', label: 'Assignment cover', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0.125, qty: 10, step: 5, base: 1200, per: 120, note: 'A4 cover page' },
+  { id: 'slides', label: 'Presentation', kind: 'doc', w: 10, h: 5.63, unit: 'in', bleed: 0, qty: 1, step: 1, base: 0, per: 0, note: '16:9 slides, shown on screen' },
   { id: 'invite', label: 'Invitation', kind: 'invite', w: 5, h: 7, unit: 'in', bleed: 0.125, qty: 100, step: 50, base: 5000, per: 220, note: 'Weddings, naming, launches' },
 ];
 
@@ -53,8 +56,14 @@ export const SAMPLE_DESIGNS: Design[] = [
 ];
 
 export type Template = { id: string; name: string; cat: string; formatId: string; accent: string; headline: string; sub: string };
-export const TEMPLATE_CATS = ['Marketing', 'Business', 'Church & events', 'School & ID', 'Weddings'] as const;
+export const TEMPLATE_CATS = ['Student', 'Marketing', 'Business', 'Church & events', 'School & ID', 'Weddings'] as const;
 export const TEMPLATES: Template[] = [
+  { id: 's1', name: 'Clean One-Page CV', cat: 'Student', formatId: 'cv', accent: '#1F3A8A', headline: 'Curriculum Vitae', sub: 'Clean, one page' },
+  { id: 's2', name: 'Graduate CV with Photo', cat: 'Student', formatId: 'cv', accent: '#0B7A7F', headline: 'Your Name', sub: 'Graduate · Lagos' },
+  { id: 's3', name: 'Assignment Cover Page', cat: 'Student', formatId: 'cover', accent: '#0F3D3E', headline: 'Assignment', sub: 'Course code · Matric no.' },
+  { id: 's4', name: 'Project Defence Slides', cat: 'Student', formatId: 'slides', accent: '#3B1673', headline: 'Project Defence', sub: 'Department of Computer Science' },
+  { id: 's5', name: 'Departmental Week Poster', cat: 'Student', formatId: 'poster', accent: '#7A1D4A', headline: 'DEPARTMENTAL WEEK', sub: 'Mon to Fri · Main Hall' },
+  { id: 's6', name: 'Thank-You Card', cat: 'Student', formatId: 'invite', accent: '#9D3A66', headline: 'Thank you', sub: 'For your support' },
   { id: 't1', name: 'Grand Opening Flyer', cat: 'Marketing', formatId: 'flyer-a5', accent: '#B6322B', headline: 'GRAND OPENING', sub: '20% off everything' },
   { id: 't2', name: 'Mega Sale Poster', cat: 'Marketing', formatId: 'poster', accent: '#E11D2E', headline: 'MEGA SALE', sub: 'Up to 70% off' },
   { id: 't3', name: 'Discount Flyer', cat: 'Marketing', formatId: 'flyer-a5', accent: '#0F5C3A', headline: 'Special Offer', sub: '15% off all services' },
