@@ -9,7 +9,7 @@ const COMPONENT_FILES = [
   'src/components/design/DesignApp.tsx', 'src/components/design/views.tsx', 'src/components/design/overlays.tsx', 'src/components/design/parts.tsx',
   'src/components/student/StudentView.tsx', 'src/components/student/store.tsx',
   'src/components/creator/dialogs.tsx', 'src/components/creator/parts.tsx', 'src/components/creator/store.tsx', 'src/components/creator/views.tsx',
-  'src/components/fonts/FontStudio.tsx', 'src/components/fonts/FontsView.tsx', 'src/components/fonts/parts.tsx', 'src/components/AppsMenu.tsx', 'src/components/ThemeToggle.tsx', 'src/components/auth/AuthShell.tsx', 'src/components/auth/parts.tsx', 'src/components/auth/LoginForm.tsx', 'src/components/auth/SignupForm.tsx', 'src/components/LangMenu.tsx',
+  'src/components/fonts/FontStudio.tsx', 'src/components/fonts/FontsView.tsx', 'src/components/fonts/parts.tsx', 'src/components/AppsMenu.tsx', 'src/components/ThemeToggle.tsx', 'src/components/CreatorInvite.tsx', 'src/components/auth/AuthShell.tsx', 'src/components/auth/parts.tsx', 'src/components/auth/LoginForm.tsx', 'src/components/auth/SignupForm.tsx', 'src/components/LangMenu.tsx',
 ];
 // Sample/seed data whose text is shown on screen. Only these keys carry words; ids, colours, urls and numbers are skipped.
 const DATA_FILES = ['src/components/design/data.ts', 'src/data/student.ts', 'src/data/creator-app.ts', 'src/data/fonts.ts', 'src/data/apps.ts'];

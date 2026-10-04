@@ -6721,6 +6721,86 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Become a creator",
+  "language": "fr",
+  "value": "Devenir créateur",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:69"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Become a creator",
+  "language": "pcm",
+  "value": "Become creator",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:69"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Become a creator",
+  "language": "yo",
+  "value": "Di olùṣẹ̀dá",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:69"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Become a creator",
+  "language": "ha",
+  "value": "Zama mai ƙirƙira",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:69"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Become a creator",
+  "language": "ig",
+  "value": "Bụrụ onye okike",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:69"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Become an Ifiok Campus Creator",
+  "language": "fr",
+  "value": "Devenez Campus Creator Ifiok",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:64"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Become an Ifiok Campus Creator",
+  "language": "pcm",
+  "value": "Become Ifiok Campus Creator",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:64"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Become an Ifiok Campus Creator",
+  "language": "yo",
+  "value": "Di Campus Creator Ifiok",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:64"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Become an Ifiok Campus Creator",
+  "language": "ha",
+  "value": "Zama Campus Creator na Ifiok",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:64"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Become an Ifiok Campus Creator",
+  "language": "ig",
+  "value": "Bụrụ Campus Creator Ifiok",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:64"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "behance.net/yourname",
   "language": "fr",
   "value": "behance.net/votrenom",
@@ -7518,6 +7598,46 @@
   "value": "BVN",
   "status": "ai_translated",
   "context": "src/components/creator/views.tsx:258"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Campus Creator Program",
+  "language": "fr",
+  "value": "Programme Campus Creator",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:63"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Campus Creator Program",
+  "language": "pcm",
+  "value": "Campus Creator Program",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:63"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Campus Creator Program",
+  "language": "yo",
+  "value": "Ètò Campus Creator",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:63"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Campus Creator Program",
+  "language": "ha",
+  "value": "Shirin Campus Creator",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:63"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Campus Creator Program",
+  "language": "ig",
+  "value": "Mmemme Campus Creator",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:63"
  },
  {
   "namespace": "legacy-inline",
@@ -11961,6 +12081,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Design templates, build your portfolio, and earn. Open to verified students.",
+  "language": "fr",
+  "value": "Créez des modèles, bâtissez votre portfolio et gagnez de l'argent. Ouvert aux étudiants vérifiés.",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:65"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design templates, build your portfolio, and earn. Open to verified students.",
+  "language": "pcm",
+  "value": "Design templates, build your portfolio, and make money. Na only verified students fit join.",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:65"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design templates, build your portfolio, and earn. Open to verified students.",
+  "language": "yo",
+  "value": "Ṣe àwọn àwòṣe, kọ́ àpò iṣẹ́ rẹ, kí o sì rí owó. Ó wà fún àwọn akẹ́kọ̀ọ́ tí a ti fìdí wọn múlẹ̀.",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:65"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design templates, build your portfolio, and earn. Open to verified students.",
+  "language": "ha",
+  "value": "Ƙirƙiri samfura, gina fayil ɗin ayyukanka, ka kuma sami kuɗi. A buɗe yake ga ɗaliban da aka tabbatar.",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:65"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design templates, build your portfolio, and earn. Open to verified students.",
+  "language": "ig",
+  "value": "Mepụta template, wuo portfolio gị, nweta ego. Ọ dịịrị ụmụ akwụkwọ e kwadoro naanị.",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:65"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Design with classmates",
   "language": "fr",
   "value": "Créez avec vos camarades",
@@ -12758,6 +12918,46 @@
   "value": "Akwụkwọ",
   "status": "ai_translated",
   "context": "src/components/design/data.ts:107"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Don't show this again",
+  "language": "fr",
+  "value": "Ne plus afficher",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:72"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Don't show this again",
+  "language": "pcm",
+  "value": "No show me this again",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:72"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Don't show this again",
+  "language": "yo",
+  "value": "Má ṣe fi èyí hàn mi mọ́",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:72"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Don't show this again",
+  "language": "ha",
+  "value": "Kada ka sake nuna mini wannan",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:72"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Don't show this again",
+  "language": "ig",
+  "value": "Egosila m nke a ọzọ",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:72"
  },
  {
   "namespace": "legacy-inline",
@@ -22478,6 +22678,46 @@
   "value": "Ọ nọghị n’ndepụta? Gaa n’ihu na-ede aha zuru ezu, anyị ga-eji ya.",
   "status": "ai_translated",
   "context": "src/components/student/StudentView.tsx:34"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Not now",
+  "language": "fr",
+  "value": "Pas maintenant",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:70"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Not now",
+  "language": "pcm",
+  "value": "No now",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:70"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Not now",
+  "language": "yo",
+  "value": "Kì í ṣe báyìí",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:70"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Not now",
+  "language": "ha",
+  "value": "Ba yanzu ba",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:70"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Not now",
+  "language": "ig",
+  "value": "Ọ bụghị ugbu a",
+  "status": "ai_translated",
+  "context": "src/components/CreatorInvite.tsx:70"
  },
  {
   "namespace": "legacy-inline",
