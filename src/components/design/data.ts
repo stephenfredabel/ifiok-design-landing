@@ -1,6 +1,6 @@
 import {
   Bot, Brush, FileText, FolderOpen, Headphones, Home, Image as ImageIcon, LayoutGrid, Link2, type LucideIcon,
-  Package, QrCode, Settings, Upload, GraduationCap, BookOpen, CreditCard, Flag, IdCard, Plus, ScrollText, ShieldCheck, Database, Users, Sparkles, StickyNote,
+  Package, QrCode, Settings, Upload, GraduationCap, BookOpen, CreditCard, Flag, IdCard, Plus, ScrollText, ShieldCheck, Database, Users, Sparkles, StickyNote, Type as TypeIcon, Wallet, Wand2, Shapes,
 } from 'lucide-react';
 
 /* Everything on this page is sample data. Real designs, orders and templates come from the live app. */
@@ -31,7 +31,7 @@ export const naira = (n: number) => '₦' + Math.round(n).toLocaleString('en-NG'
 export const priceFor = (f: Format, qty: number) => f.base + f.per * Math.pow(qty / f.qty, -0.12) * Math.max(0, qty - 1);
 export const sizeLabel = (f: Format) => `${f.w}" × ${f.h}"`;
 
-export type Design = { id: string; name: string; formatId: string; accent: string; headline: string; sub: string; stage: Stage; edited: string; warn?: string; device?: boolean };
+export type Design = { id: string; name: string; formatId: string; accent: string; headline: string; sub: string; stage: Stage; edited: string; warn?: string; device?: boolean; font?: { css: string; family: string; cat: string } };
 
 export const STAGES: { id: Stage; label: string }[] = [
   { id: 'draft', label: 'Draft' },
@@ -81,11 +81,12 @@ export const SAMPLE_ORDERS: Order[] = [
   { id: 'o4', ref: 'IFK-20190', item: 'Mama Tolu Stores — receipt book', formatId: 'receipt', qty: 20, total: 41000, stage: 'delivered', eta: 'Delivered 14 Sep', printer: 'Yaba print shop', designId: 'd7' },
 ];
 
-export type NavItem = { id: string; label: string; Icon: LucideIcon; badge?: string; href?: string; blurb?: string; group: 'create' | 'grow' | 'print' | 'foot' };
+export type NavItem = { id: string; label: string; Icon: LucideIcon; badge?: string; href?: string; blurb?: string; group: 'create' | 'studio' | 'grow' | 'print' | 'foot' };
 export const NAV: NavItem[] = [
   { id: 'home', label: 'Home', Icon: Home, group: 'create' },
   { id: 'projects', label: 'My files', Icon: FolderOpen, group: 'create' },
   { id: 'templates', label: 'Templates', Icon: LayoutGrid, group: 'create' },
+  { id: 'fonts', label: 'Fonts', Icon: TypeIcon, badge: 'New', group: 'create' },
   { id: 'brand', label: 'Brand kit', Icon: Brush, group: 'create', blurb: 'Keep your logos, colours and fonts in one kit, then apply them to any design in a tap.' },
   { id: 'uploads', label: 'Uploads', Icon: Upload, group: 'create', blurb: 'Your photos, logos and PDFs, ready to drop into any design.' },
   { id: 'stock', label: 'Stock images', Icon: ImageIcon, group: 'create', blurb: 'Browse photos and graphics you can use in your designs.' },
@@ -97,6 +98,14 @@ export const NAV: NavItem[] = [
   { id: 'docs', label: 'Documents', Icon: FileText, group: 'foot', href: 'https://ifiok.ng/tools' },
   { id: 'settings', label: 'Settings', Icon: Settings, group: 'foot', blurb: 'Your profile, delivery addresses and payment preferences.' },
   { id: 'support', label: 'Support', Icon: Headphones, group: 'foot', blurb: 'Chat with the Ifiok team, voice notes included.' },
+];
+
+/** Extra navigation for signed-in creators. Everything else on the dashboard is the same as for any designer. */
+export const CREATOR_NAV: NavItem[] = [
+  { id: 'studio', label: 'Creator studio', Icon: Wand2, group: 'studio' },
+  { id: 'ctemplates', label: 'My templates', Icon: Shapes, group: 'studio' },
+  { id: 'cfonts', label: 'My fonts', Icon: TypeIcon, group: 'studio' },
+  { id: 'wallet', label: 'Earnings', Icon: Wallet, group: 'studio' },
 ];
 
 export const QUICK = ['card', 'flyer-a5', 'banner', 'poster', 'sticker', 'id', 'letterhead', 'receipt', 'rollup', 'tshirt', 'invite'] as const;

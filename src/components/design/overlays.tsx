@@ -4,7 +4,7 @@ import { ArrowRight, Check, CornerDownLeft, Plus, Search, X } from 'lucide-react
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Thumb from './Thumb';
 import { EDITOR, Stepper, StagePill } from './parts';
-import { FORMATS, NAV, TEMPLATES, TOOL_LINKS, formatById, naira, priceFor, sizeLabel, type Design } from './data';
+import { FORMATS, NAV, TEMPLATES, TOOL_LINKS, formatById, naira, priceFor, sizeLabel, type Design, type NavItem } from './data';
 
 /** Keeps keyboard focus inside an open overlay and returns it on close. */
 export function useFocusTrap(active: boolean, onClose: () => void) {
@@ -30,12 +30,14 @@ export function useFocusTrap(active: boolean, onClose: () => void) {
   return ref;
 }
 
-export type NewDesignSeed = { formatId?: string; name?: string; accent?: string; headline?: string; sub?: string } | null;
+export type DesignFont = { css: string; family: string; cat: string };
+export type NewDesignSeed = { formatId?: string; name?: string; accent?: string; headline?: string; sub?: string; font?: DesignFont } | null;
 
 const ACCENTS = ['#0B7A7F', '#DAA019', '#B6322B', '#1F3A8A', '#15241F', '#7A1D4A'];
 
-export function NewDesignDialog({ seed, onClose, onCreate }: { seed: NewDesignSeed; onClose: () => void; onCreate: (v: { name: string; formatId: string; accent: string; headline?: string; sub?: string }) => void }) {
+export function NewDesignDialog({ seed, onClose, onCreate }: { seed: NewDesignSeed; onClose: () => void; onCreate: (v: { name: string; formatId: string; accent: string; headline?: string; sub?: string; font?: DesignFont }) => void }) {
   const open = seed !== null;
+  const [font, setFont] = useState<DesignFont | undefined>(undefined);
   const [formatId, setFormatId] = useState('card');
   const [name, setName] = useState('');
   const [accent, setAccent] = useState(ACCENTS[0]);
@@ -47,6 +49,7 @@ export function NewDesignDialog({ seed, onClose, onCreate }: { seed: NewDesignSe
       setFormatId(seed.formatId ?? 'card');
       setName(seed.name ?? '');
       setAccent(seed.accent ?? ACCENTS[0]);
+      setFont(seed.font);
     }
   }, [seed]);
 
@@ -75,7 +78,8 @@ export function NewDesignDialog({ seed, onClose, onCreate }: { seed: NewDesignSe
               </div>
             </div>
             <div className="nd-side">
-              <Thumb formatId={formatId} accent={accent} headline={name || f.label} sub={f.note} className="nd-prev" />
+              <Thumb formatId={formatId} accent={accent} headline={name || f.label} sub={f.note} className="nd-prev" font={font} />
+              {font && <p className="nd-font"><span style={{ fontFamily: `"${font.css}"` }}>Aa</span> Using <b>{font.family}</b><button type="button" className="cd-link" onClick={() => setFont(undefined)}>Remove</button></p>}
               <dl className="specs">
                 <div><dt>Size</dt><dd className="mono">{sizeLabel(f)}</dd></div>
                 <div><dt>Bleed</dt><dd className="mono">{f.bleed}"</dd></div>
@@ -107,7 +111,7 @@ export function NewDesignDialog({ seed, onClose, onCreate }: { seed: NewDesignSe
         </div>
         <footer className="dialog-f">
           <button type="button" className="btn-s" onClick={onClose}>Cancel</button>
-          <button type="button" className="btn-p" onClick={() => onCreate({ name: name.trim() || `Untitled ${f.label.toLowerCase()}`, formatId, accent, headline: seed?.headline, sub: seed?.sub })}>
+          <button type="button" className="btn-p" onClick={() => onCreate({ name: name.trim() || `Untitled ${f.label.toLowerCase()}`, formatId, accent, headline: seed?.headline, sub: seed?.sub, font })}>
             <Plus aria-hidden="true" />Create design
           </button>
         </footer>
@@ -136,7 +140,7 @@ export function DetailPanel({ d, onClose, onDuplicate, onDelete }: { d: Design |
           <button type="button" className="icon-x" onClick={onClose} aria-label="Close"><X aria-hidden="true" /></button>
         </header>
         <div className="dialog-b">
-          <Thumb formatId={d.formatId} accent={d.accent} headline={d.headline} sub={d.sub} className="dt-prev" />
+          <Thumb formatId={d.formatId} accent={d.accent} headline={d.headline} sub={d.sub} className="dt-prev" font={d.font} />
           <div className="dt-actions">
             <a className="btn-p" href={EDITOR} data-autofocus>Edit in editor <ArrowRight aria-hidden="true" /></a>
             <button type="button" className="btn-s" onClick={() => onDuplicate(d.id)}>Duplicate</button>
@@ -179,8 +183,8 @@ export function DetailPanel({ d, onClose, onDuplicate, onDelete }: { d: Design |
 
 type Hit = { id: string; group: string; label: string; hint: string; run: () => void };
 
-export function Palette({ open, onClose, designs, go, openDetail, newFrom }: {
-  open: boolean; onClose: () => void; designs: Design[]; go: (view: string) => void; openDetail: (id: string) => void; newFrom: (seed: NewDesignSeed) => void;
+export function Palette({ open, onClose, designs, go, openDetail, newFrom, nav = NAV }: {
+  nav?: NavItem[]; open: boolean; onClose: () => void; designs: Design[]; go: (view: string) => void; openDetail: (id: string) => void; newFrom: (seed: NewDesignSeed) => void;
 }) {
   const [q, setQ] = useState('');
   const [i, setI] = useState(0);
@@ -190,7 +194,7 @@ export function Palette({ open, onClose, designs, go, openDetail, newFrom }: {
   const hits = useMemo<Hit[]>(() => {
     const all: Hit[] = [
       { id: 'a-new', group: 'Actions', label: 'New design', hint: 'N', run: () => newFrom({}) },
-      ...NAV.map<Hit>((n) => ({ id: 'n-' + n.id, group: 'Go to', label: n.label, hint: n.href ? 'Opens in a new tab' : 'View', run: () => (n.href ? window.open(n.href, '_blank', 'noopener') : go(n.id)) })),
+      ...nav.map<Hit>((n) => ({ id: 'n-' + n.id, group: 'Go to', label: n.label, hint: n.href ? 'Opens in a new tab' : 'View', run: () => (n.href ? window.open(n.href, '_blank', 'noopener') : go(n.id)) })),
       ...designs.map<Hit>((d) => ({ id: 'd-' + d.id, group: 'Your designs', label: d.name, hint: formatById(d.formatId).label, run: () => openDetail(d.id) })),
       ...TEMPLATES.map<Hit>((t) => ({ id: 't-' + t.id, group: 'Templates', label: t.name, hint: t.cat, run: () => newFrom({ formatId: t.formatId, name: t.name, accent: t.accent, headline: t.headline, sub: t.sub }) })),
       ...TOOL_LINKS.map<Hit>((t) => ({ id: 'l-' + t.label, group: 'Free tools', label: t.label, hint: 'Opens in a new tab', run: () => window.open(t.href, '_blank', 'noopener') })),
@@ -262,6 +266,30 @@ export function Toast({ t, onClose }: { t: { msg: string; href?: string; label?:
       {t.href && <a href={t.href} onClick={onClose}>{t.label ?? 'Open'}</a>}
       {t.action && <button type="button" onClick={() => { t.action?.(); onClose(); }}>{t.label ?? 'Undo'}</button>}
       <button type="button" className="toast-x" onClick={onClose} aria-label="Dismiss"><X aria-hidden="true" /></button>
+    </div>
+  );
+}
+
+export type NewKind = 'design' | 'template' | 'font';
+/** Creators choose what they are making. Everyone else goes straight to a new design. */
+export function NewChooser({ open, onClose, onPick }: { open: boolean; onClose: () => void; onPick: (k: NewKind) => void }) {
+  const ref = useFocusTrap(open, onClose);
+  if (!open) return null;
+  const items: [NewKind, string, string][] = [
+    ['design', 'A design for me', 'Cards, flyers, posters and more, to use or print.'],
+    ['template', 'A template to submit', 'Any design type. If Ifiok approves it, you are paid.'],
+    ['font', 'A font to submit', 'Designers click it and start using it. If approved, you are paid.'],
+  ];
+  return (
+    <div className="scrim" onPointerDown={(e) => e.target === e.currentTarget && onClose()}>
+      <div className="dialog narrow" role="dialog" aria-modal="true" aria-labelledby="nk-title" ref={ref}>
+        <header className="dialog-h"><h2 id="nk-title">What are you making?</h2><button type="button" className="icon-x" onClick={onClose} aria-label="Close"><X aria-hidden="true" /></button></header>
+        <div className="dialog-b nk-list">
+          {items.map(([k, t, p], i) => (
+            <button key={k} type="button" className="nk" data-autofocus={i === 0 ? true : undefined} onClick={() => onPick(k)}><b>{t}</b><span>{p}</span><ArrowRight aria-hidden="true" /></button>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

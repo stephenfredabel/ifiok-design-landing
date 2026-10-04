@@ -37,8 +37,8 @@ export function ScrollRow({ label, children }: { label: string; children: React.
 
 type Ops = { openDetail: (id: string) => void; duplicate: (id: string) => void; remove: (id: string) => void };
 
-export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTemplate }: {
-  designs: Design[]; orders: Order[]; ops: Ops; go: (v: string) => void; newFrom: (seed: { formatId?: string }) => void; openPalette: () => void; useTemplate: (t: Template) => void;
+export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTemplate, slot }: {
+  slot?: React.ReactNode; designs: Design[]; orders: Order[]; ops: Ops; go: (v: string) => void; newFrom: (seed: { formatId?: string }) => void; openPalette: () => void; useTemplate: (t: Template) => void;
 }) {
   const active = orders.filter((o) => o.stage !== 'delivered');
   return (
@@ -85,6 +85,8 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
           <span><b>Offline fonts</b><small>Add fonts for use without data</small></span>
         </a>
       </section>
+
+      {slot}
 
       <section className="blk">
         <header className="blk-h"><h2>Continue designing</h2><button type="button" className="see" onClick={() => go('projects')}>See all <ChevronRight aria-hidden="true" /></button></header>
