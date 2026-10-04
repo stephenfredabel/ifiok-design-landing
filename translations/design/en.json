@@ -533,10 +533,22 @@
   ]
  },
  {
+  "key": "6-digit code",
+  "where": [
+   "src/components/auth/SignupForm.tsx:35"
+  ]
+ },
+ {
   "key": "600 level",
   "where": [
    "src/data/student.ts:26",
    "src/data/creators.ts:129"
+  ]
+ },
+ {
+  "key": "8 or more characters",
+  "where": [
+   "src/components/auth/SignupForm.tsx:122"
   ]
  },
  {
@@ -556,6 +568,18 @@
   "key": "A font to submit",
   "where": [
    "src/components/design/overlays.tsx:282"
+  ]
+ },
+ {
+  "key": "A letter",
+  "where": [
+   "src/components/auth/SignupForm.tsx:122"
+  ]
+ },
+ {
+  "key": "A number",
+  "where": [
+   "src/components/auth/SignupForm.tsx:122"
   ]
  },
  {
@@ -827,6 +851,12 @@
   ]
  },
  {
+  "key": "Already have an account?",
+  "where": [
+   "src/components/auth/SignupForm.tsx:131"
+  ]
+ },
+ {
   "key": "Amount",
   "where": [
    "src/components/creator/dialogs.tsx:217",
@@ -838,6 +868,12 @@
   "key": "Amounts shown here are examples. Ifiok sets the real amounts.",
   "where": [
    "src/components/creator/views.tsx:313"
+  ]
+ },
+ {
+  "key": "and",
+  "where": [
+   "src/components/auth/SignupForm.tsx:126"
   ]
  },
  {
@@ -996,6 +1032,13 @@
   "where": [
    "src/components/student/StudentView.tsx:137",
    "src/components/fonts/FontStudio.tsx:231"
+  ]
+ },
+ {
+  "key": "Back to log in",
+  "where": [
+   "src/components/auth/LoginForm.tsx:64",
+   "src/components/auth/LoginForm.tsx:77"
   ]
  },
  {
@@ -1182,6 +1225,12 @@
   ]
  },
  {
+  "key": "Change number",
+  "where": [
+   "src/components/auth/SignupForm.tsx:135"
+  ]
+ },
+ {
   "key": "Changes requested",
   "where": [
    "src/components/fonts/FontStudio.tsx:14",
@@ -1223,6 +1272,12 @@
   "key": "Check your account first.",
   "where": [
    "src/components/creator/views.tsx:254"
+  ]
+ },
+ {
+  "key": "Check your email",
+  "where": [
+   "src/components/auth/LoginForm.tsx:75"
   ]
  },
  {
@@ -1481,6 +1536,12 @@
   ]
  },
  {
+  "key": "Continue with Google",
+  "where": [
+   "src/components/auth/LoginForm.tsx:51"
+  ]
+ },
+ {
   "key": "Convocation Shirt",
   "where": [
    "src/data/creator-app.ts:68",
@@ -1552,6 +1613,18 @@
   ]
  },
  {
+  "key": "Create account",
+  "where": [
+   "src/components/auth/SignupForm.tsx:128"
+  ]
+ },
+ {
+  "key": "Create an account",
+  "where": [
+   "src/components/auth/LoginForm.tsx:58"
+  ]
+ },
+ {
   "key": "Create design",
   "where": [
    "src/components/design/overlays.tsx:116"
@@ -1567,6 +1640,12 @@
   "key": "Create templates",
   "where": [
    "src/data/creators.ts:32"
+  ]
+ },
+ {
+  "key": "Create your Ifiok account",
+  "where": [
+   "src/components/auth/SignupForm.tsx:95"
   ]
  },
  {
@@ -1587,6 +1666,12 @@
   "where": [
    "src/components/design/DesignApp.tsx:110",
    "src/components/design/DesignApp.tsx:258"
+  ]
+ },
+ {
+  "key": "Creating your account…",
+  "where": [
+   "src/components/auth/SignupForm.tsx:128"
   ]
  },
  {
@@ -1764,6 +1849,12 @@
   ]
  },
  {
+  "key": "Design and print",
+  "where": [
+   "src/components/auth/SignupForm.tsx:13"
+  ]
+ },
+ {
   "key": "Design at real print size, then order the print.",
   "where": [
    "src/data/apps.ts:61"
@@ -1779,6 +1870,12 @@
   "key": "Design in {family}",
   "where": [
    "src/components/design/DesignApp.tsx:125"
+  ]
+ },
+ {
+  "key": "Design it. We print it.",
+  "where": [
+   "src/components/auth/AuthShell.tsx:20"
   ]
  },
  {
@@ -1860,6 +1957,12 @@
   "key": "Die-cut vinyl",
   "where": [
    "src/components/design/data.ts:21"
+  ]
+ },
+ {
+  "key": "Digit {n}",
+  "where": [
+   "src/components/auth/SignupForm.tsx:37"
   ]
  },
  {
@@ -2038,6 +2141,26 @@
   ]
  },
  {
+  "key": "Email",
+  "where": [
+   "src/components/auth/LoginForm.tsx:67",
+   "src/components/auth/SignupForm.tsx:112"
+  ]
+ },
+ {
+  "key": "Email or phone number",
+  "where": [
+   "src/components/auth/LoginForm.tsx:53"
+  ]
+ },
+ {
+  "key": "Enter a Nigerian phone number, like 0803 123 4567.",
+  "where": [
+   "src/components/auth/LoginForm.tsx:23",
+   "src/components/auth/SignupForm.tsx:73"
+  ]
+ },
+ {
   "key": "Enter it in this month's theme:",
   "where": [
    "src/components/creator/dialogs.tsx:191"
@@ -2050,15 +2173,57 @@
   ]
  },
  {
+  "key": "Enter the 6-digit code.",
+  "where": [
+   "src/components/auth/SignupForm.tsx:84"
+  ]
+ },
+ {
+  "key": "Enter the email you signed up with.",
+  "where": [
+   "src/components/auth/LoginForm.tsx:38"
+  ]
+ },
+ {
+  "key": "Enter the email you signed up with. We will send you a link to choose a new password.",
+  "where": [
+   "src/components/auth/LoginForm.tsx:66"
+  ]
+ },
+ {
   "key": "Enter your department.",
   "where": [
    "src/components/student/StudentView.tsx:54"
   ]
  },
  {
+  "key": "Enter your email or phone number.",
+  "where": [
+   "src/components/auth/LoginForm.tsx:23"
+  ]
+ },
+ {
+  "key": "Enter your email.",
+  "where": [
+   "src/components/auth/SignupForm.tsx:72"
+  ]
+ },
+ {
+  "key": "Enter your full name.",
+  "where": [
+   "src/components/auth/SignupForm.tsx:71"
+  ]
+ },
+ {
   "key": "Enter your matric or student ID number.",
   "where": [
    "src/components/student/StudentView.tsx:58"
+  ]
+ },
+ {
+  "key": "Enter your password.",
+  "where": [
+   "src/components/auth/LoginForm.tsx:29"
   ]
  },
  {
@@ -2303,6 +2468,12 @@
   ]
  },
  {
+  "key": "For myself or my business",
+  "where": [
+   "src/components/auth/SignupForm.tsx:13"
+  ]
+ },
+ {
   "key": "For print shops: receive, print and deliver Ifiok orders.",
   "where": [
    "src/data/apps.ts:87"
@@ -2315,8 +2486,15 @@
   ]
  },
  {
+  "key": "Forgot password?",
+  "where": [
+   "src/components/auth/LoginForm.tsx:55"
+  ]
+ },
+ {
   "key": "Founder · Okafor Bakes",
   "where": [
+   "src/components/auth/AuthShell.tsx:29",
    "src/components/design/data.ts:48",
    "src/data/creator-app.ts:59"
   ]
@@ -2335,9 +2513,22 @@
   ]
  },
  {
+  "key": "Free perks with your school ID",
+  "where": [
+   "src/components/auth/SignupForm.tsx:14"
+  ]
+ },
+ {
   "key": "Free student tools",
   "where": [
    "src/data/student.ts:11"
+  ]
+ },
+ {
+  "key": "Free to start. Pay only when you print.",
+  "where": [
+   "src/components/auth/AuthShell.tsx:32",
+   "src/components/auth/SignupForm.tsx:96"
   ]
  },
  {
@@ -2357,6 +2548,12 @@
   "key": "Front print area",
   "where": [
    "src/components/design/data.ts:25"
+  ]
+ },
+ {
+  "key": "Full name",
+  "where": [
+   "src/components/auth/SignupForm.tsx:111"
   ]
  },
  {
@@ -2384,6 +2581,12 @@
   ]
  },
  {
+  "key": "Get paid when Ifiok approves them",
+  "where": [
+   "src/components/auth/SignupForm.tsx:15"
+  ]
+ },
+ {
   "key": "Give your font a name.",
   "where": [
    "src/components/fonts/FontStudio.tsx:90"
@@ -2393,6 +2596,12 @@
   "key": "Go to",
   "where": [
    "src/components/design/overlays.tsx:198"
+  ]
+ },
+ {
+  "key": "Good",
+  "where": [
+   "src/components/auth/SignupForm.tsx:89"
   ]
  },
  {
@@ -2434,9 +2643,9 @@
  {
   "key": "GRAND OPENING",
   "where": [
+   "src/components/auth/AuthShell.tsx:28",
    "src/components/design/data.ts:49",
-   "src/components/design/data.ts:67",
-   "src/data/creator-app.ts:58"
+   "src/components/design/data.ts:67"
   ]
  },
  {
@@ -2529,6 +2738,12 @@
   ]
  },
  {
+  "key": "Hide password",
+  "where": [
+   "src/components/auth/parts.tsx:47"
+  ]
+ },
+ {
   "key": "Hide this for now",
   "where": [
    "src/components/student/StudentView.tsx:223"
@@ -2568,6 +2783,18 @@
   "key": "I agree that Ifiok may verify my NIN, BVN and bank account with its verification partner to confirm my identity for creator payouts.",
   "where": [
    "src/components/creator/views.tsx:260"
+  ]
+ },
+ {
+  "key": "I agree to the",
+  "where": [
+   "src/components/auth/SignupForm.tsx:126"
+  ]
+ },
+ {
+  "key": "I am a student",
+  "where": [
+   "src/components/auth/SignupForm.tsx:14"
   ]
  },
  {
@@ -2615,6 +2842,12 @@
   ]
  },
  {
+  "key": "If {email} has an Ifiok account, a reset link is on its way. It works for 30 minutes.",
+  "where": [
+   "src/components/auth/LoginForm.tsx:76"
+  ]
+ },
+ {
   "key": "If a letter looks different from the rest, or shows as a box, this font does not include it.",
   "where": [
    "src/components/fonts/FontsView.tsx:105"
@@ -2644,6 +2877,13 @@
   "key": "Ifiok Docs",
   "where": [
    "src/data/apps.ts:70"
+  ]
+ },
+ {
+  "key": "Ifiok home",
+  "where": [
+   "src/components/auth/AuthShell.tsx:18",
+   "src/components/auth/AuthShell.tsx:37"
   ]
  },
  {
@@ -2791,6 +3031,12 @@
   ]
  },
  {
+  "key": "Keep me logged in on this device",
+  "where": [
+   "src/components/auth/LoginForm.tsx:56"
+  ]
+ },
+ {
   "key": "Keep track of your Android devices and raise the alarm.",
   "where": [
    "src/data/apps.ts:124"
@@ -2905,6 +3151,25 @@
   ]
  },
  {
+  "key": "Log in",
+  "where": [
+   "src/components/auth/LoginForm.tsx:57",
+   "src/components/auth/SignupForm.tsx:131"
+  ]
+ },
+ {
+  "key": "Log in to your designs, orders and earnings.",
+  "where": [
+   "src/components/auth/LoginForm.tsx:50"
+  ]
+ },
+ {
+  "key": "Logging in…",
+  "where": [
+   "src/components/auth/LoginForm.tsx:57"
+  ]
+ },
+ {
   "key": "Logistics · Lagos",
   "where": [
    "src/components/design/data.ts:73"
@@ -2932,6 +3197,18 @@
   "key": "Main",
   "where": [
    "src/components/design/DesignApp.tsx:230"
+  ]
+ },
+ {
+  "key": "Make cards, flyers, ID cards and posters at real print size, then order delivery across Nigeria.",
+  "where": [
+   "src/components/auth/AuthShell.tsx:21"
+  ]
+ },
+ {
+  "key": "Make templates",
+  "where": [
+   "src/components/auth/SignupForm.tsx:15"
   ]
  },
  {
@@ -3171,6 +3448,12 @@
   ]
  },
  {
+  "key": "New to Ifiok?",
+  "where": [
+   "src/components/auth/LoginForm.tsx:58"
+  ]
+ },
+ {
   "key": "Next step",
   "where": [
    "src/components/creator/dialogs.tsx:174"
@@ -3292,6 +3575,12 @@
   ]
  },
  {
+  "key": "Nothing arrived?",
+  "where": [
+   "src/components/auth/LoginForm.tsx:78"
+  ]
+ },
+ {
   "key": "Nothing found for “{q}”.",
   "where": [
    "src/components/design/overlays.tsx:236"
@@ -3350,6 +3639,12 @@
   "where": [
    "src/data/creator-app.ts:59",
    "src/data/creator-app.ts:80"
+  ]
+ },
+ {
+  "key": "Okay",
+  "where": [
+   "src/components/auth/SignupForm.tsx:89"
   ]
  },
  {
@@ -3451,6 +3746,12 @@
   ]
  },
  {
+  "key": "or",
+  "where": [
+   "src/components/auth/parts.tsx:17"
+  ]
+ },
+ {
   "key": "Order print",
   "where": [
    "src/components/design/overlays.tsx:167"
@@ -3520,6 +3821,13 @@
   "key": "Partners",
   "where": [
    "src/data/apps.ts:97"
+  ]
+ },
+ {
+  "key": "Password",
+  "where": [
+   "src/components/auth/LoginForm.tsx:54",
+   "src/components/auth/SignupForm.tsx:114"
   ]
  },
  {
@@ -3607,6 +3915,12 @@
   ]
  },
  {
+  "key": "Phone number",
+  "where": [
+   "src/components/auth/SignupForm.tsx:113"
+  ]
+ },
+ {
   "key": "Photo is under 300 DPI at this size",
   "where": [
    "src/components/design/data.ts:51"
@@ -3634,6 +3948,12 @@
   "key": "Playful",
   "where": [
    "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Please accept the terms to continue.",
+  "where": [
+   "src/components/auth/SignupForm.tsx:75"
   ]
  },
  {
@@ -3745,6 +4065,12 @@
   ]
  },
  {
+  "key": "Printed near you and delivered to your door",
+  "where": [
+   "src/components/auth/AuthShell.tsx:25"
+  ]
+ },
+ {
   "key": "Printers",
   "where": [
    "src/data/apps.ts:84"
@@ -3760,6 +4086,12 @@
   "key": "Printing",
   "where": [
    "src/components/design/data.ts:42"
+  ]
+ },
+ {
+  "key": "Privacy Policy",
+  "where": [
+   "src/components/auth/SignupForm.tsx:126"
   ]
  },
  {
@@ -3840,6 +4172,18 @@
   ]
  },
  {
+  "key": "Prototype: any 6 digits will work.",
+  "where": [
+   "src/components/auth/SignupForm.tsx:144"
+  ]
+ },
+ {
+  "key": "Prototype: no real account is created or checked here.",
+  "where": [
+   "src/components/auth/AuthShell.tsx:41"
+  ]
+ },
+ {
   "key": "Prototype: nothing is sent. Use any 11 digits.",
   "where": [
    "src/components/creator/views.tsx:263"
@@ -3879,6 +4223,12 @@
   "key": "Ready to request",
   "where": [
    "src/components/creator/views.tsx:301"
+  ]
+ },
+ {
+  "key": "Real print sizes, with bleed checked for you",
+  "where": [
+   "src/components/auth/AuthShell.tsx:23"
   ]
  },
  {
@@ -3981,6 +4331,24 @@
   "key": "Request payout",
   "where": [
    "src/components/creator/views.tsx:291"
+  ]
+ },
+ {
+  "key": "Resend code",
+  "where": [
+   "src/components/auth/SignupForm.tsx:142"
+  ]
+ },
+ {
+  "key": "Resend code in {s}s",
+  "where": [
+   "src/components/auth/SignupForm.tsx:142"
+  ]
+ },
+ {
+  "key": "Reset your password",
+  "where": [
+   "src/components/auth/LoginForm.tsx:65"
   ]
  },
  {
@@ -4104,6 +4472,7 @@
  {
   "key": "Saturday 12 July · 10am",
   "where": [
+   "src/components/auth/AuthShell.tsx:28",
    "src/components/design/data.ts:49"
   ]
  },
@@ -4299,6 +4668,12 @@
   ]
  },
  {
+  "key": "See the price in naira while you work",
+  "where": [
+   "src/components/auth/AuthShell.tsx:24"
+  ]
+ },
+ {
   "key": "See the program",
   "where": [
    "src/data/student.ts:12"
@@ -4320,6 +4695,18 @@
   "key": "SemiBold",
   "where": [
    "src/components/fonts/FontStudio.tsx:11"
+  ]
+ },
+ {
+  "key": "Send reset link",
+  "where": [
+   "src/components/auth/LoginForm.tsx:68"
+  ]
+ },
+ {
+  "key": "Sending…",
+  "where": [
+   "src/components/auth/LoginForm.tsx:68"
   ]
  },
  {
@@ -4357,6 +4744,12 @@
   ]
  },
  {
+  "key": "Show password",
+  "where": [
+   "src/components/auth/parts.tsx:47"
+  ]
+ },
+ {
   "key": "Sidebar",
   "where": [
    "src/components/design/DesignApp.tsx:194"
@@ -4366,6 +4759,12 @@
   "key": "Sign up and verify",
   "where": [
    "src/data/creators.ts:31"
+  ]
+ },
+ {
+  "key": "Sign up with Google",
+  "where": [
+   "src/components/auth/SignupForm.tsx:130"
   ]
  },
  {
@@ -4546,6 +4945,12 @@
   "key": "Story",
   "where": [
    "src/data/creator-app.ts:26"
+  ]
+ },
+ {
+  "key": "Strong",
+  "where": [
+   "src/components/auth/SignupForm.tsx:89"
   ]
  },
  {
@@ -4754,6 +5159,12 @@
   ]
  },
  {
+  "key": "Terms",
+  "where": [
+   "src/components/auth/SignupForm.tsx:126"
+  ]
+ },
+ {
   "key": "Text is editable",
   "where": [
    "src/components/creator/dialogs.tsx:185"
@@ -4796,6 +5207,14 @@
   "where": [
    "src/components/design/data.ts:52",
    "src/components/design/data.ts:89"
+  ]
+ },
+ {
+  "key": "That email does not look right.",
+  "where": [
+   "src/components/auth/LoginForm.tsx:23",
+   "src/components/auth/LoginForm.tsx:38",
+   "src/components/auth/SignupForm.tsx:72"
   ]
  },
  {
@@ -4959,6 +5378,12 @@
   ]
  },
  {
+  "key": "Try again",
+  "where": [
+   "src/components/auth/LoginForm.tsx:78"
+  ]
+ },
+ {
   "key": "Try another word or clear a filter.",
   "where": [
    "src/components/fonts/FontsView.tsx:53"
@@ -5091,6 +5516,12 @@
   ]
  },
  {
+  "key": "Use at least 8 characters, with a letter and a number.",
+  "where": [
+   "src/components/auth/SignupForm.tsx:74"
+  ]
+ },
+ {
   "key": "Use only fonts you are allowed to share, such as open-source fonts or fonts licensed for templates. List every font you used when you submit. Keep the text editable so others can change the words.",
   "where": [
    "src/components/creator/views.tsx:370"
@@ -5145,6 +5576,12 @@
   ]
  },
  {
+  "key": "Verify and continue",
+  "where": [
+   "src/components/auth/SignupForm.tsx:140"
+  ]
+ },
+ {
   "key": "Verify now",
   "where": [
    "src/components/student/StudentView.tsx:222"
@@ -5175,9 +5612,16 @@
   ]
  },
  {
+  "key": "Verify your phone",
+  "where": [
+   "src/components/auth/SignupForm.tsx:137"
+  ]
+ },
+ {
   "key": "Verifying…",
   "where": [
-   "src/components/creator/views.tsx:262"
+   "src/components/creator/views.tsx:262",
+   "src/components/auth/SignupForm.tsx:140"
   ]
  },
  {
@@ -5266,9 +5710,27 @@
   ]
  },
  {
+  "key": "We send your order updates and the code here.",
+  "where": [
+   "src/components/auth/SignupForm.tsx:113"
+  ]
+ },
+ {
+  "key": "We sent a 6-digit code to +234 {phone}. Enter it below.",
+  "where": [
+   "src/components/auth/SignupForm.tsx:138"
+  ]
+ },
+ {
   "key": "We will let you know here.",
   "where": [
    "src/components/student/StudentView.tsx:220"
+  ]
+ },
+ {
+  "key": "Weak",
+  "where": [
+   "src/components/auth/SignupForm.tsx:89"
   ]
  },
  {
@@ -5296,6 +5758,12 @@
   "key": "Weekend",
   "where": [
    "src/data/creator-app.ts:63"
+  ]
+ },
+ {
+  "key": "Welcome back",
+  "where": [
+   "src/components/auth/LoginForm.tsx:49"
   ]
  },
  {
@@ -5344,6 +5812,13 @@
   "key": "What will you design today?",
   "where": [
    "src/components/design/views.tsx:50"
+  ]
+ },
+ {
+  "key": "What will you do first?",
+  "where": [
+   "src/components/auth/SignupForm.tsx:99",
+   "src/components/auth/SignupForm.tsx:100"
   ]
  },
  {
