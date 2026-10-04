@@ -447,3 +447,5 @@
   .d-app .d-top .lang-ib { padding: 0 6px; gap: 4px; min-width: 0; }
   .d-app .d-top .grow { display: none; }
 }
+.d-app .dialog-b { min-height: 0; flex: 1 1 auto; }
+.d-app .detail { max-height: 100dvh; }
