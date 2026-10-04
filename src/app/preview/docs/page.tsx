@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import EditorShell from '@/components/editor/EditorShell';
+import DocsEditor from '@/components/docs/DocsEditor';
 
 export const metadata: Metadata = {
   title: 'Docs editor preview | Ifiok',
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <EditorShell mode="doc" />;
+  return <DocsEditor />;
 }

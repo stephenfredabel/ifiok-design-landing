@@ -94,21 +94,42 @@
   ]
  },
  {
+  "key": "{count} replaced",
+  "where": [
+   "src/components/docs/Dialogs.tsx:40"
+  ]
+ },
+ {
+  "key": "{count} suggested edits in this document.",
+  "where": [
+   "src/components/docs/Dialogs.tsx:244"
+  ]
+ },
+ {
   "key": "{count} to fix",
   "where": [
-   "src/components/editor/EditorShell.tsx:329"
+   "src/components/editor/EditorShell.tsx:329",
+   "src/components/docs/DocsEditor.tsx:656",
+   "src/components/docs/DocsEditor.tsx:693"
   ]
  },
  {
   "key": "{count} words",
   "where": [
-   "src/components/editor/EditorShell.tsx:354"
+   "src/components/editor/EditorShell.tsx:354",
+   "src/components/docs/DocsEditor.tsx:687"
   ]
  },
  {
   "key": "{cw}\" × {ch}\" is created as a custom print size in the editor.",
   "where": [
    "src/components/design/overlays.tsx:108"
+  ]
+ },
+ {
+  "key": "{km} km",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:661"
   ]
  },
  {
@@ -199,6 +220,18 @@
   "key": "{payoutsCount} payouts",
   "where": [
    "src/components/creator/views.tsx:340"
+  ]
+ },
+ {
+  "key": "{rows} × {cols}",
+  "where": [
+   "src/components/docs/MenuBar.tsx:61"
+  ]
+ },
+ {
+  "key": "{rows} by {cols} table",
+  "where": [
+   "src/components/docs/MenuBar.tsx:57"
   ]
  },
  {
@@ -310,6 +343,12 @@
   "key": "11-digit National ID",
   "where": [
    "src/components/creator/views.tsx:257"
+  ]
+ },
+ {
+  "key": "12 July, 11:05 am",
+  "where": [
+   "src/components/docs/content.ts:61"
   ]
  },
  {
@@ -487,6 +526,7 @@
  {
   "key": "2h",
   "where": [
+   "src/components/docs/content.ts:67",
    "src/components/editor/data.ts:81"
   ]
  },
@@ -645,6 +685,12 @@
   ]
  },
  {
+  "key": "A copy was made in your dashboard.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:236"
+  ]
+ },
+ {
   "key": "A design",
   "where": [
    "src/components/design/overlays.tsx:286"
@@ -705,6 +751,12 @@
   ]
  },
  {
+  "key": "A translated copy is being prepared in your dashboard.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:213"
+  ]
+ },
+ {
   "key": "A3",
   "where": [
    "src/components/design/data.ts:168",
@@ -715,9 +767,9 @@
  {
   "key": "A4",
   "where": [
+   "src/components/docs/content.ts:73",
    "src/components/design/data.ts:171",
-   "src/data/creator-app.ts:20",
-   "src/data/creator-app.ts:21"
+   "src/data/creator-app.ts:20"
   ]
  },
  {
@@ -803,6 +855,7 @@
  {
   "key": "A5",
   "where": [
+   "src/components/docs/content.ts:74",
    "src/components/design/data.ts:166",
    "src/data/creator-app.ts:18"
   ]
@@ -831,6 +884,18 @@
   "key": "About 5 working days. We review quality, not quantity, so send your best work.",
   "where": [
    "src/data/creators.ts:120"
+  ]
+ },
+ {
+  "key": "Accept all",
+  "where": [
+   "src/components/docs/Dialogs.tsx:243"
+  ]
+ },
+ {
+  "key": "Accessibility",
+  "where": [
+   "src/components/docs/menus.ts:229"
   ]
  },
  {
@@ -866,6 +931,12 @@
   ]
  },
  {
+  "key": "Action items",
+  "where": [
+   "src/components/docs/content.ts:23"
+  ]
+ },
+ {
   "key": "Actions",
   "where": [
    "src/components/design/overlays.tsx:202",
@@ -895,6 +966,13 @@
   ]
  },
  {
+  "key": "Add a comment",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:617",
+   "src/components/docs/Toolbar.tsx:147"
+  ]
+ },
+ {
   "key": "Add a heading",
   "where": [
    "src/components/editor/EditorShell.tsx:143"
@@ -919,15 +997,53 @@
   ]
  },
  {
+  "key": "Add a tab",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:548"
+  ]
+ },
+ {
   "key": "Add at least one font file.",
   "where": [
    "src/components/fonts/FontStudio.tsx:94"
   ]
  },
  {
+  "key": "Add comment",
+  "where": [
+   "src/components/docs/menus.ts:294"
+  ]
+ },
+ {
   "key": "Add fonts for use without data",
   "where": [
    "src/components/design/views.tsx:93"
+  ]
+ },
+ {
+  "key": "Add headings and they appear here.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:297"
+  ]
+ },
+ {
+  "key": "Add people by email",
+  "where": [
+   "src/components/docs/Dialogs.tsx:174"
+  ]
+ },
+ {
+  "key": "Add space after paragraph",
+  "where": [
+   "src/components/docs/Toolbar.tsx:168",
+   "src/components/docs/menus.ts:185"
+  ]
+ },
+ {
+  "key": "Add space before paragraph",
+  "where": [
+   "src/components/docs/Toolbar.tsx:167",
+   "src/components/docs/menus.ts:185"
   ]
  },
  {
@@ -975,6 +1091,12 @@
   ]
  },
  {
+  "key": "Agenda",
+  "where": [
+   "src/components/docs/content.ts:23"
+  ]
+ },
+ {
   "key": "AI assistant",
   "where": [
    "src/components/design/data.ts:133"
@@ -987,24 +1109,36 @@
   ]
  },
  {
+  "key": "Align and indent",
+  "where": [
+   "src/components/docs/menus.ts:174"
+  ]
+ },
+ {
   "key": "Align centre",
   "where": [
    "src/components/editor/EditorShell.tsx:309",
-   "src/components/editor/DesignCanvas.tsx:142"
+   "src/components/editor/DesignCanvas.tsx:144"
   ]
  },
  {
   "key": "Align left",
   "where": [
    "src/components/editor/EditorShell.tsx:308",
-   "src/components/editor/DesignCanvas.tsx:142"
+   "src/components/editor/DesignCanvas.tsx:144"
   ]
  },
  {
   "key": "Align right",
   "where": [
    "src/components/editor/EditorShell.tsx:310",
-   "src/components/editor/DesignCanvas.tsx:142"
+   "src/components/editor/DesignCanvas.tsx:144"
+  ]
+ },
+ {
+  "key": "Alignment",
+  "where": [
+   "src/components/docs/Toolbar.tsx:154"
   ]
  },
  {
@@ -1050,6 +1184,12 @@
   "key": "All types",
   "where": [
    "src/components/creator/views.tsx:142"
+  ]
+ },
+ {
+  "key": "All your Ifiok Docs and Ifiok Designs files are in your dashboard.",
+  "where": [
+   "src/components/docs/Dialogs.tsx:213"
   ]
  },
  {
@@ -1103,15 +1243,41 @@
   ]
  },
  {
+  "key": "Any other business",
+  "where": [
+   "src/components/docs/content.ts:28"
+  ]
+ },
+ {
+  "key": "Anyone with the link",
+  "where": [
+   "src/components/docs/Dialogs.tsx:186"
+  ]
+ },
+ {
   "key": "Anything we should know?",
   "where": [
    "src/components/creator/dialogs.tsx:193"
   ]
  },
  {
+  "key": "Apologies",
+  "where": [
+   "src/components/docs/content.ts:28"
+  ]
+ },
+ {
   "key": "Application under review",
   "where": [
    "src/components/student/StudentView.tsx:179"
+  ]
+ },
+ {
+  "key": "Apply",
+  "where": [
+   "src/components/docs/Dialogs.tsx:87",
+   "src/components/docs/Dialogs.tsx:117",
+   "src/components/docs/Dialogs.tsx:230"
   ]
  },
  {
@@ -1180,6 +1346,18 @@
   ]
  },
  {
+  "key": "Arrows",
+  "where": [
+   "src/components/docs/menus.ts:286"
+  ]
+ },
+ {
+  "key": "Ask",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:646"
+  ]
+ },
+ {
   "key": "Ask Ifiok",
   "where": [
    "src/components/editor/EditorShell.tsx:29",
@@ -1188,9 +1366,16 @@
   ]
  },
  {
+  "key": "Ask Ifiok anything",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:646"
+  ]
+ },
+ {
   "key": "Ask Ifiok to write, shorten, fix or translate your text.",
   "where": [
-   "src/components/editor/EditorShell.tsx:208"
+   "src/components/editor/EditorShell.tsx:208",
+   "src/components/docs/DocsEditor.tsx:642"
   ]
  },
  {
@@ -1227,6 +1412,12 @@
   "key": "Assignment Cover Page",
   "where": [
    "src/components/design/data.ts:80"
+  ]
+ },
+ {
+  "key": "Attendees",
+  "where": [
+   "src/components/docs/content.ts:23"
   ]
  },
  {
@@ -1273,7 +1464,8 @@
   "key": "Back to dashboard",
   "where": [
    "src/components/editor/EditorShell.tsx:222",
-   "src/components/editor/EditorShell.tsx:234"
+   "src/components/editor/EditorShell.tsx:234",
+   "src/components/docs/DocsEditor.tsx:490"
   ]
  },
  {
@@ -1326,6 +1518,12 @@
   ]
  },
  {
+  "key": "Bar",
+  "where": [
+   "src/components/docs/menus.ts:127"
+  ]
+ },
+ {
   "key": "Become a creator",
   "where": [
    "src/components/CreatorInvite.tsx:69"
@@ -1359,7 +1557,7 @@
  {
   "key": "Bigger",
   "where": [
-   "src/components/editor/DesignCanvas.tsx:139"
+   "src/components/editor/DesignCanvas.tsx:141"
   ]
  },
  {
@@ -1383,6 +1581,7 @@
  {
   "key": "Blank document",
   "where": [
+   "src/components/docs/content.ts:38",
    "src/components/design/data.ts:31",
    "src/components/design/data.ts:113"
   ]
@@ -1415,7 +1614,7 @@
   "key": "Bold",
   "where": [
    "src/components/editor/EditorShell.tsx:301",
-   "src/components/editor/DesignCanvas.tsx:140",
+   "src/components/editor/DesignCanvas.tsx:142",
    "src/components/editor/DocCanvas.tsx:67"
   ]
  },
@@ -1423,6 +1622,24 @@
   "key": "Bold Italic",
   "where": [
    "src/components/fonts/FontStudio.tsx:11"
+  ]
+ },
+ {
+  "key": "Bookmark",
+  "where": [
+   "src/components/docs/menus.ts:143"
+  ]
+ },
+ {
+  "key": "Bookmark {n}",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:294"
+  ]
+ },
+ {
+  "key": "Bottom",
+  "where": [
+   "src/components/docs/Dialogs.tsx:102"
   ]
  },
  {
@@ -1446,7 +1663,20 @@
  {
   "key": "Brand kit",
   "where": [
+   "src/components/docs/menus.ts:236",
    "src/components/design/data.ts:130"
+  ]
+ },
+ {
+  "key": "Brand logo",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:266"
+  ]
+ },
+ {
+  "key": "Break",
+  "where": [
+   "src/components/docs/menus.ts:136"
   ]
  },
  {
@@ -1486,6 +1716,12 @@
   ]
  },
  {
+  "key": "Building blocks",
+  "where": [
+   "src/components/docs/menus.ts:110"
+  ]
+ },
+ {
   "key": "Bulk cards",
   "where": [
    "src/components/editor/EditorShell.tsx:180"
@@ -1501,15 +1737,22 @@
   "key": "Bulleted list",
   "where": [
    "src/components/editor/EditorShell.tsx:305",
-   "src/components/editor/DocCanvas.tsx:82"
+   "src/components/editor/DocCanvas.tsx:82",
+   "src/components/docs/DocsEditor.tsx:729"
+  ]
+ },
+ {
+  "key": "Bullets and numbering",
+  "where": [
+   "src/components/docs/menus.ts:192"
   ]
  },
  {
   "key": "Business",
   "where": [
+   "src/components/docs/content.ts:55",
    "src/components/design/data.ts:76",
-   "src/components/design/data.ts:88",
-   "src/components/design/data.ts:89"
+   "src/components/design/data.ts:88"
   ]
  },
  {
@@ -1546,6 +1789,12 @@
   ]
  },
  {
+  "key": "By web address",
+  "where": [
+   "src/components/docs/menus.ts:103"
+  ]
+ },
+ {
   "key": "Campus Creator Program",
   "where": [
    "src/components/CreatorInvite.tsx:63"
@@ -1554,6 +1803,7 @@
  {
   "key": "Can we confirm the set-up cost with the printer first?",
   "where": [
+   "src/components/docs/content.ts:67",
    "src/components/editor/data.ts:81"
   ]
  },
@@ -1562,7 +1812,13 @@
   "where": [
    "src/components/design/overlays.tsx:114",
    "src/components/design/docsViews.tsx:66",
-   "src/components/creator/dialogs.tsx:78"
+   "src/components/docs/DocsEditor.tsx:618"
+  ]
+ },
+ {
+  "key": "Capitalisation",
+  "where": [
+   "src/components/docs/menus.ts:163"
   ]
  },
  {
@@ -1578,11 +1834,23 @@
   ]
  },
  {
+  "key": "Categories",
+  "where": [
+   "src/components/docs/Dialogs.tsx:143"
+  ]
+ },
+ {
   "key": "Category",
   "where": [
    "src/components/design/views.tsx:228",
    "src/components/fonts/FontStudio.tsx:137",
    "src/components/fonts/FontStudio.tsx:221"
+  ]
+ },
+ {
+  "key": "Centre",
+  "where": [
+   "src/components/docs/menus.ts:175"
   ]
  },
  {
@@ -1621,6 +1889,30 @@
   "where": [
    "src/components/creator/store.tsx:125",
    "src/components/creator/store.tsx:155"
+  ]
+ },
+ {
+  "key": "Characters",
+  "where": [
+   "src/components/docs/Dialogs.tsx:71"
+  ]
+ },
+ {
+  "key": "Characters excluding spaces",
+  "where": [
+   "src/components/docs/Dialogs.tsx:71"
+  ]
+ },
+ {
+  "key": "Chart",
+  "where": [
+   "src/components/docs/menus.ts:126"
+  ]
+ },
+ {
+  "key": "Chart (sample data)",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:786"
   ]
  },
  {
@@ -1668,13 +1960,22 @@
  {
   "key": "Checked against what verified printers need.",
   "where": [
-   "src/components/editor/EditorShell.tsx:343"
+   "src/components/editor/EditorShell.tsx:343",
+   "src/components/docs/DocsEditor.tsx:701"
   ]
  },
  {
   "key": "Checking…",
   "where": [
    "src/components/creator/views.tsx:249"
+  ]
+ },
+ {
+  "key": "Checklist",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:731",
+   "src/components/docs/Toolbar.tsx:171",
+   "src/components/docs/menus.ts:194"
   ]
  },
  {
@@ -1704,7 +2005,8 @@
  {
   "key": "Choose a size",
   "where": [
-   "src/components/design/overlays.tsx:71"
+   "src/components/design/overlays.tsx:71",
+   "src/components/docs/MenuBar.tsx:61"
   ]
  },
  {
@@ -1831,6 +2133,26 @@
   ]
  },
  {
+  "key": "Clear formatting",
+  "where": [
+   "src/components/docs/Toolbar.tsx:207",
+   "src/components/docs/menus.ts:209",
+   "src/components/docs/menus.ts:291"
+  ]
+ },
+ {
+  "key": "Click a character to put it in your document. The dialog stays open so you can add more.",
+  "where": [
+   "src/components/docs/Dialogs.tsx:147"
+  ]
+ },
+ {
+  "key": "Click inside a table first.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:217"
+  ]
+ },
+ {
   "key": "Click to select. Drag to move. Double-click text to edit. Ctrl+A selects all.",
   "where": [
    "src/components/editor/EditorShell.tsx:227"
@@ -1857,6 +2179,12 @@
   ]
  },
  {
+  "key": "Close sidebar",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:547"
+  ]
+ },
+ {
   "key": "Collapse sidebar",
   "where": [
    "src/components/design/DesignApp.tsx:181"
@@ -1867,7 +2195,7 @@
   "where": [
    "src/components/design/overlays.tsx:95",
    "src/components/design/docsViews.tsx:54",
-   "src/components/editor/DesignCanvas.tsx:149"
+   "src/components/editor/DesignCanvas.tsx:151"
   ]
  },
  {
@@ -1891,6 +2219,19 @@
   ]
  },
  {
+  "key": "Column break",
+  "where": [
+   "src/components/docs/menus.ts:137"
+  ]
+ },
+ {
+  "key": "Columns",
+  "where": [
+   "src/components/docs/Dialogs.tsx:95",
+   "src/components/docs/menus.ts:189"
+  ]
+ },
+ {
   "key": "Coming soon",
   "where": [
    "src/components/student/StudentView.tsx:154",
@@ -1900,13 +2241,24 @@
  {
   "key": "Comment",
   "where": [
-   "src/components/editor/DocCanvas.tsx:73"
+   "src/components/editor/DocCanvas.tsx:73",
+   "src/components/docs/DocsEditor.tsx:618",
+   "src/components/docs/DocsEditor.tsx:720"
+  ]
+ },
+ {
+  "key": "Commenter",
+  "where": [
+   "src/components/docs/Dialogs.tsx:175",
+   "src/components/docs/Dialogs.tsx:182"
   ]
  },
  {
   "key": "Comments",
   "where": [
-   "src/components/editor/EditorShell.tsx:28"
+   "src/components/editor/EditorShell.tsx:28",
+   "src/components/docs/DocsEditor.tsx:512",
+   "src/components/docs/DocsEditor.tsx:605"
   ]
  },
  {
@@ -1922,9 +2274,27 @@
   ]
  },
  {
+  "key": "Compact controls",
+  "where": [
+   "src/components/docs/menus.ts:95"
+  ]
+ },
+ {
   "key": "Company Letterhead",
   "where": [
    "src/components/design/data.ts:90"
+  ]
+ },
+ {
+  "key": "Compare documents",
+  "where": [
+   "src/components/docs/menus.ts:218"
+  ]
+ },
+ {
+  "key": "Compare printers and order",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:665"
   ]
  },
  {
@@ -2026,6 +2396,12 @@
   ]
  },
  {
+  "key": "Copied",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:251"
+  ]
+ },
+ {
   "key": "Copied or traced designs",
   "where": [
    "src/data/creators.ts:99"
@@ -2034,13 +2410,21 @@
  {
   "key": "Copy",
   "where": [
-   "src/components/editor/EditorShell.tsx:253"
+   "src/components/editor/EditorShell.tsx:253",
+   "src/components/docs/menus.ts:61"
   ]
  },
  {
   "key": "Copy link",
   "where": [
+   "src/components/docs/Dialogs.tsx:172",
    "src/components/creator/views.tsx:408"
+  ]
+ },
+ {
+  "key": "Copy of {name}",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:236"
   ]
  },
  {
@@ -2052,9 +2436,9 @@
  {
   "key": "Cover letter",
   "where": [
-   "src/components/editor/data.ts:77",
-   "src/components/design/data.ts:33",
-   "src/components/design/data.ts:72"
+   "src/components/docs/content.ts:36",
+   "src/components/docs/content.ts:44",
+   "src/components/docs/content.ts:51"
   ]
  },
  {
@@ -2148,6 +2532,7 @@
  {
   "key": "Created",
   "where": [
+   "src/components/docs/Dialogs.tsx:219",
    "src/components/creator/dialogs.tsx:112",
    "src/components/fonts/FontStudio.tsx:293"
   ]
@@ -2187,6 +2572,18 @@
   ]
  },
  {
+  "key": "Currency",
+  "where": [
+   "src/components/docs/menus.ts:283"
+  ]
+ },
+ {
+  "key": "Current version",
+  "where": [
+   "src/components/docs/content.ts:58"
+  ]
+ },
+ {
   "key": "Curriculum Vitae",
   "where": [
    "src/components/design/data.ts:78",
@@ -2210,6 +2607,12 @@
   "key": "Customer Journey & Conversion",
   "where": [
    "src/data/apps.ts:132"
+  ]
+ },
+ {
+  "key": "Cut",
+  "where": [
+   "src/components/docs/menus.ts:60"
   ]
  },
  {
@@ -2240,7 +2643,8 @@
  {
   "key": "Data Studio",
   "where": [
-   "src/components/editor/EditorShell.tsx:181"
+   "src/components/editor/EditorShell.tsx:181",
+   "src/components/docs/menus.ts:237"
   ]
  },
  {
@@ -2252,14 +2656,33 @@
  {
   "key": "Date",
   "where": [
+   "src/components/docs/content.ts:23",
    "src/components/creator/views.tsx:341",
    "src/components/creator/views.tsx:345"
+  ]
+ },
+ {
+  "key": "Dear",
+  "where": [
+   "src/components/docs/content.ts:24"
   ]
  },
  {
   "key": "Dear Hiring Manager",
   "where": [
    "src/components/design/data.ts:104"
+  ]
+ },
+ {
+  "key": "Dear Hiring Manager,",
+  "where": [
+   "src/components/docs/content.ts:27"
+  ]
+ },
+ {
+  "key": "Decisions",
+  "where": [
+   "src/components/docs/content.ts:23"
   ]
  },
  {
@@ -2275,11 +2698,49 @@
   ]
  },
  {
+  "key": "Decrease font size",
+  "where": [
+   "src/components/docs/Toolbar.tsx:126",
+   "src/components/docs/menus.ts:162"
+  ]
+ },
+ {
+  "key": "Decrease indent",
+  "where": [
+   "src/components/docs/Toolbar.tsx:205",
+   "src/components/docs/menus.ts:178"
+  ]
+ },
+ {
   "key": "Delete",
   "where": [
    "src/components/design/overlays.tsx:153",
    "src/components/design/parts.tsx:75",
-   "src/components/editor/DesignCanvas.tsx:157"
+   "src/components/editor/DesignCanvas.tsx:159"
+  ]
+ },
+ {
+  "key": "Delete column",
+  "where": [
+   "src/components/docs/menus.ts:205"
+  ]
+ },
+ {
+  "key": "Delete row",
+  "where": [
+   "src/components/docs/menus.ts:205"
+  ]
+ },
+ {
+  "key": "Delete tab",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:553"
+  ]
+ },
+ {
+  "key": "Delete table",
+  "where": [
+   "src/components/docs/menus.ts:205"
   ]
  },
  {
@@ -2396,6 +2857,12 @@
   ]
  },
  {
+  "key": "Design from Ifiok Designs",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:267"
+  ]
+ },
+ {
   "key": "Design in {family}",
   "where": [
    "src/components/design/DesignApp.tsx:128"
@@ -2454,6 +2921,7 @@
   "key": "Designs",
   "where": [
    "src/components/editor/EditorShell.tsx:236",
+   "src/components/docs/DocsEditor.tsx:508",
    "src/data/apps.ts:58"
   ]
  },
@@ -2461,8 +2929,8 @@
   "key": "Details",
   "where": [
    "src/components/design/parts.tsx:72",
-   "src/components/creator/parts.tsx:46",
-   "src/components/fonts/FontStudio.tsx:32"
+   "src/components/docs/Dialogs.tsx:221",
+   "src/components/creator/parts.tsx:46"
   ]
  },
  {
@@ -2481,6 +2949,12 @@
   "key": "Detty December Poster",
   "where": [
    "src/data/creator-app.ts:65"
+  ]
+ },
+ {
+  "key": "Dictionary",
+  "where": [
+   "src/components/docs/menus.ts:225"
   ]
  },
  {
@@ -2524,7 +2998,8 @@
  {
   "key": "Divider",
   "where": [
-   "src/components/editor/DocCanvas.tsx:84"
+   "src/components/editor/DocCanvas.tsx:84",
+   "src/components/docs/DocsEditor.tsx:733"
   ]
  },
  {
@@ -2537,6 +3012,7 @@
   "key": "Docs",
   "where": [
    "src/components/editor/EditorShell.tsx:237",
+   "src/components/docs/DocsEditor.tsx:509",
    "src/data/apps.ts:71"
   ]
  },
@@ -2544,7 +3020,21 @@
   "key": "Document",
   "where": [
    "src/components/design/views.tsx:69",
-   "src/components/editor/DocCanvas.tsx:58"
+   "src/components/editor/DocCanvas.tsx:58",
+   "src/components/docs/DocsEditor.tsx:582"
+  ]
+ },
+ {
+  "key": "Document tabs",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:548"
+  ]
+ },
+ {
+  "key": "Document tabs and outline",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:546",
+   "src/components/docs/DocsEditor.tsx:685"
   ]
  },
  {
@@ -2568,15 +3058,42 @@
   ]
  },
  {
+  "key": "Done",
+  "where": [
+   "src/components/docs/Dialogs.tsx:73",
+   "src/components/docs/Dialogs.tsx:142",
+   "src/components/docs/Dialogs.tsx:154"
+  ]
+ },
+ {
   "key": "Doors open 6pm",
   "where": [
    "src/components/design/data.ts:94"
   ]
  },
  {
+  "key": "Double",
+  "where": [
+   "src/components/docs/menus.ts:183",
+   "src/components/docs/menus.ts:279"
+  ]
+ },
+ {
+  "key": "Download",
+  "where": [
+   "src/components/docs/menus.ts:27"
+  ]
+ },
+ {
   "key": "Download CSV",
   "where": [
    "src/components/creator/views.tsx:341"
+  ]
+ },
+ {
+  "key": "Downloaded",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:226"
   ]
  },
  {
@@ -2588,11 +3105,23 @@
   ]
  },
  {
+  "key": "Drawing",
+  "where": [
+   "src/components/docs/menus.ts:124"
+  ]
+ },
+ {
+  "key": "Due",
+  "where": [
+   "src/components/docs/content.ts:25"
+  ]
+ },
+ {
   "key": "Duplicate",
   "where": [
    "src/components/design/overlays.tsx:152",
    "src/components/design/parts.tsx:74",
-   "src/components/editor/DesignCanvas.tsx:155"
+   "src/components/editor/DesignCanvas.tsx:157"
   ]
  },
  {
@@ -2661,7 +3190,9 @@
  {
   "key": "Edit",
   "where": [
-   "src/components/fonts/FontStudio.tsx:309"
+   "src/components/fonts/FontStudio.tsx:309",
+   "src/components/docs/menus.ts:56",
+   "src/components/docs/menus.ts:293"
   ]
  },
  {
@@ -2686,21 +3217,68 @@
   ]
  },
  {
+  "key": "Edit link",
+  "where": [
+   "src/components/docs/Dialogs.tsx:116"
+  ]
+ },
+ {
+  "key": "Edit the document directly",
+  "where": [
+   "src/components/docs/Toolbar.tsx:188",
+   "src/components/docs/menus.ts:76"
+  ]
+ },
+ {
   "key": "Edit the same design together with your group, free.",
   "where": [
    "src/data/student.ts:13"
   ]
  },
  {
+  "key": "Edited 3 days ago",
+  "where": [
+   "src/components/docs/content.ts:51"
+  ]
+ },
+ {
+  "key": "Edited last week",
+  "where": [
+   "src/components/docs/content.ts:52"
+  ]
+ },
+ {
+  "key": "Edited today",
+  "where": [
+   "src/components/docs/content.ts:49"
+  ]
+ },
+ {
+  "key": "Edited yesterday",
+  "where": [
+   "src/components/docs/content.ts:50"
+  ]
+ },
+ {
   "key": "Editing",
   "where": [
-   "src/components/editor/EditorShell.tsx:313"
+   "src/components/editor/EditorShell.tsx:313",
+   "src/components/docs/Toolbar.tsx:188",
+   "src/components/docs/menus.ts:76"
+  ]
+ },
+ {
+  "key": "Editing mode",
+  "where": [
+   "src/components/docs/Toolbar.tsx:215"
   ]
  },
  {
   "key": "Editor",
   "where": [
-   "src/components/editor/EditorShell.tsx:235"
+   "src/components/editor/EditorShell.tsx:235",
+   "src/components/docs/DocsEditor.tsx:507",
+   "src/components/docs/Dialogs.tsx:175"
   ]
  },
  {
@@ -2729,9 +3307,40 @@
   ]
  },
  {
+  "key": "Email draft",
+  "where": [
+   "src/components/docs/menus.ts:111"
+  ]
+ },
+ {
   "key": "Email or phone number",
   "where": [
    "src/components/auth/LoginForm.tsx:53"
+  ]
+ },
+ {
+  "key": "Email this document",
+  "where": [
+   "src/components/docs/menus.ts:25"
+  ]
+ },
+ {
+  "key": "Emoji",
+  "where": [
+   "src/components/docs/menus.ts:132",
+   "src/components/docs/menus.ts:287"
+  ]
+ },
+ {
+  "key": "English",
+  "where": [
+   "src/components/docs/menus.ts:46"
+  ]
+ },
+ {
+  "key": "Enter a full address that starts with https://",
+  "where": [
+   "src/components/docs/Dialogs.tsx:120"
   ]
  },
  {
@@ -2805,6 +3414,12 @@
   "key": "Enter your password.",
   "where": [
    "src/components/auth/LoginForm.tsx:29"
+  ]
+ },
+ {
+  "key": "Equation",
+  "where": [
+   "src/components/docs/menus.ts:142"
   ]
  },
  {
@@ -2886,6 +3501,12 @@
   ]
  },
  {
+  "key": "Extensions",
+  "where": [
+   "src/components/docs/menus.ts:233"
+  ]
+ },
+ {
   "key": "Extra letters",
   "where": [
    "src/components/fonts/FontStudio.tsx:223",
@@ -2942,13 +3563,16 @@
  {
   "key": "File",
   "where": [
-   "src/components/editor/SendToPrinter.tsx:102"
+   "src/components/editor/SendToPrinter.tsx:102",
+   "src/components/docs/menus.ts:19",
+   "src/components/docs/menus.ts:118"
   ]
  },
  {
   "key": "File name",
   "where": [
-   "src/components/editor/EditorShell.tsx:240"
+   "src/components/editor/EditorShell.tsx:240",
+   "src/components/docs/DocsEditor.tsx:494"
   ]
  },
  {
@@ -2990,9 +3614,37 @@
   ]
  },
  {
+  "key": "Find",
+  "where": [
+   "src/components/docs/Dialogs.tsx:43",
+   "src/components/docs/menus.ts:68",
+   "src/components/docs/menus.ts:293"
+  ]
+ },
+ {
+  "key": "Find and replace",
+  "where": [
+   "src/components/docs/Dialogs.tsx:43",
+   "src/components/docs/Dialogs.tsx:52",
+   "src/components/docs/menus.ts:69"
+  ]
+ },
+ {
+  "key": "Find in document",
+  "where": [
+   "src/components/docs/Dialogs.tsx:47"
+  ]
+ },
+ {
   "key": "Finish",
   "where": [
    "src/components/editor/SendToPrinter.tsx:67"
+  ]
+ },
+ {
+  "key": "First draft",
+  "where": [
+   "src/components/docs/content.ts:61"
   ]
  },
  {
@@ -3002,21 +3654,31 @@
   ]
  },
  {
+  "key": "Fit to width",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:707",
+   "src/components/docs/menus.ts:89"
+  ]
+ },
+ {
   "key": "Fix",
   "where": [
-   "src/components/editor/EditorShell.tsx:339"
+   "src/components/editor/EditorShell.tsx:339",
+   "src/components/docs/DocsEditor.tsx:699"
   ]
  },
  {
   "key": "Fix spelling",
   "where": [
-   "src/components/editor/EditorShell.tsx:34"
+   "src/components/editor/EditorShell.tsx:34",
+   "src/components/docs/content.ts:71"
   ]
  },
  {
   "key": "Fixed",
   "where": [
-   "src/components/editor/EditorShell.tsx:339"
+   "src/components/editor/EditorShell.tsx:339",
+   "src/components/docs/DocsEditor.tsx:699"
   ]
  },
  {
@@ -3047,6 +3709,7 @@
  {
   "key": "Flyer",
   "where": [
+   "src/components/docs/DocsEditor.tsx:267",
    "src/components/design/data.ts:166",
    "src/data/creator-app.ts:12"
   ]
@@ -3066,7 +3729,8 @@
  {
   "key": "Font",
   "where": [
-   "src/components/editor/DesignCanvas.tsx:136"
+   "src/components/editor/DesignCanvas.tsx:138",
+   "src/components/docs/Toolbar.tsx:112"
   ]
  },
  {
@@ -3100,6 +3764,14 @@
   ]
  },
  {
+  "key": "Font size",
+  "where": [
+   "src/components/docs/Toolbar.tsx:73",
+   "src/components/docs/Toolbar.tsx:76",
+   "src/components/docs/Toolbar.tsx:125"
+  ]
+ },
+ {
   "key": "Font templates",
   "where": [
    "src/data/creator-app.ts:35",
@@ -3119,7 +3791,8 @@
   "key": "Fonts are embedded",
   "where": [
    "src/components/editor/EditorShell.tsx:90",
-   "src/components/editor/useDesign.ts:54"
+   "src/components/editor/useDesign.ts:54",
+   "src/components/docs/DocsEditor.tsx:178"
   ]
  },
  {
@@ -3145,6 +3818,31 @@
   "where": [
    "src/components/creator/dialogs.tsx:62",
    "src/components/creator/dialogs.tsx:190"
+  ]
+ },
+ {
+  "key": "Footer text",
+  "where": [
+   "src/components/docs/Dialogs.tsx:232"
+  ]
+ },
+ {
+  "key": "Footer, centred",
+  "where": [
+   "src/components/docs/Dialogs.tsx:233",
+   "src/components/docs/menus.ts:149"
+  ]
+ },
+ {
+  "key": "Footnote",
+  "where": [
+   "src/components/docs/menus.ts:141"
+  ]
+ },
+ {
+  "key": "Footnote text",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:291"
   ]
  },
  {
@@ -3178,9 +3876,16 @@
   ]
  },
  {
+  "key": "Format",
+  "where": [
+   "src/components/docs/menus.ts:155"
+  ]
+ },
+ {
   "key": "Formatting",
   "where": [
-   "src/components/editor/EditorShell.tsx:295"
+   "src/components/editor/EditorShell.tsx:295",
+   "src/components/docs/Toolbar.tsx:192"
   ]
  },
  {
@@ -3189,6 +3894,19 @@
    "src/components/auth/AuthShell.tsx:29",
    "src/components/design/data.ts:61",
    "src/data/creator-app.ts:59"
+  ]
+ },
+ {
+  "key": "Four weeks from approval: week one for the site, week two for the kiosk, week three for training and week four for the launch.",
+  "where": [
+   "src/components/docs/content.ts:13"
+  ]
+ },
+ {
+  "key": "Français",
+  "where": [
+   "src/components/docs/menus.ts:46",
+   "src/components/docs/menus.ts:222"
   ]
  },
  {
@@ -3236,6 +3954,24 @@
   ]
  },
  {
+  "key": "From {price}",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:661"
+  ]
+ },
+ {
+  "key": "From my Ifiok brand kit",
+  "where": [
+   "src/components/docs/menus.ts:104"
+  ]
+ },
+ {
+  "key": "From my Ifiok Designs",
+  "where": [
+   "src/components/docs/menus.ts:105"
+  ]
+ },
+ {
   "key": "Front print area",
   "where": [
    "src/components/design/data.ts:25"
@@ -3248,9 +3984,21 @@
   ]
  },
  {
+  "key": "Full screen",
+  "where": [
+   "src/components/docs/menus.ts:94"
+  ]
+ },
+ {
   "key": "Full-page flyers",
   "where": [
    "src/components/design/data.ts:17"
+  ]
+ },
+ {
+  "key": "General access",
+  "where": [
+   "src/components/docs/Dialogs.tsx:184"
   ]
  },
  {
@@ -3271,6 +4019,12 @@
    "src/components/editor/SendToPrinter.tsx:68",
    "src/components/editor/SendToPrinter.tsx:69",
    "src/components/editor/SendToPrinter.tsx:105"
+  ]
+ },
+ {
+  "key": "Get more extensions",
+  "where": [
+   "src/components/docs/menus.ts:239"
   ]
  },
  {
@@ -3343,6 +4097,7 @@
  {
   "key": "Graduate trainee application",
   "where": [
+   "src/components/docs/content.ts:44",
    "src/components/design/data.ts:72"
   ]
  },
@@ -3438,17 +4193,48 @@
   ]
  },
  {
+  "key": "Header text",
+  "where": [
+   "src/components/docs/Dialogs.tsx:231"
+  ]
+ },
+ {
+  "key": "Header, right",
+  "where": [
+   "src/components/docs/Dialogs.tsx:233",
+   "src/components/docs/menus.ts:149"
+  ]
+ },
+ {
+  "key": "Headers and footers",
+  "where": [
+   "src/components/docs/Dialogs.tsx:230",
+   "src/components/docs/menus.ts:146",
+   "src/components/docs/menus.ts:198"
+  ]
+ },
+ {
   "key": "Heading 1",
   "where": [
    "src/components/editor/EditorShell.tsx:298",
-   "src/components/editor/DocCanvas.tsx:80"
+   "src/components/editor/DocCanvas.tsx:80",
+   "src/components/docs/DocsEditor.tsx:726"
   ]
  },
  {
   "key": "Heading 2",
   "where": [
    "src/components/editor/EditorShell.tsx:298",
-   "src/components/editor/DocCanvas.tsx:81"
+   "src/components/editor/DocCanvas.tsx:81",
+   "src/components/docs/DocsEditor.tsx:727"
+  ]
+ },
+ {
+  "key": "Heading 3",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:728",
+   "src/components/docs/menus.ts:169",
+   "src/components/docs/menus.ts:274"
   ]
  },
  {
@@ -3458,9 +4244,21 @@
   ]
  },
  {
+  "key": "Headings you add to the document will appear here.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:562"
+  ]
+ },
+ {
   "key": "Height",
   "where": [
    "src/components/design/overlays.tsx:106"
+  ]
+ },
+ {
+  "key": "Help",
+  "where": [
+   "src/components/docs/menus.ts:243"
   ]
  },
  {
@@ -3482,6 +4280,12 @@
   ]
  },
  {
+  "key": "Hide the menus",
+  "where": [
+   "src/components/docs/Toolbar.tsx:222"
+  ]
+ },
+ {
   "key": "Hide this for now",
   "where": [
    "src/components/student/StudentView.tsx:223"
@@ -3490,7 +4294,15 @@
  {
   "key": "Highlight",
   "where": [
-   "src/components/editor/DocCanvas.tsx:70"
+   "src/components/editor/DocCanvas.tsx:70",
+   "src/components/docs/DocsEditor.tsx:717"
+  ]
+ },
+ {
+  "key": "Highlight colour",
+  "where": [
+   "src/components/docs/Toolbar.tsx:139",
+   "src/components/docs/Toolbar.tsx:140"
   ]
  },
  {
@@ -3503,6 +4315,12 @@
   "key": "Home",
   "where": [
    "src/components/design/data.ts:125"
+  ]
+ },
+ {
+  "key": "Horizontal line",
+  "where": [
+   "src/components/docs/menus.ts:134"
   ]
  },
  {
@@ -3545,6 +4363,12 @@
   "key": "I am not in Nigeria. Can I join?",
   "where": [
    "src/data/creators.ts:124"
+  ]
+ },
+ {
+  "key": "I am writing to apply for the position. I would welcome the chance to talk about how I can help your team.",
+  "where": [
+   "src/components/docs/content.ts:27"
   ]
  },
  {
@@ -3626,6 +4450,18 @@
   ]
  },
  {
+  "key": "Ifiok Docs document",
+  "where": [
+   "src/components/docs/Dialogs.tsx:219"
+  ]
+ },
+ {
+  "key": "Ifiok Docs help",
+  "where": [
+   "src/components/docs/menus.ts:246"
+  ]
+ },
+ {
   "key": "Ifiok does not print your file. {name} prints it, and Ifiok holds your payment until you confirm you received it.",
   "where": [
    "src/components/editor/SendToPrinter.tsx:110"
@@ -3647,7 +4483,15 @@
  {
   "key": "Ifiok Market",
   "where": [
+   "src/components/docs/menus.ts:36",
+   "src/components/docs/menus.ts:118",
    "src/data/apps.ts:44"
+  ]
+ },
+ {
+  "key": "Ifiok Market (print)",
+  "where": [
+   "src/components/docs/menus.ts:234"
   ]
  },
  {
@@ -3697,6 +4541,25 @@
   ]
  },
  {
+  "key": "Ikeja, Lagos",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:801"
+  ]
+ },
+ {
+  "key": "Image",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:735",
+   "src/components/docs/menus.ts:101"
+  ]
+ },
+ {
+  "key": "Image address",
+  "where": [
+   "src/components/docs/Dialogs.tsx:130"
+  ]
+ },
+ {
   "key": "Images are sharp enough to print",
   "where": [
    "src/components/design/overlays.tsx:134"
@@ -3727,13 +4590,104 @@
  {
   "key": "In the full editor Ifiok answers here and can apply the change to your selection. This is a preview.",
   "where": [
-   "src/components/editor/EditorShell.tsx:207"
+   "src/components/editor/EditorShell.tsx:207",
+   "src/components/docs/DocsEditor.tsx:644"
+  ]
+ },
+ {
+  "key": "Increase font size",
+  "where": [
+   "src/components/docs/Toolbar.tsx:128",
+   "src/components/docs/menus.ts:162"
+  ]
+ },
+ {
+  "key": "Increase indent",
+  "where": [
+   "src/components/docs/Toolbar.tsx:206",
+   "src/components/docs/menus.ts:178"
+  ]
+ },
+ {
+  "key": "Insert",
+  "where": [
+   "src/components/docs/Dialogs.tsx:129",
+   "src/components/docs/menus.ts:99"
   ]
  },
  {
   "key": "Insert a block",
   "where": [
-   "src/components/editor/DocCanvas.tsx:79"
+   "src/components/editor/DocCanvas.tsx:79",
+   "src/components/docs/DocsEditor.tsx:725"
+  ]
+ },
+ {
+  "key": "Insert a date",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:802"
+  ]
+ },
+ {
+  "key": "Insert a file",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:802"
+  ]
+ },
+ {
+  "key": "Insert a place",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:802"
+  ]
+ },
+ {
+  "key": "Insert a verified printer",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:802"
+  ]
+ },
+ {
+  "key": "Insert column left",
+  "where": [
+   "src/components/docs/menus.ts:203"
+  ]
+ },
+ {
+  "key": "Insert column right",
+  "where": [
+   "src/components/docs/menus.ts:203"
+  ]
+ },
+ {
+  "key": "Insert image",
+  "where": [
+   "src/components/docs/Toolbar.tsx:148"
+  ]
+ },
+ {
+  "key": "Insert image from web address",
+  "where": [
+   "src/components/docs/Dialogs.tsx:129"
+  ]
+ },
+ {
+  "key": "Insert link",
+  "where": [
+   "src/components/docs/Toolbar.tsx:146",
+   "src/components/docs/Dialogs.tsx:116",
+   "src/components/docs/menus.ts:291"
+  ]
+ },
+ {
+  "key": "Insert row above",
+  "where": [
+   "src/components/docs/menus.ts:202"
+  ]
+ },
+ {
+  "key": "Insert row below",
+  "where": [
+   "src/components/docs/menus.ts:202"
   ]
  },
  {
@@ -3759,7 +4713,8 @@
  {
   "key": "Invite",
   "where": [
-   "src/components/editor/EditorShell.tsx:256"
+   "src/components/editor/EditorShell.tsx:256",
+   "src/components/docs/Dialogs.tsx:176"
   ]
  },
  {
@@ -3769,23 +4724,36 @@
   ]
  },
  {
+  "key": "Invite sent",
+  "where": [
+   "src/components/docs/Dialogs.tsx:182"
+  ]
+ },
+ {
   "key": "Invite sent to {email}",
   "where": [
-   "src/components/editor/EditorShell.tsx:255"
+   "src/components/editor/EditorShell.tsx:255",
+   "src/components/docs/Dialogs.tsx:173"
   ]
  },
  {
   "key": "Invoice",
   "where": [
-   "src/components/editor/data.ts:76",
-   "src/components/design/data.ts:35",
-   "src/data/creator-app.ts:22"
+   "src/components/docs/content.ts:26",
+   "src/components/docs/content.ts:35",
+   "src/components/docs/content.ts:43"
   ]
  },
  {
   "key": "INVOICE",
   "where": [
    "src/components/design/data.ts:106"
+  ]
+ },
+ {
+  "key": "Invoice 0042",
+  "where": [
+   "src/components/docs/content.ts:50"
   ]
  },
  {
@@ -3811,7 +4779,13 @@
   "where": [
    "src/components/editor/EditorShell.tsx:302",
    "src/components/editor/DocCanvas.tsx:68",
-   "src/components/fonts/FontStudio.tsx:11"
+   "src/components/docs/DocsEditor.tsx:715"
+  ]
+ },
+ {
+  "key": "Item",
+  "where": [
+   "src/components/docs/content.ts:26"
   ]
  },
  {
@@ -3843,7 +4817,13 @@
   "where": [
    "src/components/design/DesignApp.tsx:109",
    "src/components/design/DesignApp.tsx:116",
-   "src/components/creator/store.tsx:97"
+   "src/components/docs/Dialogs.tsx:219"
+  ]
+ },
+ {
+  "key": "Justified",
+  "where": [
+   "src/components/docs/menus.ts:176"
   ]
  },
  {
@@ -3871,6 +4851,19 @@
   ]
  },
  {
+  "key": "Keyboard shortcuts",
+  "where": [
+   "src/components/docs/Dialogs.tsx:154",
+   "src/components/docs/menus.ts:251"
+  ]
+ },
+ {
+  "key": "Kind regards",
+  "where": [
+   "src/components/docs/content.ts:24"
+  ]
+ },
+ {
   "key": "Lagos · 2026",
   "where": [
    "src/data/creator-app.ts:65"
@@ -3883,10 +4876,23 @@
   ]
  },
  {
+  "key": "Landscape",
+  "where": [
+   "src/components/docs/Dialogs.tsx:91"
+  ]
+ },
+ {
   "key": "Language",
   "where": [
    "src/components/editor/EditorShell.tsx:271",
+   "src/components/docs/DocsEditor.tsx:524",
    "src/components/LangMenu.tsx:30"
+  ]
+ },
+ {
+  "key": "Last edited",
+  "where": [
+   "src/components/docs/Dialogs.tsx:219"
   ]
  },
  {
@@ -3907,6 +4913,31 @@
   "where": [
    "src/components/design/views.tsx:179",
    "src/components/creator/views.tsx:146"
+  ]
+ },
+ {
+  "key": "Left",
+  "where": [
+   "src/components/docs/Dialogs.tsx:102",
+   "src/components/docs/menus.ts:175"
+  ]
+ },
+ {
+  "key": "Left margin",
+  "where": [
+   "src/components/docs/Ruler.tsx:38"
+  ]
+ },
+ {
+  "key": "Legal",
+  "where": [
+   "src/components/docs/content.ts:74"
+  ]
+ },
+ {
+  "key": "Letter",
+  "where": [
+   "src/components/docs/content.ts:73"
   ]
  },
  {
@@ -3946,26 +4977,37 @@
  {
   "key": "Line",
   "where": [
+   "src/components/docs/menus.ts:127",
    "src/components/editor/data.ts:56"
+  ]
+ },
+ {
+  "key": "Line and paragraph spacing",
+  "where": [
+   "src/components/docs/Toolbar.tsx:163",
+   "src/components/docs/menus.ts:182"
   ]
  },
  {
   "key": "Link",
   "where": [
    "src/components/editor/EditorShell.tsx:253",
-   "src/components/editor/DocCanvas.tsx:71"
+   "src/components/editor/DocCanvas.tsx:71",
+   "src/components/docs/DocsEditor.tsx:718"
   ]
  },
  {
   "key": "Link address",
   "where": [
-   "src/components/editor/DocCanvas.tsx:71"
+   "src/components/editor/DocCanvas.tsx:71",
+   "src/components/docs/Dialogs.tsx:119"
   ]
  },
  {
   "key": "Link copied",
   "where": [
-   "src/components/editor/EditorShell.tsx:253"
+   "src/components/editor/EditorShell.tsx:253",
+   "src/components/docs/Dialogs.tsx:172"
   ]
  },
  {
@@ -3994,6 +5036,18 @@
   ]
  },
  {
+  "key": "Listening…",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:689"
+  ]
+ },
+ {
+  "key": "Listening… speak now.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:356"
+  ]
+ },
+ {
   "key": "Live for designers",
   "where": [
    "src/components/fonts/FontStudio.tsx:322"
@@ -4008,7 +5062,7 @@
  {
   "key": "Lock",
   "where": [
-   "src/components/editor/DesignCanvas.tsx:156"
+   "src/components/editor/DesignCanvas.tsx:158"
   ]
  },
  {
@@ -4049,6 +5103,12 @@
   ]
  },
  {
+  "key": "Looking up \"{word}\" in the dictionary…",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:335"
+  ]
+ },
+ {
   "key": "Loose pages",
   "where": [
    "src/components/editor/data.ts:109"
@@ -4058,6 +5118,12 @@
   "key": "Low-resolution images",
   "where": [
    "src/data/creators.ts:101"
+  ]
+ },
+ {
+  "key": "Lowercase",
+  "where": [
+   "src/components/docs/menus.ts:163"
   ]
  },
  {
@@ -4073,15 +5139,34 @@
   ]
  },
  {
+  "key": "Make a copy",
+  "where": [
+   "src/components/docs/menus.ts:22"
+  ]
+ },
+ {
+  "key": "Make available offline",
+  "where": [
+   "src/components/docs/menus.ts:42"
+  ]
+ },
+ {
   "key": "Make cards, flyers, ID cards and posters at real print size, then send them to a verified printer around you.",
   "where": [
    "src/components/auth/AuthShell.tsx:21"
   ]
  },
  {
+  "key": "Make it more formal",
+  "where": [
+   "src/components/docs/content.ts:71"
+  ]
+ },
+ {
   "key": "Make it shorter",
   "where": [
-   "src/components/editor/EditorShell.tsx:34"
+   "src/components/editor/EditorShell.tsx:34",
+   "src/components/docs/content.ts:71"
   ]
  },
  {
@@ -4110,15 +5195,39 @@
   ]
  },
  {
+  "key": "Margins (inches)",
+  "where": [
+   "src/components/docs/Dialogs.tsx:97"
+  ]
+ },
+ {
   "key": "Margins are 20 mm",
   "where": [
    "src/components/editor/EditorShell.tsx:89"
   ]
  },
  {
+  "key": "Margins are safe to print",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:176"
+  ]
+ },
+ {
+  "key": "Margins are under 12 mm",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:176"
+  ]
+ },
+ {
   "key": "Margins stay inside the print area",
   "where": [
    "src/components/design/overlays.tsx:133"
+  ]
+ },
+ {
+  "key": "Markdown (.md)",
+  "where": [
+   "src/components/docs/menus.ts:32"
   ]
  },
  {
@@ -4142,6 +5251,18 @@
   ]
  },
  {
+  "key": "Match case",
+  "where": [
+   "src/components/docs/Dialogs.tsx:62"
+  ]
+ },
+ {
+  "key": "Maths",
+  "where": [
+   "src/components/docs/menus.ts:285"
+  ]
+ },
+ {
   "key": "Matric no.",
   "where": [
    "src/components/design/data.ts:96"
@@ -4157,6 +5278,12 @@
   "key": "Matric or student ID number",
   "where": [
    "src/components/student/StudentView.tsx:110"
+  ]
+ },
+ {
+  "key": "Matters arising",
+  "where": [
+   "src/components/docs/content.ts:28"
   ]
  },
  {
@@ -4176,6 +5303,13 @@
   "key": "Meeting Minutes",
   "where": [
    "src/components/design/data.ts:108"
+  ]
+ },
+ {
+  "key": "Meeting notes",
+  "where": [
+   "src/components/docs/content.ts:23",
+   "src/components/docs/menus.ts:111"
   ]
  },
  {
@@ -4213,9 +5347,17 @@
   ]
  },
  {
+  "key": "Mention a person",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:802"
+  ]
+ },
+ {
   "key": "Menu",
   "where": [
-   "src/components/design/DesignApp.tsx:202"
+   "src/components/design/DesignApp.tsx:202",
+   "src/components/docs/DocsEditor.tsx:502",
+   "src/components/docs/DocsEditor.tsx:813"
   ]
  },
  {
@@ -4237,9 +5379,30 @@
   ]
  },
  {
+  "key": "Microsoft Word (.doc)",
+  "where": [
+   "src/components/docs/menus.ts:29"
+  ]
+ },
+ {
+  "key": "Minutes of meeting",
+  "where": [
+   "src/components/docs/content.ts:28",
+   "src/components/docs/content.ts:37",
+   "src/components/docs/content.ts:52"
+  ]
+ },
+ {
   "key": "Mode",
   "where": [
-   "src/components/editor/EditorShell.tsx:312"
+   "src/components/editor/EditorShell.tsx:312",
+   "src/components/docs/menus.ts:75"
+  ]
+ },
+ {
+  "key": "Moderate",
+  "where": [
+   "src/components/docs/content.ts:76"
   ]
  },
  {
@@ -4264,9 +5427,42 @@
   ]
  },
  {
+  "key": "More fonts (Ifiok Fonts)",
+  "where": [
+   "src/components/docs/Toolbar.tsx:120"
+  ]
+ },
+ {
   "key": "More to come",
   "where": [
    "src/data/apps.ts:143"
+  ]
+ },
+ {
+  "key": "Move to folder",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:496",
+   "src/components/docs/Dialogs.tsx:251",
+   "src/components/docs/menus.ts:38"
+  ]
+ },
+ {
+  "key": "Move to trash",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:760",
+   "src/components/docs/menus.ts:39"
+  ]
+ },
+ {
+  "key": "Moved to {folder}",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:759"
+  ]
+ },
+ {
+  "key": "Moved to trash",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:760"
   ]
  },
  {
@@ -4313,7 +5509,7 @@
   "where": [
    "src/components/design/overlays.tsx:91",
    "src/components/design/docsViews.tsx:50",
-   "src/components/creator/dialogs.tsx:58"
+   "src/components/docs/Dialogs.tsx:219"
   ]
  },
  {
@@ -4326,6 +5522,12 @@
   "key": "Naming Ceremony",
   "where": [
    "src/components/design/data.ts:93"
+  ]
+ },
+ {
+  "key": "Narrow",
+  "where": [
+   "src/components/docs/content.ts:76"
   ]
  },
  {
@@ -4424,9 +5626,21 @@
   ]
  },
  {
+  "key": "Next match",
+  "where": [
+   "src/components/docs/Dialogs.tsx:51"
+  ]
+ },
+ {
   "key": "Next step",
   "where": [
    "src/components/creator/dialogs.tsx:174"
+  ]
+ },
+ {
+  "key": "Next steps",
+  "where": [
+   "src/components/docs/content.ts:16"
   ]
  },
  {
@@ -4436,9 +5650,21 @@
   ]
  },
  {
+  "key": "Nigerian letters",
+  "where": [
+   "src/components/docs/menus.ts:282"
+  ]
+ },
+ {
   "key": "NIN",
   "where": [
    "src/components/creator/views.tsx:257"
+  ]
+ },
+ {
+  "key": "No comments yet. Select some text and press the comment button.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:636"
   ]
  },
  {
@@ -4485,9 +5711,28 @@
   ]
  },
  {
+  "key": "No matching menu items",
+  "where": [
+   "src/components/docs/Dialogs.tsx:283"
+  ]
+ },
+ {
+  "key": "No page numbers",
+  "where": [
+   "src/components/docs/Dialogs.tsx:233",
+   "src/components/docs/menus.ts:149"
+  ]
+ },
+ {
   "key": "No payouts yet.",
   "where": [
    "src/components/creator/views.tsx:348"
+  ]
+ },
+ {
+  "key": "No results",
+  "where": [
+   "src/components/docs/Dialogs.tsx:49"
   ]
  },
  {
@@ -4517,15 +5762,29 @@
   ]
  },
  {
+  "key": "None",
+  "where": [
+   "src/components/docs/Toolbar.tsx:140"
+  ]
+ },
+ {
   "key": "None ticked",
   "where": [
    "src/components/fonts/FontStudio.tsx:223"
   ]
  },
  {
+  "key": "Normal",
+  "where": [
+   "src/components/docs/content.ts:76"
+  ]
+ },
+ {
   "key": "Normal text",
   "where": [
-   "src/components/editor/EditorShell.tsx:298"
+   "src/components/editor/EditorShell.tsx:298",
+   "src/components/docs/menus.ts:168",
+   "src/components/docs/menus.ts:269"
   ]
  },
  {
@@ -4599,6 +5858,12 @@
   ]
  },
  {
+  "key": "Notification settings",
+  "where": [
+   "src/components/docs/menus.ts:228"
+  ]
+ },
+ {
   "key": "Notifications",
   "where": [
    "src/components/design/DesignApp.tsx:195"
@@ -4607,7 +5872,8 @@
  {
   "key": "now",
   "where": [
-   "src/components/editor/EditorShell.tsx:321"
+   "src/components/editor/EditorShell.tsx:321",
+   "src/components/docs/DocsEditor.tsx:462"
   ]
  },
  {
@@ -4619,7 +5885,9 @@
  {
   "key": "Numbered list",
   "where": [
-   "src/components/editor/EditorShell.tsx:306"
+   "src/components/editor/EditorShell.tsx:306",
+   "src/components/docs/DocsEditor.tsx:730",
+   "src/components/docs/Toolbar.tsx:173"
   ]
  },
  {
@@ -4638,6 +5906,12 @@
   "key": "Office Memo",
   "where": [
    "src/components/design/data.ts:109"
+  ]
+ },
+ {
+  "key": "Offline access is off.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:244"
   ]
  },
  {
@@ -4690,9 +5964,17 @@
   ]
  },
  {
+  "key": "One column",
+  "where": [
+   "src/components/docs/Dialogs.tsx:95",
+   "src/components/docs/menus.ts:189"
+  ]
+ },
+ {
   "key": "Open",
   "where": [
-   "src/components/design/overlays.tsx:273"
+   "src/components/design/overlays.tsx:273",
+   "src/components/docs/menus.ts:21"
   ]
  },
  {
@@ -4716,7 +5998,8 @@
  {
   "key": "Open a document",
   "where": [
-   "src/components/design/docsViews.tsx:89"
+   "src/components/design/docsViews.tsx:89",
+   "src/components/docs/Dialogs.tsx:208"
   ]
  },
  {
@@ -4839,6 +6122,13 @@
   ]
  },
  {
+  "key": "Orientation",
+  "where": [
+   "src/components/docs/Dialogs.tsx:88",
+   "src/components/docs/Dialogs.tsx:89"
+  ]
+ },
+ {
   "key": "Original templates such as CVs, flyers, invoices, posters, business cards and wedding invitations. Work you did not make yourself is not accepted.",
   "where": [
    "src/data/creators.ts:123"
@@ -4859,7 +6149,28 @@
  {
   "key": "Outline",
   "where": [
-   "src/components/editor/EditorShell.tsx:28"
+   "src/components/editor/EditorShell.tsx:28",
+   "src/components/docs/DocsEditor.tsx:557"
+  ]
+ },
+ {
+  "key": "Owner",
+  "where": [
+   "src/components/docs/Dialogs.tsx:180",
+   "src/components/docs/Dialogs.tsx:219",
+   "src/components/docs/content.ts:25"
+  ]
+ },
+ {
+  "key": "Page {n}",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:577"
+  ]
+ },
+ {
+  "key": "Page {n} of {total}",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:686"
   ]
  },
  {
@@ -4869,15 +6180,49 @@
   ]
  },
  {
+  "key": "Page break",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:279",
+   "src/components/docs/DocsEditor.tsx:734",
+   "src/components/docs/menus.ts:137"
+  ]
+ },
+ {
+  "key": "Page colour",
+  "where": [
+   "src/components/docs/Dialogs.tsx:104"
+  ]
+ },
+ {
   "key": "Page controls",
   "where": [
    "src/components/editor/EditorShell.tsx:326"
   ]
  },
  {
+  "key": "Page numbers",
+  "where": [
+   "src/components/docs/Dialogs.tsx:233",
+   "src/components/docs/menus.ts:148"
+  ]
+ },
+ {
+  "key": "Page setup",
+  "where": [
+   "src/components/docs/Dialogs.tsx:87",
+   "src/components/docs/menus.ts:51"
+  ]
+ },
+ {
   "key": "Page size A4",
   "where": [
    "src/components/design/overlays.tsx:131"
+  ]
+ },
+ {
+  "key": "Page size is {size}",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:174"
   ]
  },
  {
@@ -4890,7 +6235,8 @@
   "key": "Pages",
   "where": [
    "src/components/editor/EditorShell.tsx:361",
-   "src/components/editor/EditorShell.tsx:362"
+   "src/components/editor/EditorShell.tsx:362",
+   "src/components/docs/DocsEditor.tsx:654"
   ]
  },
  {
@@ -4915,9 +6261,52 @@
   ]
  },
  {
+  "key": "Paint format",
+  "where": [
+   "src/components/docs/Toolbar.tsx:99"
+  ]
+ },
+ {
+  "key": "Paint format: now select the text to copy the style to.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:340"
+  ]
+ },
+ {
+  "key": "Panels",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:604"
+  ]
+ },
+ {
   "key": "Paper",
   "where": [
    "src/components/editor/SendToPrinter.tsx:66"
+  ]
+ },
+ {
+  "key": "Paper size",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:655",
+   "src/components/docs/Dialogs.tsx:94"
+  ]
+ },
+ {
+  "key": "Paragraph",
+  "where": [
+   "src/components/docs/menus.ts:292"
+  ]
+ },
+ {
+  "key": "Paragraph style",
+  "where": [
+   "src/components/docs/Toolbar.tsx:103"
+  ]
+ },
+ {
+  "key": "Paragraph styles",
+  "where": [
+   "src/components/docs/menus.ts:167"
   ]
  },
  {
@@ -4937,6 +6326,18 @@
   "key": "Password, active sessions, delete account",
   "where": [
    "src/components/design/data.ts:176"
+  ]
+ },
+ {
+  "key": "Paste",
+  "where": [
+   "src/components/docs/menus.ts:62"
+  ]
+ },
+ {
+  "key": "Paste without formatting",
+  "where": [
+   "src/components/docs/menus.ts:63"
   ]
  },
  {
@@ -4994,6 +6395,12 @@
   ]
  },
  {
+  "key": "PDF document (.pdf)",
+  "where": [
+   "src/components/docs/menus.ts:28"
+  ]
+ },
+ {
   "key": "PDF to Word",
   "where": [
    "src/components/design/docsViews.tsx:93",
@@ -5017,13 +6424,21 @@
  {
   "key": "People",
   "where": [
+   "src/components/docs/menus.ts:117",
    "src/components/design/data.ts:179"
   ]
  },
  {
   "key": "People here now",
   "where": [
-   "src/components/editor/EditorShell.tsx:247"
+   "src/components/editor/EditorShell.tsx:247",
+   "src/components/docs/DocsEditor.tsx:513"
+  ]
+ },
+ {
+  "key": "People with access",
+  "where": [
+   "src/components/docs/Dialogs.tsx:178"
   ]
  },
  {
@@ -5039,6 +6454,18 @@
   ]
  },
  {
+  "key": "Personal",
+  "where": [
+   "src/components/docs/content.ts:55"
+  ]
+ },
+ {
+  "key": "Phase",
+  "where": [
+   "src/components/docs/content.ts:25"
+  ]
+ },
+ {
   "key": "Phone number",
   "where": [
    "src/components/auth/SignupForm.tsx:113"
@@ -5047,7 +6474,7 @@
  {
   "key": "Photo",
   "where": [
-   "src/components/editor/DesignCanvas.tsx:122",
+   "src/components/editor/DesignCanvas.tsx:124",
    "src/components/editor/data.ts:22"
   ]
  },
@@ -5118,6 +6545,31 @@
   ]
  },
  {
+  "key": "Pidgin",
+  "where": [
+   "src/components/docs/menus.ts:46",
+   "src/components/docs/menus.ts:222"
+  ]
+ },
+ {
+  "key": "Pie",
+  "where": [
+   "src/components/docs/menus.ts:127"
+  ]
+ },
+ {
+  "key": "Place",
+  "where": [
+   "src/components/docs/menus.ts:119"
+  ]
+ },
+ {
+  "key": "Plain text (.txt)",
+  "where": [
+   "src/components/docs/menus.ts:30"
+  ]
+ },
+ {
   "key": "Playful",
   "where": [
    "src/data/fonts.ts:7"
@@ -5148,6 +6600,12 @@
   ]
  },
  {
+  "key": "Please review this draft and send comments by Friday. Type / on an empty line to add a heading, a list or a divider.",
+  "where": [
+   "src/components/docs/content.ts:17"
+  ]
+ },
+ {
   "key": "Please tick all three confirmations first.",
   "where": [
    "src/components/creator/dialogs.tsx:107"
@@ -5157,6 +6615,12 @@
   "key": "Portfolio link (optional)",
   "where": [
    "src/components/creator/views.tsx:405"
+  ]
+ },
+ {
+  "key": "Portrait",
+  "where": [
+   "src/components/docs/Dialogs.tsx:90"
   ]
  },
  {
@@ -5180,10 +6644,40 @@
   ]
  },
  {
+  "key": "Power cuts and paper supply are the two risks. A small inverter and a paper deal with the printer cover both.",
+  "where": [
+   "src/components/docs/content.ts:15"
+  ]
+ },
+ {
+  "key": "Prepared for the Ikeja Traders' Association. Draft one, 12 July.",
+  "where": [
+   "src/components/docs/content.ts:7"
+  ]
+ },
+ {
+  "key": "Present",
+  "where": [
+   "src/components/docs/content.ts:28"
+  ]
+ },
+ {
   "key": "Presentation",
   "where": [
    "src/components/design/data.ts:28",
    "src/data/creator-app.ts:27"
+  ]
+ },
+ {
+  "key": "Press Ctrl+Shift+V to paste without formatting.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:253"
+  ]
+ },
+ {
+  "key": "Press Ctrl+V to paste. Your browser blocks the menu from reading the clipboard.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:252"
   ]
  },
  {
@@ -5206,11 +6700,29 @@
   ]
  },
  {
+  "key": "Previous match",
+  "where": [
+   "src/components/docs/Dialogs.tsx:50"
+  ]
+ },
+ {
+  "key": "Price",
+  "where": [
+   "src/components/docs/content.ts:26"
+  ]
+ },
+ {
+  "key": "Prices are for 10 copies, loose pages.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:664"
+  ]
+ },
+ {
   "key": "Print",
   "where": [
    "src/components/design/DesignApp.tsx:155",
-   "src/data/creator-app.ts:11",
-   "src/data/creator-app.ts:12"
+   "src/components/docs/DocsEditor.tsx:607",
+   "src/components/docs/DocsEditor.tsx:677"
   ]
  },
  {
@@ -5229,19 +6741,28 @@
   "key": "Print readiness",
   "where": [
    "src/components/editor/EditorShell.tsx:332",
-   "src/components/editor/EditorShell.tsx:333"
+   "src/components/editor/EditorShell.tsx:333",
+   "src/components/docs/DocsEditor.tsx:696"
   ]
  },
  {
   "key": "Print ready",
   "where": [
-   "src/components/editor/EditorShell.tsx:329"
+   "src/components/editor/EditorShell.tsx:329",
+   "src/components/docs/DocsEditor.tsx:656",
+   "src/components/docs/DocsEditor.tsx:693"
   ]
  },
  {
   "key": "Print size, bleed and 300 DPI checked",
   "where": [
    "src/components/creator/dialogs.tsx:184"
+  ]
+ },
+ {
+  "key": "Print this document",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:652"
   ]
  },
  {
@@ -5276,10 +6797,22 @@
   ]
  },
  {
+  "key": "Printers may clip text this close to the edge.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:176"
+  ]
+ },
+ {
   "key": "Printing",
   "where": [
    "src/components/editor/SendToPrinter.tsx:106",
    "src/components/design/data.ts:55"
+  ]
+ },
+ {
+  "key": "Printing is paid per job to the printer",
+  "where": [
+   "src/components/docs/content.ts:11"
   ]
  },
  {
@@ -5355,7 +6888,14 @@
   "key": "Project proposal",
   "where": [
    "src/components/editor/EditorShell.tsx:40",
-   "src/components/editor/data.ts:75"
+   "src/components/docs/DocsEditor.tsx:52",
+   "src/components/docs/content.ts:34"
+  ]
+ },
+ {
+  "key": "Project proposal: community print kiosk",
+  "where": [
+   "src/components/docs/content.ts:6"
   ]
  },
  {
@@ -5369,6 +6909,19 @@
   "where": [
    "src/components/design/data.ts:70",
    "src/components/design/data.ts:105"
+  ]
+ },
+ {
+  "key": "Project roadmap",
+  "where": [
+   "src/components/docs/content.ts:25",
+   "src/components/docs/menus.ts:111"
+  ]
+ },
+ {
+  "key": "Projects",
+  "where": [
+   "src/components/docs/content.ts:55"
   ]
  },
  {
@@ -5416,15 +6969,35 @@
   ]
  },
  {
+  "key": "Punctuation",
+  "where": [
+   "src/components/docs/menus.ts:284"
+  ]
+ },
+ {
   "key": "QR code",
   "where": [
-   "src/components/editor/EditorShell.tsx:178"
+   "src/components/editor/EditorShell.tsx:178",
+   "src/components/docs/DocsEditor.tsx:736",
+   "src/components/docs/menus.ts:130"
+  ]
+ },
+ {
+  "key": "QR code added. The real one links to a tracked page.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:271"
   ]
  },
  {
   "key": "QR generator",
   "where": [
    "src/components/design/data.ts:158"
+  ]
+ },
+ {
+  "key": "Qty",
+  "where": [
+   "src/components/docs/content.ts:26"
   ]
  },
  {
@@ -5435,9 +7008,23 @@
   ]
  },
  {
+  "key": "Quote",
+  "where": [
+   "src/components/docs/menus.ts:170",
+   "src/components/docs/menus.ts:275"
+  ]
+ },
+ {
   "key": "Raise the contrast of the headings and keep the contact details as real text, not an image. Then resubmit.",
   "where": [
    "src/data/creator-app.ts:61"
+  ]
+ },
+ {
+  "key": "Read the final document",
+  "where": [
+   "src/components/docs/Toolbar.tsx:188",
+   "src/components/docs/menus.ts:78"
   ]
  },
  {
@@ -5504,6 +7091,12 @@
   ]
  },
  {
+  "key": "Recent",
+  "where": [
+   "src/components/docs/Dialogs.tsx:209"
+  ]
+ },
+ {
   "key": "Recent earnings",
   "where": [
    "src/components/creator/views.tsx:316"
@@ -5549,6 +7142,12 @@
   ]
  },
  {
+  "key": "Reject all",
+  "where": [
+   "src/components/docs/Dialogs.tsx:243"
+  ]
+ },
+ {
   "key": "Remove",
   "where": [
    "src/components/design/overlays.tsx:83"
@@ -5570,6 +7169,60 @@
   "key": "Remove any file that could not be read.",
   "where": [
    "src/components/fonts/FontStudio.tsx:95"
+  ]
+ },
+ {
+  "key": "Remove link",
+  "where": [
+   "src/components/docs/Dialogs.tsx:117"
+  ]
+ },
+ {
+  "key": "Remove star",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:495"
+  ]
+ },
+ {
+  "key": "Rename",
+  "where": [
+   "src/components/docs/menus.ts:37"
+  ]
+ },
+ {
+  "key": "Reopen",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:630"
+  ]
+ },
+ {
+  "key": "Replace",
+  "where": [
+   "src/components/docs/Dialogs.tsx:58"
+  ]
+ },
+ {
+  "key": "Replace all",
+  "where": [
+   "src/components/docs/Dialogs.tsx:59"
+  ]
+ },
+ {
+  "key": "Replace with",
+  "where": [
+   "src/components/docs/Dialogs.tsx:57"
+  ]
+ },
+ {
+  "key": "Replaced",
+  "where": [
+   "src/components/docs/Dialogs.tsx:40"
+  ]
+ },
+ {
+  "key": "Report a problem",
+  "where": [
+   "src/components/docs/menus.ts:250"
   ]
  },
  {
@@ -5623,9 +7276,33 @@
   ]
  },
  {
+  "key": "Resolve",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:630"
+  ]
+ },
+ {
   "key": "Restaurant menu",
   "where": [
    "src/data/creator-app.ts:29"
+  ]
+ },
+ {
+  "key": "Restore",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:569"
+  ]
+ },
+ {
+  "key": "Restore this version",
+  "where": [
+   "src/components/docs/Dialogs.tsx:196"
+  ]
+ },
+ {
+  "key": "Restricted: only people added",
+  "where": [
+   "src/components/docs/Dialogs.tsx:186"
   ]
  },
  {
@@ -5668,6 +7345,13 @@
   ]
  },
  {
+  "key": "Review suggested edits",
+  "where": [
+   "src/components/docs/Dialogs.tsx:243",
+   "src/components/docs/menus.ts:217"
+  ]
+ },
+ {
   "key": "RidgeHaus",
   "where": [
    "src/components/design/data.ts:88"
@@ -5677,6 +7361,19 @@
   "key": "RidgeHaus Business Card",
   "where": [
    "src/components/design/data.ts:88"
+  ]
+ },
+ {
+  "key": "Right",
+  "where": [
+   "src/components/docs/Dialogs.tsx:102",
+   "src/components/docs/menus.ts:176"
+  ]
+ },
+ {
+  "key": "Right margin",
+  "where": [
+   "src/components/docs/Ruler.tsx:39"
   ]
  },
  {
@@ -5692,6 +7389,18 @@
   ]
  },
  {
+  "key": "Risks",
+  "where": [
+   "src/components/docs/content.ts:14"
+  ]
+ },
+ {
+  "key": "Role",
+  "where": [
+   "src/components/docs/Dialogs.tsx:175"
+  ]
+ },
+ {
   "key": "Roll-up banner",
   "where": [
    "src/components/design/data.ts:20"
@@ -5701,6 +7410,12 @@
   "key": "Rounded",
   "where": [
    "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Running cost: ₦42,000 a month",
+  "where": [
+   "src/components/docs/content.ts:11"
   ]
  },
  {
@@ -5794,6 +7509,7 @@
  {
   "key": "Saved",
   "where": [
+   "src/components/docs/DocsEditor.tsx:497",
    "src/components/fonts/FontsView.tsx:49",
    "src/components/fonts/FontsView.tsx:91"
   ]
@@ -5805,9 +7521,28 @@
   ]
  },
  {
+  "key": "Saved by Amina",
+  "where": [
+   "src/components/docs/content.ts:60"
+  ]
+ },
+ {
+  "key": "Saved by Tunde",
+  "where": [
+   "src/components/docs/content.ts:59"
+  ]
+ },
+ {
   "key": "Saved to your Ifiok account",
   "where": [
-   "src/components/editor/EditorShell.tsx:241"
+   "src/components/editor/EditorShell.tsx:241",
+   "src/components/docs/DocsEditor.tsx:497"
+  ]
+ },
+ {
+  "key": "Saving…",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:497"
   ]
  },
  {
@@ -5819,9 +7554,9 @@
  {
   "key": "School",
   "where": [
+   "src/components/docs/content.ts:55",
    "src/components/student/StudentView.tsx:97",
-   "src/components/student/StudentView.tsx:126",
-   "src/components/creator/views.tsx:401"
+   "src/components/student/StudentView.tsx:126"
   ]
  },
  {
@@ -5912,6 +7647,14 @@
   ]
  },
  {
+  "key": "Search the menus",
+  "where": [
+   "src/components/docs/Toolbar.tsx:94",
+   "src/components/docs/Dialogs.tsx:279",
+   "src/components/docs/Dialogs.tsx:280"
+  ]
+ },
+ {
   "key": "Search tools, or ask Ifiok anything",
   "where": [
    "src/components/editor/EditorShell.tsx:379"
@@ -5998,9 +7741,17 @@
   ]
  },
  {
+  "key": "Select a word to look it up.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:335"
+  ]
+ },
+ {
   "key": "Select all",
   "where": [
-   "src/components/editor/EditorShell.tsx:218"
+   "src/components/editor/EditorShell.tsx:218",
+   "src/components/docs/menus.ts:65",
+   "src/components/docs/menus.ts:293"
   ]
  },
  {
@@ -6010,9 +7761,21 @@
   ]
  },
  {
+  "key": "Selected: “{text}”",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:642"
+  ]
+ },
+ {
+  "key": "Selection",
+  "where": [
+   "src/components/docs/Dialogs.tsx:74"
+  ]
+ },
+ {
   "key": "Selection tools",
   "where": [
-   "src/components/editor/DesignCanvas.tsx:133"
+   "src/components/editor/DesignCanvas.tsx:135"
   ]
  },
  {
@@ -6030,7 +7793,8 @@
  {
   "key": "Send",
   "where": [
-   "src/components/editor/EditorShell.tsx:261"
+   "src/components/editor/EditorShell.tsx:261",
+   "src/components/docs/DocsEditor.tsx:515"
   ]
  },
  {
@@ -6043,13 +7807,15 @@
   "key": "Send to a verified printer",
   "where": [
    "src/components/editor/EditorShell.tsx:217",
-   "src/components/editor/SendToPrinter.tsx:49"
+   "src/components/editor/SendToPrinter.tsx:49",
+   "src/components/docs/menus.ts:36"
   ]
  },
  {
   "key": "Send to printer",
   "where": [
-   "src/components/editor/EditorShell.tsx:261"
+   "src/components/editor/EditorShell.tsx:261",
+   "src/components/docs/DocsEditor.tsx:515"
   ]
  },
  {
@@ -6081,6 +7847,12 @@
   ]
  },
  {
+  "key": "Set-up: ₦185,000 once",
+  "where": [
+   "src/components/docs/content.ts:11"
+  ]
+ },
+ {
   "key": "Settings",
   "where": [
    "src/components/design/data.ts:138"
@@ -6095,9 +7867,16 @@
   ]
  },
  {
+  "key": "Share \"{name}\"",
+  "where": [
+   "src/components/docs/Dialogs.tsx:172"
+  ]
+ },
+ {
   "key": "Share on WhatsApp",
   "where": [
-   "src/components/editor/EditorShell.tsx:254"
+   "src/components/editor/EditorShell.tsx:254",
+   "src/components/docs/Dialogs.tsx:187"
   ]
  },
  {
@@ -6113,9 +7892,52 @@
   ]
  },
  {
+  "key": "Show document tabs and outline",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:678",
+   "src/components/docs/menus.ts:83"
+  ]
+ },
+ {
+  "key": "Show non-printing characters",
+  "where": [
+   "src/components/docs/menus.ts:85"
+  ]
+ },
+ {
+  "key": "Show page dividers",
+  "where": [
+   "src/components/docs/menus.ts:84"
+  ]
+ },
+ {
   "key": "Show password",
   "where": [
    "src/components/auth/parts.tsx:47"
+  ]
+ },
+ {
+  "key": "Show ruler",
+  "where": [
+   "src/components/docs/menus.ts:82"
+  ]
+ },
+ {
+  "key": "Show the menus",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:541"
+  ]
+ },
+ {
+  "key": "Side panel",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:602"
+  ]
+ },
+ {
+  "key": "Side tools",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:674"
   ]
  },
  {
@@ -6131,6 +7953,12 @@
   ]
  },
  {
+  "key": "Sign this document",
+  "where": [
+   "src/components/docs/menus.ts:122"
+  ]
+ },
+ {
   "key": "Sign up and verify",
   "where": [
    "src/data/creators.ts:31"
@@ -6143,22 +7971,42 @@
   ]
  },
  {
+  "key": "Signing opens the PDF tools in the full editor.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:268"
+  ]
+ },
+ {
   "key": "Simulate paid",
   "where": [
    "src/components/creator/views.tsx:347"
   ]
  },
  {
+  "key": "Single",
+  "where": [
+   "src/components/docs/menus.ts:183",
+   "src/components/docs/menus.ts:279"
+  ]
+ },
+ {
   "key": "Size",
   "where": [
    "src/components/design/overlays.tsx:85",
-   "src/components/creator/dialogs.tsx:55"
+   "src/components/creator/dialogs.tsx:55",
+   "src/components/docs/menus.ts:162"
   ]
  },
  {
   "key": "Size {label}",
   "where": [
    "src/components/fonts/FontsView.tsx:43"
+  ]
+ },
+ {
+  "key": "Skip to the document",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:485"
   ]
  },
  {
@@ -6170,7 +8018,13 @@
  {
   "key": "Smaller",
   "where": [
-   "src/components/editor/DesignCanvas.tsx:137"
+   "src/components/editor/DesignCanvas.tsx:139"
+  ]
+ },
+ {
+  "key": "Smart chips",
+  "where": [
+   "src/components/docs/menus.ts:116"
   ]
  },
  {
@@ -6219,9 +8073,23 @@
   ]
  },
  {
+  "key": "Special characters",
+  "where": [
+   "src/components/docs/Dialogs.tsx:142",
+   "src/components/docs/menus.ts:131"
+  ]
+ },
+ {
   "key": "Special Offer",
   "where": [
    "src/components/design/data.ts:86"
+  ]
+ },
+ {
+  "key": "Spelling and grammar check",
+  "where": [
+   "src/components/docs/Toolbar.tsx:98",
+   "src/components/docs/menus.ts:214"
   ]
  },
  {
@@ -6291,6 +8159,12 @@
   ]
  },
  {
+  "key": "Star this document",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:495"
+  ]
+ },
+ {
   "key": "Start a document",
   "where": [
    "src/components/design/docsViews.tsx:98"
@@ -6336,8 +8210,8 @@
   "key": "Status",
   "where": [
    "src/components/design/overlays.tsx:157",
-   "src/components/creator/dialogs.tsx:133",
-   "src/components/creator/views.tsx:327"
+   "src/components/docs/DocsEditor.tsx:656",
+   "src/components/creator/dialogs.tsx:133"
   ]
  },
  {
@@ -6381,6 +8255,13 @@
   "key": "Story",
   "where": [
    "src/data/creator-app.ts:26"
+  ]
+ },
+ {
+  "key": "Strikethrough",
+  "where": [
+   "src/components/docs/Toolbar.tsx:202",
+   "src/components/docs/menus.ts:159"
   ]
  },
  {
@@ -6444,6 +8325,12 @@
   ]
  },
  {
+  "key": "Subject",
+  "where": [
+   "src/components/docs/content.ts:24"
+  ]
+ },
+ {
   "key": "Submit for review",
   "where": [
    "src/components/student/StudentView.tsx:138",
@@ -6490,14 +8377,38 @@
   ]
  },
  {
+  "key": "Subscript",
+  "where": [
+   "src/components/docs/Toolbar.tsx:204",
+   "src/components/docs/menus.ts:160"
+  ]
+ },
+ {
+  "key": "Subtitle",
+  "where": [
+   "src/components/docs/menus.ts:168",
+   "src/components/docs/menus.ts:271"
+  ]
+ },
+ {
+  "key": "Suggesting",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:688",
+   "src/components/docs/Toolbar.tsx:188",
+   "src/components/docs/menus.ts:77"
+  ]
+ },
+ {
   "key": "Summarise",
   "where": [
-   "src/components/editor/EditorShell.tsx:34"
+   "src/components/editor/EditorShell.tsx:34",
+   "src/components/docs/content.ts:71"
   ]
  },
  {
   "key": "Summary",
   "where": [
+   "src/components/docs/content.ts:8",
    "src/components/creator/views.tsx:286"
   ]
  },
@@ -6517,6 +8428,13 @@
   "key": "Sunday service",
   "where": [
    "src/components/design/data.ts:92"
+  ]
+ },
+ {
+  "key": "Superscript",
+  "where": [
+   "src/components/docs/Toolbar.tsx:203",
+   "src/components/docs/menus.ts:160"
   ]
  },
  {
@@ -6544,9 +8462,16 @@
   ]
  },
  {
+  "key": "Switch page orientation",
+  "where": [
+   "src/components/docs/menus.ts:199"
+  ]
+ },
+ {
   "key": "Switch to Ifiok Designs",
   "where": [
-   "src/components/editor/EditorShell.tsx:221"
+   "src/components/editor/EditorShell.tsx:221",
+   "src/components/docs/DocsEditor.tsx:523"
   ]
  },
  {
@@ -6563,9 +8488,36 @@
   ]
  },
  {
+  "key": "Tab {n}",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:196"
+  ]
+ },
+ {
+  "key": "Tab 1",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:67"
+  ]
+ },
+ {
   "key": "Table",
   "where": [
-   "src/components/editor/DocCanvas.tsx:83"
+   "src/components/editor/DocCanvas.tsx:83",
+   "src/components/docs/DocsEditor.tsx:732",
+   "src/components/docs/menus.ts:108"
+  ]
+ },
+ {
+  "key": "Table of contents",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:297",
+   "src/components/docs/menus.ts:145"
+  ]
+ },
+ {
+  "key": "Table size",
+  "where": [
+   "src/components/docs/MenuBar.tsx:54"
   ]
  },
  {
@@ -6635,7 +8587,16 @@
  {
   "key": "Text",
   "where": [
-   "src/components/editor/EditorShell.tsx:24"
+   "src/components/editor/EditorShell.tsx:24",
+   "src/components/docs/Dialogs.tsx:118",
+   "src/components/docs/menus.ts:157"
+  ]
+ },
+ {
+  "key": "Text colour",
+  "where": [
+   "src/components/docs/Toolbar.tsx:136",
+   "src/components/docs/Toolbar.tsx:137"
   ]
  },
  {
@@ -6653,7 +8614,8 @@
  {
   "key": "Text tools",
   "where": [
-   "src/components/editor/DocCanvas.tsx:66"
+   "src/components/editor/DocCanvas.tsx:66",
+   "src/components/docs/DocsEditor.tsx:713"
   ]
  },
  {
@@ -6710,6 +8672,18 @@
   ]
  },
  {
+  "key": "The document has content",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:177"
+  ]
+ },
+ {
+  "key": "The document is empty",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:177"
+  ]
+ },
+ {
   "key": "The Ifiok team is reviewing this font. Reviews take about 5 working days.",
   "where": [
    "src/components/fonts/FontStudio.tsx:324"
@@ -6760,6 +8734,7 @@
  {
   "key": "The timeline looks tight. Maybe add a week for training.",
   "where": [
+   "src/components/docs/content.ts:68",
    "src/components/editor/data.ts:82"
   ]
  },
@@ -6767,7 +8742,32 @@
   "key": "Theme",
   "where": [
    "src/components/design/DesignApp.tsx:204",
-   "src/components/editor/EditorShell.tsx:272"
+   "src/components/editor/EditorShell.tsx:272",
+   "src/components/docs/DocsEditor.tsx:525"
+  ]
+ },
+ {
+  "key": "There are no suggested edits. Switch to Suggesting mode to make some.",
+  "where": [
+   "src/components/docs/Dialogs.tsx:244"
+  ]
+ },
+ {
+  "key": "This document goes to the trash. You can restore it for 30 days.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:760"
+  ]
+ },
+ {
+  "key": "This document is available offline.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:244"
+  ]
+ },
+ {
+  "key": "This document is in the trash.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:569"
   ]
  },
  {
@@ -6831,9 +8831,47 @@
   ]
  },
  {
+  "key": "This works in the full editor. It is a preview here.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:204"
+  ]
+ },
+ {
+  "key": "Three columns",
+  "where": [
+   "src/components/docs/Dialogs.tsx:95",
+   "src/components/docs/menus.ts:189"
+  ]
+ },
+ {
+  "key": "Timeline",
+  "where": [
+   "src/components/docs/content.ts:12"
+  ]
+ },
+ {
+  "key": "Title",
+  "where": [
+   "src/components/docs/menus.ts:168",
+   "src/components/docs/menus.ts:270"
+  ]
+ },
+ {
   "key": "Title · Department · Session",
   "where": [
    "src/components/design/data.ts:105"
+  ]
+ },
+ {
+  "key": "Title Case",
+  "where": [
+   "src/components/docs/menus.ts:163"
+  ]
+ },
+ {
+  "key": "To",
+  "where": [
+   "src/components/docs/content.ts:24"
   ]
  },
  {
@@ -6858,6 +8896,12 @@
   ]
  },
  {
+  "key": "Today, 9:41 am",
+  "where": [
+   "src/components/docs/content.ts:59"
+  ]
+ },
+ {
   "key": "Together",
   "where": [
    "src/components/design/data.ts:99"
@@ -6868,7 +8912,13 @@
   "where": [
    "src/components/editor/EditorShell.tsx:281",
    "src/components/editor/EditorShell.tsx:370",
-   "src/data/apps.ts:109"
+   "src/components/docs/menus.ts:213"
+  ]
+ },
+ {
+  "key": "Top",
+  "where": [
+   "src/components/docs/Dialogs.tsx:102"
   ]
  },
  {
@@ -6882,6 +8932,7 @@
   "key": "Total",
   "where": [
    "src/components/editor/SendToPrinter.tsx:108",
+   "src/components/docs/content.ts:26",
    "src/components/creator/views.tsx:332"
   ]
  },
@@ -6924,9 +8975,22 @@
   ]
  },
  {
+  "key": "Training and tips",
+  "where": [
+   "src/components/docs/menus.ts:247"
+  ]
+ },
+ {
+  "key": "Translate this document",
+  "where": [
+   "src/components/docs/menus.ts:221"
+  ]
+ },
+ {
   "key": "Translate to Yorùbá",
   "where": [
-   "src/components/editor/EditorShell.tsx:34"
+   "src/components/editor/EditorShell.tsx:34",
+   "src/components/docs/content.ts:71"
   ]
  },
  {
@@ -6974,8 +9038,16 @@
   ]
  },
  {
+  "key": "Two columns",
+  "where": [
+   "src/components/docs/Dialogs.tsx:95",
+   "src/components/docs/menus.ts:189"
+  ]
+ },
+ {
   "key": "Type",
   "where": [
+   "src/components/docs/Dialogs.tsx:219",
    "src/components/creator/dialogs.tsx:54",
    "src/components/creator/views.tsx:140"
   ]
@@ -7008,7 +9080,8 @@
   "key": "Underline",
   "where": [
    "src/components/editor/EditorShell.tsx:303",
-   "src/components/editor/DocCanvas.tsx:69"
+   "src/components/editor/DocCanvas.tsx:69",
+   "src/components/docs/DocsEditor.tsx:716"
   ]
  },
  {
@@ -7089,6 +9162,12 @@
   ]
  },
  {
+  "key": "Upload from computer",
+  "where": [
+   "src/components/docs/menus.ts:102"
+  ]
+ },
+ {
   "key": "Upload your font files. Once approved, designers can click it and start using it.",
   "where": [
    "src/components/creator/views.tsx:65"
@@ -7099,6 +9178,12 @@
   "where": [
    "src/components/editor/EditorShell.tsx:25",
    "src/components/design/data.ts:131"
+  ]
+ },
+ {
+  "key": "Uppercase",
+  "where": [
+   "src/components/docs/menus.ts:163"
   ]
  },
  {
@@ -7148,6 +9233,18 @@
   "where": [
    "src/components/editor/SendToPrinter.tsx:88",
    "src/components/creator/views.tsx:200"
+  ]
+ },
+ {
+  "key": "Verified printer",
+  "where": [
+   "src/components/docs/menus.ts:118"
+  ]
+ },
+ {
+  "key": "Verified printers near you",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:658"
   ]
  },
  {
@@ -7218,9 +9315,24 @@
   ]
  },
  {
+  "key": "Version history",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:511",
+   "src/components/docs/Dialogs.tsx:196",
+   "src/components/docs/menus.ts:41"
+  ]
+ },
+ {
+  "key": "Version restored.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:754"
+  ]
+ },
+ {
   "key": "View",
   "where": [
-   "src/components/design/overlays.tsx:204"
+   "src/components/design/overlays.tsx:204",
+   "src/components/docs/menus.ts:73"
   ]
  },
  {
@@ -7236,15 +9348,36 @@
   ]
  },
  {
+  "key": "Viewer",
+  "where": [
+   "src/components/docs/Dialogs.tsx:175",
+   "src/components/docs/Dialogs.tsx:182"
+  ]
+ },
+ {
   "key": "Viewing",
   "where": [
-   "src/components/editor/EditorShell.tsx:314"
+   "src/components/editor/EditorShell.tsx:314",
+   "src/components/docs/DocsEditor.tsx:688",
+   "src/components/docs/Toolbar.tsx:188"
   ]
  },
  {
   "key": "Vigil",
   "where": [
    "src/data/apps.ts:121"
+  ]
+ },
+ {
+  "key": "Voice typing",
+  "where": [
+   "src/components/docs/menus.ts:227"
+  ]
+ },
+ {
+  "key": "Voice typing is not available in this browser.",
+  "where": [
+   "src/components/docs/DocsEditor.tsx:351"
   ]
  },
  {
@@ -7303,6 +9436,12 @@
   ]
  },
  {
+  "key": "We propose a small print kiosk at the Ikeja market gate. Traders design their flyers and receipts on their phones, send them to a verified printer nearby and collect the same day. This document explains the cost, the timeline and what we need from the association.",
+  "where": [
+   "src/components/docs/content.ts:9"
+  ]
+ },
+ {
   "key": "We review the request and pay by bank transfer to your verified account.",
   "where": [
    "src/components/creator/views.tsx:311"
@@ -7330,6 +9469,12 @@
   "key": "Weak",
   "where": [
    "src/components/auth/SignupForm.tsx:89"
+  ]
+ },
+ {
+  "key": "Web page (.html)",
+  "where": [
+   "src/components/docs/menus.ts:31"
   ]
  },
  {
@@ -7408,6 +9553,18 @@
   ]
  },
  {
+  "key": "What is new",
+  "where": [
+   "src/components/docs/menus.ts:248"
+  ]
+ },
+ {
+  "key": "What it costs",
+  "where": [
+   "src/components/docs/content.ts:10"
+  ]
+ },
+ {
   "key": "What reviewers look for. Reviews take {reviewTime}.",
   "where": [
    "src/components/creator/views.tsx:364"
@@ -7475,8 +9632,15 @@
   ]
  },
  {
+  "key": "Who can open",
+  "where": [
+   "src/components/docs/Dialogs.tsx:186"
+  ]
+ },
+ {
   "key": "Wide",
   "where": [
+   "src/components/docs/content.ts:76",
    "src/data/fonts.ts:7"
   ]
  },
@@ -7487,9 +9651,24 @@
   ]
  },
  {
+  "key": "Word count",
+  "where": [
+   "src/components/docs/Dialogs.tsx:73",
+   "src/components/docs/menus.ts:215",
+   "src/components/docs/menus.ts:294"
+  ]
+ },
+ {
   "key": "Word, PDF or text, up to 25 MB",
   "where": [
    "src/components/design/docsViews.tsx:89"
+  ]
+ },
+ {
+  "key": "Words",
+  "where": [
+   "src/components/docs/Dialogs.tsx:71",
+   "src/components/docs/Dialogs.tsx:219"
   ]
  },
  {
@@ -7526,8 +9705,15 @@
  {
   "key": "Yesterday",
   "where": [
+   "src/components/docs/content.ts:68",
    "src/components/editor/data.ts:82",
    "src/components/design/data.ts:62"
+  ]
+ },
+ {
+  "key": "Yesterday, 4:12 pm",
+  "where": [
+   "src/components/docs/content.ts:60"
   ]
  },
  {
@@ -7547,8 +9733,9 @@
  {
   "key": "You",
   "where": [
-   "src/components/creator/dialogs.tsx:144",
-   "src/components/fonts/FontStudio.tsx:319"
+   "src/components/docs/DocsEditor.tsx:462",
+   "src/components/docs/Dialogs.tsx:180",
+   "src/components/docs/Dialogs.tsx:219"
   ]
  },
  {
@@ -7622,6 +9809,13 @@
   "key": "Your earnings and payments. Only you can see this page.",
   "where": [
    "src/components/creator/views.tsx:290"
+  ]
+ },
+ {
+  "key": "Your edits become suggestions",
+  "where": [
+   "src/components/docs/Toolbar.tsx:188",
+   "src/components/docs/menus.ts:77"
   ]
  },
  {
@@ -7712,21 +9906,35 @@
   ]
  },
  {
+  "key": "Yours sincerely,",
+  "where": [
+   "src/components/docs/content.ts:27"
+  ]
+ },
+ {
   "key": "YouTube thumbnail",
   "where": [
    "src/data/creator-app.ts:34"
   ]
  },
  {
+  "key": "Zoom",
+  "where": [
+   "src/components/docs/menus.ts:88"
+  ]
+ },
+ {
   "key": "Zoom in",
   "where": [
-   "src/components/editor/EditorShell.tsx:350"
+   "src/components/editor/EditorShell.tsx:350",
+   "src/components/docs/DocsEditor.tsx:708"
   ]
  },
  {
   "key": "Zoom out",
   "where": [
-   "src/components/editor/EditorShell.tsx:348"
+   "src/components/editor/EditorShell.tsx:348",
+   "src/components/docs/DocsEditor.tsx:706"
   ]
  }
 ]

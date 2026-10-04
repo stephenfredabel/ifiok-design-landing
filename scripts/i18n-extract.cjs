@@ -6,20 +6,20 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const COMPONENT_FILES = [
-  'src/components/design/DesignApp.tsx', 'src/components/design/views.tsx', 'src/components/design/overlays.tsx', 'src/components/design/parts.tsx', 'src/components/design/docsViews.tsx', 'src/components/editor/EditorShell.tsx', 'src/components/editor/DesignCanvas.tsx', 'src/components/editor/DocCanvas.tsx', 'src/components/editor/SendToPrinter.tsx', 'src/components/editor/useDesign.ts',
+  'src/components/design/DesignApp.tsx', 'src/components/design/views.tsx', 'src/components/design/overlays.tsx', 'src/components/design/parts.tsx', 'src/components/design/docsViews.tsx', 'src/components/editor/EditorShell.tsx', 'src/components/editor/DesignCanvas.tsx', 'src/components/editor/DocCanvas.tsx', 'src/components/editor/SendToPrinter.tsx', 'src/components/editor/useDesign.ts', 'src/components/docs/DocsEditor.tsx', 'src/components/docs/MenuBar.tsx', 'src/components/docs/Toolbar.tsx', 'src/components/docs/Dialogs.tsx', 'src/components/docs/Ruler.tsx', 'src/components/docs/ui.tsx', 'src/components/docs/content.ts',
   'src/components/student/StudentView.tsx', 'src/components/student/store.tsx',
   'src/components/creator/dialogs.tsx', 'src/components/creator/parts.tsx', 'src/components/creator/store.tsx', 'src/components/creator/views.tsx',
   'src/components/fonts/FontStudio.tsx', 'src/components/fonts/FontsView.tsx', 'src/components/fonts/parts.tsx', 'src/components/AppsMenu.tsx', 'src/components/ThemeToggle.tsx', 'src/components/CreatorInvite.tsx', 'src/components/auth/AuthShell.tsx', 'src/components/auth/parts.tsx', 'src/components/auth/LoginForm.tsx', 'src/components/auth/SignupForm.tsx', 'src/components/LangMenu.tsx',
 ];
 // Sample/seed data whose text is shown on screen. Only these keys carry words; ids, colours, urls and numbers are skipped.
-const DATA_FILES = ['src/components/editor/data.ts', 'src/components/design/data.ts', 'src/data/student.ts', 'src/data/creator-app.ts', 'src/data/fonts.ts', 'src/data/apps.ts'];
+const DATA_FILES = ['src/components/docs/menus.ts', 'src/components/docs/content.ts', 'src/components/editor/data.ts', 'src/components/design/data.ts', 'src/data/student.ts', 'src/data/creator-app.ts', 'src/data/fonts.ts', 'src/data/apps.ts'];
 const TEXT_KEYS = new Set(['label', 'name', 'sub', 'headline', 'note', 'blurb', 'title', 'edited', 'eta', 'item', 'warn', 'text', 'when', 'updated', 'submitted', 'decided', 'date', 'badge', 'desc', 'description', 'cat', 'group', 'size', 'closes', 'reviewTime', 'short', 'tagline', 'hint', 'l', 'printer']);
 // Named constants whose string contents are all shown to people.
-const TEXT_CONSTS = new Set(['TEMPLATE_CATS', 'GROUPS', 'FONT_CATS', 'FONT_TAGS', 'LEVELS', 'STYLES', 'STEPS', 'STATUS', 'PDF_TOOLS', 'AI_CHIPS', 'SORTS', 'STEP_NAMES']);
+const TEXT_CONSTS = new Set(['TEMPLATE_CATS', 'GROUPS', 'FONT_CATS', 'FONT_TAGS', 'LEVELS', 'STYLES', 'STEPS', 'STATUS', 'PDF_TOOLS', 'AI_CHIPS', 'SORTS', 'STEP_NAMES', 'AI_ACTIONS']);
 // Constants in data/creators.ts that the dashboards display.
 const CREATORS_CONSTS = new Set(['STANDARDS', 'FAQ']);
 // Never translate: brands, people and places in sample data, family names, bank names.
-const SKIP_VALUES = new Set(['Ifiok', 'S', 'M', 'L']);
+const SKIP_VALUES = new Set(['Ifiok', 'S', 'M', 'L', 'h1', 'h2', 'h3']);
 const hasLetter = (s) => /[A-Za-zÀ-ɏ]/.test(s);
 const texty = (s) => hasLetter(s) && !/^(#|https?:|\/|--|ifiok\.|[a-z]+-[a-z0-9-]+$|[a-z]+$)/.test(s.trim());
 
