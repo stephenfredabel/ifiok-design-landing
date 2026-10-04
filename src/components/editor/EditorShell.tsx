@@ -246,7 +246,7 @@ export default function EditorShell({ mode }: { mode: Mode }) {
         <button type="button" className="ex-cmd hide-m" onClick={() => { setCmd(true); setQ(''); }}><Search aria-hidden="true" /><span>{tr('Search or ask')}</span><kbd>Ctrl K</kbd></button>
         <div className="ex-people hide-m" aria-label={tr('People here now')}><span className="av a">A</span><span className="av b">T</span>{invited.map((m) => <span key={m} className="av c">{m[0].toUpperCase()}</span>)}</div>
         <div className="ex-pop">
-          <button type="button" className="ex-btn hide-m" onClick={() => { setShareOpen((o) => !o); setReadyOpen(false); }} aria-expanded={shareOpen}><Share2 aria-hidden="true" />{tr('Share')}</button>
+          <button type="button" className="ex-btn hide-m" onClick={() => { setShareOpen((o) => !o); setReadyOpen(false); }} aria-expanded={shareOpen}><Share2 aria-hidden="true" /><span>{tr('Share')}</span></button>
           {shareOpen && (
             <div className="ex-card ex-share" role="dialog" aria-label={tr('Share')}>
               <p className="ex-h">{tr('Share this file')}</p>
