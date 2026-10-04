@@ -299,3 +299,33 @@ button.stp-back:hover, .stp-x:hover { background: var(--hover); }
   .ex-toast { bottom: 130px; }
 }
 @media (prefers-reduced-motion: reduce) { .ex-toast { transition: none; } }
+
+/* ───── languages: nothing wraps or collides when the text gets longer ───── */
+.ex-top :is(button, a, span, kbd), .ex-tools :is(button, select, span), .ex-pill :is(button, span), .ex-btn, .ex-appsw a, .ex-seg button { white-space: nowrap; }
+.ex-top { min-width: 0; }
+.ex-top > * { flex-shrink: 0; }
+.ex-top > .ex-title { flex-shrink: 1; min-width: 90px; }
+.ex-top > .ex-cmd { flex-shrink: 1; min-width: 44px; max-width: 230px; }
+.ex-cmd span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.ex-title input, .ex-saved { text-overflow: ellipsis; }
+.ex-top .lang { display: inline-flex; }
+.ex-top .lang > button { display: inline-flex; flex-direction: row; align-items: center; gap: 6px; width: auto; height: 40px; padding: 0 10px; border: 0; border-radius: 10px; background: transparent; cursor: pointer; font-weight: 700; font-size: 13px; }
+.ex-top .lang > button:hover { background: var(--hover); }
+.ex-top .lang > button svg { width: 18px; height: 18px; }
+.ex-btn.gold .short { display: none; }
+.ex-rail { width: 84px; }
+.ex-rail button span, .ex-tabs button span { max-width: 100%; text-align: center; line-height: 1.15; overflow-wrap: anywhere; hyphens: auto; }
+.ex-tabs button { min-width: 0; }
+.ex-tools .ex-sel select { max-width: 170px; text-overflow: ellipsis; }
+.ex-pages .ex-h { white-space: normal; overflow-wrap: anywhere; }
+.ex-pill { max-width: calc(100vw - 24px); }
+.ex-ctx { max-width: var(--ex-ctx-max, 90vw); }
+
+/* progressively fold the top bar as the window narrows */
+@media (max-width: 1360px) {
+  .ex-cmd span, .ex-cmd kbd { display: none; }
+  .ex-cmd { min-width: 40px; width: 40px; padding: 0; justify-content: center; }
+  .ex-btn.gold .long { display: none; } .ex-btn.gold .short { display: inline; }
+}
+@media (max-width: 1180px) { .ex-people { display: none; } }
+@media (max-width: 1060px) { .ex-pop > .ex-btn.hide-m span { display: none; } .ex-pop > .ex-btn.hide-m { padding: 0 10px; } }

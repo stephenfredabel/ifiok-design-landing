@@ -17,6 +17,7 @@ export default function DesignCanvas({ D, zoom, guides }: { D: DesignState; zoom
   const [font, setFont] = useState(FONTS[0]);
   const tb = useRef<HTMLDivElement>(null);
   const [shift, setShift] = useState(0);
+  const [aw, setAw] = useState(0);
   const { objs, sel } = D;
   const selObjs = objs.filter((o) => sel.includes(o.id));
   const risky = new Set(checkDesign(D).find((c) => c.id === 'safe')?.ok ? [] : objs.filter((o) => o.type !== 'shape' && (o.x < SAFE || o.y < SAFE || o.x + o.w > PAGE.w - SAFE || o.y + o.h > PAGE.h - SAFE)).map((o) => o.id));
@@ -97,6 +98,7 @@ export default function DesignCanvas({ D, zoom, guides }: { D: DesignState; zoom
     if (r0 > a.right - 8) next = (a.right - 8 - r0) / zoom;
     if (l0 + next * zoom < a.left + 8) next = (a.left + 8 - l0) / zoom;
     if (Math.abs(next - shift) > 0.5) setShift(next);
+    if (Math.abs(a.width - aw) > 1) setAw(a.width);
   }); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
@@ -130,7 +132,7 @@ export default function DesignCanvas({ D, zoom, guides }: { D: DesignState; zoom
               <div className="ex-sel" style={{ left: bounds.x, top: bounds.y, width: bounds.r - bounds.x, height: bounds.b - bounds.y }}>
                 {sel.length === 1 && <i className="ex-hd" onPointerDown={(e) => startResize(first, e)} aria-hidden="true" />}
               </div>
-              <div ref={tb} className="ex-ctx" style={{ left: bounds.x + shift, top: bounds.y < 70 ? bounds.b + 12 : bounds.y - 56, transform: `scale(${1 / zoom})`, transformOrigin: bounds.y < 70 ? 'top left' : 'bottom left' }} onPointerDown={(e) => e.stopPropagation()} role="toolbar" aria-label={tr('Selection tools')}>
+              <div ref={tb} className="ex-ctx" style={{ left: bounds.x + shift, top: bounds.y < 70 ? bounds.b + 12 : bounds.y - 56, transform: `scale(${1 / zoom})`, transformOrigin: bounds.y < 70 ? 'top left' : 'bottom left', ['--ex-ctx-max' as string]: aw ? `${Math.max(240, aw - 24)}px` : undefined } as React.CSSProperties} onPointerDown={(e) => e.stopPropagation()} role="toolbar" aria-label={tr('Selection tools')}>
                 {texts.length > 0 && (
                   <>
                     <select aria-label={tr('Font')} value={font} onChange={(e) => setFont(e.target.value)}>{FONTS.map((f) => <option key={f}>{f}</option>)}</select>
