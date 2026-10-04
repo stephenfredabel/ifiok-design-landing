@@ -1060,6 +1060,18 @@
   ]
  },
  {
+  "key": "Become a creator",
+  "where": [
+   "src/components/CreatorInvite.tsx:69"
+  ]
+ },
+ {
+  "key": "Become an Ifiok Campus Creator",
+  "where": [
+   "src/components/CreatorInvite.tsx:64"
+  ]
+ },
+ {
   "key": "behance.net/yourname",
   "where": [
    "src/components/creator/views.tsx:405"
@@ -1182,6 +1194,12 @@
   "key": "BVN",
   "where": [
    "src/components/creator/views.tsx:258"
+  ]
+ },
+ {
+  "key": "Campus Creator Program",
+  "where": [
+   "src/components/CreatorInvite.tsx:63"
   ]
  },
  {
@@ -1891,6 +1909,12 @@
   ]
  },
  {
+  "key": "Design templates, build your portfolio, and earn. Open to verified students.",
+  "where": [
+   "src/components/CreatorInvite.tsx:65"
+  ]
+ },
+ {
   "key": "Design with classmates",
   "where": [
    "src/data/student.ts:13"
@@ -2015,6 +2039,12 @@
    "src/components/design/data.ts:107",
    "src/data/creator-app.ts:20",
    "src/data/creator-app.ts:21"
+  ]
+ },
+ {
+  "key": "Don't show this again",
+  "where": [
+   "src/components/CreatorInvite.tsx:72"
   ]
  },
  {
@@ -3565,6 +3595,12 @@
   "key": "Not in the list? Keep typing the full name and we will use it.",
   "where": [
    "src/components/student/StudentView.tsx:34"
+  ]
+ },
+ {
+  "key": "Not now",
+  "where": [
+   "src/components/CreatorInvite.tsx:70"
   ]
  },
  {

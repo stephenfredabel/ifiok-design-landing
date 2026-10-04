@@ -211,7 +211,7 @@ export default function ApplyForm({ onWaitlist }: { onWaitlist: () => void }) {
       const ref = `ICC-${PROGRAM.cohort}-${Math.random().toString(36).slice(2, 7).toUpperCase()}`;
       setDone(ref);
       setSending(false);
-      try { localStorage.removeItem(STORE); } catch {}
+      try { localStorage.removeItem(STORE); localStorage.setItem('ifiok.creator.applied', '1'); } catch {}
       requestAnimationFrame(() => top.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
     }, 900);
   };

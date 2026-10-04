@@ -963,5 +963,11 @@
  "We sent a 6-digit code to +234 {phone}. Enter it below.": "Nous avons envoyé un code à 6 chiffres au +234 {phone}. Saisissez-le ci-dessous.",
  "Weak": "Faible",
  "Welcome back": "Bon retour",
- "What will you do first?": "Que ferez-vous en premier ?"
+ "What will you do first?": "Que ferez-vous en premier ?",
+ "Campus Creator Program": "Programme Campus Creator",
+ "Become an Ifiok Campus Creator": "Devenez Campus Creator Ifiok",
+ "Design templates, build your portfolio, and earn. Open to verified students.": "Créez des modèles, bâtissez votre portfolio et gagnez de l'argent. Ouvert aux étudiants vérifiés.",
+ "Become a creator": "Devenir créateur",
+ "Not now": "Pas maintenant",
+ "Don't show this again": "Ne plus afficher"
 }
