@@ -8,7 +8,7 @@ import {
 export type Kind = 'card' | 'flyer' | 'poster' | 'banner' | 'id' | 'sticker' | 'doc' | 'receipt' | 'tshirt' | 'invite';
 export type Stage = 'draft' | 'ready' | 'printing' | 'delivery' | 'delivered';
 
-export type Format = { id: string; label: string; kind: Kind; w: number; h: number; unit: 'in'; bleed: number; qty: number; step: number; base: number; per: number; note: string };
+export type Format = { id: string; label: string; kind: Kind; w: number; h: number; unit: 'in'; bleed: number; qty: number; step: number; base: number; per: number; note: string; doc?: boolean };
 
 /** Print formats with real sizes. Prices are examples only. */
 export const FORMATS: Format[] = [
@@ -27,7 +27,20 @@ export const FORMATS: Format[] = [
   { id: 'cover', label: 'Assignment cover', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0.125, qty: 10, step: 5, base: 1200, per: 120, note: 'A4 cover page' },
   { id: 'slides', label: 'Presentation', kind: 'doc', w: 10, h: 5.63, unit: 'in', bleed: 0, qty: 1, step: 1, base: 0, per: 0, note: '16:9 slides, shown on screen' },
   { id: 'invite', label: 'Invitation', kind: 'invite', w: 5, h: 7, unit: 'in', bleed: 0.125, qty: 100, step: 50, base: 5000, per: 220, note: 'Weddings, naming, launches' },
+  /* Ifiok Docs: A4 documents. They open in the Docs editor, and can still be sent to a printer. */
+  { id: 'd-blank', label: 'Blank document', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0, qty: 10, step: 5, base: 500, per: 40, note: 'A4, start from scratch', doc: true },
+  { id: 'd-resume', label: 'Resume', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0, qty: 10, step: 5, base: 500, per: 40, note: 'A4, one or two pages', doc: true },
+  { id: 'd-letter', label: 'Cover letter', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0, qty: 10, step: 5, base: 500, per: 40, note: 'A4 letter', doc: true },
+  { id: 'd-report', label: 'Project report', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0, qty: 10, step: 5, base: 500, per: 40, note: 'A4, chapters and contents', doc: true },
+  { id: 'd-invoice', label: 'Invoice', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0, qty: 10, step: 5, base: 500, per: 40, note: 'A4, items and totals in naira', doc: true },
+  { id: 'd-proposal', label: 'Business proposal', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0, qty: 10, step: 5, base: 500, per: 40, note: 'A4, pitch a client', doc: true },
+  { id: 'd-minutes', label: 'Meeting minutes', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0, qty: 10, step: 5, base: 500, per: 40, note: 'A4, notes and action points', doc: true },
+  { id: 'd-memo', label: 'Memo', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0, qty: 10, step: 5, base: 500, per: 40, note: 'A4, short internal note', doc: true },
+  { id: 'd-newsletter', label: 'Newsletter', kind: 'doc', w: 8.3, h: 11.7, unit: 'in', bleed: 0, qty: 10, step: 5, base: 500, per: 40, note: 'A4, columns and images', doc: true },
 ];
+
+export const isDocFormat = (id?: string) => !!id && !!FORMATS.find((f) => f.id === id)?.doc;
+export const isDoc = (d: { formatId: string }) => isDocFormat(d.formatId);
 
 export const formatById = (id: string) => FORMATS.find((f) => f.id === id) ?? FORMATS[0];
 export const naira = (n: number) => '₦' + Math.round(n).toLocaleString('en-NG');
@@ -53,11 +66,15 @@ export const SAMPLE_DESIGNS: Design[] = [
   { id: 'd6', name: 'Ade & Funmi — invitation', formatId: 'invite', accent: '#7A1D4A', headline: 'Ade & Funmi', sub: 'Traditional wedding', stage: 'draft', edited: '2 weeks ago', device: true },
   { id: 'd7', name: 'Mama Tolu Stores — receipt book', formatId: 'receipt', accent: '#8A6100', headline: 'Mama Tolu Stores', sub: 'No. 0001', stage: 'delivered', edited: '3 weeks ago' },
   { id: 'd8', name: 'Class of 2026 — T-shirt', formatId: 'tshirt', accent: '#0F3D3E', headline: 'CLASS OF 2026', sub: 'Faculty of Arts', stage: 'ready', edited: 'Last month' },
+  { id: 'dd1', name: 'Okafor Bakes — invoice 0042', formatId: 'd-invoice', accent: '#0B7A7F', headline: 'INVOICE 0042', sub: 'Okafor Bakes · ₦186,500', stage: 'ready', edited: 'Today', device: true },
+  { id: 'dd2', name: 'Final year project report', formatId: 'd-report', accent: '#1F3A8A', headline: 'Project Report', sub: 'Department of Computer Science', stage: 'draft', edited: '2 days ago' },
+  { id: 'dd3', name: 'Adaeze Okafor — resume', formatId: 'd-resume', accent: '#0F3D3E', headline: 'Adaeze Okafor', sub: 'Baker · Entrepreneur · Lagos', stage: 'delivered', edited: 'Last week', device: true },
+  { id: 'dd4', name: 'Cover letter — Access Bank', formatId: 'd-letter', accent: '#7A1D4A', headline: 'Cover letter', sub: 'Graduate trainee application', stage: 'draft', edited: '3 weeks ago' },
 ];
 
 export type Template = { id: string; name: string; cat: string; formatId: string; accent: string; headline: string; sub: string };
-export const TEMPLATE_CATS = ['Student', 'Marketing', 'Business', 'Church & events', 'School & ID', 'Weddings'] as const;
-export const TEMPLATES: Template[] = [
+export const TEMPLATE_CATS = ['Student', 'Documents', 'Marketing', 'Business', 'Church & events', 'School & ID', 'Weddings'] as const;
+const DESIGN_TEMPLATES: Template[] = [
   { id: 's1', name: 'Clean One-Page CV', cat: 'Student', formatId: 'cv', accent: '#1F3A8A', headline: 'Curriculum Vitae', sub: 'Clean, one page' },
   { id: 's2', name: 'Graduate CV with Photo', cat: 'Student', formatId: 'cv', accent: '#0B7A7F', headline: 'Your Name', sub: 'Graduate · Lagos' },
   { id: 's3', name: 'Assignment Cover Page', cat: 'Student', formatId: 'cover', accent: '#0F3D3E', headline: 'Assignment', sub: 'Course code · Matric no.' },
@@ -82,6 +99,19 @@ export const TEMPLATES: Template[] = [
   { id: 't16', name: 'White Wedding', cat: 'Weddings', formatId: 'invite', accent: '#2B2B2B', headline: 'Together', sub: 'Join us' },
 ];
 
+export const DOC_TEMPLATES: Template[] = [
+  { id: 'dt1', name: 'Clean Resume', cat: 'Documents', formatId: 'd-resume', accent: '#1F3A8A', headline: 'Your Name', sub: 'Profession · City' },
+  { id: 'dt2', name: 'Formal Cover Letter', cat: 'Documents', formatId: 'd-letter', accent: '#7A1D4A', headline: 'Cover letter', sub: 'Dear Hiring Manager' },
+  { id: 'dt3', name: 'Project Report', cat: 'Documents', formatId: 'd-report', accent: '#0F3D3E', headline: 'Project Report', sub: 'Title · Department · Session' },
+  { id: 'dt4', name: 'Invoice in Naira', cat: 'Documents', formatId: 'd-invoice', accent: '#0B7A7F', headline: 'INVOICE', sub: 'Items · Total · Bank details' },
+  { id: 'dt5', name: 'Business Proposal', cat: 'Documents', formatId: 'd-proposal', accent: '#8A6100', headline: 'Proposal', sub: 'Scope · Timeline · Price' },
+  { id: 'dt6', name: 'Meeting Minutes', cat: 'Documents', formatId: 'd-minutes', accent: '#3B1673', headline: 'Meeting minutes', sub: 'Attendees · Decisions · Actions' },
+  { id: 'dt7', name: 'Office Memo', cat: 'Documents', formatId: 'd-memo', accent: '#B6322B', headline: 'MEMO', sub: 'To · From · Subject' },
+  { id: 'dt8', name: 'Community Newsletter', cat: 'Documents', formatId: 'd-newsletter', accent: '#C2410C', headline: 'Newsletter', sub: 'This month at a glance' },
+];
+export const TEMPLATES: Template[] = [...DESIGN_TEMPLATES, ...DOC_TEMPLATES];
+export const BLANK_DOC: Template = { id: 'dt0', name: 'Blank document', cat: 'Documents', formatId: 'd-blank', accent: '#0B7A7F', headline: 'Untitled', sub: 'Start from scratch' };
+
 export type Order = { id: string; ref: string; item: string; formatId: string; qty: number; total: number; stage: Stage; eta: string; printer: string; designId: string };
 export const SAMPLE_ORDERS: Order[] = [
   { id: 'o1', ref: 'IFK-20418', item: 'Grand Opening — flyer', formatId: 'flyer-a5', qty: 500, total: 52000, stage: 'printing', eta: 'Delivery by Fri 17 Oct', printer: 'Yaba print shop', designId: 'd2' },
@@ -94,6 +124,7 @@ export type NavItem = { id: string; label: string; Icon: LucideIcon; badge?: str
 export const NAV: NavItem[] = [
   { id: 'home', label: 'Home', Icon: Home, group: 'create' },
   { id: 'projects', label: 'My files', Icon: FolderOpen, group: 'create' },
+  { id: 'docs', label: 'Documents', Icon: FileText, group: 'create' },
   { id: 'templates', label: 'Templates', Icon: LayoutGrid, group: 'create' },
   { id: 'fonts', label: 'Fonts', Icon: TypeIcon, badge: 'New', group: 'create' },
   { id: 'brand', label: 'Brand kit', Icon: Brush, group: 'create', blurb: 'Keep your logos, colours and fonts in one kit, then apply them to any design in a tap.' },
@@ -104,7 +135,6 @@ export const NAV: NavItem[] = [
   { id: 'links', label: 'Link pages', Icon: Link2, badge: 'New', group: 'grow', href: 'https://ifiok.ng/tools/link-in-bio' },
   { id: 'student', label: 'Student perks', Icon: GraduationCap, group: 'grow', blurb: 'Verify once with your school ID and unlock student perks.' },
   { id: 'orders', label: 'Orders & prints', Icon: Package, group: 'print' },
-  { id: 'docs', label: 'Documents', Icon: FileText, group: 'foot', href: 'https://ifiok.ng/tools' },
   { id: 'settings', label: 'Settings', Icon: Settings, group: 'foot', blurb: 'Your profile, delivery addresses and payment preferences.' },
   { id: 'support', label: 'Support', Icon: Headphones, group: 'foot', blurb: 'Chat with the Ifiok team, voice notes included.' },
 ];
