@@ -2,6 +2,7 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { STR } from './strings';
+import { setTrLang } from './tr';
 
 export type LangCode = 'en' | 'fr' | 'pcm' | 'yo' | 'ha' | 'ig';
 
@@ -42,6 +43,8 @@ const LangCtx = createContext<Ctx>({ lang: 'en', setLang: () => {}, t: (_k, f) =
 
 export function LangProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<LangCode>('en');
+  // Keep the dashboards' tr() in step with the picker. Done during render so children read the right language.
+  setTrLang(lang);
 
   // Read the saved language after mount so the server and first client render match.
   useEffect(() => {

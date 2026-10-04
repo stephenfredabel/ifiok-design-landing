@@ -1,0 +1,71 @@
+/* Student dashboard additions. Scoped to .d-app. */
+.d-app .st-hero { position: relative; overflow: hidden; border-radius: 22px; padding: clamp(22px, 4vw, 40px); background: linear-gradient(135deg, #0b7a7f 0%, #0a3a52 60%, #3b1673 100%); color: #fff; display: grid; gap: 10px; }
+.d-app .st-hero h1 { font-size: clamp(28px, 4.6vw, 46px); position: relative; max-width: 16em; }
+.d-app .st-hero p { position: relative; opacity: 0.9; font-size: 16.5px; max-width: 34em; }
+.d-app .st-pill { position: relative; display: inline-flex; align-items: center; gap: 8px; width: fit-content; padding: 6px 14px; border-radius: 999px; background: rgba(255, 255, 255, 0.16); font-size: 13px; font-weight: 700; }
+.d-app .st-pill svg { width: 16px; height: 16px; }
+.d-app .st-card { display: grid; gap: 16px; padding: clamp(16px, 3vw, 26px); border: 1px solid var(--line); border-radius: 20px; background: var(--panel); min-width: 0; }
+.d-app .st-card.ok { grid-template-columns: auto minmax(0, 1fr); align-items: center; border-color: color-mix(in srgb, var(--ok) 50%, transparent); background: color-mix(in srgb, var(--ok) 10%, var(--panel)); }
+.d-app .st-card.ok > svg { width: 34px; height: 34px; color: var(--ok); }
+.d-app .st-card.warn { grid-template-columns: auto minmax(0, 1fr); align-items: start; border-color: rgba(224, 145, 79, 0.5); background: rgba(224, 145, 79, 0.1); }
+.d-app .st-card.warn > svg { width: 26px; height: 26px; color: #e0914f; margin-top: 2px; }
+.d-app .st-card h2 { font-size: 22px; letter-spacing: -0.02em; }
+.d-app .st-card p { color: var(--tx2); }
+.d-app .st-h { display: grid; gap: 6px; }
+.d-app .st-clock { width: 22px; height: 22px; vertical-align: -3px; margin-right: 6px; color: var(--gold-text); }
+.d-app .st-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.d-app .st-steps li { display: flex; flex-direction: column; gap: 6px; font-size: 12.5px; font-weight: 600; color: var(--tx3); }
+.d-app .st-steps li::before { content: ""; height: 4px; border-radius: 4px; background: var(--line-2); order: -1; }
+.d-app .st-steps li.done::before, .d-app .st-steps li.now::before { background: var(--teal); }
+.d-app .st-steps li.now { color: var(--tx); }
+.d-app .st-steps span { display: none; }
+.d-app .st-conn { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 12px; background: rgba(11, 122, 127, 0.14); font-size: 14px; color: var(--tx2); }
+.d-app .st-conn svg { width: 18px; height: 18px; color: var(--teal-text); flex: none; }
+.d-app .st-form { display: grid; gap: 16px; }
+.d-app .st-two { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 640px) { .d-app .st-two { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.d-app .st-form .field input, .d-app .st-form .field select { width: 100%; min-height: 48px; padding: 10px 14px; border: 1px solid var(--line-2); border-radius: 12px; background: var(--bg); color: var(--tx); font: inherit; font-size: 16px; }
+.d-app .st-form .field input:focus, .d-app .st-form .field select:focus { outline: 2px solid var(--teal); outline-offset: 1px; }
+.d-app .st-combo { position: relative; }
+.d-app .st-list { position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px; list-style: none; background: var(--panel); border: 1px solid var(--line-2); border-radius: 12px; box-shadow: 0 18px 40px var(--shadow); max-height: 280px; overflow-y: auto; }
+.d-app .st-list li { padding: 12px; border-radius: 8px; font-size: 15px; cursor: pointer; }
+.d-app .st-list li[aria-selected="true"] { background: rgba(11, 122, 127, 0.22); }
+.d-app .st-list li.none { color: var(--tx3); cursor: default; }
+.d-app .st-drop { display: flex; align-items: center; gap: 14px; padding: 16px; border: 1.5px dashed var(--line-2); border-radius: 14px; background: var(--bg); cursor: pointer; min-height: 72px; }
+.d-app .st-drop:hover { border-color: var(--teal); }
+.d-app .st-drop.bad { border-color: #e0594f; }
+.d-app .st-drop.has { border-style: solid; }
+.d-app .st-drop svg { width: 26px; height: 26px; color: var(--teal-text); flex: none; }
+.d-app .st-drop img { width: 64px; height: 64px; object-fit: cover; border-radius: 10px; flex: none; }
+.d-app .st-drop span { display: flex; flex-direction: column; min-width: 0; }
+.d-app .st-drop b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.d-app .st-drop small { color: var(--tx3); font-size: 13px; }
+.d-app .st-actions { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.d-app .st-perks { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 760px) { .d-app .st-perks { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.d-app .st-perk { display: flex; gap: 14px; padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); min-width: 0; }
+.d-app .st-perk.off { opacity: 0.72; }
+.d-app .st-perk h3 { font-size: 17px; letter-spacing: -0.01em; }
+.d-app .st-perk p { color: var(--tx2); font-size: 14.5px; margin: 4px 0 10px; }
+.d-app .st-perk > div { min-width: 0; }
+.d-app .st-tag { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border: 1px solid var(--line-2); border-radius: 999px; font-size: 12.5px; font-weight: 700; color: var(--tx3); }
+.d-app .st-tag svg { width: 13px; height: 13px; }
+.d-app .st-link { display: inline-flex; align-items: center; gap: 4px; min-height: 40px; padding: 0; border: 0; background: none; color: var(--teal-text); font: inherit; font-weight: 700; cursor: pointer; }
+.d-app .st-link svg { width: 16px; height: 16px; }
+.d-app .st-restart { align-self: flex-start; }
+.d-app .st-strip { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding: 14px 16px; border: 1px solid rgba(11, 122, 127, 0.5); border-radius: 18px; background: linear-gradient(135deg, rgba(11, 122, 127, 0.2), rgba(59, 22, 115, 0.18)); position: relative; padding-right: 48px; }
+.d-app .st-strip.ok { border-color: color-mix(in srgb, var(--ok) 50%, transparent); background: color-mix(in srgb, var(--ok) 10%, var(--panel)); padding-right: 16px; }
+.d-app .st-strip > svg { width: 26px; height: 26px; color: var(--teal-text); flex: none; }
+.d-app .st-strip.ok > svg { color: var(--ok); }
+.d-app .st-strip > span { flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; }
+.d-app .st-strip small { color: var(--tx2); font-size: 13.5px; }
+.d-app .st-x { position: absolute; right: 6px; top: 6px; width: 40px; height: 40px; display: grid; place-items: center; border: 0; background: none; color: var(--tx2); cursor: pointer; border-radius: 10px; }
+.d-app .st-x:hover { background: var(--hover); }
+.d-app .st-x svg { width: 17px; height: 17px; }
+@media (max-width: 899px) {
+  .d-app .st-steps li { font-size: 11.5px; }
+  .d-app .st-card.ok, .d-app .st-card.warn { grid-template-columns: minmax(0, 1fr); }
+  .d-app .st-actions .btn-p, .d-app .st-actions .btn-s { flex: 1 1 auto; }
+  .d-app .st-strip .btn-p, .d-app .st-strip .btn-s { width: 100%; }
+  .d-app .st-hero { border-radius: 18px; }
+}

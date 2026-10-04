@@ -6,6 +6,7 @@ import {
   SAMPLE_LEDGER, SAMPLE_PAYOUTS, SAMPLE_TEMPLATES, SETTINGS, kindById, naira, type CTemplate, type Entry, type Payout,
 } from '@/data/creator-app';
 
+import { tr } from '@/i18n/tr';
 export type Account = { bank: string; number: string; name: string; verified: boolean };
 export type Profile = { name: string; handle: string; bio: string; campus: string; link: string };
 export type Say = (t: { msg: string; href?: string; label?: string; action?: () => void } | string) => void;
@@ -99,18 +100,18 @@ export function CreatorProvider({ say, children }: { say: Say; children: React.R
   }, []);
   const duplicateTemplate = useCallback((id: string) => {
     setTemplates((l) => { const i = l.findIndex((t) => t.id === id); if (i < 0) return l; return [{ ...l[i], id: 'n' + Date.now(), name: l[i].name + ' (copy)', status: 'draft' as const, updated: 'Just now', submitted: undefined, decided: undefined, notes: [] }, ...l]; });
-    say('Duplicated as a draft.');
+    say(tr("Duplicated as a draft."));
   }, [say]);
   const removeTemplate = useCallback((id: string) => {
     const list = tref.current; const at = list.findIndex((t) => t.id === id); const r = list[at];
     if (!r) return;
     setTemplates(list.filter((t) => t.id !== id));
-    say({ msg: `Deleted “${r.name}”`, label: 'Undo', action: () => setTemplates((l) => { const n = [...l]; n.splice(Math.min(at, n.length), 0, r); return n; }) });
+    say({ msg: tr("Deleted “{name}”", { name: tr(r.name) }), label: tr("Undo"), action: () => setTemplates((l) => { const n = [...l]; n.splice(Math.min(at, n.length), 0, r); return n; }) });
   }, [say]);
   const submitTemplate: Ctx['submitTemplate'] = useCallback((id, d) => {
     const t = tref.current.find((x) => x.id === id); if (!t) return;
     patchT(id, { status: 'review', submitted: 'Today', updated: 'Today', fonts: d.fonts || t.fonts, theme: d.theme ? SETTINGS.theme.name : t.theme, notes: d.notes ? [...t.notes, { by: 'you', text: d.notes, when: 'Today' }] : t.notes });
-    say('Submitted. The Ifiok team will review it.');
+    say(tr("Submitted. The Ifiok team will review it."));
   }, [say]);
   const decideTemplate: Ctx['decideTemplate'] = useCallback((id, r) => {
     const t = tref.current.find((x) => x.id === id); if (!t) return;
@@ -118,13 +119,13 @@ export function CreatorProvider({ say, children }: { say: Say; children: React.R
       const amount = kindById(t.kindId).bounty;
       patchT(id, { status: 'approved', decided: 'Today', updated: 'Today', notes: [...t.notes, { by: 'reviewer', text: 'Clear and easy to edit. Approved.', when: 'Today' }] });
       setLedger((l) => [...l, { id: 'e' + Date.now(), kind: 'template', templateId: id, name: t.name, amount, date: 'Today', status: 'available' }]);
-      say(`Approved. ${naira(amount)} added to your earnings.`);
+      say(tr("Approved. {amount} added to your earnings.", { amount: naira(amount) }));
     } else if (r === 'changes') {
       patchT(id, { status: 'changes', updated: 'Today', notes: [...t.notes, { by: 'reviewer', text: 'Please improve the contrast of the headline and keep all text editable, then resubmit.', when: 'Today' }] });
-      say('Changes requested.');
+      say(tr("Changes requested."));
     } else {
       patchT(id, { status: 'rejected', decided: 'Today', updated: 'Today', notes: [...t.notes, { by: 'reviewer', text: 'This is too close to an existing template. Please make it your own.', when: 'Today' }] });
-      say('Not approved.');
+      say(tr("Not approved."));
     }
   }, [say]);
 
@@ -135,12 +136,12 @@ export function CreatorProvider({ say, children }: { say: Say; children: React.R
     const list = fref.current; const at = list.findIndex((f) => f.id === id); const r = list[at];
     if (!r) return;
     setFonts(list.filter((f) => f.id !== id));
-    say({ msg: `Deleted “${r.family}”`, label: 'Undo', action: () => setFonts((l) => { const n = [...l]; n.splice(Math.min(at, n.length), 0, r); return n; }) });
+    say({ msg: tr("Deleted “{family}”", { family: r.family }), label: tr("Undo"), action: () => setFonts((l) => { const n = [...l]; n.splice(Math.min(at, n.length), 0, r); return n; }) });
   }, [say]);
   const submitFont = useCallback((id: string, note: string) => {
     const f = fref.current.find((x) => x.id === id); if (!f) return;
     patchF(id, { status: 'review', submitted: 'Today', updated: 'Today', notes: note ? [...(f.notes ?? []), { by: 'you', text: note, when: 'Today' }] : f.notes });
-    say('Submitted. The Ifiok team will review your font.');
+    say(tr("Submitted. The Ifiok team will review your font."));
   }, [say]);
   const decideFont: Ctx['decideFont'] = useCallback((id, r) => {
     const f = fref.current.find((x) => x.id === id); if (!f) return;
@@ -148,18 +149,18 @@ export function CreatorProvider({ say, children }: { say: Say; children: React.R
     if (r === 'approve') {
       patchF(id, { status: 'approved', decided: 'Today', updated: 'Today', notes: [...notes, { by: 'reviewer', text: 'Clean spacing and a complete character set. Approved.', when: 'Today' }] });
       setLedger((l) => [...l, { id: 'e' + Date.now(), kind: 'font', templateId: id, name: `${f.family} (font)`, amount: FONT_BOUNTY, date: 'Today', status: 'available' }]);
-      say(`Approved. ${naira(FONT_BOUNTY)} added to your earnings, and designers can now use it.`);
+      say(tr("Approved. {amount} added to your earnings, and designers can now use it.", { amount: naira(FONT_BOUNTY) }));
     } else if (r === 'changes') {
       patchF(id, { status: 'changes', updated: 'Today', notes: [...notes, { by: 'reviewer', text: 'Please check the spacing between letters and the accents on ẹ and ọ, then resubmit.', when: 'Today' }] });
-      say('Changes requested.');
+      say(tr("Changes requested."));
     } else {
       patchF(id, { status: 'rejected', decided: 'Today', updated: 'Today', notes: [...notes, { by: 'reviewer', text: 'We could not confirm you have the right to share this font.', when: 'Today' }] });
-      say('Not approved.');
+      say(tr("Not approved."));
     }
   }, [say]);
 
-  const saveAccount = useCallback((a: Account) => { setAccount(a); say('Payout account verified.'); }, [say]);
-  const clearAccount = useCallback(() => { setAccount(null); say('Payout account removed. Add and verify a new one to request payouts.'); }, [say]);
+  const saveAccount = useCallback((a: Account) => { setAccount(a); say(tr("Payout account verified.")); }, [say]);
+  const clearAccount = useCallback(() => { setAccount(null); say(tr("Payout account removed. Add and verify a new one to request payouts.")); }, [say]);
   const requestPayout = useCallback(() => {
     const a = aref.current; if (!a) return;
     const b = balances(lref.current);
@@ -167,12 +168,12 @@ export function CreatorProvider({ say, children }: { say: Say; children: React.R
     const ref = `PO-${String(pref.current.length + 8).padStart(4, '0')}`;
     setPayouts((l) => [{ id, ref, amount: b.available, date: 'Today', status: 'processing', account: mask(a) }, ...l]);
     setLedger((l) => l.map((e) => (e.status === 'available' ? { ...e, status: 'requested', payoutId: id } : e)));
-    say(`Payout of ${naira(b.available)} requested.`);
+    say(tr("Payout of {available} requested.", { available: naira(b.available) }));
   }, [say]);
   const simulatePaid = useCallback((id: string) => {
     setPayouts((l) => l.map((p) => (p.id === id ? { ...p, status: 'paid' } : p)));
     setLedger((l) => l.map((e) => (e.payoutId === id ? { ...e, status: 'paid' } : e)));
-    say('Marked as paid (prototype).');
+    say(tr("Marked as paid (prototype)."));
   }, [say]);
 
   const approvedFonts = useMemo(() => fonts.filter((f) => f.status === 'approved'), [fonts]);

@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import { GOOGLE_FONTS_HREF, fontStack, type FontEntry } from '@/data/fonts';
 
+import { tr } from '@/i18n/tr';
 /** Loads the sample families once so they show in their real faces. */
 export function useSampleFonts() {
   useEffect(() => {
@@ -17,9 +18,9 @@ export const fontStyleOf = (f: Pick<FontEntry, 'css' | 'cat'>, weight?: number) 
 
 export function MarksTags({ f }: { f: FontEntry }) {
   const m = f.marks;
-  const list = [m.yoruba && 'Yorùbá', m.igbo && 'Igbo', m.hausa && 'Hausa'].filter(Boolean) as string[];
+  const list = [m.yoruba && tr('Yorùbá'), m.igbo && tr('Igbo'), m.hausa && tr('Hausa')].filter(Boolean) as string[];
   if (!list.length) return null;
-  return <span className="fn-marks" title="Supports the extra letters used in these languages">{list.join(' · ')}</span>;
+  return <span className="fn-marks" title={tr("Supports the extra letters used in these languages")}>{list.join(' · ')}</span>;
 }
 
 export const weightOf = (style: string) => (/black/i.test(style) ? 900 : /extra/i.test(style) ? 800 : /bold/i.test(style) ? 700 : /semi/i.test(style) ? 600 : /medium/i.test(style) ? 500 : /light/i.test(style) ? 300 : 400);

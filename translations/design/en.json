@@ -1,0 +1,5606 @@
+[
+ {
+  "key": ".ttf, .otf, .woff or .woff2 · up to 6 files · 2 MB each",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:159"
+  ]
+ },
+ {
+  "key": "(optional)",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:144",
+   "src/components/fonts/FontStudio.tsx:149"
+  ]
+ },
+ {
+  "key": "(prototype: shown from your profile name)",
+  "where": [
+   "src/components/creator/views.tsx:250"
+  ]
+ },
+ {
+  "key": "{approved} approved template",
+  "where": [
+   "src/components/creator/views.tsx:395"
+  ]
+ },
+ {
+  "key": "{approved} approved templates",
+  "where": [
+   "src/components/creator/views.tsx:395"
+  ]
+ },
+ {
+  "key": "{available} available",
+  "where": [
+   "src/components/creator/views.tsx:90"
+  ]
+ },
+ {
+  "key": "{blurb}. Enter a template when you submit it. Closes {closes}.",
+  "where": [
+   "src/components/creator/views.tsx:98"
+  ]
+ },
+ {
+  "key": "{cat} · {count} style",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:270",
+   "src/components/fonts/FontsView.tsx:62"
+  ]
+ },
+ {
+  "key": "{cat} · {count} styles",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:270",
+   "src/components/fonts/FontsView.tsx:62"
+  ]
+ },
+ {
+  "key": "{cat} · by {by}",
+  "where": [
+   "src/components/fonts/FontsView.tsx:85"
+  ]
+ },
+ {
+  "key": "{cat} · updated {updated}",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:302"
+  ]
+ },
+ {
+  "key": "{cat} templates",
+  "where": [
+   "src/components/design/views.tsx:114"
+  ]
+ },
+ {
+  "key": "{changes} need changes",
+  "where": [
+   "src/components/creator/views.tsx:37",
+   "src/components/creator/views.tsx:69"
+  ]
+ },
+ {
+  "key": "{cw}\" × {ch}\" is created as a custom print size in the editor.",
+  "where": [
+   "src/components/design/overlays.tsx:108"
+  ]
+ },
+ {
+  "key": "{label} · {size} · edited {edited}",
+  "where": [
+   "src/components/design/overlays.tsx:140"
+  ]
+ },
+ {
+  "key": "{label} · {size} · updated {updated}",
+  "where": [
+   "src/components/creator/dialogs.tsx:121"
+  ]
+ },
+ {
+  "key": "{ledgerCount} approved templates",
+  "where": [
+   "src/components/creator/views.tsx:304"
+  ]
+ },
+ {
+  "key": "{n} KB",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:169"
+  ]
+ },
+ {
+  "key": "{name} could not be read as a font. It may be damaged.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:73"
+  ]
+ },
+ {
+  "key": "{name} could not be read.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:75"
+  ]
+ },
+ {
+  "key": "{name} is already added.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:68"
+  ]
+ },
+ {
+  "key": "{name}: coming soon",
+  "where": [
+   "src/components/AppsMenu.tsx:60"
+  ]
+ },
+ {
+  "key": "{name}: over 2 MB. Choose a smaller file.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:67"
+  ]
+ },
+ {
+  "key": "{name}: use a .ttf, .otf, .woff or .woff2 file.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:66"
+  ]
+ },
+ {
+  "key": "{ordersCount} orders · {spent} in total",
+  "where": [
+   "src/components/design/views.tsx:217"
+  ]
+ },
+ {
+  "key": "{payoutsCount} payout",
+  "where": [
+   "src/components/creator/views.tsx:340"
+  ]
+ },
+ {
+  "key": "{payoutsCount} payouts",
+  "where": [
+   "src/components/creator/views.tsx:340"
+  ]
+ },
+ {
+  "key": "{school}. Student perks are on until {expires}. Verification lasts up to {months} months, then you apply again.",
+  "where": [
+   "src/components/student/StudentView.tsx:187"
+  ]
+ },
+ {
+  "key": "{shownCount} fonts",
+  "where": [
+   "src/components/fonts/FontsView.tsx:51"
+  ]
+ },
+ {
+  "key": "{shownCount} of {designsCount} designs",
+  "where": [
+   "src/components/design/views.tsx:149"
+  ]
+ },
+ {
+  "key": "{shownCount} of {templatesCount} templates",
+  "where": [
+   "src/components/creator/views.tsx:135"
+  ]
+ },
+ {
+  "key": "{toGo} more until you can request a payout. The minimum is {minPayout}.",
+  "where": [
+   "src/components/creator/views.tsx:91"
+  ]
+ },
+ {
+  "key": "@yourbrand",
+  "where": [
+   "src/data/creator-app.ts:67"
+  ]
+ },
+ {
+  "key": "× {label} · {total}",
+  "where": [
+   "src/components/design/parts.tsx:107"
+  ]
+ },
+ {
+  "key": "1 Oct",
+  "where": [
+   "src/data/creator-app.ts:61",
+   "src/data/fonts.ts:60"
+  ]
+ },
+ {
+  "key": "1. Bank account",
+  "where": [
+   "src/components/creator/views.tsx:235"
+  ]
+ },
+ {
+  "key": "10 Sep",
+  "where": [
+   "src/data/creator-app.ts:84"
+  ]
+ },
+ {
+  "key": "10-digit NUBAN",
+  "where": [
+   "src/components/creator/views.tsx:245"
+  ]
+ },
+ {
+  "key": "100 level",
+  "where": [
+   "src/data/student.ts:26",
+   "src/data/creators.ts:129"
+  ]
+ },
+ {
+  "key": "1080 × 1080 px",
+  "where": [
+   "src/data/creator-app.ts:25"
+  ]
+ },
+ {
+  "key": "1080 × 1920 px",
+  "where": [
+   "src/data/creator-app.ts:26",
+   "src/data/creator-app.ts:33"
+  ]
+ },
+ {
+  "key": "11 × 14 in",
+  "where": [
+   "src/data/creator-app.ts:19"
+  ]
+ },
+ {
+  "key": "11-digit BVN",
+  "where": [
+   "src/components/creator/views.tsx:258"
+  ]
+ },
+ {
+  "key": "11-digit National ID",
+  "where": [
+   "src/components/creator/views.tsx:257"
+  ]
+ },
+ {
+  "key": "12 Sep",
+  "where": [
+   "src/data/creator-app.ts:58"
+  ]
+ },
+ {
+  "key": "1280 × 720 px",
+  "where": [
+   "src/data/creator-app.ts:34"
+  ]
+ },
+ {
+  "key": "14 Sep",
+  "where": [
+   "src/data/creator-app.ts:64"
+  ]
+ },
+ {
+  "key": "15 Sep",
+  "where": [
+   "src/data/fonts.ts:58"
+  ]
+ },
+ {
+  "key": "15% off all services",
+  "where": [
+   "src/components/design/data.ts:69"
+  ]
+ },
+ {
+  "key": "16 Sep",
+  "where": [
+   "src/data/creator-app.ts:58",
+   "src/data/creator-app.ts:79"
+  ]
+ },
+ {
+  "key": "16:9 slides",
+  "where": [
+   "src/data/creator-app.ts:27"
+  ]
+ },
+ {
+  "key": "16:9 slides, shown on screen",
+  "where": [
+   "src/components/design/data.ts:28"
+  ]
+ },
+ {
+  "key": "18 Sep",
+  "where": [
+   "src/data/creator-app.ts:64"
+  ]
+ },
+ {
+  "key": "2 hours ago",
+  "where": [
+   "src/components/design/data.ts:48"
+  ]
+ },
+ {
+  "key": "2 Oct",
+  "where": [
+   "src/data/creator-app.ts:62",
+   "src/data/creator-app.ts:63",
+   "src/data/fonts.ts:59"
+  ]
+ },
+ {
+  "key": "2 Sep",
+  "where": [
+   "src/data/creator-app.ts:67",
+   "src/data/creator-app.ts:77"
+  ]
+ },
+ {
+  "key": "2 weeks ago",
+  "where": [
+   "src/components/design/data.ts:53"
+  ]
+ },
+ {
+  "key": "2. Verify it is you",
+  "where": [
+   "src/components/creator/views.tsx:253"
+  ]
+ },
+ {
+  "key": "20 Sep",
+  "where": [
+   "src/data/creator-app.ts:59",
+   "src/data/fonts.ts:58"
+  ]
+ },
+ {
+  "key": "20% off everything",
+  "where": [
+   "src/components/design/data.ts:67"
+  ]
+ },
+ {
+  "key": "200 level",
+  "where": [
+   "src/data/student.ts:26",
+   "src/data/creators.ts:129"
+  ]
+ },
+ {
+  "key": "23 Sep",
+  "where": [
+   "src/data/creator-app.ts:68"
+  ]
+ },
+ {
+  "key": "24 Sep",
+  "where": [
+   "src/data/creator-app.ts:59",
+   "src/data/creator-app.ts:80"
+  ]
+ },
+ {
+  "key": "27 Sep",
+  "where": [
+   "src/data/creator-app.ts:61",
+   "src/data/creator-app.ts:68",
+   "src/data/creator-app.ts:81"
+  ]
+ },
+ {
+  "key": "28 Sep",
+  "where": [
+   "src/data/fonts.ts:60"
+  ]
+ },
+ {
+  "key": "29 Sep",
+  "where": [
+   "src/data/creator-app.ts:60"
+  ]
+ },
+ {
+  "key": "3 × 3 in",
+  "where": [
+   "src/components/design/data.ts:139",
+   "src/data/creator-app.ts:16"
+  ]
+ },
+ {
+  "key": "3 days ago",
+  "where": [
+   "src/components/design/data.ts:50"
+  ]
+ },
+ {
+  "key": "3 Oct",
+  "where": [
+   "src/data/creator-app.ts:65"
+  ]
+ },
+ {
+  "key": "3 weeks ago",
+  "where": [
+   "src/components/design/data.ts:54"
+  ]
+ },
+ {
+  "key": "3.5 × 2 in",
+  "where": [
+   "src/components/design/data.ts:135",
+   "src/data/creator-app.ts:11"
+  ]
+ },
+ {
+  "key": "30 Aug",
+  "where": [
+   "src/data/creator-app.ts:67"
+  ]
+ },
+ {
+  "key": "30 Nov",
+  "where": [
+   "src/data/creator-app.ts:90"
+  ]
+ },
+ {
+  "key": "300 DPI · CMYK",
+  "where": [
+   "src/components/design/overlays.tsx:87"
+  ]
+ },
+ {
+  "key": "300 level",
+  "where": [
+   "src/data/student.ts:26",
+   "src/data/creators.ts:129"
+  ]
+ },
+ {
+  "key": "33 × 79 in with stand",
+  "where": [
+   "src/components/design/data.ts:20"
+  ]
+ },
+ {
+  "key": "4 × 2.5 in",
+  "where": [
+   "src/data/creator-app.ts:31"
+  ]
+ },
+ {
+  "key": "4 days ago",
+  "where": [
+   "src/components/design/data.ts:51"
+  ]
+ },
+ {
+  "key": "4 Sep",
+  "where": [
+   "src/data/creator-app.ts:66"
+  ]
+ },
+ {
+  "key": "400 level",
+  "where": [
+   "src/data/student.ts:26",
+   "src/data/creators.ts:129"
+  ]
+ },
+ {
+  "key": "5 × 7 in",
+  "where": [
+   "src/data/creator-app.ts:17",
+   "src/data/creator-app.ts:30"
+  ]
+ },
+ {
+  "key": "500 level",
+  "where": [
+   "src/data/student.ts:26",
+   "src/data/creators.ts:129"
+  ]
+ },
+ {
+  "key": "530+ free templates",
+  "where": [
+   "src/components/design/views.tsx:79"
+  ]
+ },
+ {
+  "key": "6 × 3 ft",
+  "where": [
+   "src/components/design/data.ts:137",
+   "src/data/creator-app.ts:14"
+  ]
+ },
+ {
+  "key": "6 × 3 ft, hemmed edges",
+  "where": [
+   "src/components/design/data.ts:19"
+  ]
+ },
+ {
+  "key": "600 level",
+  "where": [
+   "src/data/student.ts:26",
+   "src/data/creators.ts:129"
+  ]
+ },
+ {
+  "key": "8 Sep",
+  "where": [
+   "src/data/creator-app.ts:66",
+   "src/data/creator-app.ts:78"
+  ]
+ },
+ {
+  "key": "A design for me",
+  "where": [
+   "src/components/design/overlays.tsx:280"
+  ]
+ },
+ {
+  "key": "A font to submit",
+  "where": [
+   "src/components/design/overlays.tsx:282"
+  ]
+ },
+ {
+  "key": "A sample of the 530+ free templates. Pick one to start a design.",
+  "where": [
+   "src/components/design/views.tsx:201"
+  ]
+ },
+ {
+  "key": "A short description",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:149"
+  ]
+ },
+ {
+  "key": "A single image with the words baked in, so nothing can be edited.",
+  "where": [
+   "src/data/creators.ts:100"
+  ]
+ },
+ {
+  "key": "A template to submit",
+  "where": [
+   "src/components/design/overlays.tsx:281"
+  ]
+ },
+ {
+  "key": "A3",
+  "where": [
+   "src/components/design/data.ts:138",
+   "src/data/creator-app.ts:13",
+   "src/data/creator-app.ts:36"
+  ]
+ },
+ {
+  "key": "A4",
+  "where": [
+   "src/components/design/data.ts:141",
+   "src/data/creator-app.ts:20",
+   "src/data/creator-app.ts:21"
+  ]
+ },
+ {
+  "key": "A4 company paper",
+  "where": [
+   "src/components/design/data.ts:23"
+  ]
+ },
+ {
+  "key": "A4 cover page",
+  "where": [
+   "src/components/design/data.ts:27"
+  ]
+ },
+ {
+  "key": "A4 landscape",
+  "where": [
+   "src/data/creator-app.ts:24",
+   "src/data/creator-app.ts:37"
+  ]
+ },
+ {
+  "key": "A4 tri-fold",
+  "where": [
+   "src/data/creator-app.ts:28"
+  ]
+ },
+ {
+  "key": "A4, one or two pages",
+  "where": [
+   "src/components/design/data.ts:26"
+  ]
+ },
+ {
+  "key": "A5",
+  "where": [
+   "src/components/design/data.ts:136",
+   "src/data/creator-app.ts:18"
+  ]
+ },
+ {
+  "key": "A5 or A4",
+  "where": [
+   "src/data/creator-app.ts:12"
+  ]
+ },
+ {
+  "key": "Aa",
+  "where": [
+   "src/components/design/overlays.tsx:83",
+   "src/components/fonts/FontStudio.tsx:269",
+   "src/components/fonts/FontStudio.tsx:306"
+  ]
+ },
+ {
+  "key": "about 5 working days",
+  "where": [
+   "src/data/creator-app.ts:89"
+  ]
+ },
+ {
+  "key": "About 5 working days. We review quality, not quantity, so send your best work.",
+  "where": [
+   "src/data/creators.ts:120"
+  ]
+ },
+ {
+  "key": "Account",
+  "where": [
+   "src/components/design/DesignApp.tsx:149",
+   "src/components/design/DesignApp.tsx:190",
+   "src/components/design/views.tsx:250"
+  ]
+ },
+ {
+  "key": "Account & security",
+  "where": [
+   "src/components/design/data.ts:146"
+  ]
+ },
+ {
+  "key": "Account connected",
+  "where": [
+   "src/components/student/StudentView.tsx:180"
+  ]
+ },
+ {
+  "key": "Account name:",
+  "where": [
+   "src/components/creator/views.tsx:250"
+  ]
+ },
+ {
+  "key": "Account number",
+  "where": [
+   "src/components/creator/views.tsx:244"
+  ]
+ },
+ {
+  "key": "Actions",
+  "where": [
+   "src/components/design/overlays.tsx:197"
+  ]
+ },
+ {
+  "key": "Actions for {name}",
+  "where": [
+   "src/components/design/parts.tsx:66",
+   "src/components/creator/parts.tsx:43"
+  ]
+ },
+ {
+  "key": "Adaeze Okafor",
+  "where": [
+   "src/components/design/data.ts:48",
+   "src/data/creator-app.ts:59"
+  ]
+ },
+ {
+  "key": "Add a short bio so people know your style.",
+  "where": [
+   "src/components/creator/views.tsx:394"
+  ]
+ },
+ {
+  "key": "Add at least one font file.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:94"
+  ]
+ },
+ {
+  "key": "Add fonts for use without data",
+  "where": [
+   "src/components/design/views.tsx:87"
+  ]
+ },
+ {
+  "key": "Add your payout details first.",
+  "where": [
+   "src/components/creator/views.tsx:285"
+  ]
+ },
+ {
+  "key": "Add your payout details to request a payout. It takes about two minutes.",
+  "where": [
+   "src/components/creator/views.tsx:91"
+  ]
+ },
+ {
+  "key": "Add your school and ID once to unlock student perks.",
+  "where": [
+   "src/components/student/StudentView.tsx:220"
+  ]
+ },
+ {
+  "key": "Ade & Funmi",
+  "where": [
+   "src/components/design/data.ts:53",
+   "src/components/design/data.ts:81",
+   "src/data/creator-app.ts:66"
+  ]
+ },
+ {
+  "key": "Ade & Funmi — invitation",
+  "where": [
+   "src/components/design/data.ts:53"
+  ]
+ },
+ {
+  "key": "African-inspired",
+  "where": [
+   "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "AI assistant",
+  "where": [
+   "src/components/design/data.ts:102"
+  ]
+ },
+ {
+  "key": "AI usage",
+  "where": [
+   "src/components/design/data.ts:150"
+  ]
+ },
+ {
+  "key": "All",
+  "where": [
+   "src/components/design/views.tsx:133",
+   "src/components/creator/views.tsx:131",
+   "src/components/fonts/FontStudio.tsx:251"
+  ]
+ },
+ {
+  "key": "All apps",
+  "where": [
+   "src/components/AppsMenu.tsx:64"
+  ]
+ },
+ {
+  "key": "All files",
+  "where": [
+   "src/components/design/views.tsx:153"
+  ]
+ },
+ {
+  "key": "All images are high enough resolution",
+  "where": [
+   "src/components/design/overlays.tsx:134"
+  ]
+ },
+ {
+  "key": "All orders",
+  "where": [
+   "src/components/design/views.tsx:105"
+  ]
+ },
+ {
+  "key": "All tools",
+  "where": [
+   "src/components/design/views.tsx:122"
+  ]
+ },
+ {
+  "key": "All types",
+  "where": [
+   "src/components/creator/views.tsx:142"
+  ]
+ },
+ {
+  "key": "Amount",
+  "where": [
+   "src/components/creator/dialogs.tsx:217",
+   "src/components/creator/views.tsx:327",
+   "src/components/creator/views.tsx:341"
+  ]
+ },
+ {
+  "key": "Amounts shown here are examples. Ifiok sets the real amounts.",
+  "where": [
+   "src/components/creator/views.tsx:313"
+  ]
+ },
+ {
+  "key": "Any",
+  "where": [
+   "src/components/design/data.ts:142"
+  ]
+ },
+ {
+  "key": "Any design type",
+  "where": [
+   "src/components/creator/views.tsx:40"
+  ]
+ },
+ {
+  "key": "Any design type. If Ifiok approves it, you are paid.",
+  "where": [
+   "src/components/design/overlays.tsx:281"
+  ]
+ },
+ {
+  "key": "Anything we should know?",
+  "where": [
+   "src/components/creator/dialogs.tsx:193"
+  ]
+ },
+ {
+  "key": "Application under review",
+  "where": [
+   "src/components/student/StudentView.tsx:179"
+  ]
+ },
+ {
+  "key": "Apply again",
+  "where": [
+   "src/components/student/StudentView.tsx:83",
+   "src/components/student/StudentView.tsx:222"
+  ]
+ },
+ {
+  "key": "Approve",
+  "where": [
+   "src/components/student/StudentView.tsx:181",
+   "src/components/creator/dialogs.tsx:164",
+   "src/components/fonts/FontStudio.tsx:326"
+  ]
+ },
+ {
+  "key": "Approved",
+  "where": [
+   "src/components/creator/views.tsx:36",
+   "src/components/creator/views.tsx:68",
+   "src/components/creator/views.tsx:327"
+  ]
+ },
+ {
+  "key": "Approved {date}",
+  "where": [
+   "src/components/creator/views.tsx:318"
+  ]
+ },
+ {
+  "key": "Approved work and your payouts appear on your creator dashboard when you sign in.",
+  "where": [
+   "src/data/creators.ts:34"
+  ]
+ },
+ {
+  "key": "Approved. {amount} added to your earnings, and designers can now use it.",
+  "where": [
+   "src/components/creator/store.tsx:152"
+  ]
+ },
+ {
+  "key": "Approved. {amount} added to your earnings.",
+  "where": [
+   "src/components/creator/store.tsx:122"
+  ]
+ },
+ {
+  "key": "Approved. {bounty} (example) was added to your earnings.",
+  "where": [
+   "src/components/creator/dialogs.tsx:152"
+  ]
+ },
+ {
+  "key": "Are you a student? Get verified, it is free",
+  "where": [
+   "src/components/student/StudentView.tsx:219"
+  ]
+ },
+ {
+  "key": "Arrives today",
+  "where": [
+   "src/components/design/data.ts:88"
+  ]
+ },
+ {
+  "key": "Aso Ebi",
+  "where": [
+   "src/data/creator-app.ts:63"
+  ]
+ },
+ {
+  "key": "Aso Ebi Weekend Lettering",
+  "where": [
+   "src/data/creator-app.ts:63"
+  ]
+ },
+ {
+  "key": "Assignment",
+  "where": [
+   "src/components/design/data.ts:63"
+  ]
+ },
+ {
+  "key": "Assignment cover",
+  "where": [
+   "src/components/design/data.ts:27"
+  ]
+ },
+ {
+  "key": "Assignment Cover Page",
+  "where": [
+   "src/components/design/data.ts:63"
+  ]
+ },
+ {
+  "key": "Authentic kitchen",
+  "where": [
+   "src/components/design/data.ts:72"
+  ]
+ },
+ {
+  "key": "Available",
+  "where": [
+   "src/components/design/DesignApp.tsx:184",
+   "src/components/creator/views.tsx:35",
+   "src/components/creator/views.tsx:70"
+  ]
+ },
+ {
+  "key": "Available balance {available} naira. Open earnings",
+  "where": [
+   "src/components/design/DesignApp.tsx:184"
+  ]
+ },
+ {
+  "key": "Available now",
+  "where": [
+   "src/components/creator/views.tsx:301"
+  ]
+ },
+ {
+  "key": "Back",
+  "where": [
+   "src/components/student/StudentView.tsx:137",
+   "src/components/fonts/FontStudio.tsx:231"
+  ]
+ },
+ {
+  "key": "Balogun print shop",
+  "where": [
+   "src/components/design/data.ts:88"
+  ]
+ },
+ {
+  "key": "Bank",
+  "where": [
+   "src/components/creator/views.tsx:237"
+  ]
+ },
+ {
+  "key": "Banner",
+  "where": [
+   "src/components/design/data.ts:137"
+  ]
+ },
+ {
+  "key": "behance.net/yourname",
+  "where": [
+   "src/components/creator/views.tsx:405"
+  ]
+ },
+ {
+  "key": "Being processed",
+  "where": [
+   "src/components/creator/views.tsx:302"
+  ]
+ },
+ {
+  "key": "Bio",
+  "where": [
+   "src/components/creator/views.tsx:404"
+  ]
+ },
+ {
+  "key": "Black",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:11"
+  ]
+ },
+ {
+  "key": "Bleed",
+  "where": [
+   "src/components/design/overlays.tsx:86"
+  ]
+ },
+ {
+  "key": "Bleed {bleed}\" on all edges",
+  "where": [
+   "src/components/design/overlays.tsx:133"
+  ]
+ },
+ {
+  "key": "Blurry or stretched photos that will look poor once printed.",
+  "where": [
+   "src/data/creators.ts:101"
+  ]
+ },
+ {
+  "key": "Bold",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:11",
+   "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Bold Italic",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:11"
+  ]
+ },
+ {
+  "key": "Brand kit",
+  "where": [
+   "src/components/design/data.ts:99"
+  ]
+ },
+ {
+  "key": "Bring something in",
+  "where": [
+   "src/components/design/views.tsx:72"
+  ]
+ },
+ {
+  "key": "Brochure",
+  "where": [
+   "src/data/creator-app.ts:28"
+  ]
+ },
+ {
+  "key": "Browse photos and graphics you can use in your designs.",
+  "where": [
+   "src/components/design/data.ts:101"
+  ]
+ },
+ {
+  "key": "Browse templates",
+  "where": [
+   "src/data/student.ts:10"
+  ]
+ },
+ {
+  "key": "Build · Sell · Manage",
+  "where": [
+   "src/components/design/data.ts:71"
+  ]
+ },
+ {
+  "key": "Business",
+  "where": [
+   "src/components/design/data.ts:59",
+   "src/components/design/data.ts:71",
+   "src/components/design/data.ts:72"
+  ]
+ },
+ {
+  "key": "Business card",
+  "where": [
+   "src/components/design/data.ts:15",
+   "src/components/design/data.ts:135",
+   "src/data/creator-app.ts:11"
+  ]
+ },
+ {
+  "key": "Business proposal",
+  "where": [
+   "src/data/creator-app.ts:23"
+  ]
+ },
+ {
+  "key": "Buy and order print",
+  "where": [
+   "src/data/apps.ts:31"
+  ]
+ },
+ {
+  "key": "BVN",
+  "where": [
+   "src/components/creator/views.tsx:258"
+  ]
+ },
+ {
+  "key": "Cancel",
+  "where": [
+   "src/components/design/overlays.tsx:114",
+   "src/components/creator/dialogs.tsx:78",
+   "src/components/creator/dialogs.tsx:223"
+  ]
+ },
+ {
+  "key": "Cards, flyers, posters and more, to use or print.",
+  "where": [
+   "src/components/design/overlays.tsx:280"
+  ]
+ },
+ {
+  "key": "Cards, flyers, posters, CVs, social posts, presentations and more. Any design type.",
+  "where": [
+   "src/components/creator/views.tsx:64"
+  ]
+ },
+ {
+  "key": "Category",
+  "where": [
+   "src/components/design/views.tsx:203",
+   "src/components/fonts/FontStudio.tsx:137",
+   "src/components/fonts/FontStudio.tsx:221"
+  ]
+ },
+ {
+  "key": "Certificate",
+  "where": [
+   "src/data/creator-app.ts:24"
+  ]
+ },
+ {
+  "key": "Change account",
+  "where": [
+   "src/components/creator/views.tsx:203"
+  ]
+ },
+ {
+  "key": "Changes requested",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:14",
+   "src/data/creator-app.ts:46"
+  ]
+ },
+ {
+  "key": "Changes requested.",
+  "where": [
+   "src/components/creator/store.tsx:125",
+   "src/components/creator/store.tsx:155"
+  ]
+ },
+ {
+  "key": "Chat with the Ifiok team, voice notes included.",
+  "where": [
+   "src/components/design/data.ts:109"
+  ]
+ },
+ {
+  "key": "Check",
+  "where": [
+   "src/components/design/parts.tsx:80"
+  ]
+ },
+ {
+  "key": "Check account",
+  "where": [
+   "src/components/creator/views.tsx:249"
+  ]
+ },
+ {
+  "key": "Check the extra letters",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:181"
+  ]
+ },
+ {
+  "key": "Check your account first.",
+  "where": [
+   "src/components/creator/views.tsx:254"
+  ]
+ },
+ {
+  "key": "Checking…",
+  "where": [
+   "src/components/creator/views.tsx:249"
+  ]
+ },
+ {
+  "key": "Chidi Eze",
+  "where": [
+   "src/components/design/data.ts:51"
+  ]
+ },
+ {
+  "key": "Choose a category",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:139"
+  ]
+ },
+ {
+  "key": "Choose a category.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:91"
+  ]
+ },
+ {
+  "key": "Choose a size",
+  "where": [
+   "src/components/design/overlays.tsx:71"
+  ]
+ },
+ {
+  "key": "Choose font files",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:159"
+  ]
+ },
+ {
+  "key": "Choose level",
+  "where": [
+   "src/components/student/StudentView.tsx:101"
+  ]
+ },
+ {
+  "key": "Choose the option that fits.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:98"
+  ]
+ },
+ {
+  "key": "Choose your bank",
+  "where": [
+   "src/components/creator/views.tsx:239"
+  ]
+ },
+ {
+  "key": "Choose your bank.",
+  "where": [
+   "src/components/creator/views.tsx:210"
+  ]
+ },
+ {
+  "key": "Choose your level.",
+  "where": [
+   "src/components/student/StudentView.tsx:55"
+  ]
+ },
+ {
+  "key": "Church & events",
+  "where": [
+   "src/components/design/data.ts:59",
+   "src/components/design/data.ts:75",
+   "src/components/design/data.ts:76"
+  ]
+ },
+ {
+  "key": "CJC",
+  "where": [
+   "src/data/apps.ts:133"
+  ]
+ },
+ {
+  "key": "CLASS OF 2026",
+  "where": [
+   "src/components/design/data.ts:55",
+   "src/components/design/data.ts:80",
+   "src/data/creator-app.ts:60"
+  ]
+ },
+ {
+  "key": "Class of 2026 — T-shirt",
+  "where": [
+   "src/components/design/data.ts:55"
+  ]
+ },
+ {
+  "key": "Class of 2026 Poster",
+  "where": [
+   "src/data/creator-app.ts:60"
+  ]
+ },
+ {
+  "key": "Clean One-Page CV",
+  "where": [
+   "src/components/design/data.ts:61",
+   "src/data/creator-app.ts:61"
+  ]
+ },
+ {
+  "key": "Clean spacing and a complete character set. Approved.",
+  "where": [
+   "src/components/creator/store.tsx:150"
+  ]
+ },
+ {
+  "key": "Clean spacing and complete character set. Approved.",
+  "where": [
+   "src/data/fonts.ts:58"
+  ]
+ },
+ {
+  "key": "Clean, one page",
+  "where": [
+   "src/components/design/data.ts:61",
+   "src/data/creator-app.ts:61"
+  ]
+ },
+ {
+  "key": "Clear and easy to edit. Approved.",
+  "where": [
+   "src/components/creator/store.tsx:120",
+   "src/data/creator-app.ts:58"
+  ]
+ },
+ {
+  "key": "Clear filters",
+  "where": [
+   "src/components/design/views.tsx:174",
+   "src/components/creator/views.tsx:159",
+   "src/components/fonts/FontStudio.tsx:263"
+  ]
+ },
+ {
+  "key": "Close",
+  "where": [
+   "src/components/design/overlays.tsx:66",
+   "src/components/design/overlays.tsx:141",
+   "src/components/design/overlays.tsx:287"
+  ]
+ },
+ {
+  "key": "Close menu",
+  "where": [
+   "src/components/design/DesignApp.tsx:195"
+  ]
+ },
+ {
+  "key": "Collapse sidebar",
+  "where": [
+   "src/components/design/DesignApp.tsx:174"
+  ]
+ },
+ {
+  "key": "Colour",
+  "where": [
+   "src/components/design/overlays.tsx:95",
+   "src/components/creator/dialogs.tsx:69"
+  ]
+ },
+ {
+  "key": "Colour {c}",
+  "where": [
+   "src/components/design/overlays.tsx:98",
+   "src/components/creator/dialogs.tsx:71"
+  ]
+ },
+ {
+  "key": "Colour mode CMYK",
+  "where": [
+   "src/components/design/overlays.tsx:132"
+  ]
+ },
+ {
+  "key": "Coming soon",
+  "where": [
+   "src/components/student/StudentView.tsx:154",
+   "src/components/LangMenu.tsx:54"
+  ]
+ },
+ {
+  "key": "Common questions",
+  "where": [
+   "src/components/creator/views.tsx:373"
+  ]
+ },
+ {
+  "key": "Company Letterhead",
+  "where": [
+   "src/components/design/data.ts:73"
+  ]
+ },
+ {
+  "key": "Compress PDF",
+  "where": [
+   "src/components/design/data.ts:125"
+  ]
+ },
+ {
+  "key": "Concert Poster",
+  "where": [
+   "src/components/design/data.ts:77"
+  ]
+ },
+ {
+  "key": "Condensed",
+  "where": [
+   "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Confirm request",
+  "where": [
+   "src/components/creator/dialogs.tsx:224"
+  ]
+ },
+ {
+  "key": "Connected accounts",
+  "where": [
+   "src/components/design/data.ts:148"
+  ]
+ },
+ {
+  "key": "Connected to your Ifiok account. We already have your name and email.",
+  "where": [
+   "src/components/student/StudentView.tsx:93"
+  ]
+ },
+ {
+  "key": "Continue",
+  "where": [
+   "src/components/student/StudentView.tsx:138",
+   "src/components/fonts/FontStudio.tsx:233"
+  ]
+ },
+ {
+  "key": "Continue designing",
+  "where": [
+   "src/components/design/views.tsx:94"
+  ]
+ },
+ {
+  "key": "Continue to order",
+  "where": [
+   "src/components/design/overlays.tsx:177"
+  ]
+ },
+ {
+  "key": "Convocation Shirt",
+  "where": [
+   "src/data/creator-app.ts:68",
+   "src/data/creator-app.ts:81"
+  ]
+ },
+ {
+  "key": "Convocation T-shirt",
+  "where": [
+   "src/components/design/data.ts:80"
+  ]
+ },
+ {
+  "key": "Copied or traced designs",
+  "where": [
+   "src/data/creators.ts:99"
+  ]
+ },
+ {
+  "key": "Copy link",
+  "where": [
+   "src/components/creator/views.tsx:408"
+  ]
+ },
+ {
+  "key": "Course code · Matric no.",
+  "where": [
+   "src/components/design/data.ts:63"
+  ]
+ },
+ {
+  "key": "Cover letter",
+  "where": [
+   "src/data/creator-app.ts:21"
+  ]
+ },
+ {
+  "key": "CR80",
+  "where": [
+   "src/components/design/data.ts:140",
+   "src/data/creator-app.ts:15"
+  ]
+ },
+ {
+  "key": "CR80, portrait or landscape",
+  "where": [
+   "src/components/design/data.ts:22"
+  ]
+ },
+ {
+  "key": "Create",
+  "where": [
+   "src/components/design/DesignApp.tsx:196",
+   "src/data/apps.ts:32"
+  ]
+ },
+ {
+  "key": "Create a font",
+  "where": [
+   "src/components/creator/views.tsx:41",
+   "src/components/creator/views.tsx:65"
+  ]
+ },
+ {
+  "key": "Create a template",
+  "where": [
+   "src/components/creator/views.tsx:40",
+   "src/components/creator/views.tsx:64"
+  ]
+ },
+ {
+  "key": "Create design",
+  "where": [
+   "src/components/design/overlays.tsx:116"
+  ]
+ },
+ {
+  "key": "Create template",
+  "where": [
+   "src/components/creator/dialogs.tsx:79"
+  ]
+ },
+ {
+  "key": "Create templates",
+  "where": [
+   "src/data/creators.ts:32"
+  ]
+ },
+ {
+  "key": "Create, edit, sign and convert documents and PDFs.",
+  "where": [
+   "src/data/apps.ts:74"
+  ]
+ },
+ {
+  "key": "Created",
+  "where": [
+   "src/components/creator/dialogs.tsx:112",
+   "src/components/fonts/FontStudio.tsx:293"
+  ]
+ },
+ {
+  "key": "Created “{name}”",
+  "where": [
+   "src/components/design/DesignApp.tsx:110",
+   "src/components/design/DesignApp.tsx:258"
+  ]
+ },
+ {
+  "key": "Creator",
+  "where": [
+   "src/components/design/DesignApp.tsx:148",
+   "src/components/design/DesignApp.tsx:178"
+  ]
+ },
+ {
+  "key": "Creator menu",
+  "where": [
+   "src/components/design/DesignApp.tsx:195"
+  ]
+ },
+ {
+  "key": "Creator studio",
+  "where": [
+   "src/components/creator/views.tsx:32",
+   "src/components/creator/views.tsx:33",
+   "src/components/creator/views.tsx:62"
+  ]
+ },
+ {
+  "key": "Curriculum Vitae",
+  "where": [
+   "src/components/design/data.ts:61",
+   "src/data/creator-app.ts:61"
+  ]
+ },
+ {
+  "key": "Custom size",
+  "where": [
+   "src/components/design/views.tsx:67",
+   "src/components/design/data.ts:142"
+  ]
+ },
+ {
+  "key": "Custom size (inches)",
+  "where": [
+   "src/components/design/overlays.tsx:103"
+  ]
+ },
+ {
+  "key": "Customer Journey & Conversion",
+  "where": [
+   "src/data/apps.ts:132"
+  ]
+ },
+ {
+  "key": "CV / Resume",
+  "where": [
+   "src/components/design/data.ts:26",
+   "src/data/creator-app.ts:20"
+  ]
+ },
+ {
+  "key": "CVs, assignment covers, project posters and defence slides. Start one in seconds.",
+  "where": [
+   "src/components/design/DesignApp.tsx:212"
+  ]
+ },
+ {
+  "key": "CVs, cover letters, assignment covers, project posters and defence slides, ready to edit.",
+  "where": [
+   "src/data/student.ts:10"
+  ]
+ },
+ {
+  "key": "Data & storage",
+  "where": [
+   "src/components/design/data.ts:147"
+  ]
+ },
+ {
+  "key": "Date",
+  "where": [
+   "src/components/creator/views.tsx:341",
+   "src/components/creator/views.tsx:345"
+  ]
+ },
+ {
+  "key": "Decline",
+  "where": [
+   "src/components/student/StudentView.tsx:181"
+  ]
+ },
+ {
+  "key": "Declined.",
+  "where": [
+   "src/components/student/store.tsx:34"
+  ]
+ },
+ {
+  "key": "Delete",
+  "where": [
+   "src/components/design/overlays.tsx:148",
+   "src/components/design/parts.tsx:72",
+   "src/components/creator/dialogs.tsx:129"
+  ]
+ },
+ {
+  "key": "Deleted “{family}”",
+  "where": [
+   "src/components/creator/store.tsx:139"
+  ]
+ },
+ {
+  "key": "Deleted “{name}”",
+  "where": [
+   "src/components/design/DesignApp.tsx:121",
+   "src/components/creator/store.tsx:109"
+  ]
+ },
+ {
+  "key": "Delivered",
+  "where": [
+   "src/components/design/views.tsx:220",
+   "src/components/design/data.ts:44"
+  ]
+ },
+ {
+  "key": "Delivered 14 Sep",
+  "where": [
+   "src/components/design/data.ts:90"
+  ]
+ },
+ {
+  "key": "Delivered 2 Oct",
+  "where": [
+   "src/components/design/data.ts:89"
+  ]
+ },
+ {
+  "key": "Delivery by Fri 17 Oct",
+  "where": [
+   "src/components/design/data.ts:87"
+  ]
+ },
+ {
+  "key": "Department",
+  "where": [
+   "src/components/student/StudentView.tsx:99",
+   "src/components/student/StudentView.tsx:127"
+  ]
+ },
+ {
+  "key": "Department of Computer Science",
+  "where": [
+   "src/components/design/data.ts:64"
+  ]
+ },
+ {
+  "key": "DEPARTMENTAL WEEK",
+  "where": [
+   "src/components/design/data.ts:65"
+  ]
+ },
+ {
+  "key": "Departmental Week Poster",
+  "where": [
+   "src/components/design/data.ts:65"
+  ]
+ },
+ {
+  "key": "Describe a flyer and get a layout you can edit, not a flat picture.",
+  "where": [
+   "src/components/design/data.ts:102"
+  ]
+ },
+ {
+  "key": "Design and document work",
+  "where": [
+   "src/data/apps.ts:32"
+  ]
+ },
+ {
+  "key": "Design at real print size, then order the print.",
+  "where": [
+   "src/data/apps.ts:61"
+  ]
+ },
+ {
+  "key": "Design CVs, flyers, invoices, posters and more in the Ifiok editor, from your phone or a laptop.",
+  "where": [
+   "src/data/creators.ts:32"
+  ]
+ },
+ {
+  "key": "Design in {family}",
+  "where": [
+   "src/components/design/DesignApp.tsx:125"
+  ]
+ },
+ {
+  "key": "Design size",
+  "where": [
+   "src/components/design/overlays.tsx:72"
+  ]
+ },
+ {
+  "key": "Design with classmates",
+  "where": [
+   "src/data/student.ts:13"
+  ]
+ },
+ {
+  "key": "Design with this font",
+  "where": [
+   "src/components/fonts/FontsView.tsx:65",
+   "src/components/fonts/FontsView.tsx:90"
+  ]
+ },
+ {
+  "key": "Design your next template",
+  "where": [
+   "src/components/creator/views.tsx:411"
+  ]
+ },
+ {
+  "key": "Designers can click this font and start using it. Your one-off payment was added to your earnings.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:322"
+  ]
+ },
+ {
+  "key": "Designers click and use it",
+  "where": [
+   "src/components/creator/views.tsx:41"
+  ]
+ },
+ {
+  "key": "Designers click it and start using it. If approved, you are paid.",
+  "where": [
+   "src/components/design/overlays.tsx:282"
+  ]
+ },
+ {
+  "key": "Designs",
+  "where": [
+   "src/data/apps.ts:58"
+  ]
+ },
+ {
+  "key": "Details",
+  "where": [
+   "src/components/design/parts.tsx:69",
+   "src/components/creator/parts.tsx:46",
+   "src/components/fonts/FontStudio.tsx:32"
+  ]
+ },
+ {
+  "key": "Detty December",
+  "where": [
+   "src/data/creator-app.ts:90"
+  ]
+ },
+ {
+  "key": "DETTY DECEMBER",
+  "where": [
+   "src/data/creator-app.ts:65"
+  ]
+ },
+ {
+  "key": "Detty December Poster",
+  "where": [
+   "src/data/creator-app.ts:65"
+  ]
+ },
+ {
+  "key": "Die-cut vinyl",
+  "where": [
+   "src/components/design/data.ts:21"
+  ]
+ },
+ {
+  "key": "Discount Flyer",
+  "where": [
+   "src/components/design/data.ts:69"
+  ]
+ },
+ {
+  "key": "Dismiss",
+  "where": [
+   "src/components/design/overlays.tsx:269"
+  ]
+ },
+ {
+  "key": "Display",
+  "where": [
+   "src/data/fonts.ts:6",
+   "src/data/fonts.ts:50",
+   "src/data/fonts.ts:51"
+  ]
+ },
+ {
+  "key": "Display name",
+  "where": [
+   "src/components/creator/views.tsx:399"
+  ]
+ },
+ {
+  "key": "Do I need a laptop?",
+  "where": [
+   "src/data/creators.ts:122"
+  ]
+ },
+ {
+  "key": "Docs",
+  "where": [
+   "src/data/apps.ts:71"
+  ]
+ },
+ {
+  "key": "Documents",
+  "where": [
+   "src/components/design/data.ts:107",
+   "src/data/creator-app.ts:20",
+   "src/data/creator-app.ts:21"
+  ]
+ },
+ {
+  "key": "Doors open 6pm",
+  "where": [
+   "src/components/design/data.ts:77"
+  ]
+ },
+ {
+  "key": "Download CSV",
+  "where": [
+   "src/components/creator/views.tsx:341"
+  ]
+ },
+ {
+  "key": "Draft",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:14",
+   "src/components/design/data.ts:40",
+   "src/data/creator-app.ts:44"
+  ]
+ },
+ {
+  "key": "Duplicate",
+  "where": [
+   "src/components/design/overlays.tsx:147",
+   "src/components/design/parts.tsx:71",
+   "src/components/creator/dialogs.tsx:128"
+  ]
+ },
+ {
+  "key": "Duplicate and rework",
+  "where": [
+   "src/components/creator/dialogs.tsx:176"
+  ]
+ },
+ {
+  "key": "Duplicated",
+  "where": [
+   "src/components/design/DesignApp.tsx:114"
+  ]
+ },
+ {
+  "key": "Duplicated as a draft.",
+  "where": [
+   "src/components/creator/store.tsx:103"
+  ]
+ },
+ {
+  "key": "e.g. Archivo, DM Serif Display",
+  "where": [
+   "src/components/creator/dialogs.tsx:63",
+   "src/components/creator/dialogs.tsx:190"
+  ]
+ },
+ {
+  "key": "e.g. Aso Ebi Display",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:134"
+  ]
+ },
+ {
+  "key": "e.g. Mass Communication",
+  "where": [
+   "src/components/student/StudentView.tsx:99"
+  ]
+ },
+ {
+  "key": "Earn as a Campus Creator",
+  "where": [
+   "src/data/student.ts:12"
+  ]
+ },
+ {
+  "key": "Earned in total",
+  "where": [
+   "src/components/creator/views.tsx:304"
+  ]
+ },
+ {
+  "key": "Earnings",
+  "where": [
+   "src/components/design/DesignApp.tsx:149",
+   "src/components/creator/views.tsx:89",
+   "src/components/creator/views.tsx:286"
+  ]
+ },
+ {
+  "key": "Easy to edit",
+  "where": [
+   "src/data/creators.ts:98"
+  ]
+ },
+ {
+  "key": "Edit",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:309"
+  ]
+ },
+ {
+  "key": "Edit font",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:124"
+  ]
+ },
+ {
+  "key": "Edit in editor",
+  "where": [
+   "src/components/design/overlays.tsx:146",
+   "src/components/design/parts.tsx:70",
+   "src/components/creator/dialogs.tsx:127"
+  ]
+ },
+ {
+  "key": "Edit the same design together with your group, free.",
+  "where": [
+   "src/data/student.ts:13"
+  ]
+ },
+ {
+  "key": "Eighth day · Lagos",
+  "where": [
+   "src/components/design/data.ts:76"
+  ]
+ },
+ {
+  "key": "Elegant",
+  "where": [
+   "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Enter it in this month's theme:",
+  "where": [
+   "src/components/creator/dialogs.tsx:191"
+  ]
+ },
+ {
+  "key": "Enter the 10-digit account number.",
+  "where": [
+   "src/components/creator/views.tsx:211"
+  ]
+ },
+ {
+  "key": "Enter your department.",
+  "where": [
+   "src/components/student/StudentView.tsx:54"
+  ]
+ },
+ {
+  "key": "Enter your matric or student ID number.",
+  "where": [
+   "src/components/student/StudentView.tsx:58"
+  ]
+ },
+ {
+  "key": "Esc",
+  "where": [
+   "src/components/design/overlays.tsx:233"
+  ]
+ },
+ {
+  "key": "Event posters, parties and gift flyers",
+  "where": [
+   "src/data/creator-app.ts:90"
+  ]
+ },
+ {
+  "key": "Every font in it is one I am allowed to share.",
+  "where": [
+   "src/components/creator/dialogs.tsx:188"
+  ]
+ },
+ {
+  "key": "Every photo, icon and graphic is mine or licensed for templates.",
+  "where": [
+   "src/components/creator/dialogs.tsx:189"
+  ]
+ },
+ {
+  "key": "Example entry in review.",
+  "where": [
+   "src/data/fonts.ts:59"
+  ]
+ },
+ {
+  "key": "Example entry with feedback.",
+  "where": [
+   "src/data/fonts.ts:60"
+  ]
+ },
+ {
+  "key": "Example entry. Upload your own font file to replace it.",
+  "where": [
+   "src/data/fonts.ts:58"
+  ]
+ },
+ {
+  "key": "Example payout if approved",
+  "where": [
+   "src/components/creator/dialogs.tsx:56"
+  ]
+ },
+ {
+  "key": "Example price",
+  "where": [
+   "src/components/design/overlays.tsx:88"
+  ]
+ },
+ {
+  "key": "Example price. The final price is set in the live app at checkout.",
+  "where": [
+   "src/components/design/overlays.tsx:176"
+  ]
+ },
+ {
+  "key": "Expand sidebar",
+  "where": [
+   "src/components/design/DesignApp.tsx:174"
+  ]
+ },
+ {
+  "key": "Export or correct your data, clear cache",
+  "where": [
+   "src/components/design/data.ts:147"
+  ]
+ },
+ {
+  "key": "Extra letters",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:223",
+   "src/components/fonts/FontsView.tsx:99"
+  ]
+ },
+ {
+  "key": "ExtraBold",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:11"
+  ]
+ },
+ {
+  "key": "Faculty of Arts",
+  "where": [
+   "src/components/design/data.ts:55",
+   "src/data/creator-app.ts:60",
+   "src/data/creator-app.ts:68"
+  ]
+ },
+ {
+  "key": "Failed",
+  "where": [
+   "src/components/creator/views.tsx:347"
+  ]
+ },
+ {
+  "key": "Feedback",
+  "where": [
+   "src/components/creator/parts.tsx:57"
+  ]
+ },
+ {
+  "key": "Feedback from the Ifiok team",
+  "where": [
+   "src/components/creator/dialogs.tsx:142",
+   "src/components/fonts/FontStudio.tsx:318"
+  ]
+ },
+ {
+  "key": "Fewer",
+  "where": [
+   "src/components/design/overlays.tsx:170"
+  ]
+ },
+ {
+  "key": "Files",
+  "where": [
+   "src/components/design/DesignApp.tsx:149"
+  ]
+ },
+ {
+  "key": "Filter by status",
+  "where": [
+   "src/components/design/views.tsx:166",
+   "src/components/creator/views.tsx:151",
+   "src/components/fonts/FontStudio.tsx:259"
+  ]
+ },
+ {
+  "key": "Filter fonts",
+  "where": [
+   "src/components/fonts/FontsView.tsx:46"
+  ]
+ },
+ {
+  "key": "FLASH SALE",
+  "where": [
+   "src/components/design/data.ts:70"
+  ]
+ },
+ {
+  "key": "Flattened pictures",
+  "where": [
+   "src/data/creators.ts:100"
+  ]
+ },
+ {
+  "key": "Flex banner",
+  "where": [
+   "src/components/design/data.ts:19",
+   "src/data/creator-app.ts:14"
+  ]
+ },
+ {
+  "key": "Flex Banner — Sale",
+  "where": [
+   "src/components/design/data.ts:70"
+  ]
+ },
+ {
+  "key": "Flyer",
+  "where": [
+   "src/components/design/data.ts:136",
+   "src/data/creator-app.ts:12"
+  ]
+ },
+ {
+  "key": "Flyer A4",
+  "where": [
+   "src/components/design/data.ts:17"
+  ]
+ },
+ {
+  "key": "Flyer A5",
+  "where": [
+   "src/components/design/data.ts:16"
+  ]
+ },
+ {
+  "key": "Font and lettering templates",
+  "where": [
+   "src/components/creator/views.tsx:369"
+  ]
+ },
+ {
+  "key": "Font and lettering templates: use only fonts you may share, and list every font you used. Reviews take {reviewTime}.",
+  "where": [
+   "src/components/creator/views.tsx:115"
+  ]
+ },
+ {
+  "key": "Font files",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:32"
+  ]
+ },
+ {
+  "key": "Font name",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:133"
+  ]
+ },
+ {
+  "key": "Font pairing sheet",
+  "where": [
+   "src/data/creator-app.ts:37"
+  ]
+ },
+ {
+  "key": "Font templates",
+  "where": [
+   "src/data/creator-app.ts:35",
+   "src/data/creator-app.ts:36",
+   "src/data/creator-app.ts:37"
+  ]
+ },
+ {
+  "key": "Fonts",
+  "where": [
+   "src/components/design/DesignApp.tsx:149",
+   "src/components/fonts/FontsView.tsx:37",
+   "src/components/design/data.ts:98"
+  ]
+ },
+ {
+  "key": "Fonts designers can click and start using. {shownCount} of {fontsCount}.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:255"
+  ]
+ },
+ {
+  "key": "Fonts used",
+  "where": [
+   "src/components/creator/dialogs.tsx:62",
+   "src/components/creator/dialogs.tsx:190"
+  ]
+ },
+ {
+  "key": "For print shops: receive, print and deliver Ifiok orders.",
+  "where": [
+   "src/data/apps.ts:87"
+  ]
+ },
+ {
+  "key": "For your support",
+  "where": [
+   "src/components/design/data.ts:66"
+  ]
+ },
+ {
+  "key": "Founder · Okafor Bakes",
+  "where": [
+   "src/components/design/data.ts:48",
+   "src/data/creator-app.ts:59"
+  ]
+ },
+ {
+  "key": "Free for students",
+  "where": [
+   "src/components/student/StudentView.tsx:84",
+   "src/components/student/StudentView.tsx:171"
+  ]
+ },
+ {
+  "key": "Free PDF and QR tools that work on a phone.",
+  "where": [
+   "src/data/apps.ts:112"
+  ]
+ },
+ {
+  "key": "Free student tools",
+  "where": [
+   "src/data/student.ts:11"
+  ]
+ },
+ {
+  "key": "Free to use in your Ifiok designs.",
+  "where": [
+   "src/components/fonts/FontsView.tsx:114"
+  ]
+ },
+ {
+  "key": "Free tools",
+  "where": [
+   "src/components/design/views.tsx:122",
+   "src/components/design/overlays.tsx:201"
+  ]
+ },
+ {
+  "key": "Front print area",
+  "where": [
+   "src/components/design/data.ts:25"
+  ]
+ },
+ {
+  "key": "Full-page flyers",
+  "where": [
+   "src/components/design/data.ts:17"
+  ]
+ },
+ {
+  "key": "Get approved",
+  "where": [
+   "src/components/creator/views.tsx:309"
+  ]
+ },
+ {
+  "key": "Get approved by Ifiok",
+  "where": [
+   "src/data/creators.ts:33"
+  ]
+ },
+ {
+  "key": "Get paid",
+  "where": [
+   "src/components/creator/views.tsx:311"
+  ]
+ },
+ {
+  "key": "Give your font a name.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:90"
+  ]
+ },
+ {
+  "key": "Go to",
+  "where": [
+   "src/components/design/overlays.tsx:198"
+  ]
+ },
+ {
+  "key": "Good for",
+  "where": [
+   "src/components/fonts/FontsView.tsx:113"
+  ]
+ },
+ {
+  "key": "Good for body text",
+  "where": [
+   "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Good for posters",
+  "where": [
+   "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Google account, Google Drive, AI keys",
+  "where": [
+   "src/components/design/data.ts:148"
+  ]
+ },
+ {
+  "key": "Graduate · Lagos",
+  "where": [
+   "src/components/design/data.ts:62"
+  ]
+ },
+ {
+  "key": "Graduate CV with Photo",
+  "where": [
+   "src/components/design/data.ts:62"
+  ]
+ },
+ {
+  "key": "GRAND OPENING",
+  "where": [
+   "src/components/design/data.ts:49",
+   "src/components/design/data.ts:67",
+   "src/data/creator-app.ts:58"
+  ]
+ },
+ {
+  "key": "Grand Opening — flyer",
+  "where": [
+   "src/components/design/data.ts:49",
+   "src/components/design/data.ts:87"
+  ]
+ },
+ {
+  "key": "Grand Opening Flyer",
+  "where": [
+   "src/components/design/data.ts:67",
+   "src/data/creator-app.ts:58",
+   "src/data/creator-app.ts:79"
+  ]
+ },
+ {
+  "key": "Greeting card",
+  "where": [
+   "src/data/creator-app.ts:30"
+  ]
+ },
+ {
+  "key": "Grid",
+  "where": [
+   "src/components/design/views.tsx:162",
+   "src/components/creator/views.tsx:147"
+  ]
+ },
+ {
+  "key": "Grow",
+  "where": [
+   "src/components/design/DesignApp.tsx:148",
+   "src/data/apps.ts:34"
+  ]
+ },
+ {
+  "key": "Guidelines",
+  "where": [
+   "src/components/design/DesignApp.tsx:149",
+   "src/components/creator/views.tsx:111",
+   "src/components/creator/views.tsx:364"
+  ]
+ },
+ {
+  "key": "Handle",
+  "where": [
+   "src/components/creator/views.tsx:400"
+  ]
+ },
+ {
+  "key": "Handouts and inserts",
+  "where": [
+   "src/components/design/data.ts:16"
+  ]
+ },
+ {
+  "key": "Handwriting",
+  "where": [
+   "src/data/fonts.ts:6",
+   "src/data/fonts.ts:52",
+   "src/data/fonts.ts:60"
+  ]
+ },
+ {
+  "key": "Hausa",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:185",
+   "src/components/fonts/FontStudio.tsx:223",
+   "src/components/fonts/FontsView.tsx:103"
+  ]
+ },
+ {
+  "key": "Height",
+  "where": [
+   "src/components/design/overlays.tsx:106"
+  ]
+ },
+ {
+  "key": "Hi {first}, ready for class?",
+  "where": [
+   "src/components/design/DesignApp.tsx:212"
+  ]
+ },
+ {
+  "key": "Hi {first}. Make templates and fonts, submit them, and follow your earnings.",
+  "where": [
+   "src/components/creator/views.tsx:62"
+  ]
+ },
+ {
+  "key": "Hide this for now",
+  "where": [
+   "src/components/student/StudentView.tsx:223"
+  ]
+ },
+ {
+  "key": "History",
+  "where": [
+   "src/components/creator/views.tsx:286"
+  ]
+ },
+ {
+  "key": "Home",
+  "where": [
+   "src/components/design/data.ts:95"
+  ]
+ },
+ {
+  "key": "How do I get paid?",
+  "where": [
+   "src/data/creators.ts:121"
+  ]
+ },
+ {
+  "key": "How long does review take?",
+  "where": [
+   "src/data/creators.ts:120"
+  ]
+ },
+ {
+  "key": "How payouts work",
+  "where": [
+   "src/components/creator/views.tsx:307"
+  ]
+ },
+ {
+  "key": "I agree that Ifiok may verify my NIN, BVN and bank account with its verification partner to confirm my identity for creator payouts.",
+  "where": [
+   "src/components/creator/views.tsx:260"
+  ]
+ },
+ {
+  "key": "I am not in Nigeria. Can I join?",
+  "where": [
+   "src/data/creators.ts:124"
+  ]
+ },
+ {
+  "key": "I confirm I am a current student and that Ifiok may check my ID. Verification lasts up to a year, then I apply again.",
+  "where": [
+   "src/components/student/StudentView.tsx:131"
+  ]
+ },
+ {
+  "key": "I confirm this is true. I understand Ifiok may remove a font if this turns out to be wrong.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:208"
+  ]
+ },
+ {
+  "key": "I drew the letters myself or with my team.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:203"
+  ]
+ },
+ {
+  "key": "ID · 0001",
+  "where": [
+   "src/components/design/data.ts:78"
+  ]
+ },
+ {
+  "key": "ID card",
+  "where": [
+   "src/components/design/data.ts:22",
+   "src/components/design/data.ts:140",
+   "src/data/creator-app.ts:15"
+  ]
+ },
+ {
+  "key": "ID photo",
+  "where": [
+   "src/components/student/StudentView.tsx:129"
+  ]
+ },
+ {
+  "key": "If a letter looks different from the rest, or shows as a box, this font does not include it.",
+  "where": [
+   "src/components/fonts/FontsView.tsx:105"
+  ]
+ },
+ {
+  "key": "Ifiok apps",
+  "where": [
+   "src/components/AppsMenu.tsx:46",
+   "src/components/AppsMenu.tsx:51",
+   "src/components/AppsMenu.tsx:52"
+  ]
+ },
+ {
+  "key": "Ifiok decides what is included. The list may grow, and some perks are still on the way.",
+  "where": [
+   "src/components/student/StudentView.tsx:194"
+  ]
+ },
+ {
+  "key": "Ifiok Designs",
+  "where": [
+   "src/data/apps.ts:57"
+  ]
+ },
+ {
+  "key": "Ifiok Docs",
+  "where": [
+   "src/data/apps.ts:70"
+  ]
+ },
+ {
+  "key": "Ifiok makes approved fonts free for designers to use in their designs. We need to be sure you have the right to share this font.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:199"
+  ]
+ },
+ {
+  "key": "Ifiok Market",
+  "where": [
+   "src/data/apps.ts:44"
+  ]
+ },
+ {
+  "key": "Ifiok Partners",
+  "where": [
+   "src/data/apps.ts:96"
+  ]
+ },
+ {
+  "key": "Ifiok Printers",
+  "where": [
+   "src/data/apps.ts:83"
+  ]
+ },
+ {
+  "key": "Ifiok review",
+  "where": [
+   "src/components/student/StudentView.tsx:180",
+   "src/data/student.ts:23"
+  ]
+ },
+ {
+  "key": "Ifiok reviewer",
+  "where": [
+   "src/components/creator/dialogs.tsx:144",
+   "src/components/fonts/FontStudio.tsx:319"
+  ]
+ },
+ {
+  "key": "Ifiok Tools",
+  "where": [
+   "src/data/apps.ts:108"
+  ]
+ },
+ {
+  "key": "Ifiok Vigil",
+  "where": [
+   "src/data/apps.ts:120"
+  ]
+ },
+ {
+  "key": "Igbo",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:184",
+   "src/components/fonts/FontStudio.tsx:223",
+   "src/components/fonts/FontsView.tsx:102"
+  ]
+ },
+ {
+  "key": "In payout",
+  "where": [
+   "src/components/creator/views.tsx:302",
+   "src/components/creator/views.tsx:318",
+   "src/components/creator/views.tsx:329"
+  ]
+ },
+ {
+  "key": "In progress",
+  "where": [
+   "src/components/design/views.tsx:219"
+  ]
+ },
+ {
+  "key": "In review",
+  "where": [
+   "src/components/creator/dialogs.tsx:114",
+   "src/components/creator/dialogs.tsx:159",
+   "src/components/creator/views.tsx:37"
+  ]
+ },
+ {
+  "key": "Instagram post",
+  "where": [
+   "src/data/creator-app.ts:25"
+  ]
+ },
+ {
+  "key": "Instagram Quote Card",
+  "where": [
+   "src/data/creator-app.ts:67",
+   "src/data/creator-app.ts:77"
+  ]
+ },
+ {
+  "key": "Invitation",
+  "where": [
+   "src/components/design/data.ts:29",
+   "src/data/creator-app.ts:17"
+  ]
+ },
+ {
+  "key": "Invoice",
+  "where": [
+   "src/data/creator-app.ts:22"
+  ]
+ },
+ {
+  "key": "It is open source, or the owner has given me written permission.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:203"
+  ]
+ },
+ {
+  "key": "Italic",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:11"
+  ]
+ },
+ {
+  "key": "Join us",
+  "where": [
+   "src/components/design/data.ts:82"
+  ]
+ },
+ {
+  "key": "JPG, PNG or PDF, up to 5 MB",
+  "where": [
+   "src/components/student/StudentView.tsx:114"
+  ]
+ },
+ {
+  "key": "Just now",
+  "where": [
+   "src/components/design/DesignApp.tsx:107",
+   "src/components/design/DesignApp.tsx:113",
+   "src/components/creator/store.tsx:97"
+  ]
+ },
+ {
+  "key": "Keep going",
+  "where": [
+   "src/data/creator-app.ts:67"
+  ]
+ },
+ {
+  "key": "Keep track of your Android devices and raise the alarm.",
+  "where": [
+   "src/data/apps.ts:124"
+  ]
+ },
+ {
+  "key": "Keep your logos, colours and fonts in one kit, then apply them to any design in a tap.",
+  "where": [
+   "src/components/design/data.ts:99"
+  ]
+ },
+ {
+  "key": "Lagos · 2026",
+  "where": [
+   "src/data/creator-app.ts:65"
+  ]
+ },
+ {
+  "key": "Language",
+  "where": [
+   "src/components/LangMenu.tsx:30"
+  ]
+ },
+ {
+  "key": "Last month",
+  "where": [
+   "src/components/design/data.ts:55"
+  ]
+ },
+ {
+  "key": "Last week",
+  "where": [
+   "src/components/design/data.ts:52"
+  ]
+ },
+ {
+  "key": "Layout",
+  "where": [
+   "src/components/design/views.tsx:161",
+   "src/components/creator/views.tsx:146"
+  ]
+ },
+ {
+  "key": "Letterhead",
+  "where": [
+   "src/components/design/data.ts:23",
+   "src/components/design/data.ts:141"
+  ]
+ },
+ {
+  "key": "Lettering poster",
+  "where": [
+   "src/data/creator-app.ts:36"
+  ]
+ },
+ {
+  "key": "Level",
+  "where": [
+   "src/components/student/StudentView.tsx:100"
+  ]
+ },
+ {
+  "key": "Licence",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:32",
+   "src/components/fonts/FontStudio.tsx:200",
+   "src/components/fonts/FontStudio.tsx:224"
+  ]
+ },
+ {
+  "key": "Light",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:11",
+   "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Link pages",
+  "where": [
+   "src/components/design/data.ts:104"
+  ]
+ },
+ {
+  "key": "List",
+  "where": [
+   "src/components/design/views.tsx:163",
+   "src/components/creator/views.tsx:148"
+  ]
+ },
+ {
+  "key": "List the fonts you used.",
+  "where": [
+   "src/components/creator/dialogs.tsx:108"
+  ]
+ },
+ {
+  "key": "List the fonts you used. Only use fonts you are allowed to share.",
+  "where": [
+   "src/components/creator/dialogs.tsx:25"
+  ]
+ },
+ {
+  "key": "Live for designers",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:322"
+  ]
+ },
+ {
+  "key": "LIVE NIGHT",
+  "where": [
+   "src/components/design/data.ts:77"
+  ]
+ },
+ {
+  "key": "Logistics · Lagos",
+  "where": [
+   "src/components/design/data.ts:73"
+  ]
+ },
+ {
+  "key": "Logo",
+  "where": [
+   "src/data/creator-app.ts:32"
+  ]
+ },
+ {
+  "key": "Look at each line. Tick a language only if every letter shows properly in your font.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:187"
+  ]
+ },
+ {
+  "key": "Low-resolution images",
+  "where": [
+   "src/data/creators.ts:101"
+  ]
+ },
+ {
+  "key": "Main",
+  "where": [
+   "src/components/design/DesignApp.tsx:230"
+  ]
+ },
+ {
+  "key": "Make templates for Ifiok. If the team approves one, you are paid.",
+  "where": [
+   "src/data/student.ts:12"
+  ]
+ },
+ {
+  "key": "Mama Tolu Stores",
+  "where": [
+   "src/components/design/data.ts:54"
+  ]
+ },
+ {
+  "key": "Mama Tolu Stores — receipt book",
+  "where": [
+   "src/components/design/data.ts:54",
+   "src/components/design/data.ts:90"
+  ]
+ },
+ {
+  "key": "Marked as paid (prototype).",
+  "where": [
+   "src/components/creator/store.tsx:176"
+  ]
+ },
+ {
+  "key": "Market",
+  "where": [
+   "src/data/apps.ts:45"
+  ]
+ },
+ {
+  "key": "Marketing",
+  "where": [
+   "src/components/design/data.ts:59",
+   "src/components/design/data.ts:67",
+   "src/components/design/data.ts:68"
+  ]
+ },
+ {
+  "key": "Matric no.",
+  "where": [
+   "src/components/design/data.ts:79"
+  ]
+ },
+ {
+  "key": "Matric number",
+  "where": [
+   "src/components/student/StudentView.tsx:128"
+  ]
+ },
+ {
+  "key": "Matric or student ID number",
+  "where": [
+   "src/components/student/StudentView.tsx:110"
+  ]
+ },
+ {
+  "key": "Medium",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:11"
+  ]
+ },
+ {
+  "key": "MEGA SALE",
+  "where": [
+   "src/components/design/data.ts:50",
+   "src/components/design/data.ts:68"
+  ]
+ },
+ {
+  "key": "Mega Sale — flex banner",
+  "where": [
+   "src/components/design/data.ts:50",
+   "src/components/design/data.ts:88"
+  ]
+ },
+ {
+  "key": "Mega Sale Poster",
+  "where": [
+   "src/components/design/data.ts:68"
+  ]
+ },
+ {
+  "key": "Menu",
+  "where": [
+   "src/components/design/DesignApp.tsx:195"
+  ]
+ },
+ {
+  "key": "Merge PDF",
+  "where": [
+   "src/components/design/data.ts:123"
+  ]
+ },
+ {
+  "key": "Merge, split and compress PDFs, scan to PDF and make QR codes, right on your phone.",
+  "where": [
+   "src/data/student.ts:11"
+  ]
+ },
+ {
+  "key": "Mon to Fri · Main Hall",
+  "where": [
+   "src/components/design/data.ts:65"
+  ]
+ },
+ {
+  "key": "Mono",
+  "where": [
+   "src/data/fonts.ts:6",
+   "src/data/fonts.ts:53"
+  ]
+ },
+ {
+  "key": "More",
+  "where": [
+   "src/components/design/overlays.tsx:172"
+  ]
+ },
+ {
+  "key": "More to come",
+  "where": [
+   "src/data/apps.ts:143"
+  ]
+ },
+ {
+  "key": "My Creator Dashboard",
+  "where": [
+   "src/components/design/data.ts:151"
+  ]
+ },
+ {
+  "key": "My files",
+  "where": [
+   "src/components/design/views.tsx:149",
+   "src/components/design/data.ts:96"
+  ]
+ },
+ {
+  "key": "My fonts",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:255",
+   "src/components/design/data.ts:116"
+  ]
+ },
+ {
+  "key": "My orders",
+  "where": [
+   "src/components/design/views.tsx:262"
+  ]
+ },
+ {
+  "key": "My templates",
+  "where": [
+   "src/components/creator/views.tsx:135",
+   "src/components/design/data.ts:115"
+  ]
+ },
+ {
+  "key": "N",
+  "where": [
+   "src/components/design/overlays.tsx:197"
+  ]
+ },
+ {
+  "key": "Name",
+  "where": [
+   "src/components/design/overlays.tsx:91",
+   "src/components/creator/dialogs.tsx:58",
+   "src/components/fonts/FontStudio.tsx:220"
+  ]
+ },
+ {
+  "key": "Name A to Z",
+  "where": [
+   "src/components/design/views.tsx:159"
+  ]
+ },
+ {
+  "key": "Naming Ceremony",
+  "where": [
+   "src/components/design/data.ts:76"
+  ]
+ },
+ {
+  "key": "NCE",
+  "where": [
+   "src/data/student.ts:26",
+   "src/data/creators.ts:129"
+  ]
+ },
+ {
+  "key": "ND / HND",
+  "where": [
+   "src/data/student.ts:26",
+   "src/data/creators.ts:129"
+  ]
+ },
+ {
+  "key": "Needs your attention",
+  "where": [
+   "src/components/creator/views.tsx:75"
+  ]
+ },
+ {
+  "key": "New",
+  "where": [
+   "src/components/design/DesignApp.tsx:185",
+   "src/components/design/DesignApp.tsx:240",
+   "src/components/design/data.ts:98"
+  ]
+ },
+ {
+  "key": "New design",
+  "where": [
+   "src/components/design/DesignApp.tsx:185",
+   "src/components/design/DesignApp.tsx:234",
+   "src/components/design/DesignApp.tsx:246"
+  ]
+ },
+ {
+  "key": "New font",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:124",
+   "src/components/fonts/FontStudio.tsx:256",
+   "src/components/fonts/FontStudio.tsx:263"
+  ]
+ },
+ {
+  "key": "New template",
+  "where": [
+   "src/components/creator/dialogs.tsx:32",
+   "src/components/creator/views.tsx:136"
+  ]
+ },
+ {
+  "key": "Next step",
+  "where": [
+   "src/components/creator/dialogs.tsx:174"
+  ]
+ },
+ {
+  "key": "Nice layout. Approved.",
+  "where": [
+   "src/data/creator-app.ts:59"
+  ]
+ },
+ {
+  "key": "NIN",
+  "where": [
+   "src/components/creator/views.tsx:257"
+  ]
+ },
+ {
+  "key": "No designs match.",
+  "where": [
+   "src/components/design/views.tsx:174"
+  ]
+ },
+ {
+  "key": "No designs yet. Pick a size above to start one.",
+  "where": [
+   "src/components/design/views.tsx:99"
+  ]
+ },
+ {
+  "key": "No fonts match.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:263",
+   "src/components/fonts/FontsView.tsx:53"
+  ]
+ },
+ {
+  "key": "No fonts yet.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:263"
+  ]
+ },
+ {
+  "key": "No payouts yet.",
+  "where": [
+   "src/components/creator/views.tsx:348"
+  ]
+ },
+ {
+  "key": "No templates match.",
+  "where": [
+   "src/components/design/views.tsx:206",
+   "src/components/creator/views.tsx:159"
+  ]
+ },
+ {
+  "key": "No. ____",
+  "where": [
+   "src/components/design/data.ts:74",
+   "src/data/creator-app.ts:64"
+  ]
+ },
+ {
+  "key": "No. 0001",
+  "where": [
+   "src/components/design/data.ts:54"
+  ]
+ },
+ {
+  "key": "No. The editor works on a phone, and many creators design entirely on one.",
+  "where": [
+   "src/data/creators.ts:122"
+  ]
+ },
+ {
+  "key": "None ticked",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:223"
+  ]
+ },
+ {
+  "key": "Not approve",
+  "where": [
+   "src/components/creator/dialogs.tsx:166",
+   "src/components/fonts/FontStudio.tsx:326"
+  ]
+ },
+ {
+  "key": "Not approved",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:14",
+   "src/data/creator-app.ts:48"
+  ]
+ },
+ {
+  "key": "Not approved.",
+  "where": [
+   "src/components/creator/store.tsx:128",
+   "src/components/creator/store.tsx:158"
+  ]
+ },
+ {
+  "key": "Not in the list? Keep typing the full name and we will use it.",
+  "where": [
+   "src/components/student/StudentView.tsx:34"
+  ]
+ },
+ {
+  "key": "Not yet. Join the waitlist below and we will tell you when your country opens.",
+  "where": [
+   "src/data/creators.ts:124"
+  ]
+ },
+ {
+  "key": "Note for the reviewer (optional)",
+  "where": [
+   "src/components/creator/dialogs.tsx:192",
+   "src/components/fonts/FontStudio.tsx:332"
+  ]
+ },
+ {
+  "key": "Nothing found for “{q}”.",
+  "where": [
+   "src/components/design/overlays.tsx:236"
+  ]
+ },
+ {
+  "key": "Nothing here yet.",
+  "where": [
+   "src/components/design/views.tsx:222"
+  ]
+ },
+ {
+  "key": "Nothing yet. Earnings appear here when a template is approved.",
+  "where": [
+   "src/components/creator/views.tsx:330"
+  ]
+ },
+ {
+  "key": "Notifications",
+  "where": [
+   "src/components/design/DesignApp.tsx:188"
+  ]
+ },
+ {
+  "key": "Now",
+  "where": [
+   "src/components/student/StudentView.tsx:180"
+  ]
+ },
+ {
+  "key": "Numbered, duplicate sheets",
+  "where": [
+   "src/components/design/data.ts:24"
+  ]
+ },
+ {
+  "key": "Offers on printing for verified students, announced here when they are available.",
+  "where": [
+   "src/data/student.ts:14"
+  ]
+ },
+ {
+  "key": "Offline fonts",
+  "where": [
+   "src/components/design/views.tsx:87"
+  ]
+ },
+ {
+  "key": "Okafor Bakes — business card",
+  "where": [
+   "src/components/design/data.ts:48"
+  ]
+ },
+ {
+  "key": "Okafor Bakes Business Card",
+  "where": [
+   "src/data/creator-app.ts:59",
+   "src/data/creator-app.ts:80"
+  ]
+ },
+ {
+  "key": "On this phone",
+  "where": [
+   "src/components/design/views.tsx:154"
+  ]
+ },
+ {
+  "key": "Once you have {minPayout} available and your payout account is verified, request a payout.",
+  "where": [
+   "src/components/creator/views.tsx:310"
+  ]
+ },
+ {
+  "key": "Open",
+  "where": [
+   "src/components/design/overlays.tsx:267"
+  ]
+ },
+ {
+  "key": "Open .cdr without CorelDRAW",
+  "where": [
+   "src/components/design/views.tsx:83"
+  ]
+ },
+ {
+  "key": "Open {family}",
+  "where": [
+   "src/components/fonts/FontsView.tsx:58"
+  ]
+ },
+ {
+  "key": "Open {name}",
+  "where": [
+   "src/components/creator/parts.tsx:37"
+  ]
+ },
+ {
+  "key": "Open a file",
+  "where": [
+   "src/components/design/views.tsx:75"
+  ]
+ },
+ {
+  "key": "Open details for {name}",
+  "where": [
+   "src/components/design/parts.tsx:60"
+  ]
+ },
+ {
+  "key": "Open earnings",
+  "where": [
+   "src/components/creator/views.tsx:93"
+  ]
+ },
+ {
+  "key": "Open in editor",
+  "where": [
+   "src/components/design/DesignApp.tsx:110",
+   "src/components/design/DesignApp.tsx:258"
+  ]
+ },
+ {
+  "key": "Open in Ifiok Designs",
+  "where": [
+   "src/components/design/views.tsx:236"
+  ]
+ },
+ {
+  "key": "Open menu",
+  "where": [
+   "src/components/design/DesignApp.tsx:173"
+  ]
+ },
+ {
+  "key": "Open studio",
+  "where": [
+   "src/components/creator/views.tsx:33"
+  ]
+ },
+ {
+  "key": "Open the editor",
+  "where": [
+   "src/components/creator/views.tsx:411"
+  ]
+ },
+ {
+  "key": "Open tools",
+  "where": [
+   "src/data/student.ts:11"
+  ]
+ },
+ {
+  "key": "Opens in a new tab",
+  "where": [
+   "src/components/design/overlays.tsx:198",
+   "src/components/design/overlays.tsx:201"
+  ]
+ },
+ {
+  "key": "Order print",
+  "where": [
+   "src/components/design/overlays.tsx:167"
+  ]
+ },
+ {
+  "key": "Order printing online and have it delivered.",
+  "where": [
+   "src/data/apps.ts:48"
+  ]
+ },
+ {
+  "key": "Orders",
+  "where": [
+   "src/components/design/DesignApp.tsx:149",
+   "src/components/design/views.tsx:218"
+  ]
+ },
+ {
+  "key": "Orders & prints",
+  "where": [
+   "src/components/design/views.tsx:217",
+   "src/components/design/views.tsx:263",
+   "src/components/design/data.ts:106"
+  ]
+ },
+ {
+  "key": "Original templates such as CVs, flyers, invoices, posters, business cards and wedding invitations. Work you did not make yourself is not accepted.",
+  "where": [
+   "src/data/creators.ts:123"
+  ]
+ },
+ {
+  "key": "Original work",
+  "where": [
+   "src/data/creators.ts:96"
+  ]
+ },
+ {
+  "key": "Out for delivery",
+  "where": [
+   "src/components/design/data.ts:43"
+  ]
+ },
+ {
+  "key": "Paid",
+  "where": [
+   "src/components/creator/views.tsx:318",
+   "src/components/creator/views.tsx:329",
+   "src/components/creator/views.tsx:347"
+  ]
+ },
+ {
+  "key": "Paid out",
+  "where": [
+   "src/components/creator/views.tsx:71",
+   "src/components/creator/views.tsx:303"
+  ]
+ },
+ {
+  "key": "Paid to",
+  "where": [
+   "src/components/creator/dialogs.tsx:218"
+  ]
+ },
+ {
+  "key": "Partners",
+  "where": [
+   "src/data/apps.ts:97"
+  ]
+ },
+ {
+  "key": "Password, active sessions, delete account",
+  "where": [
+   "src/components/design/data.ts:146"
+  ]
+ },
+ {
+  "key": "Payout",
+  "where": [
+   "src/components/creator/dialogs.tsx:151"
+  ]
+ },
+ {
+  "key": "Payout account",
+  "where": [
+   "src/components/creator/views.tsx:196"
+  ]
+ },
+ {
+  "key": "Payout account removed. Add and verify a new one to request payouts.",
+  "where": [
+   "src/components/creator/store.tsx:163"
+  ]
+ },
+ {
+  "key": "Payout account verified.",
+  "where": [
+   "src/components/creator/store.tsx:162"
+  ]
+ },
+ {
+  "key": "Payout details",
+  "where": [
+   "src/components/creator/views.tsx:286"
+  ]
+ },
+ {
+  "key": "Payout of {available} requested.",
+  "where": [
+   "src/components/creator/store.tsx:171"
+  ]
+ },
+ {
+  "key": "Payout sections",
+  "where": [
+   "src/components/creator/views.tsx:294"
+  ]
+ },
+ {
+  "key": "Payouts go to this account by bank transfer. If you change it, it has to be verified again before your next payout.",
+  "where": [
+   "src/components/creator/views.tsx:202"
+  ]
+ },
+ {
+  "key": "PDF to Word",
+  "where": [
+   "src/components/design/data.ts:126"
+  ]
+ },
+ {
+  "key": "PDF, PowerPoint, images",
+  "where": [
+   "src/components/design/views.tsx:75"
+  ]
+ },
+ {
+  "key": "People",
+  "where": [
+   "src/components/design/data.ts:149"
+  ]
+ },
+ {
+  "key": "Perks on",
+  "where": [
+   "src/components/student/StudentView.tsx:180"
+  ]
+ },
+ {
+  "key": "Perks on until {expires}",
+  "where": [
+   "src/components/student/StudentView.tsx:209"
+  ]
+ },
+ {
+  "key": "Photo is under 300 DPI at this size",
+  "where": [
+   "src/components/design/data.ts:51"
+  ]
+ },
+ {
+  "key": "Photo of your student ID",
+  "where": [
+   "src/components/student/StudentView.tsx:111"
+  ]
+ },
+ {
+  "key": "Pick a font and start designing with it. Every font here is free to use in your designs.",
+  "where": [
+   "src/components/fonts/FontsView.tsx:37"
+  ]
+ },
+ {
+  "key": "Pick your school from the list, or type its full name.",
+  "where": [
+   "src/components/student/StudentView.tsx:53"
+  ]
+ },
+ {
+  "key": "Playful",
+  "where": [
+   "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Please check the spacing between letters and the accents on ẹ and ọ, then resubmit.",
+  "where": [
+   "src/components/creator/store.tsx:154"
+  ]
+ },
+ {
+  "key": "Please confirm before you continue.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:99"
+  ]
+ },
+ {
+  "key": "Please improve the contrast of the headline and keep all text editable, then resubmit.",
+  "where": [
+   "src/components/creator/store.tsx:124"
+  ]
+ },
+ {
+  "key": "Please tick all three confirmations first.",
+  "where": [
+   "src/components/creator/dialogs.tsx:107"
+  ]
+ },
+ {
+  "key": "Portfolio link (optional)",
+  "where": [
+   "src/components/creator/views.tsx:405"
+  ]
+ },
+ {
+  "key": "Poster",
+  "where": [
+   "src/components/design/data.ts:138",
+   "src/data/creator-app.ts:13"
+  ]
+ },
+ {
+  "key": "Poster A3",
+  "where": [
+   "src/components/design/data.ts:18"
+  ]
+ },
+ {
+  "key": "Postgraduate",
+  "where": [
+   "src/data/student.ts:26",
+   "src/data/creators.ts:129"
+  ]
+ },
+ {
+  "key": "Presentation",
+  "where": [
+   "src/components/design/data.ts:28",
+   "src/data/creator-app.ts:27"
+  ]
+ },
+ {
+  "key": "Preview size",
+  "where": [
+   "src/components/fonts/FontsView.tsx:42"
+  ]
+ },
+ {
+  "key": "Preview text",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:179",
+   "src/components/fonts/FontsView.tsx:41"
+  ]
+ },
+ {
+  "key": "Preview unavailable for this saved file. Add it again to preview.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:175"
+  ]
+ },
+ {
+  "key": "Print",
+  "where": [
+   "src/components/design/DesignApp.tsx:148",
+   "src/data/creator-app.ts:11",
+   "src/data/creator-app.ts:12"
+  ]
+ },
+ {
+  "key": "Print check",
+  "where": [
+   "src/components/design/overlays.tsx:158"
+  ]
+ },
+ {
+  "key": "Print orders in progress",
+  "where": [
+   "src/components/design/views.tsx:105"
+  ]
+ },
+ {
+  "key": "Print size, bleed and 300 DPI checked",
+  "where": [
+   "src/components/creator/dialogs.tsx:184"
+  ]
+ },
+ {
+  "key": "Print-ready",
+  "where": [
+   "src/data/creators.ts:97"
+  ]
+ },
+ {
+  "key": "Printers",
+  "where": [
+   "src/data/apps.ts:84"
+  ]
+ },
+ {
+  "key": "Printers and installers: join the Ifiok partner network.",
+  "where": [
+   "src/data/apps.ts:100"
+  ]
+ },
+ {
+  "key": "Printing",
+  "where": [
+   "src/components/design/data.ts:42"
+  ]
+ },
+ {
+  "key": "Processing",
+  "where": [
+   "src/components/creator/views.tsx:347"
+  ]
+ },
+ {
+  "key": "Product label",
+  "where": [
+   "src/data/creator-app.ts:31"
+  ]
+ },
+ {
+  "key": "Production · OKB-0041",
+  "where": [
+   "src/components/design/data.ts:51"
+  ]
+ },
+ {
+  "key": "Profile",
+  "where": [
+   "src/components/design/DesignApp.tsx:149",
+   "src/components/creator/views.tsx:388"
+  ]
+ },
+ {
+  "key": "Profile link copied.",
+  "where": [
+   "src/components/creator/views.tsx:408"
+  ]
+ },
+ {
+  "key": "Profile saved on this device.",
+  "where": [
+   "src/components/creator/views.tsx:407"
+  ]
+ },
+ {
+  "key": "Progress",
+  "where": [
+   "src/components/design/parts.tsx:19",
+   "src/components/student/StudentView.tsx:87",
+   "src/components/fonts/FontStudio.tsx:127"
+  ]
+ },
+ {
+  "key": "Project Defence",
+  "where": [
+   "src/components/design/data.ts:64"
+  ]
+ },
+ {
+  "key": "Project Defence Slides",
+  "where": [
+   "src/components/design/data.ts:64"
+  ]
+ },
+ {
+  "key": "Proof",
+  "where": [
+   "src/data/student.ts:22"
+  ]
+ },
+ {
+  "key": "Protect",
+  "where": [
+   "src/data/apps.ts:33"
+  ]
+ },
+ {
+  "key": "Prototype only: simulate the decision",
+  "where": [
+   "src/components/student/StudentView.tsx:181",
+   "src/components/creator/dialogs.tsx:162",
+   "src/components/fonts/FontStudio.tsx:325"
+  ]
+ },
+ {
+  "key": "Prototype: nothing is sent. Use any 11 digits.",
+  "where": [
+   "src/components/creator/views.tsx:263"
+  ]
+ },
+ {
+  "key": "QR generator",
+  "where": [
+   "src/components/design/data.ts:128"
+  ]
+ },
+ {
+  "key": "Quantity",
+  "where": [
+   "src/components/design/overlays.tsx:169"
+  ]
+ },
+ {
+  "key": "Raise the contrast of the headings and keep the contact details as real text, not an image. Then resubmit.",
+  "where": [
+   "src/data/creator-app.ts:61"
+  ]
+ },
+ {
+  "key": "Reading your files…",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:159"
+  ]
+ },
+ {
+  "key": "Ready to print",
+  "where": [
+   "src/components/design/data.ts:41"
+  ]
+ },
+ {
+  "key": "Ready to request",
+  "where": [
+   "src/components/creator/views.tsx:301"
+  ]
+ },
+ {
+  "key": "Real text and shapes that someone else can change in a few taps.",
+  "where": [
+   "src/data/creators.ts:98"
+  ]
+ },
+ {
+  "key": "Receipt",
+  "where": [
+   "src/components/design/data.ts:74",
+   "src/data/creator-app.ts:64"
+  ]
+ },
+ {
+  "key": "Receipt book",
+  "where": [
+   "src/components/design/data.ts:24",
+   "src/data/creator-app.ts:18"
+  ]
+ },
+ {
+  "key": "Receipt Book — Store",
+  "where": [
+   "src/components/design/data.ts:74",
+   "src/data/creator-app.ts:64"
+  ]
+ },
+ {
+  "key": "Recent earnings",
+  "where": [
+   "src/components/creator/views.tsx:316"
+  ]
+ },
+ {
+  "key": "Recent submissions",
+  "where": [
+   "src/components/creator/views.tsx:103"
+  ]
+ },
+ {
+  "key": "Recently edited",
+  "where": [
+   "src/components/design/views.tsx:159"
+  ]
+ },
+ {
+  "key": "Reference",
+  "where": [
+   "src/components/creator/views.tsx:341",
+   "src/components/creator/views.tsx:345"
+  ]
+ },
+ {
+  "key": "Regular",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:11"
+  ]
+ },
+ {
+  "key": "Remove",
+  "where": [
+   "src/components/design/overlays.tsx:83"
+  ]
+ },
+ {
+  "key": "Remove {family} from saved",
+  "where": [
+   "src/components/fonts/FontsView.tsx:63"
+  ]
+ },
+ {
+  "key": "Remove {name}",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:170"
+  ]
+ },
+ {
+  "key": "Remove any file that could not be read.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:95"
+  ]
+ },
+ {
+  "key": "Request a payout",
+  "where": [
+   "src/components/creator/dialogs.tsx:212",
+   "src/components/creator/views.tsx:310"
+  ]
+ },
+ {
+  "key": "Request changes",
+  "where": [
+   "src/components/creator/dialogs.tsx:165",
+   "src/components/fonts/FontStudio.tsx:326"
+  ]
+ },
+ {
+  "key": "Request payout",
+  "where": [
+   "src/components/creator/views.tsx:291"
+  ]
+ },
+ {
+  "key": "Resolution",
+  "where": [
+   "src/components/design/overlays.tsx:87"
+  ]
+ },
+ {
+  "key": "Resolution 300 DPI",
+  "where": [
+   "src/components/design/overlays.tsx:131"
+  ]
+ },
+ {
+  "key": "Restaurant menu",
+  "where": [
+   "src/data/creator-app.ts:29"
+  ]
+ },
+ {
+  "key": "Resubmit",
+  "where": [
+   "src/components/creator/dialogs.tsx:196",
+   "src/components/fonts/FontStudio.tsx:333"
+  ]
+ },
+ {
+  "key": "Resubmit for review",
+  "where": [
+   "src/components/creator/dialogs.tsx:182",
+   "src/components/fonts/FontStudio.tsx:331"
+  ]
+ },
+ {
+  "key": "Retro",
+  "where": [
+   "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Review",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:32"
+  ]
+ },
+ {
+  "key": "RidgeHaus",
+  "where": [
+   "src/components/design/data.ts:71"
+  ]
+ },
+ {
+  "key": "RidgeHaus Business Card",
+  "where": [
+   "src/components/design/data.ts:71"
+  ]
+ },
+ {
+  "key": "Right now the program is open to verified students in Nigeria, NYSC corps members, and individual creators. It is free to join.",
+  "where": [
+   "src/data/creators.ts:118"
+  ]
+ },
+ {
+  "key": "Right size, 300 DPI images, enough bleed, and text that is not too close to the edge.",
+  "where": [
+   "src/data/creators.ts:97"
+  ]
+ },
+ {
+  "key": "Roll-up banner",
+  "where": [
+   "src/components/design/data.ts:20"
+  ]
+ },
+ {
+  "key": "Rounded",
+  "where": [
+   "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Sample data and example amounts. Your real templates, fonts and earnings load from the live app.",
+  "where": [
+   "src/components/design/DesignApp.tsx:227"
+  ]
+ },
+ {
+  "key": "Sample data. Your real designs, orders and templates load from the live app.",
+  "where": [
+   "src/components/design/DesignApp.tsx:227"
+  ]
+ },
+ {
+  "key": "Sample open-source font shown for the prototype.",
+  "where": [
+   "src/components/fonts/FontsView.tsx:114"
+  ]
+ },
+ {
+  "key": "Sans",
+  "where": [
+   "src/data/fonts.ts:6",
+   "src/data/fonts.ts:42",
+   "src/data/fonts.ts:43"
+  ]
+ },
+ {
+  "key": "Saturday · 10am",
+  "where": [
+   "src/data/creator-app.ts:58"
+  ]
+ },
+ {
+  "key": "Saturday · Asọ-ẹbí",
+  "where": [
+   "src/components/design/data.ts:81"
+  ]
+ },
+ {
+  "key": "Saturday 12 July · 10am",
+  "where": [
+   "src/components/design/data.ts:49"
+  ]
+ },
+ {
+  "key": "Save",
+  "where": [
+   "src/components/fonts/FontsView.tsx:91"
+  ]
+ },
+ {
+  "key": "Save {family}",
+  "where": [
+   "src/components/fonts/FontsView.tsx:63"
+  ]
+ },
+ {
+  "key": "Save and verify",
+  "where": [
+   "src/components/creator/views.tsx:262"
+  ]
+ },
+ {
+  "key": "Save draft",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:236"
+  ]
+ },
+ {
+  "key": "Save profile",
+  "where": [
+   "src/components/creator/views.tsx:407"
+  ]
+ },
+ {
+  "key": "Saved",
+  "where": [
+   "src/components/fonts/FontsView.tsx:49",
+   "src/components/fonts/FontsView.tsx:91"
+  ]
+ },
+ {
+  "key": "Saved as a draft.",
+  "where": [
+   "src/components/design/DesignApp.tsx:261"
+  ]
+ },
+ {
+  "key": "Scan to PDF",
+  "where": [
+   "src/components/design/data.ts:127"
+  ]
+ },
+ {
+  "key": "School",
+  "where": [
+   "src/components/student/StudentView.tsx:97",
+   "src/components/student/StudentView.tsx:126",
+   "src/components/creator/views.tsx:401"
+  ]
+ },
+ {
+  "key": "School & ID",
+  "where": [
+   "src/components/design/data.ts:59",
+   "src/components/design/data.ts:78",
+   "src/components/design/data.ts:79"
+  ]
+ },
+ {
+  "key": "School and ID sent",
+  "where": [
+   "src/components/student/StudentView.tsx:180"
+  ]
+ },
+ {
+  "key": "Script",
+  "where": [
+   "src/data/fonts.ts:6",
+   "src/data/fonts.ts:48",
+   "src/data/fonts.ts:49"
+  ]
+ },
+ {
+  "key": "Scroll left",
+  "where": [
+   "src/components/design/views.tsx:32"
+  ]
+ },
+ {
+  "key": "Scroll right",
+  "where": [
+   "src/components/design/views.tsx:34"
+  ]
+ },
+ {
+  "key": "Search",
+  "where": [
+   "src/components/design/DesignApp.tsx:180",
+   "src/components/design/overlays.tsx:214",
+   "src/components/design/overlays.tsx:227"
+  ]
+ },
+ {
+  "key": "Search designs, templates and tools",
+  "where": [
+   "src/components/design/views.tsx:53"
+  ]
+ },
+ {
+  "key": "Search designs, templates, tools and pages",
+  "where": [
+   "src/components/design/overlays.tsx:226"
+  ]
+ },
+ {
+  "key": "Search fonts",
+  "where": [
+   "src/components/fonts/FontsView.tsx:40"
+  ]
+ },
+ {
+  "key": "Search templates",
+  "where": [
+   "src/components/design/views.tsx:202"
+  ]
+ },
+ {
+  "key": "Search your designs",
+  "where": [
+   "src/components/design/views.tsx:157"
+  ]
+ },
+ {
+  "key": "Search your designs, templates…",
+  "where": [
+   "src/components/design/DesignApp.tsx:181"
+  ]
+ },
+ {
+  "key": "Search your fonts",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:258"
+  ]
+ },
+ {
+  "key": "Search your templates",
+  "where": [
+   "src/components/creator/views.tsx:139"
+  ]
+ },
+ {
+  "key": "Secure what you own",
+  "where": [
+   "src/data/apps.ts:33"
+  ]
+ },
+ {
+  "key": "See all",
+  "where": [
+   "src/components/design/views.tsx:94",
+   "src/components/design/views.tsx:114",
+   "src/components/creator/views.tsx:103"
+  ]
+ },
+ {
+  "key": "See how customers go from first visit to paid order.",
+  "where": [
+   "src/data/apps.ts:136"
+  ]
+ },
+ {
+  "key": "See how much AI you have used this month",
+  "where": [
+   "src/components/design/data.ts:150"
+  ]
+ },
+ {
+  "key": "See it in Earnings",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:322"
+  ]
+ },
+ {
+  "key": "See it in Payouts",
+  "where": [
+   "src/components/creator/dialogs.tsx:153"
+  ]
+ },
+ {
+  "key": "See status",
+  "where": [
+   "src/components/student/StudentView.tsx:222"
+  ]
+ },
+ {
+  "key": "See the program",
+  "where": [
+   "src/data/student.ts:12"
+  ]
+ },
+ {
+  "key": "See your payout",
+  "where": [
+   "src/data/creators.ts:34"
+  ]
+ },
+ {
+  "key": "Sell",
+  "where": [
+   "src/data/apps.ts:31"
+  ]
+ },
+ {
+  "key": "SemiBold",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:11"
+  ]
+ },
+ {
+  "key": "Sent to your account",
+  "where": [
+   "src/components/creator/views.tsx:303"
+  ]
+ },
+ {
+  "key": "Serif",
+  "where": [
+   "src/data/fonts.ts:6",
+   "src/data/fonts.ts:45",
+   "src/data/fonts.ts:46"
+  ]
+ },
+ {
+  "key": "Set up payouts",
+  "where": [
+   "src/components/creator/views.tsx:93",
+   "src/components/creator/views.tsx:230",
+   "src/components/creator/views.tsx:293"
+  ]
+ },
+ {
+  "key": "Settings",
+  "where": [
+   "src/components/design/data.ts:108"
+  ]
+ },
+ {
+  "key": "Share your designs",
+  "where": [
+   "src/components/design/data.ts:149"
+  ]
+ },
+ {
+  "key": "Sidebar",
+  "where": [
+   "src/components/design/DesignApp.tsx:194"
+  ]
+ },
+ {
+  "key": "Sign up and verify",
+  "where": [
+   "src/data/creators.ts:31"
+  ]
+ },
+ {
+  "key": "Simulate paid",
+  "where": [
+   "src/components/creator/views.tsx:347"
+  ]
+ },
+ {
+  "key": "Size",
+  "where": [
+   "src/components/design/overlays.tsx:85",
+   "src/components/creator/dialogs.tsx:55"
+  ]
+ },
+ {
+  "key": "Size {label}",
+  "where": [
+   "src/components/fonts/FontsView.tsx:43"
+  ]
+ },
+ {
+  "key": "so far",
+  "where": [
+   "src/components/creator/views.tsx:71"
+  ]
+ },
+ {
+  "key": "Social",
+  "where": [
+   "src/data/creator-app.ts:25",
+   "src/data/creator-app.ts:26",
+   "src/data/creator-app.ts:32"
+  ]
+ },
+ {
+  "key": "soon",
+  "where": [
+   "src/components/LangMenu.tsx:56"
+  ]
+ },
+ {
+  "key": "Soon",
+  "where": [
+   "src/components/AppsMenu.tsx:56"
+  ]
+ },
+ {
+  "key": "Sort",
+  "where": [
+   "src/components/design/views.tsx:158"
+  ]
+ },
+ {
+  "key": "Special Offer",
+  "where": [
+   "src/components/design/data.ts:69"
+  ]
+ },
+ {
+  "key": "Spice Route",
+  "where": [
+   "src/components/design/data.ts:72"
+  ]
+ },
+ {
+  "key": "Spice Route Card",
+  "where": [
+   "src/components/design/data.ts:72"
+  ]
+ },
+ {
+  "key": "Split PDF",
+  "where": [
+   "src/components/design/data.ts:124"
+  ]
+ },
+ {
+  "key": "Square",
+  "where": [
+   "src/data/creator-app.ts:32"
+  ]
+ },
+ {
+  "key": "Staff",
+  "where": [
+   "src/components/design/data.ts:78"
+  ]
+ },
+ {
+  "key": "Staff ID — Okafor Bakes",
+  "where": [
+   "src/components/design/data.ts:51"
+  ]
+ },
+ {
+  "key": "Staff ID Card",
+  "where": [
+   "src/components/design/data.ts:78"
+  ]
+ },
+ {
+  "key": "Standard 3.5 × 2 in",
+  "where": [
+   "src/components/design/data.ts:15"
+  ]
+ },
+ {
+  "key": "Start a new design",
+  "where": [
+   "src/components/design/views.tsx:55"
+  ]
+ },
+ {
+  "key": "Start a template",
+  "where": [
+   "src/components/creator/views.tsx:99"
+  ]
+ },
+ {
+  "key": "Start over (prototype)",
+  "where": [
+   "src/components/student/StudentView.tsx:196"
+  ]
+ },
+ {
+  "key": "Start typing your school's name",
+  "where": [
+   "src/components/student/StudentView.tsx:23"
+  ]
+ },
+ {
+  "key": "Status",
+  "where": [
+   "src/components/design/overlays.tsx:152",
+   "src/components/creator/dialogs.tsx:133",
+   "src/components/creator/views.tsx:327"
+  ]
+ },
+ {
+  "key": "Step {n} of 4 · {name}",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:124"
+  ]
+ },
+ {
+  "key": "Stephen Fredabel",
+  "where": [
+   "src/components/creator/store.tsx:58"
+  ]
+ },
+ {
+  "key": "Stephenfredabel",
+  "where": [
+   "src/components/design/data.ts:131"
+  ]
+ },
+ {
+  "key": "Sticker",
+  "where": [
+   "src/components/design/data.ts:139",
+   "src/data/creator-app.ts:16"
+  ]
+ },
+ {
+  "key": "Sticker (SAV)",
+  "where": [
+   "src/components/design/data.ts:21"
+  ]
+ },
+ {
+  "key": "Stock images",
+  "where": [
+   "src/components/design/data.ts:101"
+  ]
+ },
+ {
+  "key": "Story",
+  "where": [
+   "src/data/creator-app.ts:26"
+  ]
+ },
+ {
+  "key": "Student",
+  "where": [
+   "src/components/design/DesignApp.tsx:179",
+   "src/components/student/StudentView.tsx:208",
+   "src/components/student/StudentView.tsx:216"
+  ]
+ },
+ {
+  "key": "Student ID Card",
+  "where": [
+   "src/components/design/data.ts:79"
+  ]
+ },
+ {
+  "key": "Student perks",
+  "where": [
+   "src/components/design/DesignApp.tsx:54",
+   "src/components/design/DesignApp.tsx:149",
+   "src/components/student/StudentView.tsx:170"
+  ]
+ },
+ {
+  "key": "Student print offers",
+  "where": [
+   "src/data/student.ts:14"
+  ]
+ },
+ {
+  "key": "Student templates",
+  "where": [
+   "src/data/student.ts:10"
+  ]
+ },
+ {
+  "key": "Studio",
+  "where": [
+   "src/components/design/DesignApp.tsx:149"
+  ]
+ },
+ {
+  "key": "Style",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:172"
+  ]
+ },
+ {
+  "key": "Styles",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:222",
+   "src/components/fonts/FontsView.tsx:108"
+  ]
+ },
+ {
+  "key": "Submit for review",
+  "where": [
+   "src/components/student/StudentView.tsx:138",
+   "src/components/creator/dialogs.tsx:182",
+   "src/components/creator/dialogs.tsx:196"
+  ]
+ },
+ {
+  "key": "Submit templates, track earnings, request payouts",
+  "where": [
+   "src/components/design/data.ts:151"
+  ]
+ },
+ {
+  "key": "Submitted",
+  "where": [
+   "src/components/creator/dialogs.tsx:113",
+   "src/components/fonts/FontStudio.tsx:294"
+  ]
+ },
+ {
+  "key": "Submitted {submitted}. {school}. The Ifiok team usually replies within a few working days, and we will let you know here.",
+  "where": [
+   "src/components/student/StudentView.tsx:179"
+  ]
+ },
+ {
+  "key": "Submitted. The Ifiok team will review it.",
+  "where": [
+   "src/components/creator/store.tsx:114"
+  ]
+ },
+ {
+  "key": "Submitted. The Ifiok team will review your font.",
+  "where": [
+   "src/components/design/DesignApp.tsx:261",
+   "src/components/creator/store.tsx:144"
+  ]
+ },
+ {
+  "key": "Submitted. The Ifiok team will review your student ID.",
+  "where": [
+   "src/components/student/store.tsx:31"
+  ]
+ },
+ {
+  "key": "Summary",
+  "where": [
+   "src/components/creator/views.tsx:286"
+  ]
+ },
+ {
+  "key": "Sunday 9am",
+  "where": [
+   "src/data/creator-app.ts:62"
+  ]
+ },
+ {
+  "key": "Sunday 9am · Surulere",
+  "where": [
+   "src/components/design/data.ts:52"
+  ]
+ },
+ {
+  "key": "Sunday service",
+  "where": [
+   "src/components/design/data.ts:75"
+  ]
+ },
+ {
+  "key": "Support",
+  "where": [
+   "src/components/design/data.ts:109"
+  ]
+ },
+ {
+  "key": "Supports the extra letters used in these languages",
+  "where": [
+   "src/components/fonts/parts.tsx:23"
+  ]
+ },
+ {
+  "key": "Surulere print shop",
+  "where": [
+   "src/components/design/data.ts:89"
+  ]
+ },
+ {
+  "key": "SwiftHaul",
+  "where": [
+   "src/components/design/data.ts:73"
+  ]
+ },
+ {
+  "key": "T-shirt print",
+  "where": [
+   "src/components/design/data.ts:25",
+   "src/data/creator-app.ts:19"
+  ]
+ },
+ {
+  "key": "Tags",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:145"
+  ]
+ },
+ {
+  "key": "Take the photo in good light and make sure your name and photo are readable.",
+  "where": [
+   "src/components/student/StudentView.tsx:118"
+  ]
+ },
+ {
+  "key": "Tap to replace",
+  "where": [
+   "src/components/student/StudentView.tsx:114"
+  ]
+ },
+ {
+  "key": "Tap to upload your school ID",
+  "where": [
+   "src/components/student/StudentView.tsx:114"
+  ]
+ },
+ {
+  "key": "Template",
+  "where": [
+   "src/components/creator/views.tsx:327"
+  ]
+ },
+ {
+  "key": "Template gallery",
+  "where": [
+   "src/components/design/views.tsx:79"
+  ]
+ },
+ {
+  "key": "Templates",
+  "where": [
+   "src/components/design/DesignApp.tsx:149",
+   "src/components/design/views.tsx:201",
+   "src/components/design/overlays.tsx:200"
+  ]
+ },
+ {
+  "key": "templates and fonts",
+  "where": [
+   "src/components/creator/views.tsx:36",
+   "src/components/creator/views.tsx:68"
+  ]
+ },
+ {
+  "key": "Text is editable",
+  "where": [
+   "src/components/creator/dialogs.tsx:185"
+  ]
+ },
+ {
+  "key": "Thank you",
+  "where": [
+   "src/components/design/data.ts:66"
+  ]
+ },
+ {
+  "key": "Thank-You Card",
+  "where": [
+   "src/components/design/data.ts:66"
+  ]
+ },
+ {
+  "key": "Thanksgiving",
+  "where": [
+   "src/components/design/data.ts:75"
+  ]
+ },
+ {
+  "key": "Thanksgiving Programme",
+  "where": [
+   "src/components/design/data.ts:75",
+   "src/data/creator-app.ts:62"
+  ]
+ },
+ {
+  "key": "Thanksgiving Service",
+  "where": [
+   "src/components/design/data.ts:52",
+   "src/data/creator-app.ts:62"
+  ]
+ },
+ {
+  "key": "Thanksgiving Service — programme",
+  "where": [
+   "src/components/design/data.ts:52",
+   "src/components/design/data.ts:89"
+  ]
+ },
+ {
+  "key": "That file is over 5 MB. Choose a smaller photo.",
+  "where": [
+   "src/components/student/StudentView.tsx:69"
+  ]
+ },
+ {
+  "key": "The Ifiok team is reviewing this font. Reviews take about 5 working days.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:324"
+  ]
+ },
+ {
+  "key": "The Ifiok team is reviewing this template. Reviews take {reviewTime}.",
+  "where": [
+   "src/components/creator/dialogs.tsx:160"
+  ]
+ },
+ {
+  "key": "The Ifiok team reviews each payout request and pays by bank transfer to your verified account. You can follow it on the History tab.",
+  "where": [
+   "src/components/creator/dialogs.tsx:220"
+  ]
+ },
+ {
+  "key": "The Ifiok team reviews every font. If it is approved, a one-off payment is added to your earnings.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:226"
+  ]
+ },
+ {
+  "key": "The Ifiok team reviews every submission for quality, originality and print readiness.",
+  "where": [
+   "src/data/creators.ts:33"
+  ]
+ },
+ {
+  "key": "The Ifiok team. Every submission is reviewed for quality, originality and print readiness before it is approved.",
+  "where": [
+   "src/data/creators.ts:119"
+  ]
+ },
+ {
+  "key": "The layout is too close to an existing template. Please make it your own and try again.",
+  "where": [
+   "src/data/creator-app.ts:64"
+  ]
+ },
+ {
+  "key": "The letters ẹ and ọ are missing their dots. Please add them, or remove the Yorùbá tick, then resubmit.",
+  "where": [
+   "src/data/fonts.ts:60"
+  ]
+ },
+ {
+  "key": "Theme",
+  "where": [
+   "src/components/design/DesignApp.tsx:197"
+  ]
+ },
+ {
+  "key": "This is my own original work.",
+  "where": [
+   "src/components/creator/dialogs.tsx:187"
+  ]
+ },
+ {
+  "key": "This is the only time we ask for bank details. They stay private and are used only to pay you.",
+  "where": [
+   "src/components/creator/views.tsx:232"
+  ]
+ },
+ {
+  "key": "This is too close to an existing template. Please make it your own.",
+  "where": [
+   "src/components/creator/store.tsx:127"
+  ]
+ },
+ {
+  "key": "This is your public creator page.",
+  "where": [
+   "src/components/creator/views.tsx:388"
+  ]
+ },
+ {
+  "key": "This month's theme",
+  "where": [
+   "src/components/creator/views.tsx:96"
+  ]
+ },
+ {
+  "key": "This screen is part of the live app. The prototype shows Home, My files, Templates and Orders.",
+  "where": [
+   "src/components/design/views.tsx:235"
+  ]
+ },
+ {
+  "key": "This weekend only",
+  "where": [
+   "src/components/design/data.ts:70"
+  ]
+ },
+ {
+  "key": "to request",
+  "where": [
+   "src/components/creator/views.tsx:35",
+   "src/components/creator/views.tsx:70"
+  ]
+ },
+ {
+  "key": "Today",
+  "where": [
+   "src/components/creator/store.tsx:113",
+   "src/components/creator/store.tsx:120",
+   "src/components/creator/store.tsx:121"
+  ]
+ },
+ {
+  "key": "Together",
+  "where": [
+   "src/components/design/data.ts:82"
+  ]
+ },
+ {
+  "key": "Tools",
+  "where": [
+   "src/data/apps.ts:109"
+  ]
+ },
+ {
+  "key": "Total",
+  "where": [
+   "src/components/creator/views.tsx:332"
+  ]
+ },
+ {
+  "key": "Track in the live app",
+  "where": [
+   "src/components/design/parts.tsx:114"
+  ]
+ },
+ {
+  "key": "Trackable QR",
+  "where": [
+   "src/components/design/data.ts:103"
+  ]
+ },
+ {
+  "key": "Traditional wedding",
+  "where": [
+   "src/components/design/data.ts:53",
+   "src/data/creator-app.ts:66"
+  ]
+ },
+ {
+  "key": "Traditional Wedding",
+  "where": [
+   "src/components/design/data.ts:81"
+  ]
+ },
+ {
+  "key": "Try another word or clear a filter.",
+  "where": [
+   "src/components/fonts/FontsView.tsx:53"
+  ]
+ },
+ {
+  "key": "Try another word or status.",
+  "where": [
+   "src/components/design/views.tsx:174",
+   "src/components/creator/views.tsx:159",
+   "src/components/fonts/FontStudio.tsx:263"
+  ]
+ },
+ {
+  "key": "Try another word.",
+  "where": [
+   "src/components/design/views.tsx:206"
+  ]
+ },
+ {
+  "key": "Try it in a design",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:308"
+  ]
+ },
+ {
+  "key": "Try your own words",
+  "where": [
+   "src/components/fonts/FontsView.tsx:93"
+  ]
+ },
+ {
+  "key": "Type",
+  "where": [
+   "src/components/creator/dialogs.tsx:54",
+   "src/components/creator/views.tsx:140"
+  ]
+ },
+ {
+  "key": "Type here",
+  "where": [
+   "src/components/fonts/FontsView.tsx:93"
+  ]
+ },
+ {
+  "key": "Type specimen",
+  "where": [
+   "src/data/creator-app.ts:35"
+  ]
+ },
+ {
+  "key": "Type your own words to preview",
+  "where": [
+   "src/components/fonts/FontsView.tsx:41"
+  ]
+ },
+ {
+  "key": "Understand your customers",
+  "where": [
+   "src/data/apps.ts:34"
+  ]
+ },
+ {
+  "key": "Undo",
+  "where": [
+   "src/components/design/DesignApp.tsx:121",
+   "src/components/design/overlays.tsx:268",
+   "src/components/creator/store.tsx:109"
+  ]
+ },
+ {
+  "key": "University of Ibadan",
+  "where": [
+   "src/components/design/data.ts:80"
+  ]
+ },
+ {
+  "key": "Unlocks when you are verified",
+  "where": [
+   "src/components/student/StudentView.tsx:154"
+  ]
+ },
+ {
+  "key": "Untitled {label}",
+  "where": [
+   "src/components/design/overlays.tsx:92",
+   "src/components/creator/dialogs.tsx:59"
+  ]
+ },
+ {
+  "key": "Up to 40% off · Balogun Market",
+  "where": [
+   "src/components/design/data.ts:50"
+  ]
+ },
+ {
+  "key": "Up to 70% off",
+  "where": [
+   "src/components/design/data.ts:68"
+  ]
+ },
+ {
+  "key": "Upload a clear photo of your student ID card.",
+  "where": [
+   "src/components/student/StudentView.tsx:59"
+  ]
+ },
+ {
+  "key": "Upload a font file to get started.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:263"
+  ]
+ },
+ {
+  "key": "Upload your font files. Once approved, designers can click it and start using it.",
+  "where": [
+   "src/components/creator/views.tsx:65"
+  ]
+ },
+ {
+  "key": "Uploads",
+  "where": [
+   "src/components/design/data.ts:100"
+  ]
+ },
+ {
+  "key": "Use a photo (JPG or PNG) or a PDF.",
+  "where": [
+   "src/components/student/StudentView.tsx:68"
+  ]
+ },
+ {
+  "key": "Use only fonts you are allowed to share, such as open-source fonts or fonts licensed for templates. List every font you used when you submit. Keep the text editable so others can change the words.",
+  "where": [
+   "src/components/creator/views.tsx:370"
+  ]
+ },
+ {
+  "key": "Use only fonts you may share: open-source fonts or fonts licensed for templates.",
+  "where": [
+   "src/components/creator/dialogs.tsx:64"
+  ]
+ },
+ {
+  "key": "Use template {name}",
+  "where": [
+   "src/components/design/parts.tsx:90"
+  ]
+ },
+ {
+  "key": "Use your Ifiok account and confirm you are a student, a corps member or an individual creator.",
+  "where": [
+   "src/data/creators.ts:31"
+  ]
+ },
+ {
+  "key": "Using",
+  "where": [
+   "src/components/design/overlays.tsx:83"
+  ]
+ },
+ {
+  "key": "Verified",
+  "where": [
+   "src/components/creator/views.tsx:200"
+  ]
+ },
+ {
+  "key": "Verified student",
+  "where": [
+   "src/components/student/StudentView.tsx:209"
+  ]
+ },
+ {
+  "key": "Verified. Your student perks are on.",
+  "where": [
+   "src/components/student/store.tsx:33"
+  ]
+ },
+ {
+  "key": "Verify",
+  "where": [
+   "src/components/design/DesignApp.tsx:54"
+  ]
+ },
+ {
+  "key": "Verify now",
+  "where": [
+   "src/components/student/StudentView.tsx:222"
+  ]
+ },
+ {
+  "key": "Verify once with your school ID and unlock Ifiok’s student perks.",
+  "where": [
+   "src/components/student/StudentView.tsx:172"
+  ]
+ },
+ {
+  "key": "Verify once with your school ID and unlock student perks.",
+  "where": [
+   "src/components/design/data.ts:105"
+  ]
+ },
+ {
+  "key": "Verify once with your school ID and unlock your student perks. Your ID is only used to confirm you are a student.",
+  "where": [
+   "src/components/student/StudentView.tsx:85"
+  ]
+ },
+ {
+  "key": "Verify you are a student",
+  "where": [
+   "src/components/student/StudentView.tsx:83"
+  ]
+ },
+ {
+  "key": "Verifying…",
+  "where": [
+   "src/components/creator/views.tsx:262"
+  ]
+ },
+ {
+  "key": "View",
+  "where": [
+   "src/components/design/overlays.tsx:198"
+  ]
+ },
+ {
+  "key": "View CorelDRAW",
+  "where": [
+   "src/components/design/views.tsx:83"
+  ]
+ },
+ {
+  "key": "View design",
+  "where": [
+   "src/components/design/parts.tsx:113"
+  ]
+ },
+ {
+  "key": "Vigil",
+  "where": [
+   "src/data/apps.ts:121"
+  ]
+ },
+ {
+  "key": "waiting on Ifiok",
+  "where": [
+   "src/components/creator/views.tsx:37",
+   "src/components/creator/views.tsx:69"
+  ]
+ },
+ {
+  "key": "Walls and notice boards",
+  "where": [
+   "src/components/design/data.ts:18"
+  ]
+ },
+ {
+  "key": "We are checking your ID",
+  "where": [
+   "src/components/student/StudentView.tsx:179"
+  ]
+ },
+ {
+  "key": "We could not confirm you have the right to share this font.",
+  "where": [
+   "src/components/creator/store.tsx:157"
+  ]
+ },
+ {
+  "key": "We could not read your student ID. Please upload a clear, well-lit photo of the front of the card and apply again.",
+  "where": [
+   "src/components/student/store.tsx:34"
+  ]
+ },
+ {
+  "key": "We could not verify you yet",
+  "where": [
+   "src/components/student/StudentView.tsx:176"
+  ]
+ },
+ {
+  "key": "We could not verify your ID yet",
+  "where": [
+   "src/components/student/StudentView.tsx:219"
+  ]
+ },
+ {
+  "key": "We need your consent to verify your identity.",
+  "where": [
+   "src/components/creator/views.tsx:221"
+  ]
+ },
+ {
+  "key": "We need your OK to check your ID.",
+  "where": [
+   "src/components/student/StudentView.tsx:61"
+  ]
+ },
+ {
+  "key": "We review the request and pay by bank transfer to your verified account.",
+  "where": [
+   "src/components/creator/views.tsx:311"
+  ]
+ },
+ {
+  "key": "We will let you know here.",
+  "where": [
+   "src/components/student/StudentView.tsx:220"
+  ]
+ },
+ {
+  "key": "Wedding Invitation — Gold",
+  "where": [
+   "src/data/creator-app.ts:66",
+   "src/data/creator-app.ts:78"
+  ]
+ },
+ {
+  "key": "Weddings",
+  "where": [
+   "src/components/design/data.ts:59",
+   "src/components/design/data.ts:81",
+   "src/components/design/data.ts:82"
+  ]
+ },
+ {
+  "key": "Weddings, naming, launches",
+  "where": [
+   "src/components/design/data.ts:29"
+  ]
+ },
+ {
+  "key": "Weekend",
+  "where": [
+   "src/data/creator-app.ts:63"
+  ]
+ },
+ {
+  "key": "Welcome back, {first}",
+  "where": [
+   "src/components/design/views.tsx:49"
+  ]
+ },
+ {
+  "key": "Welcome, Oluwaseun",
+  "where": [
+   "src/components/design/data.ts:76"
+  ]
+ },
+ {
+  "key": "What are you making?",
+  "where": [
+   "src/components/design/overlays.tsx:287"
+  ]
+ },
+ {
+  "key": "What can I submit?",
+  "where": [
+   "src/data/creators.ts:123"
+  ]
+ },
+ {
+  "key": "What inspired it? Where does it look best?",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:150"
+  ]
+ },
+ {
+  "key": "What is it good for?",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:144"
+  ]
+ },
+ {
+  "key": "What reviewers look for. Reviews take {reviewTime}.",
+  "where": [
+   "src/components/creator/views.tsx:364"
+  ]
+ },
+ {
+  "key": "What will you design today?",
+  "where": [
+   "src/components/design/views.tsx:50"
+  ]
+ },
+ {
+  "key": "What you get",
+  "where": [
+   "src/components/student/StudentView.tsx:192"
+  ]
+ },
+ {
+  "key": "WhatsApp status",
+  "where": [
+   "src/data/creator-app.ts:33"
+  ]
+ },
+ {
+  "key": "When the Ifiok team approves a template, a one-off payment for it is added to your available balance.",
+  "where": [
+   "src/components/creator/views.tsx:309"
+  ]
+ },
+ {
+  "key": "Where should we pay you?",
+  "where": [
+   "src/components/creator/views.tsx:231"
+  ]
+ },
+ {
+  "key": "Where your files are",
+  "where": [
+   "src/components/design/views.tsx:152"
+  ]
+ },
+ {
+  "key": "White Wedding",
+  "where": [
+   "src/components/design/data.ts:82"
+  ]
+ },
+ {
+  "key": "Who approves my templates?",
+  "where": [
+   "src/data/creators.ts:119"
+  ]
+ },
+ {
+  "key": "Who can apply?",
+  "where": [
+   "src/data/creators.ts:118"
+  ]
+ },
+ {
+  "key": "Wide",
+  "where": [
+   "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Width",
+  "where": [
+   "src/components/design/overlays.tsx:105"
+  ]
+ },
+ {
+  "key": "Work that copies another designer, a brand or a template from somewhere else.",
+  "where": [
+   "src/data/creators.ts:99"
+  ]
+ },
+ {
+  "key": "Yaba print shop",
+  "where": [
+   "src/components/design/data.ts:87",
+   "src/components/design/data.ts:90"
+  ]
+ },
+ {
+  "key": "Yesterday",
+  "where": [
+   "src/components/design/data.ts:49"
+  ]
+ },
+ {
+  "key": "Yorùbá",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:183",
+   "src/components/fonts/FontStudio.tsx:223",
+   "src/components/fonts/FontsView.tsx:101"
+  ]
+ },
+ {
+  "key": "Yorùbá, Igbo & Hausa marks",
+  "where": [
+   "src/components/fonts/FontsView.tsx:48"
+  ]
+ },
+ {
+  "key": "You",
+  "where": [
+   "src/components/creator/dialogs.tsx:144",
+   "src/components/fonts/FontStudio.tsx:319"
+  ]
+ },
+ {
+  "key": "You are a verified student",
+  "where": [
+   "src/components/student/StudentView.tsx:187"
+  ]
+ },
+ {
+  "key": "You are all caught up.",
+  "where": [
+   "src/components/design/DesignApp.tsx:188"
+  ]
+ },
+ {
+  "key": "You are here",
+  "where": [
+   "src/components/AppsMenu.tsx:56"
+  ]
+ },
+ {
+  "key": "You are verified, {first}",
+  "where": [
+   "src/components/student/StudentView.tsx:171"
+  ]
+ },
+ {
+  "key": "You can add up to 6 files.",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:65"
+  ]
+ },
+ {
+  "key": "You can duplicate this template, rework it and submit it again.",
+  "where": [
+   "src/components/creator/dialogs.tsx:175"
+  ]
+ },
+ {
+  "key": "You can request a payout now.",
+  "where": [
+   "src/components/creator/views.tsx:91"
+  ]
+ },
+ {
+  "key": "You made it yourself, and the fonts, photos and icons in it are ones you may use.",
+  "where": [
+   "src/data/creators.ts:96"
+  ]
+ },
+ {
+  "key": "You need {amount} available to request a payout.",
+  "where": [
+   "src/components/creator/views.tsx:285"
+  ]
+ },
+ {
+  "key": "Your BVN is 11 digits.",
+  "where": [
+   "src/components/creator/views.tsx:220"
+  ]
+ },
+ {
+  "key": "Your designs",
+  "where": [
+   "src/components/design/overlays.tsx:199"
+  ]
+ },
+ {
+  "key": "Your earnings and payments. Only you can see this page.",
+  "where": [
+   "src/components/creator/views.tsx:290"
+  ]
+ },
+ {
+  "key": "Your font",
+  "where": [
+   "src/components/fonts/FontStudio.tsx:216"
+  ]
+ },
+ {
+  "key": "Your matric number",
+  "where": [
+   "src/components/student/StudentView.tsx:110"
+  ]
+ },
+ {
+  "key": "Your name",
+  "where": [
+   "src/components/creator/views.tsx:392"
+  ]
+ },
+ {
+  "key": "Your Name",
+  "where": [
+   "src/components/design/data.ts:62"
+  ]
+ },
+ {
+  "key": "Your NIN is 11 digits.",
+  "where": [
+   "src/components/creator/views.tsx:219"
+  ]
+ },
+ {
+  "key": "Your numbers",
+  "where": [
+   "src/components/creator/views.tsx:67"
+  ]
+ },
+ {
+  "key": "Your payouts appear on your creator dashboard when you sign in. You add your payout details there after you are approved, so the application never asks for a bank account.",
+  "where": [
+   "src/data/creators.ts:121"
+  ]
+ },
+ {
+  "key": "Your perks",
+  "where": [
+   "src/components/student/StudentView.tsx:192",
+   "src/components/student/StudentView.tsx:210"
+  ]
+ },
+ {
+  "key": "Your photos, logos and PDFs, ready to drop into any design.",
+  "where": [
+   "src/components/design/data.ts:100"
+  ]
+ },
+ {
+  "key": "Your profile, delivery addresses and payment preferences.",
+  "where": [
+   "src/components/design/data.ts:108"
+  ]
+ },
+ {
+  "key": "Your school",
+  "where": [
+   "src/data/student.ts:21"
+  ]
+ },
+ {
+  "key": "Your student ID is being checked",
+  "where": [
+   "src/components/student/StudentView.tsx:219"
+  ]
+ },
+ {
+  "key": "Your student perks are on. Make something for class today.",
+  "where": [
+   "src/components/student/StudentView.tsx:172"
+  ]
+ },
+ {
+  "key": "YouTube thumbnail",
+  "where": [
+   "src/data/creator-app.ts:34"
+  ]
+ }
+]

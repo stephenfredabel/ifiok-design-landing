@@ -1,4 +1,4 @@
-import { Eye, Palette, Printer, ShoppingBag, TrendingUp, Wrench, type LucideIcon } from 'lucide-react';
+import { Eye, FileText, Handshake, Palette, Printer, ShoppingBag, TrendingUp, Wrench, type LucideIcon } from 'lucide-react';
 
 export type Status = 'live' | 'soon';
 export type LayerId = 'sell' | 'create' | 'protect' | 'grow';
@@ -21,8 +21,10 @@ export type AppEntry = {
   features: string[];
   web?: Surface;
   android?: Surface;
-  /** CSS gradient for the icon tile. */
+  /** CSS gradient for the icon tile when the app has no icon file. */
   tile: string;
+  /** App icon taken from the Ifiok repo, under public/apps. */
+  icon?: string;
 };
 
 export const LAYERS: { id: LayerId; label: string; blurb: string }[] = [
@@ -48,6 +50,7 @@ export const APPS: AppEntry[] = [
     web: { status: 'live', url: 'https://ifiok.ng' },
     android: { status: 'soon', pkg: 'ng.ifiok.market' },
     tile: 'linear-gradient(150deg, #e6a91a, #c2410c)',
+    icon: 'market.png',
   },
   {
     slug: 'designs',
@@ -60,6 +63,45 @@ export const APPS: AppEntry[] = [
     web: { status: 'live', url: 'https://designs.ifiok.ng' },
     android: { status: 'live', url: 'https://ifiok.ng/get-app', pkg: 'ng.ifiok.designs' }, // CHECK: store link and package id
     tile: 'linear-gradient(150deg, #0b7a7f, #0a3a52)',
+    icon: 'designs.png',
+  },
+  {
+    slug: 'docs',
+    name: 'Ifiok Docs',
+    short: 'Docs',
+    layer: 'create',
+    Icon: FileText,
+    tagline: 'Create, edit, sign and convert documents and PDFs.',
+    features: ['Write letters, CVs and forms', 'Sign and fill PDFs', 'Convert between PDF and Word'],
+    web: { status: 'live', url: 'https://docs.ifiok.ng' },
+    android: { status: 'soon', pkg: 'ng.ifiok.docs' },
+    tile: 'linear-gradient(150deg, #0b7a7f, #064e51)',
+    icon: 'docs.png',
+  },
+  {
+    slug: 'printers',
+    name: 'Ifiok Printers',
+    short: 'Printers',
+    layer: 'sell',
+    Icon: Printer,
+    tagline: 'For print shops: receive, print and deliver Ifiok orders.',
+    features: ['See incoming print jobs', 'Bid for work and track orders', 'Get paid for completed jobs'], // CHECK: confirm the printer portal feature list
+    web: { status: 'live', url: 'https://ifiok.ng/printer' },
+    android: { status: 'soon', pkg: 'ng.ifiok.printers' },
+    tile: 'linear-gradient(150deg, #0b7a7f, #064e51)',
+    icon: 'printers.png',
+  },
+  {
+    slug: 'partners',
+    name: 'Ifiok Partners',
+    short: 'Partners',
+    layer: 'sell',
+    Icon: Handshake,
+    tagline: 'Printers and installers: join the Ifiok partner network.',
+    features: ['Signage, billboard and vehicle branding work', 'A dashboard for your jobs', 'Customers across Nigeria'], // CHECK: confirm copy
+    web: { status: 'live', url: 'https://ifiok.ng/partners' },
+    tile: 'linear-gradient(150deg, #0b7a7f, #064e51)',
+    icon: 'partners.png',
   },
   {
     slug: 'tools',

@@ -4,6 +4,7 @@ import { ArrowUpRight, Globe, LayoutGrid, List, Plus, Rows3, Search, Smartphone 
 import { useMemo, useState } from 'react';
 import { APPS, LAYERS, NEXT_UP, surfaceLabel, type AppEntry, type Surface } from '@/data/apps';
 import { T } from '@/i18n/LangProvider';
+import { asset } from '@/lib/asset';
 
 type StatusFilter = 'all' | 'live' | 'soon';
 type PlatformFilter = 'any' | 'web' | 'android';
@@ -35,7 +36,7 @@ function Card({ a }: { a: AppEntry }) {
   return (
     <article className="appcard" id={a.slug}>
       <header>
-        <span className="tile" style={{ background: a.tile }}><a.Icon aria-hidden="true" /></span>
+        {a.icon ? <img className="tile img" src={asset(`/apps/${a.icon}`)} alt="" width={48} height={48} /> : <span className="tile" style={{ background: a.tile }}><a.Icon aria-hidden="true" /></span>}
         <div>
           <h3>{a.name}</h3>
           <span className="ltag">{LAYERS.find((l) => l.id === a.layer)!.label}</span>
@@ -71,7 +72,7 @@ function Table({ apps }: { apps: AppEntry[] }) {
             <tr key={a.slug} id={a.slug}>
               <td>
                 <span className="tcell">
-                  <span className="tile sm" style={{ background: a.tile }}><a.Icon aria-hidden="true" /></span>
+                  {a.icon ? <img className="tile sm img" src={asset(`/apps/${a.icon}`)} alt="" width={34} height={34} /> : <span className="tile sm" style={{ background: a.tile }}><a.Icon aria-hidden="true" /></span>}
                   <span><b>{a.name}</b><small>{a.tagline}</small></span>
                 </span>
               </td>
@@ -228,7 +229,7 @@ export default function AppDashboard() {
                   <p className="map-h">{l.label}</p>
                   {APPS.filter((a) => a.layer === l.id).map((a) => (
                     <a className="node" href={`#${a.slug}`} key={a.slug}>
-                      <span className="tile sm" style={{ background: a.tile }}><a.Icon aria-hidden="true" /></span>
+                      {a.icon ? <img className="tile sm img" src={asset(`/apps/${a.icon}`)} alt="" width={34} height={34} /> : <span className="tile sm" style={{ background: a.tile }}><a.Icon aria-hidden="true" /></span>}
                       <span><b>{a.short}</b><small>{isLive(a) ? 'Live' : 'Coming soon'}</small></span>
                     </a>
                   ))}

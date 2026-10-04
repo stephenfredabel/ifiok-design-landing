@@ -2,6 +2,8 @@
 
 import { Monitor, Moon, Sun } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { useLang } from '@/i18n/LangProvider';
+import { tr } from '@/i18n/tr';
 
 type Mode = 'system' | 'light' | 'dark';
 const ORDER: Mode[] = ['system', 'light', 'dark'];
@@ -9,6 +11,7 @@ const LABEL: Record<Mode, string> = { system: 'Theme: match device', light: 'The
 
 /** One icon button that cycles System, Light, Dark. System removes the attribute so the OS setting decides. */
 export default function ThemeToggle() {
+  useLang(); // re-render when the language changes
   const [mode, setMode] = useState<Mode>('system');
 
   useEffect(() => {
@@ -35,7 +38,7 @@ export default function ThemeToggle() {
 
   const Icon = mode === 'light' ? Sun : mode === 'dark' ? Moon : Monitor;
   return (
-    <button type="button" className="iconbtn" onClick={next} aria-label={LABEL[mode]} title={LABEL[mode]}>
+    <button type="button" className="iconbtn" onClick={next} aria-label={tr(LABEL[mode])} title={tr(LABEL[mode])}>
       <Icon aria-hidden="true" />
     </button>
   );
