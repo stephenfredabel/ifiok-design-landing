@@ -1481,6 +1481,12 @@
   ]
  },
  {
+  "key": "Compare verified printers and their prices in naira",
+  "where": [
+   "src/components/auth/AuthShell.tsx:24"
+  ]
+ },
+ {
   "key": "Compress PDF",
   "where": [
    "src/components/design/data.ts:125"
@@ -1855,6 +1861,12 @@
   ]
  },
  {
+  "key": "Design and print with verified printers near you.",
+  "where": [
+   "src/components/auth/AuthShell.tsx:20"
+  ]
+ },
+ {
   "key": "Design at real print size, then order the print.",
   "where": [
    "src/data/apps.ts:61"
@@ -1870,12 +1882,6 @@
   "key": "Design in {family}",
   "where": [
    "src/components/design/DesignApp.tsx:125"
-  ]
- },
- {
-  "key": "Design it. We print it.",
-  "where": [
-   "src/components/auth/AuthShell.tsx:20"
   ]
  },
  {
@@ -3200,7 +3206,7 @@
   ]
  },
  {
-  "key": "Make cards, flyers, ID cards and posters at real print size, then order delivery across Nigeria.",
+  "key": "Make cards, flyers, ID cards and posters at real print size, then send them to a verified printer around you.",
   "where": [
    "src/components/auth/AuthShell.tsx:21"
   ]
@@ -3939,6 +3945,12 @@
   ]
  },
  {
+  "key": "Pick up nearby or get it delivered to your door",
+  "where": [
+   "src/components/auth/AuthShell.tsx:25"
+  ]
+ },
+ {
   "key": "Pick your school from the list, or type its full name.",
   "where": [
    "src/components/student/StudentView.tsx:53"
@@ -4062,12 +4074,6 @@
   "key": "Print-ready",
   "where": [
    "src/data/creators.ts:97"
-  ]
- },
- {
-  "key": "Printed near you and delivered to your door",
-  "where": [
-   "src/components/auth/AuthShell.tsx:25"
   ]
  },
  {
@@ -4665,12 +4671,6 @@
   "key": "See status",
   "where": [
    "src/components/student/StudentView.tsx:222"
-  ]
- },
- {
-  "key": "See the price in naira while you work",
-  "where": [
-   "src/components/auth/AuthShell.tsx:24"
   ]
  },
  {

@@ -17,12 +17,12 @@ export default function AuthShell({ children }: { children: React.ReactNode }) {
       <aside className="au-side" aria-hidden="false">
         <a className="au-brand" href={asset('/')} aria-label={tr('Ifiok home')}><Mark /></a>
         <div className="au-pitch">
-          <h2>{tr('Design it. We print it.')}</h2>
-          <p>{tr('Make cards, flyers, ID cards and posters at real print size, then order delivery across Nigeria.')}</p>
+          <h2>{tr('Design and print with verified printers near you.')}</h2>
+          <p>{tr('Make cards, flyers, ID cards and posters at real print size, then send them to a verified printer around you.')}</p>
           <ul>
             <li><span><Ruler aria-hidden="true" /></span>{tr('Real print sizes, with bleed checked for you')}</li>
-            <li><span><Banknote aria-hidden="true" /></span>{tr('See the price in naira while you work')}</li>
-            <li><span><Truck aria-hidden="true" /></span>{tr('Printed near you and delivered to your door')}</li>
+            <li><span><Banknote aria-hidden="true" /></span>{tr('Compare verified printers and their prices in naira')}</li>
+            <li><span><Truck aria-hidden="true" /></span>{tr('Pick up nearby or get it delivered to your door')}</li>
           </ul>
           <div className="au-mock" aria-hidden="true">
             <div className="au-flyer"><b>{tr('GRAND OPENING')}</b><i /><small>{tr('Saturday 12 July · 10am')}</small></div>

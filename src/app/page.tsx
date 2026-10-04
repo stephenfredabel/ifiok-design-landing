@@ -19,7 +19,7 @@ export default function HomePage() {
           <div className="wrap">
             <div>
               <TH as="h1" k="hero.h1">{'Design for print, <u>not just for screens</u>.'}</TH>
-              <p className="lead"><T k="hero.lead">Make it here and we print it. Real print sizes, bleed and 300 DPI are checked while you work, and the price moves as you design.</T></p>
+              <p className="lead"><T k="hero.lead">Make it here, then send it to a verified printer near you. Real print sizes, bleed and 300 DPI are checked while you work, and you see each printer’s price before you order.</T></p>
               <div className="herocta">
                 <a className="btn btn-gold" href={APP}><T k="cta.startFree">Start designing — free</T></a>
                 <a className="btn btn-line" href="#templates"><T k="cta.browse">Browse 530+ templates</T></a>
