@@ -82,9 +82,39 @@
   ]
  },
  {
+  "key": "{count} item is outside the safe area",
+  "where": [
+   "src/components/editor/useDesign.ts:48"
+  ]
+ },
+ {
+  "key": "{count} print check needs a look. You can still continue.",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:62"
+  ]
+ },
+ {
+  "key": "{count} to fix",
+  "where": [
+   "src/components/editor/EditorShell.tsx:329"
+  ]
+ },
+ {
+  "key": "{count} words",
+  "where": [
+   "src/components/editor/EditorShell.tsx:354"
+  ]
+ },
+ {
   "key": "{cw}\" × {ch}\" is created as a custom print size in the editor.",
   "where": [
    "src/components/design/overlays.tsx:108"
+  ]
+ },
+ {
+  "key": "{km} km away",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:89"
   ]
  },
  {
@@ -121,6 +151,12 @@
   "key": "{name} could not be read.",
   "where": [
    "src/components/fonts/FontStudio.tsx:75"
+  ]
+ },
+ {
+  "key": "{name} has your file",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:117"
   ]
  },
  {
@@ -240,6 +276,12 @@
   ]
  },
  {
+  "key": "100gsm bond",
+  "where": [
+   "src/components/editor/data.ts:106"
+  ]
+ },
+ {
   "key": "1080 × 1080 px",
   "where": [
    "src/data/creator-app.ts:25"
@@ -283,6 +325,12 @@
   ]
  },
  {
+  "key": "130gsm gloss",
+  "where": [
+   "src/components/editor/data.ts:95"
+  ]
+ },
+ {
   "key": "14 Sep",
   "where": [
    "src/data/creator-app.ts:64"
@@ -317,6 +365,12 @@
   "key": "16:9 slides, shown on screen",
   "where": [
    "src/components/design/data.ts:28"
+  ]
+ },
+ {
+  "key": "170gsm gloss",
+  "where": [
+   "src/components/editor/data.ts:96"
   ]
  },
  {
@@ -374,6 +428,7 @@
  {
   "key": "20% off everything",
   "where": [
+   "src/components/editor/data.ts:24",
    "src/components/design/data.ts:84"
   ]
  },
@@ -398,6 +453,18 @@
   ]
  },
  {
+  "key": "250gsm matt",
+  "where": [
+   "src/components/editor/data.ts:97"
+  ]
+ },
+ {
+  "key": "27 Adeola Odeku St, Victoria Island, Lagos",
+  "where": [
+   "src/components/editor/data.ts:26"
+  ]
+ },
+ {
   "key": "27 Sep",
   "where": [
    "src/data/creator-app.ts:61",
@@ -415,6 +482,12 @@
   "key": "29 Sep",
   "where": [
    "src/data/creator-app.ts:60"
+  ]
+ },
+ {
+  "key": "2h",
+  "where": [
+   "src/components/editor/data.ts:81"
   ]
  },
  {
@@ -566,6 +639,12 @@
   ]
  },
  {
+  "key": "80gsm bond",
+  "where": [
+   "src/components/editor/data.ts:105"
+  ]
+ },
+ {
   "key": "A design",
   "where": [
    "src/components/design/overlays.tsx:286"
@@ -593,6 +672,12 @@
   "key": "A number",
   "where": [
    "src/components/auth/SignupForm.tsx:122"
+  ]
+ },
+ {
+  "key": "A photo is {dpi} DPI at this size",
+  "where": [
+   "src/components/editor/useDesign.ts:50"
   ]
  },
  {
@@ -810,9 +895,27 @@
   ]
  },
  {
+  "key": "Add a heading",
+  "where": [
+   "src/components/editor/EditorShell.tsx:143"
+  ]
+ },
+ {
+  "key": "Add a little bit of body text",
+  "where": [
+   "src/components/editor/EditorShell.tsx:145"
+  ]
+ },
+ {
   "key": "Add a short bio so people know your style.",
   "where": [
    "src/components/creator/views.tsx:394"
+  ]
+ },
+ {
+  "key": "Add a subheading",
+  "where": [
+   "src/components/editor/EditorShell.tsx:144"
   ]
  },
  {
@@ -846,11 +949,17 @@
   ]
  },
  {
+  "key": "Added to your design",
+  "where": [
+   "src/components/editor/EditorShell.tsx:153"
+  ]
+ },
+ {
   "key": "Ade & Funmi",
   "where": [
+   "src/components/editor/data.ts:45",
    "src/components/design/data.ts:66",
-   "src/components/design/data.ts:98",
-   "src/data/creator-app.ts:66"
+   "src/components/design/data.ts:98"
   ]
  },
  {
@@ -875,6 +984,27 @@
   "key": "AI usage",
   "where": [
    "src/components/design/data.ts:180"
+  ]
+ },
+ {
+  "key": "Align centre",
+  "where": [
+   "src/components/editor/EditorShell.tsx:309",
+   "src/components/editor/DesignCanvas.tsx:142"
+  ]
+ },
+ {
+  "key": "Align left",
+  "where": [
+   "src/components/editor/EditorShell.tsx:308",
+   "src/components/editor/DesignCanvas.tsx:142"
+  ]
+ },
+ {
+  "key": "Align right",
+  "where": [
+   "src/components/editor/EditorShell.tsx:310",
+   "src/components/editor/DesignCanvas.tsx:142"
   ]
  },
  {
@@ -946,6 +1076,12 @@
   "key": "and",
   "where": [
    "src/components/auth/SignupForm.tsx:126"
+  ]
+ },
+ {
+  "key": "Annotate",
+  "where": [
+   "src/components/editor/EditorShell.tsx:33"
   ]
  },
  {
@@ -1044,6 +1180,26 @@
   ]
  },
  {
+  "key": "Ask Ifiok",
+  "where": [
+   "src/components/editor/EditorShell.tsx:29",
+   "src/components/editor/EditorShell.tsx:179",
+   "src/components/editor/EditorShell.tsx:220"
+  ]
+ },
+ {
+  "key": "Ask Ifiok to write, shorten, fix or translate your text.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:208"
+  ]
+ },
+ {
+  "key": "Ask Ifiok: {q}",
+  "where": [
+   "src/components/editor/EditorShell.tsx:382"
+  ]
+ },
+ {
   "key": "Aso Ebi",
   "where": [
    "src/data/creator-app.ts:63"
@@ -1108,8 +1264,22 @@
  {
   "key": "Back",
   "where": [
+   "src/components/editor/SendToPrinter.tsx:48",
    "src/components/student/StudentView.tsx:137",
    "src/components/fonts/FontStudio.tsx:231"
+  ]
+ },
+ {
+  "key": "Back to dashboard",
+  "where": [
+   "src/components/editor/EditorShell.tsx:222",
+   "src/components/editor/EditorShell.tsx:234"
+  ]
+ },
+ {
+  "key": "Back to editor",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:121"
   ]
  },
  {
@@ -1120,9 +1290,21 @@
   ]
  },
  {
+  "key": "Badge",
+  "where": [
+   "src/components/editor/data.ts:57"
+  ]
+ },
+ {
   "key": "Baker · Entrepreneur · Lagos",
   "where": [
    "src/components/design/data.ts:71"
+  ]
+ },
+ {
+  "key": "Balogun Market · Lagos",
+  "where": [
+   "src/components/editor/data.ts:39"
   ]
  },
  {
@@ -1168,6 +1350,25 @@
   ]
  },
  {
+  "key": "Best price",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:11",
+   "src/components/editor/data.ts:90"
+  ]
+ },
+ {
+  "key": "Bigger",
+  "where": [
+   "src/components/editor/DesignCanvas.tsx:139"
+  ]
+ },
+ {
+  "key": "Binding",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:67"
+  ]
+ },
+ {
   "key": "Bio",
   "where": [
    "src/components/creator/views.tsx:404"
@@ -1199,6 +1400,12 @@
   ]
  },
  {
+  "key": "Bleed of 3 mm is set",
+  "where": [
+   "src/components/editor/useDesign.ts:53"
+  ]
+ },
+ {
   "key": "Blurry or stretched photos that will look poor once printed.",
   "where": [
    "src/data/creators.ts:101"
@@ -1207,14 +1414,33 @@
  {
   "key": "Bold",
   "where": [
-   "src/components/fonts/FontStudio.tsx:11",
-   "src/data/fonts.ts:7"
+   "src/components/editor/EditorShell.tsx:301",
+   "src/components/editor/DesignCanvas.tsx:140",
+   "src/components/editor/DocCanvas.tsx:67"
   ]
  },
  {
   "key": "Bold Italic",
   "where": [
    "src/components/fonts/FontStudio.tsx:11"
+  ]
+ },
+ {
+  "key": "Brand",
+  "where": [
+   "src/components/editor/EditorShell.tsx:25"
+  ]
+ },
+ {
+  "key": "Brand colours",
+  "where": [
+   "src/components/editor/EditorShell.tsx:166"
+  ]
+ },
+ {
+  "key": "Brand fonts",
+  "where": [
+   "src/components/editor/EditorShell.tsx:171"
   ]
  },
  {
@@ -1257,6 +1483,25 @@
   "key": "Build · Sell · Manage",
   "where": [
    "src/components/design/data.ts:88"
+  ]
+ },
+ {
+  "key": "Bulk cards",
+  "where": [
+   "src/components/editor/EditorShell.tsx:180"
+  ]
+ },
+ {
+  "key": "Bulk cards opens here in the full editor.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:180"
+  ]
+ },
+ {
+  "key": "Bulleted list",
+  "where": [
+   "src/components/editor/EditorShell.tsx:305",
+   "src/components/editor/DocCanvas.tsx:82"
   ]
  },
  {
@@ -1307,6 +1552,12 @@
   ]
  },
  {
+  "key": "Can we confirm the set-up cost with the printer first?",
+  "where": [
+   "src/components/editor/data.ts:81"
+  ]
+ },
+ {
   "key": "Cancel",
   "where": [
    "src/components/design/overlays.tsx:114",
@@ -1341,6 +1592,12 @@
   ]
  },
  {
+  "key": "Change",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:74"
+  ]
+ },
+ {
   "key": "Change account",
   "where": [
    "src/components/creator/views.tsx:203"
@@ -1364,6 +1621,12 @@
   "where": [
    "src/components/creator/store.tsx:125",
    "src/components/creator/store.tsx:155"
+  ]
+ },
+ {
+  "key": "Charts and tables from your data",
+  "where": [
+   "src/components/editor/EditorShell.tsx:181"
   ]
  },
  {
@@ -1403,6 +1666,12 @@
   ]
  },
  {
+  "key": "Checked against what verified printers need.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:343"
+  ]
+ },
+ {
   "key": "Checking…",
   "where": [
    "src/components/creator/views.tsx:249"
@@ -1424,6 +1693,12 @@
   "key": "Choose a category.",
   "where": [
    "src/components/fonts/FontStudio.tsx:91"
+  ]
+ },
+ {
+  "key": "Choose a printer",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:130"
   ]
  },
  {
@@ -1474,6 +1749,12 @@
    "src/components/design/data.ts:76",
    "src/components/design/data.ts:92",
    "src/components/design/data.ts:93"
+  ]
+ },
+ {
+  "key": "Circle",
+  "where": [
+   "src/components/editor/data.ts:55"
   ]
  },
  {
@@ -1550,6 +1831,18 @@
   ]
  },
  {
+  "key": "Click to select. Drag to move. Double-click text to edit. Ctrl+A selects all.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:227"
+  ]
+ },
+ {
+  "key": "Click to type. Ctrl+A selects all. Type / on an empty line.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:227"
+  ]
+ },
+ {
   "key": "Close",
   "where": [
    "src/components/design/overlays.tsx:66",
@@ -1574,7 +1867,7 @@
   "where": [
    "src/components/design/overlays.tsx:95",
    "src/components/design/docsViews.tsx:54",
-   "src/components/creator/dialogs.tsx:69"
+   "src/components/editor/DesignCanvas.tsx:149"
   ]
  },
  {
@@ -1582,7 +1875,7 @@
   "where": [
    "src/components/design/overlays.tsx:98",
    "src/components/design/docsViews.tsx:57",
-   "src/components/creator/dialogs.tsx:71"
+   "src/components/editor/EditorShell.tsx:168"
   ]
  },
  {
@@ -1592,10 +1885,28 @@
   ]
  },
  {
+  "key": "Colours convert to CMYK",
+  "where": [
+   "src/components/editor/useDesign.ts:52"
+  ]
+ },
+ {
   "key": "Coming soon",
   "where": [
    "src/components/student/StudentView.tsx:154",
    "src/components/LangMenu.tsx:54"
+  ]
+ },
+ {
+  "key": "Comment",
+  "where": [
+   "src/components/editor/DocCanvas.tsx:73"
+  ]
+ },
+ {
+  "key": "Comments",
+  "where": [
+   "src/components/editor/EditorShell.tsx:28"
   ]
  },
  {
@@ -1620,6 +1931,12 @@
   "key": "Compare verified printers and their prices in naira",
   "where": [
    "src/components/auth/AuthShell.tsx:24"
+  ]
+ },
+ {
+  "key": "Compress a PDF",
+  "where": [
+   "src/components/editor/EditorShell.tsx:33"
   ]
  },
  {
@@ -1678,9 +1995,21 @@
   ]
  },
  {
+  "key": "Continue with {name}",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:130"
+  ]
+ },
+ {
   "key": "Continue with Google",
   "where": [
    "src/components/auth/LoginForm.tsx:51"
+  ]
+ },
+ {
+  "key": "Convert to Word",
+  "where": [
+   "src/components/editor/EditorShell.tsx:33"
   ]
  },
  {
@@ -1703,6 +2032,12 @@
   ]
  },
  {
+  "key": "Copy",
+  "where": [
+   "src/components/editor/EditorShell.tsx:253"
+  ]
+ },
+ {
   "key": "Copy link",
   "where": [
    "src/components/creator/views.tsx:408"
@@ -1717,9 +2052,9 @@
  {
   "key": "Cover letter",
   "where": [
+   "src/components/editor/data.ts:77",
    "src/components/design/data.ts:33",
-   "src/components/design/data.ts:72",
-   "src/components/design/data.ts:104"
+   "src/components/design/data.ts:72"
   ]
  },
  {
@@ -1903,6 +2238,18 @@
   ]
  },
  {
+  "key": "Data Studio",
+  "where": [
+   "src/components/editor/EditorShell.tsx:181"
+  ]
+ },
+ {
+  "key": "Data Studio opens here in the full editor.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:181"
+  ]
+ },
+ {
   "key": "Date",
   "where": [
    "src/components/creator/views.tsx:341",
@@ -1932,7 +2279,7 @@
   "where": [
    "src/components/design/overlays.tsx:153",
    "src/components/design/parts.tsx:75",
-   "src/components/creator/dialogs.tsx:129"
+   "src/components/editor/DesignCanvas.tsx:157"
   ]
  },
  {
@@ -1968,9 +2315,22 @@
   ]
  },
  {
+  "key": "Delivery",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:71",
+   "src/components/editor/SendToPrinter.tsx:105"
+  ]
+ },
+ {
   "key": "Delivery by Fri 17 Oct",
   "where": [
    "src/components/design/data.ts:117"
+  ]
+ },
+ {
+  "key": "Delivery fee",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:107"
   ]
  },
  {
@@ -2093,6 +2453,7 @@
  {
   "key": "Designs",
   "where": [
+   "src/components/editor/EditorShell.tsx:236",
    "src/data/apps.ts:58"
   ]
  },
@@ -2161,6 +2522,12 @@
   ]
  },
  {
+  "key": "Divider",
+  "where": [
+   "src/components/editor/DocCanvas.tsx:84"
+  ]
+ },
+ {
   "key": "Do I need a laptop?",
   "where": [
    "src/data/creators.ts:122"
@@ -2169,13 +2536,15 @@
  {
   "key": "Docs",
   "where": [
+   "src/components/editor/EditorShell.tsx:237",
    "src/data/apps.ts:71"
   ]
  },
  {
   "key": "Document",
   "where": [
-   "src/components/design/views.tsx:69"
+   "src/components/design/views.tsx:69",
+   "src/components/editor/DocCanvas.tsx:58"
   ]
  },
  {
@@ -2223,7 +2592,7 @@
   "where": [
    "src/components/design/overlays.tsx:152",
    "src/components/design/parts.tsx:74",
-   "src/components/creator/dialogs.tsx:128"
+   "src/components/editor/DesignCanvas.tsx:155"
   ]
  },
  {
@@ -2323,6 +2692,18 @@
   ]
  },
  {
+  "key": "Editing",
+  "where": [
+   "src/components/editor/EditorShell.tsx:313"
+  ]
+ },
+ {
+  "key": "Editor",
+  "where": [
+   "src/components/editor/EditorShell.tsx:235"
+  ]
+ },
+ {
   "key": "Eighth day · Lagos",
   "where": [
    "src/components/design/data.ts:93"
@@ -2332,6 +2713,12 @@
   "key": "Elegant",
   "where": [
    "src/data/fonts.ts:7"
+  ]
+ },
+ {
+  "key": "Elements",
+  "where": [
+   "src/components/editor/EditorShell.tsx:24"
   ]
  },
  {
@@ -2445,6 +2832,12 @@
   ]
  },
  {
+  "key": "Everything is inside the safe area",
+  "where": [
+   "src/components/editor/useDesign.ts:48"
+  ]
+ },
+ {
   "key": "Example entry in review.",
   "where": [
    "src/data/fonts.ts:59"
@@ -2520,6 +2913,13 @@
   ]
  },
  {
+  "key": "Fastest",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:11",
+   "src/components/editor/data.ts:89"
+  ]
+ },
+ {
   "key": "Feedback",
   "where": [
    "src/components/creator/parts.tsx:57"
@@ -2535,13 +2935,32 @@
  {
   "key": "Fewer",
   "where": [
-   "src/components/design/overlays.tsx:175"
+   "src/components/design/overlays.tsx:175",
+   "src/components/editor/SendToPrinter.tsx:64"
+  ]
+ },
+ {
+  "key": "File",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:102"
+  ]
+ },
+ {
+  "key": "File name",
+  "where": [
+   "src/components/editor/EditorShell.tsx:240"
   ]
  },
  {
   "key": "Files",
   "where": [
    "src/components/design/DesignApp.tsx:156"
+  ]
+ },
+ {
+  "key": "Fill a form",
+  "where": [
+   "src/components/editor/EditorShell.tsx:33"
   ]
  },
  {
@@ -2568,6 +2987,36 @@
   "key": "Final year project report",
   "where": [
    "src/components/design/data.ts:70"
+  ]
+ },
+ {
+  "key": "Finish",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:67"
+  ]
+ },
+ {
+  "key": "Fit",
+  "where": [
+   "src/components/editor/EditorShell.tsx:349"
+  ]
+ },
+ {
+  "key": "Fix",
+  "where": [
+   "src/components/editor/EditorShell.tsx:339"
+  ]
+ },
+ {
+  "key": "Fix spelling",
+  "where": [
+   "src/components/editor/EditorShell.tsx:34"
+  ]
+ },
+ {
+  "key": "Fixed",
+  "where": [
+   "src/components/editor/EditorShell.tsx:339"
   ]
  },
  {
@@ -2612,6 +3061,12 @@
   "key": "Flyer A5",
   "where": [
    "src/components/design/data.ts:16"
+  ]
+ },
+ {
+  "key": "Font",
+  "where": [
+   "src/components/editor/DesignCanvas.tsx:136"
   ]
  },
  {
@@ -2661,9 +3116,22 @@
   ]
  },
  {
+  "key": "Fonts are embedded",
+  "where": [
+   "src/components/editor/EditorShell.tsx:90",
+   "src/components/editor/useDesign.ts:54"
+  ]
+ },
+ {
   "key": "Fonts are embedded when you print",
   "where": [
    "src/components/design/overlays.tsx:132"
+  ]
+ },
+ {
+  "key": "Fonts are set in your Brand kit.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:172"
   ]
  },
  {
@@ -2707,6 +3175,12 @@
   "key": "Formal Cover Letter",
   "where": [
    "src/components/design/data.ts:104"
+  ]
+ },
+ {
+  "key": "Formatting",
+  "where": [
+   "src/components/editor/EditorShell.tsx:295"
   ]
  },
  {
@@ -2792,6 +3266,14 @@
   ]
  },
  {
+  "key": "Get it by",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:68",
+   "src/components/editor/SendToPrinter.tsx:69",
+   "src/components/editor/SendToPrinter.tsx:105"
+  ]
+ },
+ {
   "key": "Get paid",
   "where": [
    "src/components/creator/views.tsx:311"
@@ -2868,8 +3350,8 @@
   "key": "GRAND OPENING",
   "where": [
    "src/components/auth/AuthShell.tsx:28",
-   "src/components/design/data.ts:62",
-   "src/components/design/data.ts:84"
+   "src/components/editor/data.ts:20",
+   "src/components/design/data.ts:62"
   ]
  },
  {
@@ -2880,11 +3362,17 @@
   ]
  },
  {
+  "key": "Grand Opening flyer",
+  "where": [
+   "src/components/editor/EditorShell.tsx:40"
+  ]
+ },
+ {
   "key": "Grand Opening Flyer",
   "where": [
+   "src/components/editor/data.ts:31",
    "src/components/design/data.ts:84",
-   "src/data/creator-app.ts:58",
-   "src/data/creator-app.ts:79"
+   "src/data/creator-app.ts:58"
   ]
  },
  {
@@ -2916,6 +3404,12 @@
   ]
  },
  {
+  "key": "Guides",
+  "where": [
+   "src/components/editor/EditorShell.tsx:352"
+  ]
+ },
+ {
   "key": "Handle",
   "where": [
    "src/components/creator/views.tsx:400"
@@ -2941,6 +3435,26 @@
    "src/components/fonts/FontStudio.tsx:185",
    "src/components/fonts/FontStudio.tsx:223",
    "src/components/fonts/FontsView.tsx:103"
+  ]
+ },
+ {
+  "key": "Heading 1",
+  "where": [
+   "src/components/editor/EditorShell.tsx:298",
+   "src/components/editor/DocCanvas.tsx:80"
+  ]
+ },
+ {
+  "key": "Heading 2",
+  "where": [
+   "src/components/editor/EditorShell.tsx:298",
+   "src/components/editor/DocCanvas.tsx:81"
+  ]
+ },
+ {
+  "key": "Headings you add show up here.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:189"
   ]
  },
  {
@@ -2971,6 +3485,12 @@
   "key": "Hide this for now",
   "where": [
    "src/components/student/StudentView.tsx:223"
+  ]
+ },
+ {
+  "key": "Highlight",
+  "where": [
+   "src/components/editor/DocCanvas.tsx:70"
   ]
  },
  {
@@ -3106,6 +3626,12 @@
   ]
  },
  {
+  "key": "Ifiok does not print your file. {name} prints it, and Ifiok holds your payment until you confirm you received it.",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:110"
+  ]
+ },
+ {
   "key": "Ifiok home",
   "where": [
    "src/components/auth/AuthShell.tsx:18",
@@ -3199,6 +3725,18 @@
   ]
  },
  {
+  "key": "In the full editor Ifiok answers here and can apply the change to your selection. This is a preview.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:207"
+  ]
+ },
+ {
+  "key": "Insert a block",
+  "where": [
+   "src/components/editor/DocCanvas.tsx:79"
+  ]
+ },
+ {
   "key": "Instagram post",
   "where": [
    "src/data/creator-app.ts:25"
@@ -3219,8 +3757,27 @@
   ]
  },
  {
+  "key": "Invite",
+  "where": [
+   "src/components/editor/EditorShell.tsx:256"
+  ]
+ },
+ {
+  "key": "Invite by email",
+  "where": [
+   "src/components/editor/EditorShell.tsx:256"
+  ]
+ },
+ {
+  "key": "Invite sent to {email}",
+  "where": [
+   "src/components/editor/EditorShell.tsx:255"
+  ]
+ },
+ {
   "key": "Invoice",
   "where": [
+   "src/components/editor/data.ts:76",
    "src/components/design/data.ts:35",
    "src/data/creator-app.ts:22"
   ]
@@ -3252,6 +3809,8 @@
  {
   "key": "Italic",
   "where": [
+   "src/components/editor/EditorShell.tsx:302",
+   "src/components/editor/DocCanvas.tsx:68",
    "src/components/fonts/FontStudio.tsx:11"
   ]
  },
@@ -3271,6 +3830,12 @@
   "key": "JPG, PNG or PDF, up to 5 MB",
   "where": [
    "src/components/student/StudentView.tsx:114"
+  ]
+ },
+ {
+  "key": "JPG, PNG or SVG",
+  "where": [
+   "src/components/editor/EditorShell.tsx:152"
   ]
  },
  {
@@ -3312,8 +3877,15 @@
   ]
  },
  {
+  "key": "Lamination",
+  "where": [
+   "src/components/editor/data.ts:101"
+  ]
+ },
+ {
   "key": "Language",
   "where": [
+   "src/components/editor/EditorShell.tsx:271",
    "src/components/LangMenu.tsx:30"
   ]
  },
@@ -3372,6 +3944,31 @@
   ]
  },
  {
+  "key": "Line",
+  "where": [
+   "src/components/editor/data.ts:56"
+  ]
+ },
+ {
+  "key": "Link",
+  "where": [
+   "src/components/editor/EditorShell.tsx:253",
+   "src/components/editor/DocCanvas.tsx:71"
+  ]
+ },
+ {
+  "key": "Link address",
+  "where": [
+   "src/components/editor/DocCanvas.tsx:71"
+  ]
+ },
+ {
+  "key": "Link copied",
+  "where": [
+   "src/components/editor/EditorShell.tsx:253"
+  ]
+ },
+ {
   "key": "Link pages",
   "where": [
    "src/components/design/data.ts:135"
@@ -3406,6 +4003,12 @@
   "key": "LIVE NIGHT",
   "where": [
    "src/components/design/data.ts:94"
+  ]
+ },
+ {
+  "key": "Lock",
+  "where": [
+   "src/components/editor/DesignCanvas.tsx:156"
   ]
  },
  {
@@ -3446,6 +4049,12 @@
   ]
  },
  {
+  "key": "Loose pages",
+  "where": [
+   "src/components/editor/data.ts:109"
+  ]
+ },
+ {
   "key": "Low-resolution images",
   "where": [
    "src/data/creators.ts:101"
@@ -3458,9 +4067,21 @@
   ]
  },
  {
+  "key": "Make 50 ID cards from a sheet",
+  "where": [
+   "src/components/editor/EditorShell.tsx:180"
+  ]
+ },
+ {
   "key": "Make cards, flyers, ID cards and posters at real print size, then send them to a verified printer around you.",
   "where": [
    "src/components/auth/AuthShell.tsx:21"
+  ]
+ },
+ {
+  "key": "Make it shorter",
+  "where": [
+   "src/components/editor/EditorShell.tsx:34"
   ]
  },
  {
@@ -3486,6 +4107,12 @@
   "where": [
    "src/components/design/data.ts:67",
    "src/components/design/data.ts:120"
+  ]
+ },
+ {
+  "key": "Margins are 20 mm",
+  "where": [
+   "src/components/editor/EditorShell.tsx:89"
   ]
  },
  {
@@ -3554,6 +4181,7 @@
  {
   "key": "MEGA SALE",
   "where": [
+   "src/components/editor/data.ts:35",
    "src/components/design/data.ts:63",
    "src/components/design/data.ts:85"
   ]
@@ -3568,6 +4196,7 @@
  {
   "key": "Mega Sale Poster",
   "where": [
+   "src/components/editor/data.ts:33",
    "src/components/design/data.ts:85"
   ]
  },
@@ -3596,9 +4225,21 @@
   ]
  },
  {
+  "key": "Merge PDFs",
+  "where": [
+   "src/components/editor/EditorShell.tsx:33"
+  ]
+ },
+ {
   "key": "Merge, split and compress PDFs, scan to PDF and make QR codes, right on your phone.",
   "where": [
    "src/data/student.ts:11"
+  ]
+ },
+ {
+  "key": "Mode",
+  "where": [
+   "src/components/editor/EditorShell.tsx:312"
   ]
  },
  {
@@ -3617,7 +4258,9 @@
  {
   "key": "More",
   "where": [
-   "src/components/design/overlays.tsx:177"
+   "src/components/design/overlays.tsx:177",
+   "src/components/editor/EditorShell.tsx:25",
+   "src/components/editor/EditorShell.tsx:265"
   ]
  },
  {
@@ -3700,6 +4343,18 @@
   ]
  },
  {
+  "key": "Near Yaba, Lagos",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:74"
+  ]
+ },
+ {
+  "key": "Nearest",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:11"
+  ]
+ },
+ {
   "key": "Needs your attention",
   "where": [
    "src/components/creator/views.tsx:75"
@@ -3711,6 +4366,12 @@
    "src/components/design/DesignApp.tsx:192",
    "src/components/design/DesignApp.tsx:242",
    "src/components/design/DesignApp.tsx:248"
+  ]
+ },
+ {
+  "key": "New comment",
+  "where": [
+   "src/components/editor/EditorShell.tsx:321"
   ]
  },
  {
@@ -3734,6 +4395,12 @@
    "src/components/fonts/FontStudio.tsx:124",
    "src/components/fonts/FontStudio.tsx:256",
    "src/components/fonts/FontStudio.tsx:263"
+  ]
+ },
+ {
+  "key": "New page",
+  "where": [
+   "src/components/editor/EditorShell.tsx:364"
   ]
  },
  {
@@ -3793,6 +4460,12 @@
   ]
  },
  {
+  "key": "No finish",
+  "where": [
+   "src/components/editor/data.ts:100"
+  ]
+ },
+ {
   "key": "No fonts match.",
   "where": [
    "src/components/fonts/FontStudio.tsx:263",
@@ -3803,6 +4476,12 @@
   "key": "No fonts yet.",
   "where": [
    "src/components/fonts/FontStudio.tsx:263"
+  ]
+ },
+ {
+  "key": "No low-resolution images",
+  "where": [
+   "src/components/editor/EditorShell.tsx:91"
   ]
  },
  {
@@ -3841,6 +4520,12 @@
   "key": "None ticked",
   "where": [
    "src/components/fonts/FontStudio.tsx:223"
+  ]
+ },
+ {
+  "key": "Normal text",
+  "where": [
+   "src/components/editor/EditorShell.tsx:298"
   ]
  },
  {
@@ -3920,9 +4605,21 @@
   ]
  },
  {
+  "key": "now",
+  "where": [
+   "src/components/editor/EditorShell.tsx:321"
+  ]
+ },
+ {
   "key": "Now",
   "where": [
    "src/components/student/StudentView.tsx:180"
+  ]
+ },
+ {
+  "key": "Numbered list",
+  "where": [
+   "src/components/editor/EditorShell.tsx:306"
   ]
  },
  {
@@ -4103,6 +4800,12 @@
   ]
  },
  {
+  "key": "Order {ref} is in your Orders. The printer confirms within 15 minutes and you will get a message here and on WhatsApp.",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:118"
+  ]
+ },
+ {
   "key": "Order print",
   "where": [
    "src/components/design/overlays.tsx:172"
@@ -4112,6 +4815,12 @@
   "key": "Order printing online and have it delivered.",
   "where": [
    "src/data/apps.ts:48"
+  ]
+ },
+ {
+  "key": "Order sent",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:49"
   ]
  },
  {
@@ -4148,9 +4857,40 @@
   ]
  },
  {
+  "key": "Outline",
+  "where": [
+   "src/components/editor/EditorShell.tsx:28"
+  ]
+ },
+ {
+  "key": "Page added",
+  "where": [
+   "src/components/editor/EditorShell.tsx:364"
+  ]
+ },
+ {
+  "key": "Page controls",
+  "where": [
+   "src/components/editor/EditorShell.tsx:326"
+  ]
+ },
+ {
   "key": "Page size A4",
   "where": [
    "src/components/design/overlays.tsx:131"
+  ]
+ },
+ {
+  "key": "Page size is A4",
+  "where": [
+   "src/components/editor/EditorShell.tsx:88"
+  ]
+ },
+ {
+  "key": "Pages",
+  "where": [
+   "src/components/editor/EditorShell.tsx:361",
+   "src/components/editor/EditorShell.tsx:362"
   ]
  },
  {
@@ -4175,6 +4915,12 @@
   ]
  },
  {
+  "key": "Paper",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:66"
+  ]
+ },
+ {
   "key": "Partners",
   "where": [
    "src/data/apps.ts:97"
@@ -4191,6 +4937,12 @@
   "key": "Password, active sessions, delete account",
   "where": [
    "src/components/design/data.ts:176"
+  ]
+ },
+ {
+  "key": "Pay {amount} and send",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:131"
   ]
  },
  {
@@ -4252,7 +5004,8 @@
   "key": "PDF tools",
   "where": [
    "src/components/design/views.tsx:139",
-   "src/components/design/docsViews.tsx:114"
+   "src/components/design/docsViews.tsx:114",
+   "src/components/editor/EditorShell.tsx:29"
   ]
  },
  {
@@ -4265,6 +5018,12 @@
   "key": "People",
   "where": [
    "src/components/design/data.ts:179"
+  ]
+ },
+ {
+  "key": "People here now",
+  "where": [
+   "src/components/editor/EditorShell.tsx:247"
   ]
  },
  {
@@ -4286,6 +5045,19 @@
   ]
  },
  {
+  "key": "Photo",
+  "where": [
+   "src/components/editor/DesignCanvas.tsx:122",
+   "src/components/editor/data.ts:22"
+  ]
+ },
+ {
+  "key": "Photo {n}",
+  "where": [
+   "src/components/editor/EditorShell.tsx:158"
+  ]
+ },
+ {
   "key": "Photo is under 300 DPI at this size",
   "where": [
    "src/components/design/data.ts:64"
@@ -4298,6 +5070,18 @@
   ]
  },
  {
+  "key": "Photos are 300 DPI",
+  "where": [
+   "src/components/editor/useDesign.ts:50"
+  ]
+ },
+ {
+  "key": "Pick a colour to change the selection, or the page when nothing is selected.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:170"
+  ]
+ },
+ {
   "key": "Pick a font and start designing with it. Every font here is free to use in your designs.",
   "where": [
    "src/components/fonts/FontsView.tsx:37"
@@ -4307,6 +5091,18 @@
   "key": "Pick a template above to write your first one.",
   "where": [
    "src/components/design/docsViews.tsx:107"
+  ]
+ },
+ {
+  "key": "Pick up",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:70"
+  ]
+ },
+ {
+  "key": "Pick up at {area}",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:105"
   ]
  },
  {
@@ -4430,6 +5226,19 @@
   ]
  },
  {
+  "key": "Print readiness",
+  "where": [
+   "src/components/editor/EditorShell.tsx:332",
+   "src/components/editor/EditorShell.tsx:333"
+  ]
+ },
+ {
+  "key": "Print ready",
+  "where": [
+   "src/components/editor/EditorShell.tsx:329"
+  ]
+ },
+ {
   "key": "Print size, bleed and 300 DPI checked",
   "where": [
    "src/components/creator/dialogs.tsx:184"
@@ -4439,6 +5248,13 @@
   "key": "Print-ready",
   "where": [
    "src/data/creators.ts:97"
+  ]
+ },
+ {
+  "key": "Printer",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:10",
+   "src/components/editor/SendToPrinter.tsx:103"
   ]
  },
  {
@@ -4454,8 +5270,15 @@
   ]
  },
  {
+  "key": "Printers and prices come live from Ifiok Market",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:80"
+  ]
+ },
+ {
   "key": "Printing",
   "where": [
+   "src/components/editor/SendToPrinter.tsx:106",
    "src/components/design/data.ts:55"
   ]
  },
@@ -4512,8 +5335,8 @@
   "key": "Progress",
   "where": [
    "src/components/design/parts.tsx:22",
-   "src/components/student/StudentView.tsx:87",
-   "src/components/fonts/FontStudio.tsx:127"
+   "src/components/editor/SendToPrinter.tsx:54",
+   "src/components/student/StudentView.tsx:87"
   ]
  },
  {
@@ -4526,6 +5349,13 @@
   "key": "Project Defence Slides",
   "where": [
    "src/components/design/data.ts:81"
+  ]
+ },
+ {
+  "key": "Project proposal",
+  "where": [
+   "src/components/editor/EditorShell.tsx:40",
+   "src/components/editor/data.ts:75"
   ]
  },
  {
@@ -4586,6 +5416,12 @@
   ]
  },
  {
+  "key": "QR code",
+  "where": [
+   "src/components/editor/EditorShell.tsx:178"
+  ]
+ },
+ {
   "key": "QR generator",
   "where": [
    "src/components/design/data.ts:158"
@@ -4594,7 +5430,8 @@
  {
   "key": "Quantity",
   "where": [
-   "src/components/design/overlays.tsx:174"
+   "src/components/design/overlays.tsx:174",
+   "src/components/editor/SendToPrinter.tsx:63"
   ]
  },
  {
@@ -4607,6 +5444,18 @@
   "key": "Reading your files…",
   "where": [
    "src/components/fonts/FontStudio.tsx:159"
+  ]
+ },
+ {
+  "key": "Ready in {days} days",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:90"
+  ]
+ },
+ {
+  "key": "Ready in 1 day",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:90"
   ]
  },
  {
@@ -4670,6 +5519,20 @@
   "key": "Recently edited",
   "where": [
    "src/components/design/views.tsx:177"
+  ]
+ },
+ {
+  "key": "Rectangle",
+  "where": [
+   "src/components/editor/data.ts:54"
+  ]
+ },
+ {
+  "key": "Redo",
+  "where": [
+   "src/components/editor/EditorShell.tsx:219",
+   "src/components/editor/EditorShell.tsx:245",
+   "src/components/editor/EditorShell.tsx:269"
   ]
  },
  {
@@ -4800,6 +5663,7 @@
  {
   "key": "Review",
   "where": [
+   "src/components/editor/SendToPrinter.tsx:10",
    "src/components/fonts/FontStudio.tsx:32"
   ]
  },
@@ -4858,6 +5722,12 @@
   ]
  },
  {
+  "key": "Sample photos",
+  "where": [
+   "src/components/editor/EditorShell.tsx:155"
+  ]
+ },
+ {
   "key": "Sans",
   "where": [
    "src/data/fonts.ts:6",
@@ -4872,6 +5742,12 @@
   ]
  },
  {
+  "key": "Saturday · 11am · Lagos",
+  "where": [
+   "src/components/editor/data.ts:48"
+  ]
+ },
+ {
   "key": "Saturday · Asọ-ẹbí",
   "where": [
    "src/components/design/data.ts:98"
@@ -4881,6 +5757,7 @@
   "key": "Saturday 12 July · 10am",
   "where": [
    "src/components/auth/AuthShell.tsx:28",
+   "src/components/editor/data.ts:21",
    "src/components/design/data.ts:62"
   ]
  },
@@ -4925,6 +5802,12 @@
   "key": "Saved as a draft.",
   "where": [
    "src/components/design/DesignApp.tsx:270"
+  ]
+ },
+ {
+  "key": "Saved to your Ifiok account",
+  "where": [
+   "src/components/editor/EditorShell.tsx:241"
   ]
  },
  {
@@ -5014,9 +5897,24 @@
   ]
  },
  {
+  "key": "Search or ask",
+  "where": [
+   "src/components/editor/EditorShell.tsx:246",
+   "src/components/editor/EditorShell.tsx:378",
+   "src/components/editor/EditorShell.tsx:379"
+  ]
+ },
+ {
   "key": "Search templates",
   "where": [
-   "src/components/design/views.tsx:227"
+   "src/components/design/views.tsx:227",
+   "src/components/editor/EditorShell.tsx:114"
+  ]
+ },
+ {
+  "key": "Search tools, or ask Ifiok anything",
+  "where": [
+   "src/components/editor/EditorShell.tsx:379"
   ]
  },
  {
@@ -5076,6 +5974,12 @@
   ]
  },
  {
+  "key": "See printers near me",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:129"
+  ]
+ },
+ {
   "key": "See status",
   "where": [
    "src/components/student/StudentView.tsx:222"
@@ -5094,6 +5998,24 @@
   ]
  },
  {
+  "key": "Select all",
+  "where": [
+   "src/components/editor/EditorShell.tsx:218"
+  ]
+ },
+ {
+  "key": "Select some text and press the comment button to add one.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:194"
+  ]
+ },
+ {
+  "key": "Selection tools",
+  "where": [
+   "src/components/editor/DesignCanvas.tsx:133"
+  ]
+ },
+ {
   "key": "Sell",
   "where": [
    "src/data/apps.ts:31"
@@ -5106,9 +6028,28 @@
   ]
  },
  {
+  "key": "Send",
+  "where": [
+   "src/components/editor/EditorShell.tsx:261"
+  ]
+ },
+ {
   "key": "Send reset link",
   "where": [
    "src/components/auth/LoginForm.tsx:68"
+  ]
+ },
+ {
+  "key": "Send to a verified printer",
+  "where": [
+   "src/components/editor/EditorShell.tsx:217",
+   "src/components/editor/SendToPrinter.tsx:49"
+  ]
+ },
+ {
+  "key": "Send to printer",
+  "where": [
+   "src/components/editor/EditorShell.tsx:261"
   ]
  },
  {
@@ -5146,6 +6087,26 @@
   ]
  },
  {
+  "key": "Share",
+  "where": [
+   "src/components/editor/EditorShell.tsx:249",
+   "src/components/editor/EditorShell.tsx:251",
+   "src/components/editor/EditorShell.tsx:270"
+  ]
+ },
+ {
+  "key": "Share on WhatsApp",
+  "where": [
+   "src/components/editor/EditorShell.tsx:254"
+  ]
+ },
+ {
+  "key": "Share this file",
+  "where": [
+   "src/components/editor/EditorShell.tsx:252"
+  ]
+ },
+ {
   "key": "Share your designs",
   "where": [
    "src/components/design/data.ts:179"
@@ -5161,6 +6122,12 @@
   "key": "Sidebar",
   "where": [
    "src/components/design/DesignApp.tsx:201"
+  ]
+ },
+ {
+  "key": "Sign a PDF",
+  "where": [
+   "src/components/editor/EditorShell.tsx:33"
   ]
  },
  {
@@ -5192,6 +6159,18 @@
   "key": "Size {label}",
   "where": [
    "src/components/fonts/FontsView.tsx:43"
+  ]
+ },
+ {
+  "key": "Skip to the editor",
+  "where": [
+   "src/components/editor/EditorShell.tsx:231"
+  ]
+ },
+ {
+  "key": "Smaller",
+  "where": [
+   "src/components/editor/DesignCanvas.tsx:137"
   ]
  },
  {
@@ -5227,6 +6206,19 @@
   ]
  },
  {
+  "key": "Sort printers",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:81"
+  ]
+ },
+ {
+  "key": "Spec",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:10",
+   "src/components/editor/SendToPrinter.tsx:104"
+  ]
+ },
+ {
   "key": "Special Offer",
   "where": [
    "src/components/design/data.ts:86"
@@ -5245,9 +6237,21 @@
   ]
  },
  {
+  "key": "Spiral bound",
+  "where": [
+   "src/components/editor/data.ts:111"
+  ]
+ },
+ {
   "key": "Split PDF",
   "where": [
    "src/components/design/data.ts:154"
+  ]
+ },
+ {
+  "key": "Spot UV",
+  "where": [
+   "src/components/editor/data.ts:102"
   ]
  },
  {
@@ -5278,6 +6282,12 @@
   "key": "Standard 3.5 × 2 in",
   "where": [
    "src/components/design/data.ts:15"
+  ]
+ },
+ {
+  "key": "Stapled",
+  "where": [
+   "src/components/editor/data.ts:110"
   ]
  },
  {
@@ -5422,6 +6432,7 @@
  {
   "key": "Style",
   "where": [
+   "src/components/editor/EditorShell.tsx:296",
    "src/components/fonts/FontStudio.tsx:172"
   ]
  },
@@ -5479,6 +6490,12 @@
   ]
  },
  {
+  "key": "Summarise",
+  "where": [
+   "src/components/editor/EditorShell.tsx:34"
+  ]
+ },
+ {
   "key": "Summary",
   "where": [
    "src/components/creator/views.tsx:286"
@@ -5527,10 +6544,28 @@
   ]
  },
  {
+  "key": "Switch to Ifiok Designs",
+  "where": [
+   "src/components/editor/EditorShell.tsx:221"
+  ]
+ },
+ {
+  "key": "Switch to Ifiok Docs",
+  "where": [
+   "src/components/editor/EditorShell.tsx:221"
+  ]
+ },
+ {
   "key": "T-shirt print",
   "where": [
    "src/components/design/data.ts:25",
    "src/data/creator-app.ts:19"
+  ]
+ },
+ {
+  "key": "Table",
+  "where": [
+   "src/components/editor/DocCanvas.tsx:83"
   ]
  },
  {
@@ -5564,6 +6599,13 @@
   ]
  },
  {
+  "key": "Template applied",
+  "where": [
+   "src/components/editor/EditorShell.tsx:117",
+   "src/components/editor/EditorShell.tsx:126"
+  ]
+ },
+ {
   "key": "Template gallery",
   "where": [
    "src/components/design/views.tsx:85"
@@ -5591,9 +6633,27 @@
   ]
  },
  {
+  "key": "Text",
+  "where": [
+   "src/components/editor/EditorShell.tsx:24"
+  ]
+ },
+ {
   "key": "Text is editable",
   "where": [
    "src/components/creator/dialogs.tsx:185"
+  ]
+ },
+ {
+  "key": "Text or images this close to the edge can be cut when trimmed.",
+  "where": [
+   "src/components/editor/useDesign.ts:48"
+  ]
+ },
+ {
+  "key": "Text tools",
+  "where": [
+   "src/components/editor/DocCanvas.tsx:66"
   ]
  },
  {
@@ -5698,9 +6758,16 @@
   ]
  },
  {
+  "key": "The timeline looks tight. Maybe add a week for training.",
+  "where": [
+   "src/components/editor/data.ts:82"
+  ]
+ },
+ {
   "key": "Theme",
   "where": [
-   "src/components/design/DesignApp.tsx:204"
+   "src/components/design/DesignApp.tsx:204",
+   "src/components/editor/EditorShell.tsx:272"
   ]
  },
  {
@@ -5740,9 +6807,21 @@
   ]
  },
  {
+  "key": "This opens the PDF tools in the full editor.",
+  "where": [
+   "src/components/editor/EditorShell.tsx:200"
+  ]
+ },
+ {
   "key": "This screen is part of the live app. The prototype shows Home, My files, Templates and Orders.",
   "where": [
    "src/components/design/views.tsx:260"
+  ]
+ },
+ {
+  "key": "THIS WEEKEND",
+  "where": [
+   "src/components/editor/data.ts:38"
   ]
  },
  {
@@ -5787,19 +6866,41 @@
  {
   "key": "Tools",
   "where": [
+   "src/components/editor/EditorShell.tsx:281",
+   "src/components/editor/EditorShell.tsx:370",
    "src/data/apps.ts:109"
+  ]
+ },
+ {
+  "key": "Top rated",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:11",
+   "src/components/editor/data.ts:88"
   ]
  },
  {
   "key": "Total",
   "where": [
+   "src/components/editor/SendToPrinter.tsx:108",
    "src/components/creator/views.tsx:332"
+  ]
+ },
+ {
+  "key": "Track in Orders",
+  "where": [
+   "src/components/editor/SendToPrinter.tsx:120"
   ]
  },
  {
   "key": "Track in the live app",
   "where": [
    "src/components/design/parts.tsx:117"
+  ]
+ },
+ {
+  "key": "Track scans from the dashboard",
+  "where": [
+   "src/components/editor/EditorShell.tsx:178"
   ]
  },
  {
@@ -5811,6 +6912,7 @@
  {
   "key": "Traditional wedding",
   "where": [
+   "src/components/editor/data.ts:47",
    "src/components/design/data.ts:66",
    "src/data/creator-app.ts:66"
   ]
@@ -5819,6 +6921,12 @@
   "key": "Traditional Wedding",
   "where": [
    "src/components/design/data.ts:98"
+  ]
+ },
+ {
+  "key": "Translate to Yorùbá",
+  "where": [
+   "src/components/editor/EditorShell.tsx:34"
   ]
  },
  {
@@ -5891,6 +6999,19 @@
   ]
  },
  {
+  "key": "Under 240 DPI looks soft in print. Make it smaller or use a sharper photo.",
+  "where": [
+   "src/components/editor/useDesign.ts:50"
+  ]
+ },
+ {
+  "key": "Underline",
+  "where": [
+   "src/components/editor/EditorShell.tsx:303",
+   "src/components/editor/DocCanvas.tsx:69"
+  ]
+ },
+ {
   "key": "Understand your customers",
   "where": [
    "src/data/apps.ts:34"
@@ -5901,7 +7022,7 @@
   "where": [
    "src/components/design/DesignApp.tsx:124",
    "src/components/design/overlays.tsx:274",
-   "src/components/creator/store.tsx:109"
+   "src/components/editor/EditorShell.tsx:219"
   ]
  },
  {
@@ -5945,6 +7066,7 @@
  {
   "key": "Up to 70% off",
   "where": [
+   "src/components/editor/data.ts:36",
    "src/components/design/data.ts:85"
   ]
  },
@@ -5961,6 +7083,12 @@
   ]
  },
  {
+  "key": "Upload a photo or logo",
+  "where": [
+   "src/components/editor/EditorShell.tsx:152"
+  ]
+ },
+ {
   "key": "Upload your font files. Once approved, designers can click it and start using it.",
   "where": [
    "src/components/creator/views.tsx:65"
@@ -5969,6 +7097,7 @@
  {
   "key": "Uploads",
   "where": [
+   "src/components/editor/EditorShell.tsx:25",
    "src/components/design/data.ts:131"
   ]
  },
@@ -6017,6 +7146,7 @@
  {
   "key": "Verified",
   "where": [
+   "src/components/editor/SendToPrinter.tsx:88",
    "src/components/creator/views.tsx:200"
   ]
  },
@@ -6103,6 +7233,12 @@
   "key": "View design",
   "where": [
    "src/components/design/parts.tsx:116"
+  ]
+ },
+ {
+  "key": "Viewing",
+  "where": [
+   "src/components/editor/EditorShell.tsx:314"
   ]
  },
  {
@@ -6194,6 +7330,12 @@
   "key": "Weak",
   "where": [
    "src/components/auth/SignupForm.tsx:89"
+  ]
+ },
+ {
+  "key": "Wedding Invitation",
+  "where": [
+   "src/components/editor/data.ts:43"
   ]
  },
  {
@@ -6357,9 +7499,21 @@
   ]
  },
  {
+  "key": "Write a headline for this flyer",
+  "where": [
+   "src/components/editor/EditorShell.tsx:179"
+  ]
+ },
+ {
   "key": "Write, edit and sign documents and PDFs with Ifiok Docs.",
   "where": [
    "src/components/design/docsViews.tsx:82"
+  ]
+ },
+ {
+  "key": "Write, rewrite or translate",
+  "where": [
+   "src/components/editor/EditorShell.tsx:179"
   ]
  },
  {
@@ -6372,6 +7526,7 @@
  {
   "key": "Yesterday",
   "where": [
+   "src/components/editor/data.ts:82",
    "src/components/design/data.ts:62"
   ]
  },
@@ -6560,6 +7715,18 @@
   "key": "YouTube thumbnail",
   "where": [
    "src/data/creator-app.ts:34"
+  ]
+ },
+ {
+  "key": "Zoom in",
+  "where": [
+   "src/components/editor/EditorShell.tsx:350"
+  ]
+ },
+ {
+  "key": "Zoom out",
+  "where": [
+   "src/components/editor/EditorShell.tsx:348"
   ]
  }
 ]
