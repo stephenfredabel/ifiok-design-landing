@@ -46,7 +46,7 @@ export default function Header() {
         <span className="grow" />
         <ThemeToggle />
         <LangMenu />
-        <a className="login" href="https://designs.ifiok.ng"><T k="cta.login">Log in</T></a>
+        <a className="login" href={asset('/login/')}><T k="cta.login">Log in</T></a>
         <a className="btn btn-gold hdr-start" href="https://designs.ifiok.ng/editor"><T k="cta.start">Start designing</T></a>
       </div>
       {open && (
@@ -57,7 +57,7 @@ export default function Header() {
               {links.map(([href, k, label]) => <a key={k} href={href} onClick={() => setOpen(false)}><T k={k}>{label}</T></a>)}
             </nav>
             <div className="mnav-f">
-              <a className="btn btn-line" href="https://designs.ifiok.ng"><T k="cta.login">Log in</T></a>
+              <a className="btn btn-line" href={asset('/login/')}><T k="cta.login">Log in</T></a>
               <a className="btn btn-gold" href="https://designs.ifiok.ng/editor"><T k="cta.start">Start designing</T></a>
             </div>
           </div>
