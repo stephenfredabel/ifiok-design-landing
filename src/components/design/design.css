@@ -494,3 +494,12 @@
 .d-app .seg.wide button{ flex: 1 1 0; min-width: 0; justify-content: center; text-align: center; line-height: 1.15; height: auto; min-height: 42px; padding: 6px 10px; }
 .d-app .stage{ white-space: normal; max-width: 100%; line-height: 1.2; text-align: left; }
 .d-app .stage i{ flex: none; }
+
+/* "New document" tile in the Documents rail */
+.d-app .tcard.newdoc { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 168px; width: 100%; border: 1.5px dashed var(--line-2); border-radius: 14px; background: transparent; color: var(--tx); cursor: pointer; text-align: center; }
+.d-app .tcard.newdoc:hover { background: var(--hover); border-color: var(--teal-hi); }
+.d-app .tcard.newdoc .nd-plus { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: rgba(11, 122, 127, 0.18); color: var(--teal-text); margin-bottom: 4px; }
+.d-app .tcard.newdoc .nd-plus svg { width: 22px; height: 22px; }
+/* template tiles in a rail are all the same width, whatever the name length */
+.d-app .rs-i .tcard { width: 100%; }
+.d-app .rs-i .tcard .th-frame { width: 100%; }

@@ -7,6 +7,9 @@ import { formatById, naira, STAGES, type Design, type Order, type Stage, type Te
 
 import { tr } from '@/i18n/tr';
 export const EDITOR = 'https://designs.ifiok.ng/editor';
+/** Documents open in the Ifiok Docs editor. */
+export const DOCS_EDITOR = 'https://docs.ifiok.ng/d-next';
+export const editorFor = (formatId: string) => (formatById(formatId).doc ? DOCS_EDITOR : EDITOR);
 
 export function StagePill({ stage }: { stage: Stage }) {
   const label = STAGES.find((s) => s.id === stage)!.label;
@@ -67,7 +70,7 @@ export function DesignCard({ d, onOpen, onDuplicate, onDelete }: { d: Design; on
             {(close) => (
               <>
                 <button type="button" role="menuitem" onClick={() => { close(); onOpen(d.id); }}><Pencil aria-hidden="true" />{tr("Details")}</button>
-                <a role="menuitem" href={EDITOR} onClick={close}><ExternalLink aria-hidden="true" />{tr("Edit in editor")}</a>
+                <a role="menuitem" href={editorFor(d.formatId)} onClick={close}><ExternalLink aria-hidden="true" />{f.doc ? tr("Edit in Ifiok Docs") : tr("Edit in editor")}</a>
                 <button type="button" role="menuitem" onClick={() => { close(); onDuplicate(d.id); }}><Copy aria-hidden="true" />{tr("Duplicate")}</button>
                 <button type="button" role="menuitem" className="danger" onClick={() => { close(); onDelete(d.id); }}><Trash2 aria-hidden="true" />{tr("Delete")}</button>
               </>

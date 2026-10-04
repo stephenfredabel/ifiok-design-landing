@@ -3,7 +3,7 @@
 import { ArrowRight, Check, CornerDownLeft, Plus, Search, X } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Thumb from './Thumb';
-import { EDITOR, Stepper, StagePill } from './parts';
+import { DOCS_EDITOR, EDITOR, Stepper, StagePill } from './parts';
 import { FORMATS, NAV, TEMPLATES, TOOL_LINKS, formatById, naira, priceFor, sizeLabel, type Design, type NavItem } from './data';
 
 import { tr } from '@/i18n/tr';
@@ -70,7 +70,7 @@ export function NewDesignDialog({ seed, onClose, onCreate }: { seed: NewDesignSe
             <div>
               <p className="lbl">{tr("Choose a size")}</p>
               <div className="fmt-list" role="radiogroup" aria-label={tr("Design size")}>
-                {FORMATS.map((x) => (
+                {FORMATS.filter((x) => !x.doc).map((x) => (
                   <button key={x.id} type="button" role="radio" aria-checked={formatId === x.id} className="fmt" onClick={() => setFormatId(x.id)}>
                     <b>{tr(x.label)}</b>
                     <span className="mono">{sizeLabel(x)}</span>
@@ -127,7 +127,12 @@ export function DetailPanel({ d, onClose, onDuplicate, onDelete }: { d: Design |
   const f = d ? formatById(d.formatId) : null;
   useEffect(() => { if (f) setQty(f.qty); }, [f?.id, d?.id]); // eslint-disable-line react-hooks/exhaustive-deps
   if (!d || !f) return null;
-  const checks = [
+  const checks = f.doc ? [
+    { ok: true, text: tr("Page size A4") },
+    { ok: true, text: tr("Fonts are embedded when you print") },
+    { ok: true, text: tr("Margins stay inside the print area") },
+    d.warn ? { ok: false, text: d.warn } : { ok: true, text: tr("Images are sharp enough to print") },
+  ] : [
     { ok: true, text: tr("Resolution 300 DPI") },
     { ok: true, text: tr("Colour mode CMYK") },
     { ok: true, text: tr("Bleed {bleed}\" on all edges", { bleed: f.bleed }) },
@@ -143,7 +148,7 @@ export function DetailPanel({ d, onClose, onDuplicate, onDelete }: { d: Design |
         <div className="dialog-b">
           <Thumb formatId={d.formatId} accent={d.accent} headline={d.headline} sub={tr(d.sub)} className="dt-prev" font={d.font} />
           <div className="dt-actions">
-            <a className="btn-p" href={EDITOR} data-autofocus>{tr("Edit in editor")} <ArrowRight aria-hidden="true" /></a>
+            <a className="btn-p" href={f.doc ? DOCS_EDITOR : EDITOR} data-autofocus>{f.doc ? tr("Edit in Ifiok Docs") : tr("Edit in editor")} <ArrowRight aria-hidden="true" /></a>
             <button type="button" className="btn-s" onClick={() => onDuplicate(d.id)}>{tr("Duplicate")}</button>
             <button type="button" className="btn-s danger" onClick={() => { onDelete(d.id); onClose(); }}>{tr("Delete")}</button>
           </div>
@@ -174,7 +179,7 @@ export function DetailPanel({ d, onClose, onDuplicate, onDelete }: { d: Design |
               <p className="price mono">{naira(priceFor(f, qty))}</p>
             </div>
             <p className="muted">{tr("Example price. The final price is set in the live app at checkout.")}</p>
-            <a className="btn-p wide" href={EDITOR}>{tr("Continue to order")}</a>
+            <a className="btn-p wide" href={f.doc ? DOCS_EDITOR : EDITOR}>{tr("Continue to order")}</a>
           </section>
         </div>
       </aside>
@@ -184,8 +189,8 @@ export function DetailPanel({ d, onClose, onDuplicate, onDelete }: { d: Design |
 
 type Hit = { id: string; group: string; label: string; hint: string; run: () => void };
 
-export function Palette({ open, onClose, designs, go, openDetail, newFrom, nav = NAV }: {
-  nav?: NavItem[]; open: boolean; onClose: () => void; designs: Design[]; go: (view: string) => void; openDetail: (id: string) => void; newFrom: (seed: NewDesignSeed) => void;
+export function Palette({ open, onClose, designs, go, openDetail, newFrom, newDoc, nav = NAV }: {
+  nav?: NavItem[]; open: boolean; onClose: () => void; designs: Design[]; go: (view: string) => void; openDetail: (id: string) => void; newFrom: (seed: NewDesignSeed) => void; newDoc: () => void;
 }) {
   const [q, setQ] = useState('');
   const [i, setI] = useState(0);
@@ -195,15 +200,16 @@ export function Palette({ open, onClose, designs, go, openDetail, newFrom, nav =
   const hits = useMemo<Hit[]>(() => {
     const all: Hit[] = [
       { id: 'a-new', group: tr("Actions"), label: tr("New design"), hint: tr("N"), run: () => newFrom({}) },
+      { id: 'a-doc', group: tr("Actions"), label: tr("New document"), hint: tr("Ifiok Docs"), run: () => newDoc() },
       ...nav.map<Hit>((n) => ({ id: 'n-' + n.id, group: tr("Go to"), label: n.label, hint: n.href ? tr("Opens in a new tab") : tr("View"), run: () => (n.href ? window.open(n.href, '_blank', 'noopener') : go(n.id)) })),
-      ...designs.map<Hit>((d) => ({ id: 'd-' + d.id, group: tr("Your designs"), label: d.name, hint: formatById(d.formatId).label, run: () => openDetail(d.id) })),
+      ...designs.map<Hit>((d) => ({ id: 'd-' + d.id, group: tr("Your files"), label: d.name, hint: formatById(d.formatId).label, run: () => openDetail(d.id) })),
       ...TEMPLATES.map<Hit>((t) => ({ id: 't-' + t.id, group: tr("Templates"), label: t.name, hint: t.cat, run: () => newFrom({ formatId: t.formatId, name: t.name, accent: t.accent, headline: t.headline, sub: t.sub }) })),
       ...TOOL_LINKS.map<Hit>((t) => ({ id: 'l-' + t.label, group: tr("Free tools"), label: t.label, hint: tr("Opens in a new tab"), run: () => window.open(t.href, '_blank', 'noopener') })),
     ];
     const needle = q.trim().toLowerCase();
-    const list = needle ? all.filter((h) => (h.label + ' ' + h.hint + ' ' + h.group).toLowerCase().includes(needle)) : all.filter((h) => h.group === 'Actions' || h.group === 'Go to' || h.group === 'Your designs').slice(0, 12);
+    const list = needle ? all.filter((h) => (h.label + ' ' + h.hint + ' ' + h.group).toLowerCase().includes(needle)) : all.filter((h) => h.group === tr("Actions") || h.group === tr("Go to") || h.group === tr("Your files")).slice(0, 12);
     return list.slice(0, 20);
-  }, [q, designs, go, openDetail, newFrom]);
+  }, [q, designs, go, openDetail, newFrom, newDoc]);
 
   if (!open) return null;
   const choose = (h?: Hit) => { if (!h) return; onClose(); h.run(); };
@@ -223,7 +229,7 @@ export function Palette({ open, onClose, designs, go, openDetail, newFrom, nav =
               if (e.key === 'ArrowUp') { e.preventDefault(); setI((x) => Math.max(0, x - 1)); }
               if (e.key === 'Enter') { e.preventDefault(); choose(hits[i]); }
             }}
-            placeholder={tr("Search designs, templates, tools and pages")}
+            placeholder={tr("Search designs, documents, templates, tools and pages")}
             aria-label={tr("Search")}
             role="combobox"
             aria-expanded="true"
@@ -271,15 +277,18 @@ export function Toast({ t, onClose }: { t: { msg: string; href?: string; label?:
   );
 }
 
-export type NewKind = 'design' | 'template' | 'font';
-/** Creators choose what they are making. Everyone else goes straight to a new design. */
-export function NewChooser({ open, onClose, onPick }: { open: boolean; onClose: () => void; onPick: (k: NewKind) => void }) {
+export type NewKind = 'design' | 'document' | 'template' | 'font';
+/** Everyone chooses between a design (Ifiok Designs) and a document (Ifiok Docs). Creators can also start a template or a font. */
+export function NewChooser({ open, onClose, onPick, creator = false }: { open: boolean; onClose: () => void; onPick: (k: NewKind) => void; creator?: boolean }) {
   const ref = useFocusTrap(open, onClose);
   if (!open) return null;
   const items: [NewKind, string, string][] = [
-    ['design', tr('A design for me'), tr('Cards, flyers, posters and more, to use or print.')],
-    ['template', tr('A template to submit'), tr('Any design type. If Ifiok approves it, you are paid.')],
-    ['font', tr('A font to submit'), tr('Designers click it and start using it. If approved, you are paid.')],
+    ['design', tr('A design'), tr('Cards, flyers, posters and more, to use or send to a printer.')],
+    ['document', tr('A document'), tr('Resumes, invoices, reports and letters, written in Ifiok Docs.')],
+    ...(creator ? ([
+      ['template', tr('A template to submit'), tr('Any design type. If Ifiok approves it, you are paid.')],
+      ['font', tr('A font to submit'), tr('Designers click it and start using it. If approved, you are paid.')],
+    ] as [NewKind, string, string][]) : []),
   ];
   return (
     <div className="scrim" onPointerDown={(e) => e.target === e.currentTarget && onClose()}>

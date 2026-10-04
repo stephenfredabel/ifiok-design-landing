@@ -4,7 +4,7 @@ import { ArrowRight, ChevronLeft, ChevronRight, ExternalLink, FolderOpen, Layout
 import { useCallback, useEffect, useRef } from 'react';
 import { useMemo, useState } from 'react';
 import { DesignCard, OrderCard, StagePill, TemplateCard } from './parts';
-import { ACCOUNT_ROWS, QUICK, STAGES, TEMPLATES, TEMPLATE_CATS, TOOL_LINKS, USER, formatById, naira, type Design, type NavItem, type Order, type Stage, type Template } from './data';
+import { ACCOUNT_ROWS, DOC_TEMPLATES, QUICK, STAGES, TEMPLATES, TEMPLATE_CATS, TOOL_LINKS, USER, formatById, isDoc, naira, type Design, type NavItem, type Order, type Stage, type Template } from './data';
 import Thumb from './Thumb';
 
 import { tr } from '@/i18n/tr';
@@ -38,10 +38,12 @@ export function ScrollRow({ label, children }: { label: string; children: React.
 
 type Ops = { openDetail: (id: string) => void; duplicate: (id: string) => void; remove: (id: string) => void };
 
-export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTemplate, slot, hero }: {
-  slot?: React.ReactNode; hero?: { title: string; sub?: string; quick: readonly string[] }; designs: Design[]; orders: Order[]; ops: Ops; go: (v: string) => void; newFrom: (seed: { formatId?: string }) => void; openPalette: () => void; useTemplate: (t: Template) => void;
+export function HomeView({ designs: all, orders, ops, go, newFrom, newDoc, openPalette, useTemplate, slot, hero }: {
+  newDoc: (t?: Template) => void; slot?: React.ReactNode; hero?: { title: string; sub?: string; quick: readonly string[] }; designs: Design[]; orders: Order[]; ops: Ops; go: (v: string) => void; newFrom: (seed: { formatId?: string }) => void; openPalette: () => void; useTemplate: (t: Template) => void;
 }) {
   const active = orders.filter((o) => o.stage !== 'delivered');
+  const designs = all.filter((d) => !isDoc(d));
+  const docs = all.filter(isDoc);
   return (
     <div className="view">
       <section className="hero-d">
@@ -50,7 +52,7 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
         <h1>{hero?.title ?? tr("What will you design today?")}</h1>
         {hero?.sub && <p className="cd-hero-sub">{tr(hero.sub)}</p>}
         <button type="button" className="hero-search" onClick={openPalette}>
-          <Search aria-hidden="true" /><span>{tr("Search designs, templates and tools")}</span><kbd>/</kbd>
+          <Search aria-hidden="true" /><span>{tr("Search designs, documents and tools")}</span><kbd>/</kbd>
         </button>
         <ScrollRow label={tr("Start a new design")}>
           {(hero?.quick ?? QUICK).map((id) => {
@@ -62,6 +64,10 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
               </button>
             );
           })}
+          <button type="button" role="listitem" className="quick-i" onClick={() => newDoc()}>
+            <span className="quick-ic custom" aria-hidden="true"><Plus /></span>
+            <span>{tr("Document")}</span>
+          </button>
           <button type="button" role="listitem" className="quick-i" onClick={() => newFrom({})}>
             <span className="quick-ic custom" aria-hidden="true"><Plus /></span>
             <span>{tr("Custom size")}</span>
@@ -100,6 +106,17 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
         </div>
       </section>
 
+      <section className="blk">
+        <header className="blk-h"><h2>{tr("Your documents")}</h2><button type="button" className="see" onClick={() => go('docs')}>{tr("See all")} <ChevronRight aria-hidden="true" /></button></header>
+        <div className="rail-scroll">
+          <div className="rs-i sm"><button type="button" className="tcard newdoc" onClick={() => newDoc()} aria-label={tr("New document")}><span className="nd-plus" aria-hidden="true"><Plus /></span><span className="tcard-name">{tr("New document")}</span><span className="tcard-sub">{tr("Ifiok Docs")}</span></button></div>
+          {docs.slice(0, 5).map((d) => (
+            <div className="rs-i" key={d.id}><DesignCard d={d} onOpen={ops.openDetail} onDuplicate={ops.duplicate} onDelete={ops.remove} /></div>
+          ))}
+          {docs.length === 0 && DOC_TEMPLATES.slice(0, 4).map((t) => <div className="rs-i sm" key={t.id}><TemplateCard t={t} onUse={(x) => newDoc(x)} /></div>)}
+        </div>
+      </section>
+
       {active.length > 0 && (
         <section className="blk">
           <header className="blk-h"><h2>{tr("Print orders in progress")}</h2><button type="button" className="see" onClick={() => go('orders')}>{tr("All orders")} <ChevronRight aria-hidden="true" /></button></header>
@@ -119,7 +136,7 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
       ))}
 
       <section className="blk">
-        <header className="blk-h"><h2>{tr("Free tools")}</h2><a className="see" href="https://ifiok.ng/tools" target="_blank" rel="noopener noreferrer">{tr("All tools")} <ExternalLink aria-hidden="true" /></a></header>
+        <header className="blk-h"><h2>{tr("PDF tools")}</h2><a className="see" href="https://ifiok.ng/tools" target="_blank" rel="noopener noreferrer">{tr("All tools")} <ExternalLink aria-hidden="true" /></a></header>
         <div className="tool-g">
           {TOOL_LINKS.map(({ label, href, Icon }) => (
             <a key={label} className="tool" href={href} target="_blank" rel="noopener noreferrer"><Icon aria-hidden="true" /><span>{tr(label)}</span></a>
@@ -132,29 +149,30 @@ export function HomeView({ designs, orders, ops, go, newFrom, openPalette, useTe
 
 const FILTERS: { id: 'all' | Stage; label: string }[] = [{ id: 'all', label: 'All' }, ...STAGES.map((s) => ({ id: s.id, label: s.label }))];
 
-export function ProjectsView({ designs, ops, newFrom }: { designs: Design[]; ops: Ops; newFrom: (seed: Record<string, never>) => void }) {
+export function ProjectsView({ designs, ops, onNew }: { designs: Design[]; ops: Ops; onNew: () => void }) {
   const [q, setQ] = useState('');
+  const [kind, setKind] = useState<'all' | 'design' | 'doc'>('all');
   const [stage, setStage] = useState<'all' | Stage>('all');
   const [sort, setSort] = useState<'recent' | 'name'>('recent');
   const [layout, setLayout] = useState<'grid' | 'list'>('grid');
   const [where, setWhere] = useState<'cloud' | 'phone'>('cloud');
   const shown = useMemo(() => {
     const n = q.trim().toLowerCase();
-    const list = designs.filter((d) => (where === 'cloud' || d.device) && (stage === 'all' || d.stage === stage) && (!n || (d.name + ' ' + formatById(d.formatId).label).toLowerCase().includes(n)));
+    const list = designs.filter((d) => (where === 'cloud' || d.device) && (kind === 'all' || (kind === 'doc') === isDoc(d)) && (stage === 'all' || d.stage === stage) && (!n || (d.name + ' ' + formatById(d.formatId).label).toLowerCase().includes(n)));
     return sort === 'name' ? [...list].sort((a, b) => a.name.localeCompare(b.name)) : list;
-  }, [designs, q, stage, sort, where]);
+  }, [designs, q, stage, sort, where, kind]);
   return (
     <div className="view">
       <header className="view-h">
-        <div><h1>{tr("My files")}</h1><p className="muted">{tr("{shownCount} of {designsCount} designs", { shownCount: shown.length, designsCount: designs.length })}</p></div>
-        <button type="button" className="btn-p" onClick={() => newFrom({})}><Plus aria-hidden="true" />{tr("New design")}</button>
+        <div><h1>{tr("My files")}</h1><p className="muted">{tr("{shownCount} of {designsCount} files", { shownCount: shown.length, designsCount: designs.length })}</p></div>
+        <button type="button" className="btn-p" onClick={onNew}><Plus aria-hidden="true" />{tr("New")}</button>
       </header>
       <div className="seg wide" role="group" aria-label={tr("Where your files are")}>
         <button type="button" aria-pressed={where === 'cloud'} onClick={() => setWhere('cloud')}><Cloud aria-hidden="true" />&nbsp;{tr("All files")}</button>
         <button type="button" aria-pressed={where === 'phone'} onClick={() => setWhere('phone')}><Smartphone aria-hidden="true" />&nbsp;{tr("On this phone")}</button>
       </div>
       <div className="bar">
-        <label className="search"><Search aria-hidden="true" /><input value={q} onChange={(e) => setQ(e.target.value)} placeholder={tr("Search your designs")} aria-label={tr("Search your designs")} /></label>
+        <label className="search"><Search aria-hidden="true" /><input value={q} onChange={(e) => setQ(e.target.value)} placeholder={tr("Search your files")} aria-label={tr("Search your files")} /></label>
         <label className="sel"><span className="sr">{tr("Sort")}</span>
           <select value={sort} onChange={(e) => setSort(e.target.value as 'recent' | 'name')}><option value="recent">{tr("Recently edited")}</option><option value="name">{tr("Name A to Z")}</option></select>
         </label>
@@ -162,6 +180,13 @@ export function ProjectsView({ designs, ops, newFrom }: { designs: Design[]; ops
           <button type="button" aria-pressed={layout === 'grid'} onClick={() => setLayout('grid')} aria-label={tr("Grid")}><LayoutGrid aria-hidden="true" /></button>
           <button type="button" aria-pressed={layout === 'list'} onClick={() => setLayout('list')} aria-label={tr("List")}><List aria-hidden="true" /></button>
         </div>
+      </div>
+      <div className="chips" role="group" aria-label={tr("Filter by app")}>
+        {([['all', 'All files'], ['design', 'Designs'], ['doc', 'Documents']] as const).map(([id, label]) => (
+          <button key={id} type="button" className="chip" aria-pressed={kind === id} onClick={() => setKind(id)}>
+            {tr(label)}<small>{id === 'all' ? designs.length : designs.filter((d) => (id === 'doc') === isDoc(d)).length}</small>
+          </button>
+        ))}
       </div>
       <div className="chips" role="group" aria-label={tr("Filter by status")}>
         {FILTERS.map((f) => (
@@ -171,7 +196,7 @@ export function ProjectsView({ designs, ops, newFrom }: { designs: Design[]; ops
         ))}
       </div>
       {shown.length === 0 ? (
-        <div className="empty"><p><b>{tr("No designs match.")}</b> {tr("Try another word or status.")}</p><button type="button" className="btn-s" onClick={() => { setQ(''); setStage('all'); }}>{tr("Clear filters")}</button></div>
+        <div className="empty"><p><b>{tr("No files match.")}</b> {tr("Try another word or status.")}</p><button type="button" className="btn-s" onClick={() => { setQ(''); setStage('all'); setKind('all'); }}>{tr("Clear filters")}</button></div>
       ) : layout === 'grid' ? (
         <div className="dgrid">{shown.map((d) => <DesignCard key={d.id} d={d} onOpen={ops.openDetail} onDuplicate={ops.duplicate} onDelete={ops.remove} />)}</div>
       ) : (

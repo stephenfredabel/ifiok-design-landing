@@ -13,12 +13,13 @@ import { FontStudioView, MyFontPanel, NewFontDialog } from '@/components/fonts/F
 import { useSampleFonts } from '@/components/fonts/parts';
 import type { FontEntry } from '@/data/fonts';
 import { DetailPanel, NewChooser, NewDesignDialog, Palette, Toast, type DesignFont, type NewDesignSeed, type NewKind } from './overlays';
-import { EDITOR } from './parts';
+import { DOCS_EDITOR, EDITOR } from './parts';
+import { DocsView, NewDocDialog, type NewDocSeed } from './docsViews';
 import { AccountView, HomeView, OrdersView, PlaceholderView, ProjectsView, TemplatesView } from './views';
 import { StudentProvider, useStudent } from '@/components/student/store';
 import { StudentStrip, StudentView } from '@/components/student/StudentView';
 import { STUDENT_QUICK } from '@/data/student';
-import { CREATOR_NAV, NAV, SAMPLE_DESIGNS, SAMPLE_ORDERS, USER, formatById, type Design, type NavItem, type Template } from './data';
+import { CREATOR_NAV, NAV, SAMPLE_DESIGNS, SAMPLE_ORDERS, USER, formatById, isDocFormat, type Design, type NavItem, type Template } from './data';
 import './design.css';
 import '@/components/creator/creator.css';
 import '@/components/fonts/fonts.css';
@@ -67,6 +68,7 @@ function Shell({ creator, student, say }: { creator: boolean; student: boolean; 
   const [collapsed, setCollapsed] = useState(false);
   const [drawer, setDrawer] = useState(false);
   const [seed, setSeed] = useState<NewDesignSeed>(null);
+  const [docSeed, setDocSeed] = useState<NewDocSeed>(null);
   const [detail, setDetail] = useState<string | null>(null);
   const [palette, setPalette] = useState(false);
   const [chooser, setChooser] = useState(false);
@@ -106,8 +108,9 @@ function Shell({ creator, student, say }: { creator: boolean; student: boolean; 
     const f = formatById(v.formatId);
     const d: Design = { id: 'n' + Date.now(), name: v.name, formatId: v.formatId, accent: v.accent, headline: v.headline ?? v.name, sub: v.sub ?? f.note, stage: 'draft', edited: tr("Just now"), font: v.font };
     setDesigns((l) => [d, ...l]);
-    setSeed(null);
-    say({ msg: tr("Created “{name}”", { name: tr(v.name) }), href: EDITOR, label: tr("Open in editor") });
+    setSeed(null); setDocSeed(null);
+    const doc = isDocFormat(v.formatId);
+    say({ msg: tr("Created “{name}”", { name: tr(v.name) }), href: doc ? DOCS_EDITOR : EDITOR, label: doc ? tr("Open in Ifiok Docs") : tr("Open in editor") });
   }, [say]);
   const duplicate = useCallback((id: string) => {
     setDesigns((l) => { const i = l.findIndex((d) => d.id === id); if (i < 0) return l; return [{ ...l[i], id: 'n' + Date.now(), name: l[i].name + ' (copy)', edited: tr("Just now"), stage: 'draft' as const }, ...l]; });
@@ -121,15 +124,19 @@ function Shell({ creator, student, say }: { creator: boolean; student: boolean; 
     say({ msg: tr("Deleted “{name}”", { name: tr(r.name) }), label: tr("Undo"), action: () => setDesigns((l) => { const n = [...l]; n.splice(Math.min(at, n.length), 0, r); return n; }) });
   }, [say]);
 
-  const useTemplate = useCallback((t: Template) => setSeed({ formatId: t.formatId, name: t.name, accent: t.accent, headline: t.headline, sub: t.sub }), []);
+  const useTemplate = useCallback((t: Template) => (isDocFormat(t.formatId) ? setDocSeed({ template: t }) : setSeed({ formatId: t.formatId, name: t.name, accent: t.accent, headline: t.headline, sub: t.sub })), []);
   const useFont = useCallback((f: FontEntry) => { setOpenF(null); setSeed({ name: tr("Design in {family}", { family: f.family }), font: { css: f.css, family: f.family, cat: f.cat } }); }, []);
   const openDetail = useCallback((id: string) => setDetail(id), []);
-  const newFrom = useCallback((s: NewDesignSeed) => setSeed(s ?? {}), []);
+  const newFrom = useCallback((s: NewDesignSeed) => {
+    if (s && isDocFormat(s.formatId)) setDocSeed({ template: { id: 'x', name: s.name ?? '', cat: 'Documents', formatId: s.formatId!, accent: s.accent ?? '#0B7A7F', headline: s.headline ?? '', sub: s.sub ?? '' } });
+    else setSeed(s ?? {});
+  }, []);
+  const newDoc = useCallback((t?: Template) => setDocSeed(t ? { template: t } : {}), []);
   const ops = useMemo(() => ({ openDetail, duplicate, remove }), [openDetail, duplicate, remove]);
 
-  // "New" asks creators what they are making; everyone else goes straight to a design.
-  const startNew = useCallback(() => (creator ? setChooser(true) : setSeed({})), [creator]);
-  const pick = (k: NewKind) => { setChooser(false); if (k === 'design') setSeed({}); else if (k === 'template') setTSeed({}); else setFontDlg({ open: true, initial: null }); };
+  // "New" asks what you are making: a design (Ifiok Designs) or a document (Ifiok Docs). Creators can also start a template or a font.
+  const startNew = useCallback(() => setChooser(true), []);
+  const pick = (k: NewKind) => { setChooser(false); if (k === 'design') setSeed({}); else if (k === 'document') setDocSeed({}); else if (k === 'template') setTSeed({}); else setFontDlg({ open: true, initial: null }); };
 
   useEffect(() => {
     const key = (e: KeyboardEvent) => {
@@ -146,7 +153,7 @@ function Shell({ creator, student, say }: { creator: boolean; student: boolean; 
   const detailDesign = designs.find((d) => d.id === detail) ?? null;
   const item = nav.find((n) => n.id === view) as NavItem | undefined;
   const groups: { id: NavItem['group']; label?: string }[] = [{ id: 'create' }, ...(creator ? [{ id: 'studio' as const, label: tr("Creator") }] : []), { id: 'grow', label: tr("Grow") }, { id: 'print', label: tr("Print") }, { id: 'foot' }];
-  const titles: Record<string, string> = { projects: tr('Files'), orders: tr('Orders'), account: tr('Account'), student: tr('Student perks'), studio: tr('Studio'), ctemplates: tr('Templates'), cfonts: tr('Fonts'), wallet: tr('Earnings'), guidelines: tr('Guidelines'), profile: tr('Profile'), fonts: tr('Fonts') };
+  const titles: Record<string, string> = { docs: tr('Documents'), projects: tr('Files'), orders: tr('Orders'), account: tr('Account'), student: tr('Student perks'), studio: tr('Studio'), ctemplates: tr('Templates'), cfonts: tr('Fonts'), wallet: tr('Earnings'), guidelines: tr('Guidelines'), profile: tr('Profile'), fonts: tr('Fonts') };
   const title = titles[view] ?? item?.label ?? 'Home';
 
   const bal = C ? balances(C.ledger) : null;
@@ -178,11 +185,11 @@ function Shell({ creator, student, say }: { creator: boolean; student: boolean; 
         {creator && <span className="role-pill d-only">{tr("Creator")}</span>}
         {student && !creator && <span className="role-pill d-only">{tr("Student")}</span>}
         <button type="button" className="d-search d-only" onClick={() => setPalette(true)} aria-label={tr("Search")}>
-          <Search aria-hidden="true" /><span>{tr("Search your designs, templates…")}</span><kbd>/</kbd>
+          <Search aria-hidden="true" /><span>{tr("Search designs, documents, templates…")}</span><kbd>/</kbd>
         </button>
         <span className="grow" />
         {bal && <button type="button" className="cd-bal-chip d-only" onClick={() => go('wallet')} aria-label={tr("Available balance {available} naira. Open earnings", { available: bal.available.toLocaleString('en-NG') })}><Wallet aria-hidden="true" /><span>{tr("Available")}</span><b>₦{bal.available.toLocaleString('en-NG')}</b></button>}
-        <button type="button" className="btn-p top-new d-only" onClick={startNew}><Plus aria-hidden="true" /><span>{creator ? tr("New") : tr("New design")}</span></button>
+        <button type="button" className="btn-p top-new d-only" onClick={startNew}><Plus aria-hidden="true" /><span>{tr("New")}</span></button>
         <LangMenu className="ib lang-ib" />
         <AppsMenu current="designs" />
         <button type="button" className="ib hide-s" aria-label={tr("Notifications")} onClick={() => say(tr("You are all caught up."))}><Bell aria-hidden="true" /></button>
@@ -207,11 +214,12 @@ function Shell({ creator, student, say }: { creator: boolean; student: boolean; 
 
       <main className="d-main" ref={mainRef} id="main">
         {view === 'home' && (
-          <HomeView designs={designs} orders={SAMPLE_ORDERS} ops={ops} go={go} newFrom={newFrom} openPalette={() => setPalette(true)} useTemplate={useTemplate}
+          <HomeView designs={designs} orders={SAMPLE_ORDERS} ops={ops} go={go} newFrom={newFrom} newDoc={newDoc} openPalette={() => setPalette(true)} useTemplate={useTemplate}
             slot={<><StudentStrip go={go} always={student} />{C ? <CreatorHomeStrip mine={{ templates: C.templates, fonts: C.fonts, ledger: C.ledger, account: C.account }} go={go} newTemplate={() => setTSeed({})} newFont={() => setFontDlg({ open: true, initial: null })} /> : null}</>}
             hero={student ? { title: tr("Hi {first}, ready for class?", { first }), sub: tr("CVs, assignment covers, project posters and defence slides. Start one in seconds."), quick: STUDENT_QUICK } : undefined} />
         )}
-        {view === 'projects' && <ProjectsView designs={designs} ops={ops} newFrom={newFrom} />}
+        {view === 'projects' && <ProjectsView designs={designs} ops={ops} onNew={startNew} />}
+        {view === 'docs' && <DocsView designs={designs} ops={ops} newDoc={newDoc} />}
         {view === 'templates' && <TemplatesView useTemplate={useTemplate} initialCat={student ? 'Student' : 'All'} />}
         {view === 'student' && ST && <StudentView go={go} first={first} />}
         {view === 'fonts' && <FontsView extra={C?.approvedFonts ?? []} onUse={useFont} />}
@@ -223,7 +231,7 @@ function Shell({ creator, student, say }: { creator: boolean; student: boolean; 
         {C && view === 'wallet' && <PayoutsView ledger={C.ledger} payouts={C.payouts} account={C.account} name={C.profile.name} tab={payTab} setTab={setPayTab} onSaveAccount={(a) => { C.saveAccount(a); setPayTab('summary'); }} onClearAccount={C.clearAccount} onRequest={() => setPaying(true)} onSimulatePaid={C.simulatePaid} />}
         {C && view === 'guidelines' && <GuidelinesView />}
         {C && view === 'profile' && <ProfileView profile={C.profile} setProfile={C.setProfile} approved={C.templates.filter((t) => t.status === 'approved').length + C.fonts.filter((f) => f.status === 'approved').length} say={say} />}
-        {!['home', 'projects', 'templates', 'fonts', 'orders', 'account', 'student', 'studio', 'ctemplates', 'cfonts', 'wallet', 'guidelines', 'profile'].includes(view) && item && <PlaceholderView item={item} />}
+        {!['home', 'projects', 'docs', 'templates', 'fonts', 'orders', 'account', 'student', 'studio', 'ctemplates', 'cfonts', 'wallet', 'guidelines', 'profile'].includes(view) && item && <PlaceholderView item={item} />}
         <p className="sample-note">{creator ? tr("Sample data and example amounts. Your real templates, fonts and earnings load from the live app.") : tr("Sample data. Your real designs, orders and templates load from the live app.")}</p>
       </main>
 
@@ -231,7 +239,7 @@ function Shell({ creator, student, say }: { creator: boolean; student: boolean; 
         {student && !creator ? (
           <>
             {tab('home', 'Home', byId('home').Icon)}{tab('templates', 'Templates', byId('templates').Icon)}
-            <button type="button" className="fab" aria-label={tr("New design")} onClick={startNew}><Plus aria-hidden="true" /></button>
+            <button type="button" className="fab" aria-label={tr("New")} onClick={startNew}><Plus aria-hidden="true" /></button>
             {tab('projects', 'Files', byId('projects').Icon)}{tab('student', 'Perks', byId('student').Icon)}
           </>
         ) : creator ? (
@@ -243,16 +251,17 @@ function Shell({ creator, student, say }: { creator: boolean; student: boolean; 
         ) : (
           <>
             {tab('home', 'Home', byId('home').Icon)}{tab('templates', 'Templates', byId('templates').Icon)}
-            <button type="button" className="fab" aria-label={tr("New design")} onClick={startNew}><Plus aria-hidden="true" /></button>
-            {tab('projects', 'Files', byId('projects').Icon)}{tab('orders', 'Orders', byId('orders').Icon)}
+            <button type="button" className="fab" aria-label={tr("New")} onClick={startNew}><Plus aria-hidden="true" /></button>
+            {tab('docs', 'Docs', byId('docs').Icon)}{tab('projects', 'Files', byId('projects').Icon)}
           </>
         )}
       </nav>
 
-      <NewChooser open={chooser} onClose={() => setChooser(false)} onPick={pick} />
+      <NewChooser open={chooser} onClose={() => setChooser(false)} onPick={pick} creator={creator} />
+      <NewDocDialog seed={docSeed} onClose={() => setDocSeed(null)} onCreate={create} />
       <NewDesignDialog seed={seed} onClose={() => setSeed(null)} onCreate={create} />
       <DetailPanel d={detailDesign} onClose={() => setDetail(null)} onDuplicate={duplicate} onDelete={remove} />
-      <Palette nav={nav} open={palette} onClose={() => setPalette(false)} designs={designs} go={go} openDetail={(id) => setDetail(id)} newFrom={newFrom} />
+      <Palette nav={nav} open={palette} onClose={() => setPalette(false)} designs={designs} go={go} openDetail={(id) => setDetail(id)} newFrom={newFrom} newDoc={() => newDoc()} />
       {C && (
         <>
           <NewTemplateDialog seed={tSeed} onClose={() => setTSeed(null)} onCreate={(v) => { const t = C.createTemplate(v); setTSeed(null); say({ msg: tr("Created “{name}”", { name: tr(v.name) }), href: EDITOR, label: tr("Open in editor") }); setOpenT(t.id); }} />

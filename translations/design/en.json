@@ -71,7 +71,7 @@
  {
   "key": "{cat} templates",
   "where": [
-   "src/components/design/views.tsx:114"
+   "src/components/design/views.tsx:131"
   ]
  },
  {
@@ -90,7 +90,7 @@
  {
   "key": "{label} · {size} · edited {edited}",
   "where": [
-   "src/components/design/overlays.tsx:140"
+   "src/components/design/overlays.tsx:145"
   ]
  },
  {
@@ -150,7 +150,7 @@
  {
   "key": "{ordersCount} orders · {spent} in total",
   "where": [
-   "src/components/design/views.tsx:217"
+   "src/components/design/views.tsx:242"
   ]
  },
  {
@@ -178,9 +178,9 @@
   ]
  },
  {
-  "key": "{shownCount} of {designsCount} designs",
+  "key": "{shownCount} of {designsCount} files",
   "where": [
-   "src/components/design/views.tsx:149"
+   "src/components/design/views.tsx:167"
   ]
  },
  {
@@ -204,7 +204,7 @@
  {
   "key": "× {label} · {total}",
   "where": [
-   "src/components/design/parts.tsx:107"
+   "src/components/design/parts.tsx:110"
   ]
  },
  {
@@ -297,7 +297,7 @@
  {
   "key": "15% off all services",
   "where": [
-   "src/components/design/data.ts:69"
+   "src/components/design/data.ts:86"
   ]
  },
  {
@@ -326,9 +326,15 @@
   ]
  },
  {
+  "key": "2 days ago",
+  "where": [
+   "src/components/design/data.ts:70"
+  ]
+ },
+ {
   "key": "2 hours ago",
   "where": [
-   "src/components/design/data.ts:48"
+   "src/components/design/data.ts:61"
   ]
  },
  {
@@ -349,7 +355,7 @@
  {
   "key": "2 weeks ago",
   "where": [
-   "src/components/design/data.ts:53"
+   "src/components/design/data.ts:66"
   ]
  },
  {
@@ -368,7 +374,7 @@
  {
   "key": "20% off everything",
   "where": [
-   "src/components/design/data.ts:67"
+   "src/components/design/data.ts:84"
   ]
  },
  {
@@ -414,14 +420,14 @@
  {
   "key": "3 × 3 in",
   "where": [
-   "src/components/design/data.ts:139",
+   "src/components/design/data.ts:169",
    "src/data/creator-app.ts:16"
   ]
  },
  {
   "key": "3 days ago",
   "where": [
-   "src/components/design/data.ts:50"
+   "src/components/design/data.ts:63"
   ]
  },
  {
@@ -433,13 +439,14 @@
  {
   "key": "3 weeks ago",
   "where": [
-   "src/components/design/data.ts:54"
+   "src/components/design/data.ts:67",
+   "src/components/design/data.ts:72"
   ]
  },
  {
   "key": "3.5 × 2 in",
   "where": [
-   "src/components/design/data.ts:135",
+   "src/components/design/data.ts:165",
    "src/data/creator-app.ts:11"
   ]
  },
@@ -483,7 +490,7 @@
  {
   "key": "4 days ago",
   "where": [
-   "src/components/design/data.ts:51"
+   "src/components/design/data.ts:64"
   ]
  },
  {
@@ -516,13 +523,13 @@
  {
   "key": "530+ free templates",
   "where": [
-   "src/components/design/views.tsx:79"
+   "src/components/design/views.tsx:85"
   ]
  },
  {
   "key": "6 × 3 ft",
   "where": [
-   "src/components/design/data.ts:137",
+   "src/components/design/data.ts:167",
    "src/data/creator-app.ts:14"
   ]
  },
@@ -559,15 +566,21 @@
   ]
  },
  {
-  "key": "A design for me",
+  "key": "A design",
   "where": [
-   "src/components/design/overlays.tsx:280"
+   "src/components/design/overlays.tsx:286"
+  ]
+ },
+ {
+  "key": "A document",
+  "where": [
+   "src/components/design/overlays.tsx:287"
   ]
  },
  {
   "key": "A font to submit",
   "where": [
-   "src/components/design/overlays.tsx:282"
+   "src/components/design/overlays.tsx:290"
   ]
  },
  {
@@ -585,7 +598,7 @@
  {
   "key": "A sample of the 530+ free templates. Pick one to start a design.",
   "where": [
-   "src/components/design/views.tsx:201"
+   "src/components/design/views.tsx:226"
   ]
  },
  {
@@ -603,13 +616,13 @@
  {
   "key": "A template to submit",
   "where": [
-   "src/components/design/overlays.tsx:281"
+   "src/components/design/overlays.tsx:289"
   ]
  },
  {
   "key": "A3",
   "where": [
-   "src/components/design/data.ts:138",
+   "src/components/design/data.ts:168",
    "src/data/creator-app.ts:13",
    "src/data/creator-app.ts:36"
   ]
@@ -617,7 +630,7 @@
  {
   "key": "A4",
   "where": [
-   "src/components/design/data.ts:141",
+   "src/components/design/data.ts:171",
    "src/data/creator-app.ts:20",
    "src/data/creator-app.ts:21"
   ]
@@ -642,21 +655,70 @@
   ]
  },
  {
+  "key": "A4 letter",
+  "where": [
+   "src/components/design/data.ts:33"
+  ]
+ },
+ {
   "key": "A4 tri-fold",
   "where": [
    "src/data/creator-app.ts:28"
   ]
  },
  {
+  "key": "A4, chapters and contents",
+  "where": [
+   "src/components/design/data.ts:34"
+  ]
+ },
+ {
+  "key": "A4, columns and images",
+  "where": [
+   "src/components/design/data.ts:39"
+  ]
+ },
+ {
+  "key": "A4, items and totals in naira",
+  "where": [
+   "src/components/design/data.ts:35"
+  ]
+ },
+ {
+  "key": "A4, notes and action points",
+  "where": [
+   "src/components/design/data.ts:37"
+  ]
+ },
+ {
   "key": "A4, one or two pages",
   "where": [
-   "src/components/design/data.ts:26"
+   "src/components/design/data.ts:26",
+   "src/components/design/data.ts:32"
+  ]
+ },
+ {
+  "key": "A4, pitch a client",
+  "where": [
+   "src/components/design/data.ts:36"
+  ]
+ },
+ {
+  "key": "A4, short internal note",
+  "where": [
+   "src/components/design/data.ts:38"
+  ]
+ },
+ {
+  "key": "A4, start from scratch",
+  "where": [
+   "src/components/design/data.ts:31"
   ]
  },
  {
   "key": "A5",
   "where": [
-   "src/components/design/data.ts:136",
+   "src/components/design/data.ts:166",
    "src/data/creator-app.ts:18"
   ]
  },
@@ -689,15 +751,15 @@
  {
   "key": "Account",
   "where": [
-   "src/components/design/DesignApp.tsx:149",
-   "src/components/design/DesignApp.tsx:190",
-   "src/components/design/views.tsx:250"
+   "src/components/design/DesignApp.tsx:156",
+   "src/components/design/DesignApp.tsx:197",
+   "src/components/design/views.tsx:275"
   ]
  },
  {
   "key": "Account & security",
   "where": [
-   "src/components/design/data.ts:146"
+   "src/components/design/data.ts:176"
   ]
  },
  {
@@ -721,21 +783,30 @@
  {
   "key": "Actions",
   "where": [
-   "src/components/design/overlays.tsx:197"
+   "src/components/design/overlays.tsx:202",
+   "src/components/design/overlays.tsx:203",
+   "src/components/design/overlays.tsx:210"
   ]
  },
  {
   "key": "Actions for {name}",
   "where": [
-   "src/components/design/parts.tsx:66",
+   "src/components/design/parts.tsx:69",
    "src/components/creator/parts.tsx:43"
   ]
  },
  {
   "key": "Adaeze Okafor",
   "where": [
-   "src/components/design/data.ts:48",
+   "src/components/design/data.ts:61",
+   "src/components/design/data.ts:71",
    "src/data/creator-app.ts:59"
+  ]
+ },
+ {
+  "key": "Adaeze Okafor — resume",
+  "where": [
+   "src/components/design/data.ts:71"
   ]
  },
  {
@@ -753,7 +824,7 @@
  {
   "key": "Add fonts for use without data",
   "where": [
-   "src/components/design/views.tsx:87"
+   "src/components/design/views.tsx:93"
   ]
  },
  {
@@ -777,15 +848,15 @@
  {
   "key": "Ade & Funmi",
   "where": [
-   "src/components/design/data.ts:53",
-   "src/components/design/data.ts:81",
+   "src/components/design/data.ts:66",
+   "src/components/design/data.ts:98",
    "src/data/creator-app.ts:66"
   ]
  },
  {
   "key": "Ade & Funmi — invitation",
   "where": [
-   "src/components/design/data.ts:53"
+   "src/components/design/data.ts:66"
   ]
  },
  {
@@ -797,19 +868,19 @@
  {
   "key": "AI assistant",
   "where": [
-   "src/components/design/data.ts:102"
+   "src/components/design/data.ts:133"
   ]
  },
  {
   "key": "AI usage",
   "where": [
-   "src/components/design/data.ts:150"
+   "src/components/design/data.ts:180"
   ]
  },
  {
   "key": "All",
   "where": [
-   "src/components/design/views.tsx:133",
+   "src/components/design/views.tsx:150",
    "src/components/creator/views.tsx:131",
    "src/components/fonts/FontStudio.tsx:251"
   ]
@@ -823,25 +894,26 @@
  {
   "key": "All files",
   "where": [
-   "src/components/design/views.tsx:153"
+   "src/components/design/views.tsx:171"
   ]
  },
  {
   "key": "All images are high enough resolution",
   "where": [
-   "src/components/design/overlays.tsx:134"
+   "src/components/design/overlays.tsx:139"
   ]
  },
  {
   "key": "All orders",
   "where": [
-   "src/components/design/views.tsx:105"
+   "src/components/design/views.tsx:122"
   ]
  },
  {
   "key": "All tools",
   "where": [
-   "src/components/design/views.tsx:122"
+   "src/components/design/views.tsx:139",
+   "src/components/design/docsViews.tsx:114"
   ]
  },
  {
@@ -879,7 +951,7 @@
  {
   "key": "Any",
   "where": [
-   "src/components/design/data.ts:142"
+   "src/components/design/data.ts:172"
   ]
  },
  {
@@ -891,7 +963,7 @@
  {
   "key": "Any design type. If Ifiok approves it, you are paid.",
   "where": [
-   "src/components/design/overlays.tsx:281"
+   "src/components/design/overlays.tsx:289"
   ]
  },
  {
@@ -968,7 +1040,7 @@
  {
   "key": "Arrives today",
   "where": [
-   "src/components/design/data.ts:88"
+   "src/components/design/data.ts:118"
   ]
  },
  {
@@ -986,7 +1058,7 @@
  {
   "key": "Assignment",
   "where": [
-   "src/components/design/data.ts:63"
+   "src/components/design/data.ts:80"
   ]
  },
  {
@@ -998,19 +1070,25 @@
  {
   "key": "Assignment Cover Page",
   "where": [
-   "src/components/design/data.ts:63"
+   "src/components/design/data.ts:80"
+  ]
+ },
+ {
+  "key": "Attendees · Decisions · Actions",
+  "where": [
+   "src/components/design/data.ts:108"
   ]
  },
  {
   "key": "Authentic kitchen",
   "where": [
-   "src/components/design/data.ts:72"
+   "src/components/design/data.ts:89"
   ]
  },
  {
   "key": "Available",
   "where": [
-   "src/components/design/DesignApp.tsx:184",
+   "src/components/design/DesignApp.tsx:191",
    "src/components/creator/views.tsx:35",
    "src/components/creator/views.tsx:70"
   ]
@@ -1018,7 +1096,7 @@
  {
   "key": "Available balance {available} naira. Open earnings",
   "where": [
-   "src/components/design/DesignApp.tsx:184"
+   "src/components/design/DesignApp.tsx:191"
   ]
  },
  {
@@ -1042,9 +1120,15 @@
   ]
  },
  {
+  "key": "Baker · Entrepreneur · Lagos",
+  "where": [
+   "src/components/design/data.ts:71"
+  ]
+ },
+ {
   "key": "Balogun print shop",
   "where": [
-   "src/components/design/data.ts:88"
+   "src/components/design/data.ts:118"
   ]
  },
  {
@@ -1056,7 +1140,7 @@
  {
   "key": "Banner",
   "where": [
-   "src/components/design/data.ts:137"
+   "src/components/design/data.ts:167"
   ]
  },
  {
@@ -1096,6 +1180,13 @@
   ]
  },
  {
+  "key": "Blank document",
+  "where": [
+   "src/components/design/data.ts:31",
+   "src/components/design/data.ts:113"
+  ]
+ },
+ {
   "key": "Bleed",
   "where": [
    "src/components/design/overlays.tsx:86"
@@ -1104,7 +1195,7 @@
  {
   "key": "Bleed {bleed}\" on all edges",
   "where": [
-   "src/components/design/overlays.tsx:133"
+   "src/components/design/overlays.tsx:138"
   ]
  },
  {
@@ -1129,13 +1220,19 @@
  {
   "key": "Brand kit",
   "where": [
-   "src/components/design/data.ts:99"
+   "src/components/design/data.ts:130"
+  ]
+ },
+ {
+  "key": "Bring a document in",
+  "where": [
+   "src/components/design/docsViews.tsx:86"
   ]
  },
  {
   "key": "Bring something in",
   "where": [
-   "src/components/design/views.tsx:72"
+   "src/components/design/views.tsx:78"
   ]
  },
  {
@@ -1147,7 +1244,7 @@
  {
   "key": "Browse photos and graphics you can use in your designs.",
   "where": [
-   "src/components/design/data.ts:101"
+   "src/components/design/data.ts:132"
   ]
  },
  {
@@ -1159,29 +1256,36 @@
  {
   "key": "Build · Sell · Manage",
   "where": [
-   "src/components/design/data.ts:71"
+   "src/components/design/data.ts:88"
   ]
  },
  {
   "key": "Business",
   "where": [
-   "src/components/design/data.ts:59",
-   "src/components/design/data.ts:71",
-   "src/components/design/data.ts:72"
+   "src/components/design/data.ts:76",
+   "src/components/design/data.ts:88",
+   "src/components/design/data.ts:89"
   ]
  },
  {
   "key": "Business card",
   "where": [
    "src/components/design/data.ts:15",
-   "src/components/design/data.ts:135",
+   "src/components/design/data.ts:165",
    "src/data/creator-app.ts:11"
   ]
  },
  {
   "key": "Business proposal",
   "where": [
+   "src/components/design/data.ts:36",
    "src/data/creator-app.ts:23"
+  ]
+ },
+ {
+  "key": "Business Proposal",
+  "where": [
+   "src/components/design/data.ts:107"
   ]
  },
  {
@@ -1206,14 +1310,14 @@
   "key": "Cancel",
   "where": [
    "src/components/design/overlays.tsx:114",
-   "src/components/creator/dialogs.tsx:78",
-   "src/components/creator/dialogs.tsx:223"
+   "src/components/design/docsViews.tsx:66",
+   "src/components/creator/dialogs.tsx:78"
   ]
  },
  {
-  "key": "Cards, flyers, posters and more, to use or print.",
+  "key": "Cards, flyers, posters and more, to use or send to a printer.",
   "where": [
-   "src/components/design/overlays.tsx:280"
+   "src/components/design/overlays.tsx:286"
   ]
  },
  {
@@ -1225,7 +1329,7 @@
  {
   "key": "Category",
   "where": [
-   "src/components/design/views.tsx:203",
+   "src/components/design/views.tsx:228",
    "src/components/fonts/FontStudio.tsx:137",
    "src/components/fonts/FontStudio.tsx:221"
   ]
@@ -1265,13 +1369,13 @@
  {
   "key": "Chat with the Ifiok team, voice notes included.",
   "where": [
-   "src/components/design/data.ts:109"
+   "src/components/design/data.ts:139"
   ]
  },
  {
   "key": "Check",
   "where": [
-   "src/components/design/parts.tsx:80"
+   "src/components/design/parts.tsx:83"
   ]
  },
  {
@@ -1307,7 +1411,7 @@
  {
   "key": "Chidi Eze",
   "where": [
-   "src/components/design/data.ts:51"
+   "src/components/design/data.ts:64"
   ]
  },
  {
@@ -1367,9 +1471,9 @@
  {
   "key": "Church & events",
   "where": [
-   "src/components/design/data.ts:59",
-   "src/components/design/data.ts:75",
-   "src/components/design/data.ts:76"
+   "src/components/design/data.ts:76",
+   "src/components/design/data.ts:92",
+   "src/components/design/data.ts:93"
   ]
  },
  {
@@ -1381,15 +1485,15 @@
  {
   "key": "CLASS OF 2026",
   "where": [
-   "src/components/design/data.ts:55",
-   "src/components/design/data.ts:80",
+   "src/components/design/data.ts:68",
+   "src/components/design/data.ts:97",
    "src/data/creator-app.ts:60"
   ]
  },
  {
   "key": "Class of 2026 — T-shirt",
   "where": [
-   "src/components/design/data.ts:55"
+   "src/components/design/data.ts:68"
   ]
  },
  {
@@ -1401,8 +1505,14 @@
  {
   "key": "Clean One-Page CV",
   "where": [
-   "src/components/design/data.ts:61",
+   "src/components/design/data.ts:78",
    "src/data/creator-app.ts:61"
+  ]
+ },
+ {
+  "key": "Clean Resume",
+  "where": [
+   "src/components/design/data.ts:103"
   ]
  },
  {
@@ -1420,7 +1530,7 @@
  {
   "key": "Clean, one page",
   "where": [
-   "src/components/design/data.ts:61",
+   "src/components/design/data.ts:78",
    "src/data/creator-app.ts:61"
   ]
  },
@@ -1434,7 +1544,7 @@
  {
   "key": "Clear filters",
   "where": [
-   "src/components/design/views.tsx:174",
+   "src/components/design/views.tsx:199",
    "src/components/creator/views.tsx:159",
    "src/components/fonts/FontStudio.tsx:263"
   ]
@@ -1443,26 +1553,27 @@
   "key": "Close",
   "where": [
    "src/components/design/overlays.tsx:66",
-   "src/components/design/overlays.tsx:141",
-   "src/components/design/overlays.tsx:287"
+   "src/components/design/overlays.tsx:146",
+   "src/components/design/overlays.tsx:296"
   ]
  },
  {
   "key": "Close menu",
   "where": [
-   "src/components/design/DesignApp.tsx:195"
+   "src/components/design/DesignApp.tsx:202"
   ]
  },
  {
   "key": "Collapse sidebar",
   "where": [
-   "src/components/design/DesignApp.tsx:174"
+   "src/components/design/DesignApp.tsx:181"
   ]
  },
  {
   "key": "Colour",
   "where": [
    "src/components/design/overlays.tsx:95",
+   "src/components/design/docsViews.tsx:54",
    "src/components/creator/dialogs.tsx:69"
   ]
  },
@@ -1470,13 +1581,14 @@
   "key": "Colour {c}",
   "where": [
    "src/components/design/overlays.tsx:98",
+   "src/components/design/docsViews.tsx:57",
    "src/components/creator/dialogs.tsx:71"
   ]
  },
  {
   "key": "Colour mode CMYK",
   "where": [
-   "src/components/design/overlays.tsx:132"
+   "src/components/design/overlays.tsx:137"
   ]
  },
  {
@@ -1493,9 +1605,15 @@
   ]
  },
  {
+  "key": "Community Newsletter",
+  "where": [
+   "src/components/design/data.ts:110"
+  ]
+ },
+ {
   "key": "Company Letterhead",
   "where": [
-   "src/components/design/data.ts:73"
+   "src/components/design/data.ts:90"
   ]
  },
  {
@@ -1507,13 +1625,13 @@
  {
   "key": "Compress PDF",
   "where": [
-   "src/components/design/data.ts:125"
+   "src/components/design/data.ts:155"
   ]
  },
  {
   "key": "Concert Poster",
   "where": [
-   "src/components/design/data.ts:77"
+   "src/components/design/data.ts:94"
   ]
  },
  {
@@ -1531,7 +1649,7 @@
  {
   "key": "Connected accounts",
   "where": [
-   "src/components/design/data.ts:148"
+   "src/components/design/data.ts:178"
   ]
  },
  {
@@ -1550,13 +1668,13 @@
  {
   "key": "Continue designing",
   "where": [
-   "src/components/design/views.tsx:94"
+   "src/components/design/views.tsx:100"
   ]
  },
  {
   "key": "Continue to order",
   "where": [
-   "src/components/design/overlays.tsx:177"
+   "src/components/design/overlays.tsx:182"
   ]
  },
  {
@@ -1575,7 +1693,7 @@
  {
   "key": "Convocation T-shirt",
   "where": [
-   "src/components/design/data.ts:80"
+   "src/components/design/data.ts:97"
   ]
  },
  {
@@ -1593,19 +1711,27 @@
  {
   "key": "Course code · Matric no.",
   "where": [
-   "src/components/design/data.ts:63"
+   "src/components/design/data.ts:80"
   ]
  },
  {
   "key": "Cover letter",
   "where": [
-   "src/data/creator-app.ts:21"
+   "src/components/design/data.ts:33",
+   "src/components/design/data.ts:72",
+   "src/components/design/data.ts:104"
+  ]
+ },
+ {
+  "key": "Cover letter — Access Bank",
+  "where": [
+   "src/components/design/data.ts:72"
   ]
  },
  {
   "key": "CR80",
   "where": [
-   "src/components/design/data.ts:140",
+   "src/components/design/data.ts:170",
    "src/data/creator-app.ts:15"
   ]
  },
@@ -1618,7 +1744,7 @@
  {
   "key": "Create",
   "where": [
-   "src/components/design/DesignApp.tsx:196",
+   "src/components/design/DesignApp.tsx:203",
    "src/data/apps.ts:32"
   ]
  },
@@ -1655,6 +1781,12 @@
   ]
  },
  {
+  "key": "Create document",
+  "where": [
+   "src/components/design/docsViews.tsx:68"
+  ]
+ },
+ {
   "key": "Create template",
   "where": [
    "src/components/creator/dialogs.tsx:79"
@@ -1688,8 +1820,8 @@
  {
   "key": "Created “{name}”",
   "where": [
-   "src/components/design/DesignApp.tsx:110",
-   "src/components/design/DesignApp.tsx:258"
+   "src/components/design/DesignApp.tsx:113",
+   "src/components/design/DesignApp.tsx:267"
   ]
  },
  {
@@ -1701,14 +1833,14 @@
  {
   "key": "Creator",
   "where": [
-   "src/components/design/DesignApp.tsx:148",
-   "src/components/design/DesignApp.tsx:178"
+   "src/components/design/DesignApp.tsx:155",
+   "src/components/design/DesignApp.tsx:185"
   ]
  },
  {
   "key": "Creator menu",
   "where": [
-   "src/components/design/DesignApp.tsx:195"
+   "src/components/design/DesignApp.tsx:202"
   ]
  },
  {
@@ -1722,15 +1854,15 @@
  {
   "key": "Curriculum Vitae",
   "where": [
-   "src/components/design/data.ts:61",
+   "src/components/design/data.ts:78",
    "src/data/creator-app.ts:61"
   ]
  },
  {
   "key": "Custom size",
   "where": [
-   "src/components/design/views.tsx:67",
-   "src/components/design/data.ts:142"
+   "src/components/design/views.tsx:73",
+   "src/components/design/data.ts:172"
   ]
  },
  {
@@ -1755,7 +1887,7 @@
  {
   "key": "CVs, assignment covers, project posters and defence slides. Start one in seconds.",
   "where": [
-   "src/components/design/DesignApp.tsx:212"
+   "src/components/design/DesignApp.tsx:219"
   ]
  },
  {
@@ -1767,7 +1899,7 @@
  {
   "key": "Data & storage",
   "where": [
-   "src/components/design/data.ts:147"
+   "src/components/design/data.ts:177"
   ]
  },
  {
@@ -1775,6 +1907,12 @@
   "where": [
    "src/components/creator/views.tsx:341",
    "src/components/creator/views.tsx:345"
+  ]
+ },
+ {
+  "key": "Dear Hiring Manager",
+  "where": [
+   "src/components/design/data.ts:104"
   ]
  },
  {
@@ -1792,8 +1930,8 @@
  {
   "key": "Delete",
   "where": [
-   "src/components/design/overlays.tsx:148",
-   "src/components/design/parts.tsx:72",
+   "src/components/design/overlays.tsx:153",
+   "src/components/design/parts.tsx:75",
    "src/components/creator/dialogs.tsx:129"
   ]
  },
@@ -1806,33 +1944,33 @@
  {
   "key": "Deleted “{name}”",
   "where": [
-   "src/components/design/DesignApp.tsx:121",
+   "src/components/design/DesignApp.tsx:124",
    "src/components/creator/store.tsx:109"
   ]
  },
  {
   "key": "Delivered",
   "where": [
-   "src/components/design/views.tsx:220",
-   "src/components/design/data.ts:44"
+   "src/components/design/views.tsx:245",
+   "src/components/design/data.ts:57"
   ]
  },
  {
   "key": "Delivered 14 Sep",
   "where": [
-   "src/components/design/data.ts:90"
+   "src/components/design/data.ts:120"
   ]
  },
  {
   "key": "Delivered 2 Oct",
   "where": [
-   "src/components/design/data.ts:89"
+   "src/components/design/data.ts:119"
   ]
  },
  {
   "key": "Delivery by Fri 17 Oct",
   "where": [
-   "src/components/design/data.ts:87"
+   "src/components/design/data.ts:117"
   ]
  },
  {
@@ -1845,25 +1983,26 @@
  {
   "key": "Department of Computer Science",
   "where": [
-   "src/components/design/data.ts:64"
+   "src/components/design/data.ts:70",
+   "src/components/design/data.ts:81"
   ]
  },
  {
   "key": "DEPARTMENTAL WEEK",
   "where": [
-   "src/components/design/data.ts:65"
+   "src/components/design/data.ts:82"
   ]
  },
  {
   "key": "Departmental Week Poster",
   "where": [
-   "src/components/design/data.ts:65"
+   "src/components/design/data.ts:82"
   ]
  },
  {
   "key": "Describe a flyer and get a layout you can edit, not a flat picture.",
   "where": [
-   "src/components/design/data.ts:102"
+   "src/components/design/data.ts:133"
   ]
  },
  {
@@ -1899,7 +2038,7 @@
  {
   "key": "Design in {family}",
   "where": [
-   "src/components/design/DesignApp.tsx:125"
+   "src/components/design/DesignApp.tsx:128"
   ]
  },
  {
@@ -1948,7 +2087,7 @@
  {
   "key": "Designers click it and start using it. If approved, you are paid.",
   "where": [
-   "src/components/design/overlays.tsx:282"
+   "src/components/design/overlays.tsx:290"
   ]
  },
  {
@@ -1960,7 +2099,7 @@
  {
   "key": "Details",
   "where": [
-   "src/components/design/parts.tsx:69",
+   "src/components/design/parts.tsx:72",
    "src/components/creator/parts.tsx:46",
    "src/components/fonts/FontStudio.tsx:32"
   ]
@@ -1998,13 +2137,13 @@
  {
   "key": "Discount Flyer",
   "where": [
-   "src/components/design/data.ts:69"
+   "src/components/design/data.ts:86"
   ]
  },
  {
   "key": "Dismiss",
   "where": [
-   "src/components/design/overlays.tsx:269"
+   "src/components/design/overlays.tsx:275"
   ]
  },
  {
@@ -2034,11 +2173,23 @@
   ]
  },
  {
+  "key": "Document",
+  "where": [
+   "src/components/design/views.tsx:69"
+  ]
+ },
+ {
+  "key": "Document type",
+  "where": [
+   "src/components/design/docsViews.tsx:38"
+  ]
+ },
+ {
   "key": "Documents",
   "where": [
-   "src/components/design/data.ts:107",
-   "src/data/creator-app.ts:20",
-   "src/data/creator-app.ts:21"
+   "src/components/design/DesignApp.tsx:131",
+   "src/components/design/DesignApp.tsx:156",
+   "src/components/design/docsViews.tsx:82"
   ]
  },
  {
@@ -2050,7 +2201,7 @@
  {
   "key": "Doors open 6pm",
   "where": [
-   "src/components/design/data.ts:77"
+   "src/components/design/data.ts:94"
   ]
  },
  {
@@ -2063,15 +2214,15 @@
   "key": "Draft",
   "where": [
    "src/components/fonts/FontStudio.tsx:14",
-   "src/components/design/data.ts:40",
+   "src/components/design/data.ts:53",
    "src/data/creator-app.ts:44"
   ]
  },
  {
   "key": "Duplicate",
   "where": [
-   "src/components/design/overlays.tsx:147",
-   "src/components/design/parts.tsx:71",
+   "src/components/design/overlays.tsx:152",
+   "src/components/design/parts.tsx:74",
    "src/components/creator/dialogs.tsx:128"
   ]
  },
@@ -2084,7 +2235,7 @@
  {
   "key": "Duplicated",
   "where": [
-   "src/components/design/DesignApp.tsx:114"
+   "src/components/design/DesignApp.tsx:117"
   ]
  },
  {
@@ -2127,7 +2278,7 @@
  {
   "key": "Earnings",
   "where": [
-   "src/components/design/DesignApp.tsx:149",
+   "src/components/design/DesignApp.tsx:156",
    "src/components/creator/views.tsx:89",
    "src/components/creator/views.tsx:286"
   ]
@@ -2153,9 +2304,16 @@
  {
   "key": "Edit in editor",
   "where": [
-   "src/components/design/overlays.tsx:146",
-   "src/components/design/parts.tsx:70",
+   "src/components/design/overlays.tsx:151",
+   "src/components/design/parts.tsx:73",
    "src/components/creator/dialogs.tsx:127"
+  ]
+ },
+ {
+  "key": "Edit in Ifiok Docs",
+  "where": [
+   "src/components/design/overlays.tsx:151",
+   "src/components/design/parts.tsx:73"
   ]
  },
  {
@@ -2167,7 +2325,7 @@
  {
   "key": "Eighth day · Lagos",
   "where": [
-   "src/components/design/data.ts:76"
+   "src/components/design/data.ts:93"
   ]
  },
  {
@@ -2265,7 +2423,7 @@
  {
   "key": "Esc",
   "where": [
-   "src/components/design/overlays.tsx:233"
+   "src/components/design/overlays.tsx:239"
   ]
  },
  {
@@ -2319,19 +2477,19 @@
  {
   "key": "Example price. The final price is set in the live app at checkout.",
   "where": [
-   "src/components/design/overlays.tsx:176"
+   "src/components/design/overlays.tsx:181"
   ]
  },
  {
   "key": "Expand sidebar",
   "where": [
-   "src/components/design/DesignApp.tsx:174"
+   "src/components/design/DesignApp.tsx:181"
   ]
  },
  {
   "key": "Export or correct your data, clear cache",
   "where": [
-   "src/components/design/data.ts:147"
+   "src/components/design/data.ts:177"
   ]
  },
  {
@@ -2350,7 +2508,7 @@
  {
   "key": "Faculty of Arts",
   "where": [
-   "src/components/design/data.ts:55",
+   "src/components/design/data.ts:68",
    "src/data/creator-app.ts:60",
    "src/data/creator-app.ts:68"
   ]
@@ -2377,19 +2535,25 @@
  {
   "key": "Fewer",
   "where": [
-   "src/components/design/overlays.tsx:170"
+   "src/components/design/overlays.tsx:175"
   ]
  },
  {
   "key": "Files",
   "where": [
-   "src/components/design/DesignApp.tsx:149"
+   "src/components/design/DesignApp.tsx:156"
+  ]
+ },
+ {
+  "key": "Filter by app",
+  "where": [
+   "src/components/design/views.tsx:184"
   ]
  },
  {
   "key": "Filter by status",
   "where": [
-   "src/components/design/views.tsx:166",
+   "src/components/design/views.tsx:191",
    "src/components/creator/views.tsx:151",
    "src/components/fonts/FontStudio.tsx:259"
   ]
@@ -2401,9 +2565,15 @@
   ]
  },
  {
-  "key": "FLASH SALE",
+  "key": "Final year project report",
   "where": [
    "src/components/design/data.ts:70"
+  ]
+ },
+ {
+  "key": "FLASH SALE",
+  "where": [
+   "src/components/design/data.ts:87"
   ]
  },
  {
@@ -2422,13 +2592,13 @@
  {
   "key": "Flex Banner — Sale",
   "where": [
-   "src/components/design/data.ts:70"
+   "src/components/design/data.ts:87"
   ]
  },
  {
   "key": "Flyer",
   "where": [
-   "src/components/design/data.ts:136",
+   "src/components/design/data.ts:166",
    "src/data/creator-app.ts:12"
   ]
  },
@@ -2485,9 +2655,15 @@
  {
   "key": "Fonts",
   "where": [
-   "src/components/design/DesignApp.tsx:149",
+   "src/components/design/DesignApp.tsx:156",
    "src/components/fonts/FontsView.tsx:37",
-   "src/components/design/data.ts:98"
+   "src/components/design/data.ts:129"
+  ]
+ },
+ {
+  "key": "Fonts are embedded when you print",
+  "where": [
+   "src/components/design/overlays.tsx:132"
   ]
  },
  {
@@ -2518,7 +2694,7 @@
  {
   "key": "For your support",
   "where": [
-   "src/components/design/data.ts:66"
+   "src/components/design/data.ts:83"
   ]
  },
  {
@@ -2528,10 +2704,16 @@
   ]
  },
  {
+  "key": "Formal Cover Letter",
+  "where": [
+   "src/components/design/data.ts:104"
+  ]
+ },
+ {
   "key": "Founder · Okafor Bakes",
   "where": [
    "src/components/auth/AuthShell.tsx:29",
-   "src/components/design/data.ts:48",
+   "src/components/design/data.ts:61",
    "src/data/creator-app.ts:59"
   ]
  },
@@ -2576,8 +2758,7 @@
  {
   "key": "Free tools",
   "where": [
-   "src/components/design/views.tsx:122",
-   "src/components/design/overlays.tsx:201"
+   "src/components/design/overlays.tsx:207"
   ]
  },
  {
@@ -2631,7 +2812,8 @@
  {
   "key": "Go to",
   "where": [
-   "src/components/design/overlays.tsx:198"
+   "src/components/design/overlays.tsx:204",
+   "src/components/design/overlays.tsx:210"
   ]
  },
  {
@@ -2661,40 +2843,46 @@
  {
   "key": "Google account, Google Drive, AI keys",
   "where": [
-   "src/components/design/data.ts:148"
+   "src/components/design/data.ts:178"
   ]
  },
  {
   "key": "Graduate · Lagos",
   "where": [
-   "src/components/design/data.ts:62"
+   "src/components/design/data.ts:79"
   ]
  },
  {
   "key": "Graduate CV with Photo",
   "where": [
-   "src/components/design/data.ts:62"
+   "src/components/design/data.ts:79"
+  ]
+ },
+ {
+  "key": "Graduate trainee application",
+  "where": [
+   "src/components/design/data.ts:72"
   ]
  },
  {
   "key": "GRAND OPENING",
   "where": [
    "src/components/auth/AuthShell.tsx:28",
-   "src/components/design/data.ts:49",
-   "src/components/design/data.ts:67"
+   "src/components/design/data.ts:62",
+   "src/components/design/data.ts:84"
   ]
  },
  {
   "key": "Grand Opening — flyer",
   "where": [
-   "src/components/design/data.ts:49",
-   "src/components/design/data.ts:87"
+   "src/components/design/data.ts:62",
+   "src/components/design/data.ts:117"
   ]
  },
  {
   "key": "Grand Opening Flyer",
   "where": [
-   "src/components/design/data.ts:67",
+   "src/components/design/data.ts:84",
    "src/data/creator-app.ts:58",
    "src/data/creator-app.ts:79"
   ]
@@ -2708,21 +2896,21 @@
  {
   "key": "Grid",
   "where": [
-   "src/components/design/views.tsx:162",
+   "src/components/design/views.tsx:180",
    "src/components/creator/views.tsx:147"
   ]
  },
  {
   "key": "Grow",
   "where": [
-   "src/components/design/DesignApp.tsx:148",
+   "src/components/design/DesignApp.tsx:155",
    "src/data/apps.ts:34"
   ]
  },
  {
   "key": "Guidelines",
   "where": [
-   "src/components/design/DesignApp.tsx:149",
+   "src/components/design/DesignApp.tsx:156",
    "src/components/creator/views.tsx:111",
    "src/components/creator/views.tsx:364"
   ]
@@ -2764,7 +2952,7 @@
  {
   "key": "Hi {first}, ready for class?",
   "where": [
-   "src/components/design/DesignApp.tsx:212"
+   "src/components/design/DesignApp.tsx:219"
   ]
  },
  {
@@ -2794,7 +2982,7 @@
  {
   "key": "Home",
   "where": [
-   "src/components/design/data.ts:95"
+   "src/components/design/data.ts:125"
   ]
  },
  {
@@ -2860,14 +3048,14 @@
  {
   "key": "ID · 0001",
   "where": [
-   "src/components/design/data.ts:78"
+   "src/components/design/data.ts:95"
   ]
  },
  {
   "key": "ID card",
   "where": [
    "src/components/design/data.ts:22",
-   "src/components/design/data.ts:140",
+   "src/components/design/data.ts:170",
    "src/data/creator-app.ts:15"
   ]
  },
@@ -2912,6 +3100,8 @@
  {
   "key": "Ifiok Docs",
   "where": [
+   "src/components/design/views.tsx:112",
+   "src/components/design/overlays.tsx:203",
    "src/data/apps.ts:70"
   ]
  },
@@ -2981,6 +3171,12 @@
   ]
  },
  {
+  "key": "Images are sharp enough to print",
+  "where": [
+   "src/components/design/overlays.tsx:134"
+  ]
+ },
+ {
   "key": "In payout",
   "where": [
    "src/components/creator/views.tsx:302",
@@ -2991,7 +3187,7 @@
  {
   "key": "In progress",
   "where": [
-   "src/components/design/views.tsx:219"
+   "src/components/design/views.tsx:244"
   ]
  },
  {
@@ -3025,7 +3221,26 @@
  {
   "key": "Invoice",
   "where": [
+   "src/components/design/data.ts:35",
    "src/data/creator-app.ts:22"
+  ]
+ },
+ {
+  "key": "INVOICE",
+  "where": [
+   "src/components/design/data.ts:106"
+  ]
+ },
+ {
+  "key": "INVOICE 0042",
+  "where": [
+   "src/components/design/data.ts:69"
+  ]
+ },
+ {
+  "key": "Invoice in Naira",
+  "where": [
+   "src/components/design/data.ts:106"
   ]
  },
  {
@@ -3041,9 +3256,15 @@
   ]
  },
  {
+  "key": "Items · Total · Bank details",
+  "where": [
+   "src/components/design/data.ts:106"
+  ]
+ },
+ {
   "key": "Join us",
   "where": [
-   "src/components/design/data.ts:82"
+   "src/components/design/data.ts:99"
   ]
  },
  {
@@ -3055,8 +3276,8 @@
  {
   "key": "Just now",
   "where": [
-   "src/components/design/DesignApp.tsx:107",
-   "src/components/design/DesignApp.tsx:113",
+   "src/components/design/DesignApp.tsx:109",
+   "src/components/design/DesignApp.tsx:116",
    "src/components/creator/store.tsx:97"
   ]
  },
@@ -3081,7 +3302,7 @@
  {
   "key": "Keep your logos, colours and fonts in one kit, then apply them to any design in a tap.",
   "where": [
-   "src/components/design/data.ts:99"
+   "src/components/design/data.ts:130"
   ]
  },
  {
@@ -3099,19 +3320,20 @@
  {
   "key": "Last month",
   "where": [
-   "src/components/design/data.ts:55"
+   "src/components/design/data.ts:68"
   ]
  },
  {
   "key": "Last week",
   "where": [
-   "src/components/design/data.ts:52"
+   "src/components/design/data.ts:65",
+   "src/components/design/data.ts:71"
   ]
  },
  {
   "key": "Layout",
   "where": [
-   "src/components/design/views.tsx:161",
+   "src/components/design/views.tsx:179",
    "src/components/creator/views.tsx:146"
   ]
  },
@@ -3119,7 +3341,7 @@
   "key": "Letterhead",
   "where": [
    "src/components/design/data.ts:23",
-   "src/components/design/data.ts:141"
+   "src/components/design/data.ts:171"
   ]
  },
  {
@@ -3152,13 +3374,13 @@
  {
   "key": "Link pages",
   "where": [
-   "src/components/design/data.ts:104"
+   "src/components/design/data.ts:135"
   ]
  },
  {
   "key": "List",
   "where": [
-   "src/components/design/views.tsx:163",
+   "src/components/design/views.tsx:181",
    "src/components/creator/views.tsx:148"
   ]
  },
@@ -3183,7 +3405,7 @@
  {
   "key": "LIVE NIGHT",
   "where": [
-   "src/components/design/data.ts:77"
+   "src/components/design/data.ts:94"
   ]
  },
  {
@@ -3208,7 +3430,7 @@
  {
   "key": "Logistics · Lagos",
   "where": [
-   "src/components/design/data.ts:73"
+   "src/components/design/data.ts:90"
   ]
  },
  {
@@ -3232,7 +3454,7 @@
  {
   "key": "Main",
   "where": [
-   "src/components/design/DesignApp.tsx:230"
+   "src/components/design/DesignApp.tsx:238"
   ]
  },
  {
@@ -3256,14 +3478,20 @@
  {
   "key": "Mama Tolu Stores",
   "where": [
-   "src/components/design/data.ts:54"
+   "src/components/design/data.ts:67"
   ]
  },
  {
   "key": "Mama Tolu Stores — receipt book",
   "where": [
-   "src/components/design/data.ts:54",
-   "src/components/design/data.ts:90"
+   "src/components/design/data.ts:67",
+   "src/components/design/data.ts:120"
+  ]
+ },
+ {
+  "key": "Margins stay inside the print area",
+  "where": [
+   "src/components/design/overlays.tsx:133"
   ]
  },
  {
@@ -3281,15 +3509,15 @@
  {
   "key": "Marketing",
   "where": [
-   "src/components/design/data.ts:59",
-   "src/components/design/data.ts:67",
-   "src/components/design/data.ts:68"
+   "src/components/design/data.ts:76",
+   "src/components/design/data.ts:84",
+   "src/components/design/data.ts:85"
   ]
  },
  {
   "key": "Matric no.",
   "where": [
-   "src/components/design/data.ts:79"
+   "src/components/design/data.ts:96"
   ]
  },
  {
@@ -3311,35 +3539,60 @@
   ]
  },
  {
+  "key": "Meeting minutes",
+  "where": [
+   "src/components/design/data.ts:37",
+   "src/components/design/data.ts:108"
+  ]
+ },
+ {
+  "key": "Meeting Minutes",
+  "where": [
+   "src/components/design/data.ts:108"
+  ]
+ },
+ {
   "key": "MEGA SALE",
   "where": [
-   "src/components/design/data.ts:50",
-   "src/components/design/data.ts:68"
+   "src/components/design/data.ts:63",
+   "src/components/design/data.ts:85"
   ]
  },
  {
   "key": "Mega Sale — flex banner",
   "where": [
-   "src/components/design/data.ts:50",
-   "src/components/design/data.ts:88"
+   "src/components/design/data.ts:63",
+   "src/components/design/data.ts:118"
   ]
  },
  {
   "key": "Mega Sale Poster",
   "where": [
-   "src/components/design/data.ts:68"
+   "src/components/design/data.ts:85"
+  ]
+ },
+ {
+  "key": "Memo",
+  "where": [
+   "src/components/design/data.ts:38"
+  ]
+ },
+ {
+  "key": "MEMO",
+  "where": [
+   "src/components/design/data.ts:109"
   ]
  },
  {
   "key": "Menu",
   "where": [
-   "src/components/design/DesignApp.tsx:195"
+   "src/components/design/DesignApp.tsx:202"
   ]
  },
  {
   "key": "Merge PDF",
   "where": [
-   "src/components/design/data.ts:123"
+   "src/components/design/data.ts:153"
   ]
  },
  {
@@ -3351,7 +3604,7 @@
  {
   "key": "Mon to Fri · Main Hall",
   "where": [
-   "src/components/design/data.ts:65"
+   "src/components/design/data.ts:82"
   ]
  },
  {
@@ -3364,7 +3617,7 @@
  {
   "key": "More",
   "where": [
-   "src/components/design/overlays.tsx:172"
+   "src/components/design/overlays.tsx:177"
   ]
  },
  {
@@ -3376,60 +3629,60 @@
  {
   "key": "My Creator Dashboard",
   "where": [
-   "src/components/design/data.ts:151"
+   "src/components/design/data.ts:181"
   ]
  },
  {
   "key": "My files",
   "where": [
-   "src/components/design/views.tsx:149",
-   "src/components/design/data.ts:96"
+   "src/components/design/views.tsx:167",
+   "src/components/design/data.ts:126"
   ]
  },
  {
   "key": "My fonts",
   "where": [
    "src/components/fonts/FontStudio.tsx:255",
-   "src/components/design/data.ts:116"
+   "src/components/design/data.ts:146"
   ]
  },
  {
   "key": "My orders",
   "where": [
-   "src/components/design/views.tsx:262"
+   "src/components/design/views.tsx:287"
   ]
  },
  {
   "key": "My templates",
   "where": [
    "src/components/creator/views.tsx:135",
-   "src/components/design/data.ts:115"
+   "src/components/design/data.ts:145"
   ]
  },
  {
   "key": "N",
   "where": [
-   "src/components/design/overlays.tsx:197"
+   "src/components/design/overlays.tsx:202"
   ]
  },
  {
   "key": "Name",
   "where": [
    "src/components/design/overlays.tsx:91",
-   "src/components/creator/dialogs.tsx:58",
-   "src/components/fonts/FontStudio.tsx:220"
+   "src/components/design/docsViews.tsx:50",
+   "src/components/creator/dialogs.tsx:58"
   ]
  },
  {
   "key": "Name A to Z",
   "where": [
-   "src/components/design/views.tsx:159"
+   "src/components/design/views.tsx:177"
   ]
  },
  {
   "key": "Naming Ceremony",
   "where": [
-   "src/components/design/data.ts:76"
+   "src/components/design/data.ts:93"
   ]
  },
  {
@@ -3455,17 +3708,24 @@
  {
   "key": "New",
   "where": [
-   "src/components/design/DesignApp.tsx:185",
-   "src/components/design/DesignApp.tsx:240",
-   "src/components/design/data.ts:98"
+   "src/components/design/DesignApp.tsx:192",
+   "src/components/design/DesignApp.tsx:242",
+   "src/components/design/DesignApp.tsx:248"
   ]
  },
  {
   "key": "New design",
   "where": [
-   "src/components/design/DesignApp.tsx:185",
-   "src/components/design/DesignApp.tsx:234",
-   "src/components/design/DesignApp.tsx:246"
+   "src/components/design/overlays.tsx:65",
+   "src/components/design/overlays.tsx:202"
+  ]
+ },
+ {
+  "key": "New document",
+  "where": [
+   "src/components/design/views.tsx:112",
+   "src/components/design/overlays.tsx:203",
+   "src/components/design/docsViews.tsx:31"
   ]
  },
  {
@@ -3490,6 +3750,13 @@
   ]
  },
  {
+  "key": "Newsletter",
+  "where": [
+   "src/components/design/data.ts:39",
+   "src/components/design/data.ts:110"
+  ]
+ },
+ {
   "key": "Next step",
   "where": [
    "src/components/creator/dialogs.tsx:174"
@@ -3508,15 +3775,21 @@
   ]
  },
  {
-  "key": "No designs match.",
+  "key": "No designs yet. Pick a size above to start one.",
   "where": [
-   "src/components/design/views.tsx:174"
+   "src/components/design/views.tsx:105"
   ]
  },
  {
-  "key": "No designs yet. Pick a size above to start one.",
+  "key": "No documents yet.",
   "where": [
-   "src/components/design/views.tsx:99"
+   "src/components/design/docsViews.tsx:107"
+  ]
+ },
+ {
+  "key": "No files match.",
+  "where": [
+   "src/components/design/views.tsx:199"
   ]
  },
  {
@@ -3541,21 +3814,21 @@
  {
   "key": "No templates match.",
   "where": [
-   "src/components/design/views.tsx:206",
+   "src/components/design/views.tsx:231",
    "src/components/creator/views.tsx:159"
   ]
  },
  {
   "key": "No. ____",
   "where": [
-   "src/components/design/data.ts:74",
+   "src/components/design/data.ts:91",
    "src/data/creator-app.ts:64"
   ]
  },
  {
   "key": "No. 0001",
   "where": [
-   "src/components/design/data.ts:54"
+   "src/components/design/data.ts:67"
   ]
  },
  {
@@ -3625,13 +3898,13 @@
  {
   "key": "Nothing found for “{q}”.",
   "where": [
-   "src/components/design/overlays.tsx:236"
+   "src/components/design/overlays.tsx:242"
   ]
  },
  {
   "key": "Nothing here yet.",
   "where": [
-   "src/components/design/views.tsx:222"
+   "src/components/design/views.tsx:247"
   ]
  },
  {
@@ -3643,7 +3916,7 @@
  {
   "key": "Notifications",
   "where": [
-   "src/components/design/DesignApp.tsx:188"
+   "src/components/design/DesignApp.tsx:195"
   ]
  },
  {
@@ -3665,15 +3938,33 @@
   ]
  },
  {
+  "key": "Office Memo",
+  "where": [
+   "src/components/design/data.ts:109"
+  ]
+ },
+ {
   "key": "Offline fonts",
   "where": [
-   "src/components/design/views.tsx:87"
+   "src/components/design/views.tsx:93"
   ]
  },
  {
   "key": "Okafor Bakes — business card",
   "where": [
-   "src/components/design/data.ts:48"
+   "src/components/design/data.ts:61"
+  ]
+ },
+ {
+  "key": "Okafor Bakes — invoice 0042",
+  "where": [
+   "src/components/design/data.ts:69"
+  ]
+ },
+ {
+  "key": "Okafor Bakes · ₦186,500",
+  "where": [
+   "src/components/design/data.ts:69"
   ]
  },
  {
@@ -3692,7 +3983,7 @@
  {
   "key": "On this phone",
   "where": [
-   "src/components/design/views.tsx:154"
+   "src/components/design/views.tsx:172"
   ]
  },
  {
@@ -3704,13 +3995,13 @@
  {
   "key": "Open",
   "where": [
-   "src/components/design/overlays.tsx:267"
+   "src/components/design/overlays.tsx:273"
   ]
  },
  {
   "key": "Open .cdr without CorelDRAW",
   "where": [
-   "src/components/design/views.tsx:83"
+   "src/components/design/views.tsx:89"
   ]
  },
  {
@@ -3726,15 +4017,21 @@
   ]
  },
  {
+  "key": "Open a document",
+  "where": [
+   "src/components/design/docsViews.tsx:89"
+  ]
+ },
+ {
   "key": "Open a file",
   "where": [
-   "src/components/design/views.tsx:75"
+   "src/components/design/views.tsx:81"
   ]
  },
  {
   "key": "Open details for {name}",
   "where": [
-   "src/components/design/parts.tsx:60"
+   "src/components/design/parts.tsx:63"
   ]
  },
  {
@@ -3746,20 +4043,26 @@
  {
   "key": "Open in editor",
   "where": [
-   "src/components/design/DesignApp.tsx:110",
-   "src/components/design/DesignApp.tsx:258"
+   "src/components/design/DesignApp.tsx:113",
+   "src/components/design/DesignApp.tsx:267"
   ]
  },
  {
   "key": "Open in Ifiok Designs",
   "where": [
-   "src/components/design/views.tsx:236"
+   "src/components/design/views.tsx:261"
+  ]
+ },
+ {
+  "key": "Open in Ifiok Docs",
+  "where": [
+   "src/components/design/DesignApp.tsx:113"
   ]
  },
  {
   "key": "Open menu",
   "where": [
-   "src/components/design/DesignApp.tsx:173"
+   "src/components/design/DesignApp.tsx:180"
   ]
  },
  {
@@ -3783,8 +4086,14 @@
  {
   "key": "Opens in a new tab",
   "where": [
-   "src/components/design/overlays.tsx:198",
-   "src/components/design/overlays.tsx:201"
+   "src/components/design/overlays.tsx:204",
+   "src/components/design/overlays.tsx:207"
+  ]
+ },
+ {
+  "key": "Opens in Ifiok Docs. You can send it to a verified printer from there.",
+  "where": [
+   "src/components/design/docsViews.tsx:61"
   ]
  },
  {
@@ -3796,7 +4105,7 @@
  {
   "key": "Order print",
   "where": [
-   "src/components/design/overlays.tsx:167"
+   "src/components/design/overlays.tsx:172"
   ]
  },
  {
@@ -3808,16 +4117,16 @@
  {
   "key": "Orders",
   "where": [
-   "src/components/design/DesignApp.tsx:149",
-   "src/components/design/views.tsx:218"
+   "src/components/design/DesignApp.tsx:156",
+   "src/components/design/views.tsx:243"
   ]
  },
  {
   "key": "Orders & prints",
   "where": [
-   "src/components/design/views.tsx:217",
-   "src/components/design/views.tsx:263",
-   "src/components/design/data.ts:106"
+   "src/components/design/views.tsx:242",
+   "src/components/design/views.tsx:288",
+   "src/components/design/data.ts:137"
   ]
  },
  {
@@ -3835,7 +4144,13 @@
  {
   "key": "Out for delivery",
   "where": [
-   "src/components/design/data.ts:43"
+   "src/components/design/data.ts:56"
+  ]
+ },
+ {
+  "key": "Page size A4",
+  "where": [
+   "src/components/design/overlays.tsx:131"
   ]
  },
  {
@@ -3875,7 +4190,7 @@
  {
   "key": "Password, active sessions, delete account",
   "where": [
-   "src/components/design/data.ts:146"
+   "src/components/design/data.ts:176"
   ]
  },
  {
@@ -3929,19 +4244,27 @@
  {
   "key": "PDF to Word",
   "where": [
-   "src/components/design/data.ts:126"
+   "src/components/design/docsViews.tsx:93",
+   "src/components/design/data.ts:156"
+  ]
+ },
+ {
+  "key": "PDF tools",
+  "where": [
+   "src/components/design/views.tsx:139",
+   "src/components/design/docsViews.tsx:114"
   ]
  },
  {
   "key": "PDF, PowerPoint, images",
   "where": [
-   "src/components/design/views.tsx:75"
+   "src/components/design/views.tsx:81"
   ]
  },
  {
   "key": "People",
   "where": [
-   "src/components/design/data.ts:149"
+   "src/components/design/data.ts:179"
   ]
  },
  {
@@ -3965,7 +4288,7 @@
  {
   "key": "Photo is under 300 DPI at this size",
   "where": [
-   "src/components/design/data.ts:51"
+   "src/components/design/data.ts:64"
   ]
  },
  {
@@ -3978,6 +4301,12 @@
   "key": "Pick a font and start designing with it. Every font here is free to use in your designs.",
   "where": [
    "src/components/fonts/FontsView.tsx:37"
+  ]
+ },
+ {
+  "key": "Pick a template above to write your first one.",
+  "where": [
+   "src/components/design/docsViews.tsx:107"
   ]
  },
  {
@@ -4037,7 +4366,7 @@
  {
   "key": "Poster",
   "where": [
-   "src/components/design/data.ts:138",
+   "src/components/design/data.ts:168",
    "src/data/creator-app.ts:13"
   ]
  },
@@ -4083,7 +4412,7 @@
  {
   "key": "Print",
   "where": [
-   "src/components/design/DesignApp.tsx:148",
+   "src/components/design/DesignApp.tsx:155",
    "src/data/creator-app.ts:11",
    "src/data/creator-app.ts:12"
   ]
@@ -4091,13 +4420,13 @@
  {
   "key": "Print check",
   "where": [
-   "src/components/design/overlays.tsx:158"
+   "src/components/design/overlays.tsx:163"
   ]
  },
  {
   "key": "Print orders in progress",
   "where": [
-   "src/components/design/views.tsx:105"
+   "src/components/design/views.tsx:122"
   ]
  },
  {
@@ -4127,7 +4456,7 @@
  {
   "key": "Printing",
   "where": [
-   "src/components/design/data.ts:42"
+   "src/components/design/data.ts:55"
   ]
  },
  {
@@ -4151,13 +4480,19 @@
  {
   "key": "Production · OKB-0041",
   "where": [
-   "src/components/design/data.ts:51"
+   "src/components/design/data.ts:64"
+  ]
+ },
+ {
+  "key": "Profession · City",
+  "where": [
+   "src/components/design/data.ts:103"
   ]
  },
  {
   "key": "Profile",
   "where": [
-   "src/components/design/DesignApp.tsx:149",
+   "src/components/design/DesignApp.tsx:156",
    "src/components/creator/views.tsx:388"
   ]
  },
@@ -4176,7 +4511,7 @@
  {
   "key": "Progress",
   "where": [
-   "src/components/design/parts.tsx:19",
+   "src/components/design/parts.tsx:22",
    "src/components/student/StudentView.tsx:87",
    "src/components/fonts/FontStudio.tsx:127"
   ]
@@ -4184,19 +4519,38 @@
  {
   "key": "Project Defence",
   "where": [
-   "src/components/design/data.ts:64"
+   "src/components/design/data.ts:81"
   ]
  },
  {
   "key": "Project Defence Slides",
   "where": [
-   "src/components/design/data.ts:64"
+   "src/components/design/data.ts:81"
+  ]
+ },
+ {
+  "key": "Project report",
+  "where": [
+   "src/components/design/data.ts:34"
+  ]
+ },
+ {
+  "key": "Project Report",
+  "where": [
+   "src/components/design/data.ts:70",
+   "src/components/design/data.ts:105"
   ]
  },
  {
   "key": "Proof",
   "where": [
    "src/data/student.ts:22"
+  ]
+ },
+ {
+  "key": "Proposal",
+  "where": [
+   "src/components/design/data.ts:107"
   ]
  },
  {
@@ -4234,13 +4588,13 @@
  {
   "key": "QR generator",
   "where": [
-   "src/components/design/data.ts:128"
+   "src/components/design/data.ts:158"
   ]
  },
  {
   "key": "Quantity",
   "where": [
-   "src/components/design/overlays.tsx:169"
+   "src/components/design/overlays.tsx:174"
   ]
  },
  {
@@ -4258,7 +4612,7 @@
  {
   "key": "Ready to print",
   "where": [
-   "src/components/design/data.ts:41"
+   "src/components/design/data.ts:54"
   ]
  },
  {
@@ -4282,7 +4636,7 @@
  {
   "key": "Receipt",
   "where": [
-   "src/components/design/data.ts:74",
+   "src/components/design/data.ts:91",
    "src/data/creator-app.ts:64"
   ]
  },
@@ -4296,7 +4650,7 @@
  {
   "key": "Receipt Book — Store",
   "where": [
-   "src/components/design/data.ts:74",
+   "src/components/design/data.ts:91",
    "src/data/creator-app.ts:64"
   ]
  },
@@ -4315,7 +4669,7 @@
  {
   "key": "Recently edited",
   "where": [
-   "src/components/design/views.tsx:159"
+   "src/components/design/views.tsx:177"
   ]
  },
  {
@@ -4402,7 +4756,7 @@
  {
   "key": "Resolution 300 DPI",
   "where": [
-   "src/components/design/overlays.tsx:131"
+   "src/components/design/overlays.tsx:136"
   ]
  },
  {
@@ -4426,6 +4780,18 @@
   ]
  },
  {
+  "key": "Resume",
+  "where": [
+   "src/components/design/data.ts:32"
+  ]
+ },
+ {
+  "key": "Resumes, invoices, reports and letters, written in Ifiok Docs.",
+  "where": [
+   "src/components/design/overlays.tsx:287"
+  ]
+ },
+ {
   "key": "Retro",
   "where": [
    "src/data/fonts.ts:7"
@@ -4440,13 +4806,13 @@
  {
   "key": "RidgeHaus",
   "where": [
-   "src/components/design/data.ts:71"
+   "src/components/design/data.ts:88"
   ]
  },
  {
   "key": "RidgeHaus Business Card",
   "where": [
-   "src/components/design/data.ts:71"
+   "src/components/design/data.ts:88"
   ]
  },
  {
@@ -4476,13 +4842,13 @@
  {
   "key": "Sample data and example amounts. Your real templates, fonts and earnings load from the live app.",
   "where": [
-   "src/components/design/DesignApp.tsx:227"
+   "src/components/design/DesignApp.tsx:235"
   ]
  },
  {
   "key": "Sample data. Your real designs, orders and templates load from the live app.",
   "where": [
-   "src/components/design/DesignApp.tsx:227"
+   "src/components/design/DesignApp.tsx:235"
   ]
  },
  {
@@ -4508,14 +4874,14 @@
  {
   "key": "Saturday · Asọ-ẹbí",
   "where": [
-   "src/components/design/data.ts:81"
+   "src/components/design/data.ts:98"
   ]
  },
  {
   "key": "Saturday 12 July · 10am",
   "where": [
    "src/components/auth/AuthShell.tsx:28",
-   "src/components/design/data.ts:49"
+   "src/components/design/data.ts:62"
   ]
  },
  {
@@ -4558,13 +4924,13 @@
  {
   "key": "Saved as a draft.",
   "where": [
-   "src/components/design/DesignApp.tsx:261"
+   "src/components/design/DesignApp.tsx:270"
   ]
  },
  {
   "key": "Scan to PDF",
   "where": [
-   "src/components/design/data.ts:127"
+   "src/components/design/data.ts:157"
   ]
  },
  {
@@ -4578,15 +4944,21 @@
  {
   "key": "School & ID",
   "where": [
-   "src/components/design/data.ts:59",
-   "src/components/design/data.ts:78",
-   "src/components/design/data.ts:79"
+   "src/components/design/data.ts:76",
+   "src/components/design/data.ts:95",
+   "src/components/design/data.ts:96"
   ]
  },
  {
   "key": "School and ID sent",
   "where": [
    "src/components/student/StudentView.tsx:180"
+  ]
+ },
+ {
+  "key": "Scope · Timeline · Price",
+  "where": [
+   "src/components/design/data.ts:107"
   ]
  },
  {
@@ -4612,21 +4984,27 @@
  {
   "key": "Search",
   "where": [
-   "src/components/design/DesignApp.tsx:180",
-   "src/components/design/overlays.tsx:214",
-   "src/components/design/overlays.tsx:227"
+   "src/components/design/DesignApp.tsx:187",
+   "src/components/design/overlays.tsx:220",
+   "src/components/design/overlays.tsx:233"
   ]
  },
  {
-  "key": "Search designs, templates and tools",
+  "key": "Search designs, documents and tools",
   "where": [
-   "src/components/design/views.tsx:53"
+   "src/components/design/views.tsx:55"
   ]
  },
  {
-  "key": "Search designs, templates, tools and pages",
+  "key": "Search designs, documents, templates, tools and pages",
   "where": [
-   "src/components/design/overlays.tsx:226"
+   "src/components/design/overlays.tsx:232"
+  ]
+ },
+ {
+  "key": "Search designs, documents, templates…",
+  "where": [
+   "src/components/design/DesignApp.tsx:188"
   ]
  },
  {
@@ -4638,19 +5016,13 @@
  {
   "key": "Search templates",
   "where": [
-   "src/components/design/views.tsx:202"
+   "src/components/design/views.tsx:227"
   ]
  },
  {
-  "key": "Search your designs",
+  "key": "Search your files",
   "where": [
-   "src/components/design/views.tsx:157"
-  ]
- },
- {
-  "key": "Search your designs, templates…",
-  "where": [
-   "src/components/design/DesignApp.tsx:181"
+   "src/components/design/views.tsx:175"
   ]
  },
  {
@@ -4674,9 +5046,9 @@
  {
   "key": "See all",
   "where": [
-   "src/components/design/views.tsx:94",
-   "src/components/design/views.tsx:114",
-   "src/components/creator/views.tsx:103"
+   "src/components/design/views.tsx:100",
+   "src/components/design/views.tsx:110",
+   "src/components/design/views.tsx:131"
   ]
  },
  {
@@ -4688,7 +5060,7 @@
  {
   "key": "See how much AI you have used this month",
   "where": [
-   "src/components/design/data.ts:150"
+   "src/components/design/data.ts:180"
   ]
  },
  {
@@ -4770,13 +5142,13 @@
  {
   "key": "Settings",
   "where": [
-   "src/components/design/data.ts:108"
+   "src/components/design/data.ts:138"
   ]
  },
  {
   "key": "Share your designs",
   "where": [
-   "src/components/design/data.ts:149"
+   "src/components/design/data.ts:179"
   ]
  },
  {
@@ -4788,7 +5160,7 @@
  {
   "key": "Sidebar",
   "where": [
-   "src/components/design/DesignApp.tsx:194"
+   "src/components/design/DesignApp.tsx:201"
   ]
  },
  {
@@ -4851,31 +5223,31 @@
  {
   "key": "Sort",
   "where": [
-   "src/components/design/views.tsx:158"
+   "src/components/design/views.tsx:176"
   ]
  },
  {
   "key": "Special Offer",
   "where": [
-   "src/components/design/data.ts:69"
+   "src/components/design/data.ts:86"
   ]
  },
  {
   "key": "Spice Route",
   "where": [
-   "src/components/design/data.ts:72"
+   "src/components/design/data.ts:89"
   ]
  },
  {
   "key": "Spice Route Card",
   "where": [
-   "src/components/design/data.ts:72"
+   "src/components/design/data.ts:89"
   ]
  },
  {
   "key": "Split PDF",
   "where": [
-   "src/components/design/data.ts:124"
+   "src/components/design/data.ts:154"
   ]
  },
  {
@@ -4887,19 +5259,19 @@
  {
   "key": "Staff",
   "where": [
-   "src/components/design/data.ts:78"
+   "src/components/design/data.ts:95"
   ]
  },
  {
   "key": "Staff ID — Okafor Bakes",
   "where": [
-   "src/components/design/data.ts:51"
+   "src/components/design/data.ts:64"
   ]
  },
  {
   "key": "Staff ID Card",
   "where": [
-   "src/components/design/data.ts:78"
+   "src/components/design/data.ts:95"
   ]
  },
  {
@@ -4909,15 +5281,33 @@
   ]
  },
  {
+  "key": "Start a document",
+  "where": [
+   "src/components/design/docsViews.tsx:98"
+  ]
+ },
+ {
   "key": "Start a new design",
   "where": [
-   "src/components/design/views.tsx:55"
+   "src/components/design/views.tsx:57"
   ]
  },
  {
   "key": "Start a template",
   "where": [
    "src/components/creator/views.tsx:99"
+  ]
+ },
+ {
+  "key": "Start from",
+  "where": [
+   "src/components/design/docsViews.tsx:37"
+  ]
+ },
+ {
+  "key": "Start from scratch",
+  "where": [
+   "src/components/design/data.ts:113"
   ]
  },
  {
@@ -4935,7 +5325,7 @@
  {
   "key": "Status",
   "where": [
-   "src/components/design/overlays.tsx:152",
+   "src/components/design/overlays.tsx:157",
    "src/components/creator/dialogs.tsx:133",
    "src/components/creator/views.tsx:327"
   ]
@@ -4955,13 +5345,13 @@
  {
   "key": "Stephenfredabel",
   "where": [
-   "src/components/design/data.ts:131"
+   "src/components/design/data.ts:161"
   ]
  },
  {
   "key": "Sticker",
   "where": [
-   "src/components/design/data.ts:139",
+   "src/components/design/data.ts:169",
    "src/data/creator-app.ts:16"
   ]
  },
@@ -4974,7 +5364,7 @@
  {
   "key": "Stock images",
   "where": [
-   "src/components/design/data.ts:101"
+   "src/components/design/data.ts:132"
   ]
  },
  {
@@ -4992,7 +5382,7 @@
  {
   "key": "Student",
   "where": [
-   "src/components/design/DesignApp.tsx:179",
+   "src/components/design/DesignApp.tsx:186",
    "src/components/student/StudentView.tsx:208",
    "src/components/student/StudentView.tsx:216"
   ]
@@ -5000,14 +5390,14 @@
  {
   "key": "Student ID Card",
   "where": [
-   "src/components/design/data.ts:79"
+   "src/components/design/data.ts:96"
   ]
  },
  {
   "key": "Student perks",
   "where": [
-   "src/components/design/DesignApp.tsx:54",
-   "src/components/design/DesignApp.tsx:149",
+   "src/components/design/DesignApp.tsx:55",
+   "src/components/design/DesignApp.tsx:156",
    "src/components/student/StudentView.tsx:170"
   ]
  },
@@ -5026,7 +5416,7 @@
  {
   "key": "Studio",
   "where": [
-   "src/components/design/DesignApp.tsx:149"
+   "src/components/design/DesignApp.tsx:156"
   ]
  },
  {
@@ -5053,7 +5443,7 @@
  {
   "key": "Submit templates, track earnings, request payouts",
   "where": [
-   "src/components/design/data.ts:151"
+   "src/components/design/data.ts:181"
   ]
  },
  {
@@ -5078,7 +5468,7 @@
  {
   "key": "Submitted. The Ifiok team will review your font.",
   "where": [
-   "src/components/design/DesignApp.tsx:261",
+   "src/components/design/DesignApp.tsx:270",
    "src/components/creator/store.tsx:144"
   ]
  },
@@ -5103,19 +5493,19 @@
  {
   "key": "Sunday 9am · Surulere",
   "where": [
-   "src/components/design/data.ts:52"
+   "src/components/design/data.ts:65"
   ]
  },
  {
   "key": "Sunday service",
   "where": [
-   "src/components/design/data.ts:75"
+   "src/components/design/data.ts:92"
   ]
  },
  {
   "key": "Support",
   "where": [
-   "src/components/design/data.ts:109"
+   "src/components/design/data.ts:139"
   ]
  },
  {
@@ -5127,13 +5517,13 @@
  {
   "key": "Surulere print shop",
   "where": [
-   "src/components/design/data.ts:89"
+   "src/components/design/data.ts:119"
   ]
  },
  {
   "key": "SwiftHaul",
   "where": [
-   "src/components/design/data.ts:73"
+   "src/components/design/data.ts:90"
   ]
  },
  {
@@ -5176,15 +5566,15 @@
  {
   "key": "Template gallery",
   "where": [
-   "src/components/design/views.tsx:79"
+   "src/components/design/views.tsx:85"
   ]
  },
  {
   "key": "Templates",
   "where": [
-   "src/components/design/DesignApp.tsx:149",
-   "src/components/design/views.tsx:201",
-   "src/components/design/overlays.tsx:200"
+   "src/components/design/DesignApp.tsx:156",
+   "src/components/design/views.tsx:226",
+   "src/components/design/overlays.tsx:206"
   ]
  },
  {
@@ -5209,40 +5599,40 @@
  {
   "key": "Thank you",
   "where": [
-   "src/components/design/data.ts:66"
+   "src/components/design/data.ts:83"
   ]
  },
  {
   "key": "Thank-You Card",
   "where": [
-   "src/components/design/data.ts:66"
+   "src/components/design/data.ts:83"
   ]
  },
  {
   "key": "Thanksgiving",
   "where": [
-   "src/components/design/data.ts:75"
+   "src/components/design/data.ts:92"
   ]
  },
  {
   "key": "Thanksgiving Programme",
   "where": [
-   "src/components/design/data.ts:75",
+   "src/components/design/data.ts:92",
    "src/data/creator-app.ts:62"
   ]
  },
  {
   "key": "Thanksgiving Service",
   "where": [
-   "src/components/design/data.ts:52",
+   "src/components/design/data.ts:65",
    "src/data/creator-app.ts:62"
   ]
  },
  {
   "key": "Thanksgiving Service — programme",
   "where": [
-   "src/components/design/data.ts:52",
-   "src/components/design/data.ts:89"
+   "src/components/design/data.ts:65",
+   "src/components/design/data.ts:119"
   ]
  },
  {
@@ -5310,7 +5700,7 @@
  {
   "key": "Theme",
   "where": [
-   "src/components/design/DesignApp.tsx:197"
+   "src/components/design/DesignApp.tsx:204"
   ]
  },
  {
@@ -5338,6 +5728,12 @@
   ]
  },
  {
+  "key": "This month at a glance",
+  "where": [
+   "src/components/design/data.ts:110"
+  ]
+ },
+ {
   "key": "This month's theme",
   "where": [
    "src/components/creator/views.tsx:96"
@@ -5346,13 +5742,25 @@
  {
   "key": "This screen is part of the live app. The prototype shows Home, My files, Templates and Orders.",
   "where": [
-   "src/components/design/views.tsx:235"
+   "src/components/design/views.tsx:260"
   ]
  },
  {
   "key": "This weekend only",
   "where": [
-   "src/components/design/data.ts:70"
+   "src/components/design/data.ts:87"
+  ]
+ },
+ {
+  "key": "Title · Department · Session",
+  "where": [
+   "src/components/design/data.ts:105"
+  ]
+ },
+ {
+  "key": "To · From · Subject",
+  "where": [
+   "src/components/design/data.ts:109"
   ]
  },
  {
@@ -5373,7 +5781,7 @@
  {
   "key": "Together",
   "where": [
-   "src/components/design/data.ts:82"
+   "src/components/design/data.ts:99"
   ]
  },
  {
@@ -5391,26 +5799,26 @@
  {
   "key": "Track in the live app",
   "where": [
-   "src/components/design/parts.tsx:114"
+   "src/components/design/parts.tsx:117"
   ]
  },
  {
   "key": "Trackable QR",
   "where": [
-   "src/components/design/data.ts:103"
+   "src/components/design/data.ts:134"
   ]
  },
  {
   "key": "Traditional wedding",
   "where": [
-   "src/components/design/data.ts:53",
+   "src/components/design/data.ts:66",
    "src/data/creator-app.ts:66"
   ]
  },
  {
   "key": "Traditional Wedding",
   "where": [
-   "src/components/design/data.ts:81"
+   "src/components/design/data.ts:98"
   ]
  },
  {
@@ -5428,7 +5836,7 @@
  {
   "key": "Try another word or status.",
   "where": [
-   "src/components/design/views.tsx:174",
+   "src/components/design/views.tsx:199",
    "src/components/creator/views.tsx:159",
    "src/components/fonts/FontStudio.tsx:263"
   ]
@@ -5436,7 +5844,7 @@
  {
   "key": "Try another word.",
   "where": [
-   "src/components/design/views.tsx:206"
+   "src/components/design/views.tsx:231"
   ]
  },
  {
@@ -5449,6 +5857,12 @@
   "key": "Try your own words",
   "where": [
    "src/components/fonts/FontsView.tsx:93"
+  ]
+ },
+ {
+  "key": "Turn a PDF into an editable document",
+  "where": [
+   "src/components/design/docsViews.tsx:93"
   ]
  },
  {
@@ -5485,21 +5899,27 @@
  {
   "key": "Undo",
   "where": [
-   "src/components/design/DesignApp.tsx:121",
-   "src/components/design/overlays.tsx:268",
+   "src/components/design/DesignApp.tsx:124",
+   "src/components/design/overlays.tsx:274",
    "src/components/creator/store.tsx:109"
   ]
  },
  {
   "key": "University of Ibadan",
   "where": [
-   "src/components/design/data.ts:80"
+   "src/components/design/data.ts:97"
   ]
  },
  {
   "key": "Unlocks when you are verified",
   "where": [
    "src/components/student/StudentView.tsx:154"
+  ]
+ },
+ {
+  "key": "Untitled",
+  "where": [
+   "src/components/design/data.ts:113"
   ]
  },
  {
@@ -5510,15 +5930,22 @@
   ]
  },
  {
+  "key": "Untitled document",
+  "where": [
+   "src/components/design/docsViews.tsx:51",
+   "src/components/design/docsViews.tsx:67"
+  ]
+ },
+ {
   "key": "Up to 40% off · Balogun Market",
   "where": [
-   "src/components/design/data.ts:50"
+   "src/components/design/data.ts:63"
   ]
  },
  {
   "key": "Up to 70% off",
   "where": [
-   "src/components/design/data.ts:68"
+   "src/components/design/data.ts:85"
   ]
  },
  {
@@ -5542,7 +5969,7 @@
  {
   "key": "Uploads",
   "where": [
-   "src/components/design/data.ts:100"
+   "src/components/design/data.ts:131"
   ]
  },
  {
@@ -5572,7 +5999,7 @@
  {
   "key": "Use template {name}",
   "where": [
-   "src/components/design/parts.tsx:90"
+   "src/components/design/parts.tsx:93"
   ]
  },
  {
@@ -5608,7 +6035,7 @@
  {
   "key": "Verify",
   "where": [
-   "src/components/design/DesignApp.tsx:54"
+   "src/components/design/DesignApp.tsx:55"
   ]
  },
  {
@@ -5632,7 +6059,7 @@
  {
   "key": "Verify once with your school ID and unlock student perks.",
   "where": [
-   "src/components/design/data.ts:105"
+   "src/components/design/data.ts:136"
   ]
  },
  {
@@ -5663,19 +6090,19 @@
  {
   "key": "View",
   "where": [
-   "src/components/design/overlays.tsx:198"
+   "src/components/design/overlays.tsx:204"
   ]
  },
  {
   "key": "View CorelDRAW",
   "where": [
-   "src/components/design/views.tsx:83"
+   "src/components/design/views.tsx:89"
   ]
  },
  {
   "key": "View design",
   "where": [
-   "src/components/design/parts.tsx:113"
+   "src/components/design/parts.tsx:116"
   ]
  },
  {
@@ -5779,9 +6206,9 @@
  {
   "key": "Weddings",
   "where": [
-   "src/components/design/data.ts:59",
-   "src/components/design/data.ts:81",
-   "src/components/design/data.ts:82"
+   "src/components/design/data.ts:76",
+   "src/components/design/data.ts:98",
+   "src/components/design/data.ts:99"
   ]
  },
  {
@@ -5805,19 +6232,19 @@
  {
   "key": "Welcome back, {first}",
   "where": [
-   "src/components/design/views.tsx:49"
+   "src/components/design/views.tsx:51"
   ]
  },
  {
   "key": "Welcome, Oluwaseun",
   "where": [
-   "src/components/design/data.ts:76"
+   "src/components/design/data.ts:93"
   ]
  },
  {
   "key": "What are you making?",
   "where": [
-   "src/components/design/overlays.tsx:287"
+   "src/components/design/overlays.tsx:296"
   ]
  },
  {
@@ -5847,7 +6274,7 @@
  {
   "key": "What will you design today?",
   "where": [
-   "src/components/design/views.tsx:50"
+   "src/components/design/views.tsx:52"
   ]
  },
  {
@@ -5884,13 +6311,13 @@
  {
   "key": "Where your files are",
   "where": [
-   "src/components/design/views.tsx:152"
+   "src/components/design/views.tsx:170"
   ]
  },
  {
   "key": "White Wedding",
   "where": [
-   "src/components/design/data.ts:82"
+   "src/components/design/data.ts:99"
   ]
  },
  {
@@ -5918,22 +6345,34 @@
   ]
  },
  {
+  "key": "Word, PDF or text, up to 25 MB",
+  "where": [
+   "src/components/design/docsViews.tsx:89"
+  ]
+ },
+ {
   "key": "Work that copies another designer, a brand or a template from somewhere else.",
   "where": [
    "src/data/creators.ts:99"
   ]
  },
  {
+  "key": "Write, edit and sign documents and PDFs with Ifiok Docs.",
+  "where": [
+   "src/components/design/docsViews.tsx:82"
+  ]
+ },
+ {
   "key": "Yaba print shop",
   "where": [
-   "src/components/design/data.ts:87",
-   "src/components/design/data.ts:90"
+   "src/components/design/data.ts:117",
+   "src/components/design/data.ts:120"
   ]
  },
  {
   "key": "Yesterday",
   "where": [
-   "src/components/design/data.ts:49"
+   "src/components/design/data.ts:62"
   ]
  },
  {
@@ -5966,7 +6405,7 @@
  {
   "key": "You are all caught up.",
   "where": [
-   "src/components/design/DesignApp.tsx:188"
+   "src/components/design/DesignApp.tsx:195"
   ]
  },
  {
@@ -6018,15 +6457,23 @@
   ]
  },
  {
-  "key": "Your designs",
+  "key": "Your documents",
   "where": [
-   "src/components/design/overlays.tsx:199"
+   "src/components/design/views.tsx:110",
+   "src/components/design/docsViews.tsx:105"
   ]
  },
  {
   "key": "Your earnings and payments. Only you can see this page.",
   "where": [
    "src/components/creator/views.tsx:290"
+  ]
+ },
+ {
+  "key": "Your files",
+  "where": [
+   "src/components/design/overlays.tsx:205",
+   "src/components/design/overlays.tsx:210"
   ]
  },
  {
@@ -6050,7 +6497,8 @@
  {
   "key": "Your Name",
   "where": [
-   "src/components/design/data.ts:62"
+   "src/components/design/data.ts:79",
+   "src/components/design/data.ts:103"
   ]
  },
  {
@@ -6081,13 +6529,13 @@
  {
   "key": "Your photos, logos and PDFs, ready to drop into any design.",
   "where": [
-   "src/components/design/data.ts:100"
+   "src/components/design/data.ts:131"
   ]
  },
  {
   "key": "Your profile, delivery addresses and payment preferences.",
   "where": [
-   "src/components/design/data.ts:108"
+   "src/components/design/data.ts:138"
   ]
  },
  {
