@@ -3401,6 +3401,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "6-digit code",
+  "language": "fr",
+  "value": "Code à 6 chiffres",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:35"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "6-digit code",
+  "language": "pcm",
+  "value": "6-digit code",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:35"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "6-digit code",
+  "language": "yo",
+  "value": "Kóòdù oní-nọ́ńbà mẹ́fà",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:35"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "6-digit code",
+  "language": "ha",
+  "value": "Lambar tantancewa mai lambobi 6",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:35"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "6-digit code",
+  "language": "ig",
+  "value": "Koodu nke ọnụọgụ 6",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:35"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "600 level",
   "language": "fr",
   "value": "Niveau 600",
@@ -3438,6 +3478,46 @@
   "value": "Ọkwa 600",
   "status": "ai_translated",
   "context": "src/data/student.ts:26"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "8 or more characters",
+  "language": "fr",
+  "value": "8 caractères ou plus",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "8 or more characters",
+  "language": "pcm",
+  "value": "8 or more characters",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "8 or more characters",
+  "language": "yo",
+  "value": "Ó kéré jù ní ọ̀rọ̀ mẹ́jọ tàbí jù bẹ́ẹ̀ lọ",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "8 or more characters",
+  "language": "ha",
+  "value": "Haruffa 8 ko fiye",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "8 or more characters",
+  "language": "ig",
+  "value": "Mkpụrụedemede 8 ma ọ bụ ka nke ahụ",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
  },
  {
   "namespace": "legacy-inline",
@@ -3558,6 +3638,86 @@
   "value": "Font ịnyefe",
   "status": "ai_translated",
   "context": "src/components/design/overlays.tsx:282"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "A letter",
+  "language": "fr",
+  "value": "Une lettre",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "A letter",
+  "language": "pcm",
+  "value": "One letter",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "A letter",
+  "language": "yo",
+  "value": "Lẹ́tà kan",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "A letter",
+  "language": "ha",
+  "value": "Harafi",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "A letter",
+  "language": "ig",
+  "value": "Mkpụrụedemede",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "A number",
+  "language": "fr",
+  "value": "Un chiffre",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "A number",
+  "language": "pcm",
+  "value": "One number",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "A number",
+  "language": "yo",
+  "value": "Nọ́ńbà kan",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "A number",
+  "language": "ha",
+  "value": "Lamba",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "A number",
+  "language": "ig",
+  "value": "Ọnụọgụ",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:122"
  },
  {
   "namespace": "legacy-inline",
@@ -5241,6 +5401,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Already have an account?",
+  "language": "fr",
+  "value": "Vous avez déjà un compte ?",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:131"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Already have an account?",
+  "language": "pcm",
+  "value": "You don already get account?",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:131"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Already have an account?",
+  "language": "yo",
+  "value": "Ṣé o ti ní àkáǹtì?",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:131"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Already have an account?",
+  "language": "ha",
+  "value": "Kuna da asusu tuni?",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:131"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Already have an account?",
+  "language": "ig",
+  "value": "Ị nwerelarị akaụntụ?",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:131"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Amount",
   "language": "fr",
   "value": "Montant",
@@ -5318,6 +5518,46 @@
   "value": "Ọnụọgụ ndị a gosipụtara bụ ọmụmaatụ. Ifiok na-ekpebi ọnụọgụ ahụ n'ezie.",
   "status": "ai_translated",
   "context": "src/components/creator/views.tsx:313"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "and",
+  "language": "fr",
+  "value": "et la",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "and",
+  "language": "pcm",
+  "value": "and",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "and",
+  "language": "yo",
+  "value": "àti",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "and",
+  "language": "ha",
+  "value": "da",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "and",
+  "language": "ig",
+  "value": "na",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
  },
  {
   "namespace": "legacy-inline",
@@ -6318,6 +6558,46 @@
   "value": "Laghachi",
   "status": "ai_translated",
   "context": "src/components/student/StudentView.tsx:137"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Back to log in",
+  "language": "fr",
+  "value": "Retour à la connexion",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:64"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Back to log in",
+  "language": "pcm",
+  "value": "Go back to Log in",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:64"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Back to log in",
+  "language": "yo",
+  "value": "Padà sí wọlé",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:64"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Back to log in",
+  "language": "ha",
+  "value": "Koma shiga",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:64"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Back to log in",
+  "language": "ig",
+  "value": "Laghachi na nbanye",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:64"
  },
  {
   "namespace": "legacy-inline",
@@ -7481,6 +7761,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Change number",
+  "language": "fr",
+  "value": "Changer de numéro",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:135"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Change number",
+  "language": "pcm",
+  "value": "Change number",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:135"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Change number",
+  "language": "yo",
+  "value": "Yí nọ́ńbà padà",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:135"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Change number",
+  "language": "ha",
+  "value": "Canja lamba",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:135"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Change number",
+  "language": "ig",
+  "value": "Gbanwee nọmba",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:135"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Changes requested",
   "language": "fr",
   "value": "Modifications demandées",
@@ -7758,6 +8078,46 @@
   "value": "Buru ụzọ lelee akaụntụ gị.",
   "status": "ai_translated",
   "context": "src/components/creator/views.tsx:254"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Check your email",
+  "language": "fr",
+  "value": "Vérifiez votre e-mail",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:75"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Check your email",
+  "language": "pcm",
+  "value": "Check your email",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:75"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Check your email",
+  "language": "yo",
+  "value": "Wo ímeèlì rẹ",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:75"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Check your email",
+  "language": "ha",
+  "value": "Duba imel ɗinku",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:75"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Check your email",
+  "language": "ig",
+  "value": "Lelee ozi ịntanetị gị",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:75"
  },
  {
   "namespace": "legacy-inline",
@@ -9001,6 +9361,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Compare verified printers and their prices in naira",
+  "language": "fr",
+  "value": "Comparez les imprimeurs vérifiés et leurs prix en nairas",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:24"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Compare verified printers and their prices in naira",
+  "language": "pcm",
+  "value": "Compare verified printers and wetin dem dey charge for naira",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:24"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Compare verified printers and their prices in naira",
+  "language": "yo",
+  "value": "Fi àwọn atẹ̀wé tí a ti ṣàyẹ̀wò àti owó wọn ní náírà wéra",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:24"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Compare verified printers and their prices in naira",
+  "language": "ha",
+  "value": "Kwatanta ingantattun masu bugawa da farashinsu cikin naira",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:24"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Compare verified printers and their prices in naira",
+  "language": "ig",
+  "value": "Tụnyere ndị na-ebipụta e gosipụtara na ọnụahịa ha n'naira",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:24"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Compress PDF",
   "language": "fr",
   "value": "Compresser un PDF",
@@ -9358,6 +9758,46 @@
   "value": "Gaa n’ihu na iwu",
   "status": "ai_translated",
   "context": "src/components/design/overlays.tsx:177"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Continue with Google",
+  "language": "fr",
+  "value": "Continuer avec Google",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:51"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Continue with Google",
+  "language": "pcm",
+  "value": "Continue with Google",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:51"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Continue with Google",
+  "language": "yo",
+  "value": "Tẹ̀síwájú pẹ̀lú Google",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:51"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Continue with Google",
+  "language": "ha",
+  "value": "Ci gaba da Google",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:51"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Continue with Google",
+  "language": "ig",
+  "value": "Gaa n'ihu site na Google",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:51"
  },
  {
   "namespace": "legacy-inline",
@@ -9801,6 +10241,86 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Create account",
+  "language": "fr",
+  "value": "Créer un compte",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:128"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create account",
+  "language": "pcm",
+  "value": "Create account",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:128"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create account",
+  "language": "yo",
+  "value": "Ṣí àkáǹtì",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:128"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create account",
+  "language": "ha",
+  "value": "Ƙirƙiri asusu",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:128"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create account",
+  "language": "ig",
+  "value": "Mepụta akaụntụ",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:128"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create an account",
+  "language": "fr",
+  "value": "Créer un compte",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:58"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create an account",
+  "language": "pcm",
+  "value": "Create an account",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:58"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create an account",
+  "language": "yo",
+  "value": "Ṣí àkáǹtì kan",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:58"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create an account",
+  "language": "ha",
+  "value": "Ƙirƙiri asusu",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:58"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create an account",
+  "language": "ig",
+  "value": "Mepụta akaụntụ",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:58"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Create design",
   "language": "fr",
   "value": "Créer le design",
@@ -9921,6 +10441,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Create your Ifiok account",
+  "language": "fr",
+  "value": "Créez votre compte Ifiok",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:95"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create your Ifiok account",
+  "language": "pcm",
+  "value": "Open your Ifiok account",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:95"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create your Ifiok account",
+  "language": "yo",
+  "value": "Ṣí àkáǹtì Ifiok rẹ",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:95"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create your Ifiok account",
+  "language": "ha",
+  "value": "Ƙirƙiri asusunku na Ifiok",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:95"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Create your Ifiok account",
+  "language": "ig",
+  "value": "Mepụta akaụntụ Ifiok gị",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:95"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Create, edit, sign and convert documents and PDFs.",
   "language": "fr",
   "value": "Créez, modifiez, signez et convertissez des documents et des PDF.",
@@ -10038,6 +10598,46 @@
   "value": "Emepụtara “{name}”",
   "status": "ai_translated",
   "context": "src/components/design/DesignApp.tsx:110"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Creating your account…",
+  "language": "fr",
+  "value": "Création de votre compte…",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:128"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Creating your account…",
+  "language": "pcm",
+  "value": "We dey create your account…",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:128"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Creating your account…",
+  "language": "yo",
+  "value": "À ń ṣí àkáǹtì rẹ…",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:128"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Creating your account…",
+  "language": "ha",
+  "value": "Ana ƙirƙirar asusunku…",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:128"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Creating your account…",
+  "language": "ig",
+  "value": "Na-emepụta akaụntụ gị…",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:128"
  },
  {
   "namespace": "legacy-inline",
@@ -11121,6 +11721,86 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Design and print",
+  "language": "fr",
+  "value": "Concevoir et faire imprimer",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:13"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design and print",
+  "language": "pcm",
+  "value": "Design and print",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:13"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design and print",
+  "language": "yo",
+  "value": "Àwòrán àti ìtẹ̀wé",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:13"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design and print",
+  "language": "ha",
+  "value": "Zane da ɗab’i",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:13"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design and print",
+  "language": "ig",
+  "value": "Design na mbipụta",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:13"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design and print with verified printers near you.",
+  "language": "fr",
+  "value": "Concevez et faites imprimer chez des imprimeurs vérifiés près de chez vous.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:20"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design and print with verified printers near you.",
+  "language": "pcm",
+  "value": "Design am, then print am with verified printers wey dey near you.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:20"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design and print with verified printers near you.",
+  "language": "yo",
+  "value": "Ṣe àwòrán, kí o sì tẹ̀ ẹ́ pẹ̀lú àwọn atẹ̀wé tí a ti ṣàyẹ̀wò nítòsí rẹ.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:20"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design and print with verified printers near you.",
+  "language": "ha",
+  "value": "Yi zane, sannan ingantattun masu bugawa kusa da ku su buga shi.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:20"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Design and print with verified printers near you.",
+  "language": "ig",
+  "value": "Design ma bipụta site n'aka ndị na-ebipụta e gosipụtara nọ nso gị.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:20"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Design at real print size, then order the print.",
   "language": "fr",
   "value": "Créez à la taille réelle d'impression, puis commandez l'impression.",
@@ -11758,6 +12438,46 @@
   "value": "Vinyl e bipụrụ n'udi",
   "status": "ai_translated",
   "context": "src/components/design/data.ts:21"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Digit {n}",
+  "language": "fr",
+  "value": "Chiffre {n}",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:37"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Digit {n}",
+  "language": "pcm",
+  "value": "Digit {n}",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:37"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Digit {n}",
+  "language": "yo",
+  "value": "Nọ́ńbà ìkẹ́ {n}",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:37"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Digit {n}",
+  "language": "ha",
+  "value": "Lamba ta {n}",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:37"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Digit {n}",
+  "language": "ig",
+  "value": "Ọnụọgụ {n}",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:37"
  },
  {
   "namespace": "legacy-inline",
@@ -12841,6 +13561,126 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Email",
+  "language": "fr",
+  "value": "E-mail",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:67"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Email",
+  "language": "pcm",
+  "value": "Email",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:67"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Email",
+  "language": "yo",
+  "value": "Ímeèlì",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:67"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Email",
+  "language": "ha",
+  "value": "Imel",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:67"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Email",
+  "language": "ig",
+  "value": "Ozi ịntanetị",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:67"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Email or phone number",
+  "language": "fr",
+  "value": "E-mail ou numéro de téléphone",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:53"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Email or phone number",
+  "language": "pcm",
+  "value": "Email or phone number",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:53"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Email or phone number",
+  "language": "yo",
+  "value": "Ímeèlì tàbí nọ́ńbà fóònù",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:53"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Email or phone number",
+  "language": "ha",
+  "value": "Imel ko lambar waya",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:53"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Email or phone number",
+  "language": "ig",
+  "value": "Ozi ịntanetị ma ọ bụ nọmba ekwentị",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:53"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter a Nigerian phone number, like 0803 123 4567.",
+  "language": "fr",
+  "value": "Saisissez un numéro de téléphone nigérian, comme 0803 123 4567.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter a Nigerian phone number, like 0803 123 4567.",
+  "language": "pcm",
+  "value": "Put Nigerian phone number, like 0803 123 4567.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter a Nigerian phone number, like 0803 123 4567.",
+  "language": "yo",
+  "value": "Tẹ nọ́ńbà fóònù Nàìjíríà sí i, bíi 0803 123 4567.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter a Nigerian phone number, like 0803 123 4567.",
+  "language": "ha",
+  "value": "Shigar da lambar wayar Najeriya, kamar 0803 123 4567.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter a Nigerian phone number, like 0803 123 4567.",
+  "language": "ig",
+  "value": "Tinye nọmba ekwentị Naịjirịa, dị ka 0803 123 4567.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Enter it in this month's theme:",
   "language": "fr",
   "value": "Participez au thème de ce mois-ci :",
@@ -12921,6 +13761,126 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Enter the 6-digit code.",
+  "language": "fr",
+  "value": "Saisissez le code à 6 chiffres.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:84"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the 6-digit code.",
+  "language": "pcm",
+  "value": "Put the 6-digit code.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:84"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the 6-digit code.",
+  "language": "yo",
+  "value": "Tẹ kóòdù oní-nọ́ńbà mẹ́fà náà sí i.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:84"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the 6-digit code.",
+  "language": "ha",
+  "value": "Shigar da lambar mai lambobi 6.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:84"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the 6-digit code.",
+  "language": "ig",
+  "value": "Tinye koodu nke ọnụọgụ 6.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:84"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the email you signed up with.",
+  "language": "fr",
+  "value": "Saisissez l'e-mail avec lequel vous vous êtes inscrit.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:38"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the email you signed up with.",
+  "language": "pcm",
+  "value": "Put the email wey you use sign up.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:38"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the email you signed up with.",
+  "language": "yo",
+  "value": "Tẹ ímeèlì tí o fi forúkọ sílẹ̀ sí i.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:38"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the email you signed up with.",
+  "language": "ha",
+  "value": "Shigar da imel ɗin da kuka yi rajista da shi.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:38"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the email you signed up with.",
+  "language": "ig",
+  "value": "Tinye ozi ịntanetị i ji debanye aha.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:38"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the email you signed up with. We will send you a link to choose a new password.",
+  "language": "fr",
+  "value": "Saisissez l'e-mail avec lequel vous vous êtes inscrit. Nous vous enverrons un lien pour choisir un nouveau mot de passe.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:66"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the email you signed up with. We will send you a link to choose a new password.",
+  "language": "pcm",
+  "value": "Put the email wey you use sign up. We go send you link make you choose new password.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:66"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the email you signed up with. We will send you a link to choose a new password.",
+  "language": "yo",
+  "value": "Tẹ ímeèlì tí o fi forúkọ sílẹ̀ sí i. A ó fi ìjápọ̀ ránṣẹ́ sí ọ láti yan ọ̀rọ̀ aṣínà tuntun.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:66"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the email you signed up with. We will send you a link to choose a new password.",
+  "language": "ha",
+  "value": "Shigar da imel ɗin da kuka yi rajista da shi. Za mu aiko muku da hanyar haɗi don zaɓar sabon kalmar sirri.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:66"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter the email you signed up with. We will send you a link to choose a new password.",
+  "language": "ig",
+  "value": "Tinye ozi ịntanetị i ji debanye aha. Anyị ga-eziga gị njikọ ị ga-eji họrọ okwuntughe ọhụrụ.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:66"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Enter your department.",
   "language": "fr",
   "value": "Saisissez votre département.",
@@ -12961,6 +13921,126 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Enter your email or phone number.",
+  "language": "fr",
+  "value": "Saisissez votre e-mail ou votre numéro de téléphone.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your email or phone number.",
+  "language": "pcm",
+  "value": "Put your email or phone number.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your email or phone number.",
+  "language": "yo",
+  "value": "Tẹ ímeèlì tàbí nọ́ńbà fóònù rẹ sí i.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your email or phone number.",
+  "language": "ha",
+  "value": "Shigar da imel ko lambar wayarku.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your email or phone number.",
+  "language": "ig",
+  "value": "Tinye ozi ịntanetị gị ma ọ bụ nọmba ekwentị gị.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your email.",
+  "language": "fr",
+  "value": "Saisissez votre e-mail.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:72"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your email.",
+  "language": "pcm",
+  "value": "Put your email.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:72"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your email.",
+  "language": "yo",
+  "value": "Tẹ ímeèlì rẹ sí i.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:72"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your email.",
+  "language": "ha",
+  "value": "Shigar da imel ɗinku.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:72"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your email.",
+  "language": "ig",
+  "value": "Tinye ozi ịntanetị gị.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:72"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your full name.",
+  "language": "fr",
+  "value": "Saisissez votre nom complet.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:71"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your full name.",
+  "language": "pcm",
+  "value": "Put your full name.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:71"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your full name.",
+  "language": "yo",
+  "value": "Tẹ orúkọ rẹ pátápátá sí i.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:71"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your full name.",
+  "language": "ha",
+  "value": "Shigar da cikakken sunanku.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:71"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your full name.",
+  "language": "ig",
+  "value": "Tinye aha gị zuru ezu.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:71"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Enter your matric or student ID number.",
   "language": "fr",
   "value": "Saisissez votre numéro matricule ou d'étudiant.",
@@ -12998,6 +14078,46 @@
   "value": "Tinye nọmba matric ma ọ bụ ID nwa akwụkwọ gị.",
   "status": "ai_translated",
   "context": "src/components/student/StudentView.tsx:58"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your password.",
+  "language": "fr",
+  "value": "Saisissez votre mot de passe.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:29"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your password.",
+  "language": "pcm",
+  "value": "Put your password.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:29"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your password.",
+  "language": "yo",
+  "value": "Tẹ ọ̀rọ̀ aṣínà rẹ sí i.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:29"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your password.",
+  "language": "ha",
+  "value": "Shigar da kalmar sirrinku.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:29"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Enter your password.",
+  "language": "ig",
+  "value": "Tinye okwuntughe gị.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:29"
  },
  {
   "namespace": "legacy-inline",
@@ -14521,6 +15641,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "For myself or my business",
+  "language": "fr",
+  "value": "Pour moi ou pour mon entreprise",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:13"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "For myself or my business",
+  "language": "pcm",
+  "value": "For me or my business",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:13"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "For myself or my business",
+  "language": "yo",
+  "value": "Fún ara mi tàbí iṣẹ́ òwò mi",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:13"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "For myself or my business",
+  "language": "ha",
+  "value": "Don kaina ko kasuwancina",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:13"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "For myself or my business",
+  "language": "ig",
+  "value": "Maka onwe m ma ọ bụ azụmahịa m",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:13"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "For print shops: receive, print and deliver Ifiok orders.",
   "language": "fr",
   "value": "Pour les imprimeries : recevez, imprimez et livrez les commandes Ifiok.",
@@ -14601,11 +15761,51 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Forgot password?",
+  "language": "fr",
+  "value": "Mot de passe oublié ?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:55"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Forgot password?",
+  "language": "pcm",
+  "value": "You forget password?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:55"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Forgot password?",
+  "language": "yo",
+  "value": "Ṣé o gbàgbé ọ̀rọ̀ aṣínà?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:55"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Forgot password?",
+  "language": "ha",
+  "value": "Kun manta kalmar sirri?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:55"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Forgot password?",
+  "language": "ig",
+  "value": "Chefuo okwuntughe?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:55"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Founder · Okafor Bakes",
   "language": "fr",
   "value": "Fondatrice · Okafor Bakes",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:48"
+  "context": "src/components/auth/AuthShell.tsx:29"
  },
  {
   "namespace": "legacy-inline",
@@ -14613,7 +15813,7 @@
   "language": "pcm",
   "value": "Founder · Okafor Bakes",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:48"
+  "context": "src/components/auth/AuthShell.tsx:29"
  },
  {
   "namespace": "legacy-inline",
@@ -14621,7 +15821,7 @@
   "language": "yo",
   "value": "Olùdásílẹ̀ · Okafor Bakes",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:48"
+  "context": "src/components/auth/AuthShell.tsx:29"
  },
  {
   "namespace": "legacy-inline",
@@ -14629,7 +15829,7 @@
   "language": "ha",
   "value": "Wanda ya kafa · Okafor Bakes",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:48"
+  "context": "src/components/auth/AuthShell.tsx:29"
  },
  {
   "namespace": "legacy-inline",
@@ -14637,7 +15837,7 @@
   "language": "ig",
   "value": "Onye malitere · Okafor Bakes",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:48"
+  "context": "src/components/auth/AuthShell.tsx:29"
  },
  {
   "namespace": "legacy-inline",
@@ -14721,6 +15921,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Free perks with your school ID",
+  "language": "fr",
+  "value": "Avantages gratuits avec votre carte d'étudiant",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:14"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Free perks with your school ID",
+  "language": "pcm",
+  "value": "Free gift with your school ID",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:14"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Free perks with your school ID",
+  "language": "yo",
+  "value": "Àǹfààní ọ̀fẹ́ pẹ̀lú káàdì ilé-ẹ̀kọ́ rẹ",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:14"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Free perks with your school ID",
+  "language": "ha",
+  "value": "Kyautar fa’ida da katin shaidar makarantarku",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:14"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Free perks with your school ID",
+  "language": "ig",
+  "value": "Uru n'efu site na kaadi ID ụlọ akwụkwọ gị",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:14"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Free student tools",
   "language": "fr",
   "value": "Outils gratuits pour étudiants",
@@ -14758,6 +15998,46 @@
   "value": "Ngwa ọrụ n'efu maka ụmụ akwụkwọ",
   "status": "ai_translated",
   "context": "src/data/student.ts:11"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Free to start. Pay only when you print.",
+  "language": "fr",
+  "value": "Gratuit pour commencer. Vous ne payez que lorsque vous faites imprimer.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:32"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Free to start. Pay only when you print.",
+  "language": "pcm",
+  "value": "E free to start. You go pay only when you print.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:32"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Free to start. Pay only when you print.",
+  "language": "yo",
+  "value": "Ọ̀fẹ́ ni láti bẹ̀rẹ̀. Sanwó nìkan nígbà tí o bá fi àṣẹ ìtẹ̀wé ránṣẹ́.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:32"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Free to start. Pay only when you print.",
+  "language": "ha",
+  "value": "Farawa kyauta ce. Ku biya ne kawai idan kun yi odar ɗab’i.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:32"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Free to start. Pay only when you print.",
+  "language": "ig",
+  "value": "Malite n'efu. Kwụọ ụgwọ naanị mgbe ị nyere iwu mbipụta.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:32"
  },
  {
   "namespace": "legacy-inline",
@@ -14878,6 +16158,46 @@
   "value": "Ebe mbipụta n'ihu",
   "status": "ai_translated",
   "context": "src/components/design/data.ts:25"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Full name",
+  "language": "fr",
+  "value": "Nom complet",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:111"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Full name",
+  "language": "pcm",
+  "value": "Full name",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:111"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Full name",
+  "language": "yo",
+  "value": "Orúkọ kíkún",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:111"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Full name",
+  "language": "ha",
+  "value": "Cikakken suna",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:111"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Full name",
+  "language": "ig",
+  "value": "Aha zuru ezu",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:111"
  },
  {
   "namespace": "legacy-inline",
@@ -15041,6 +16361,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Get paid when Ifiok approves them",
+  "language": "fr",
+  "value": "Soyez payé dès qu'Ifiok les approuve",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:15"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Get paid when Ifiok approves them",
+  "language": "pcm",
+  "value": "Collect money when Ifiok approve dem",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:15"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Get paid when Ifiok approves them",
+  "language": "yo",
+  "value": "Gba owó nígbà tí Ifiok bá fọwọ́ sí wọn",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:15"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Get paid when Ifiok approves them",
+  "language": "ha",
+  "value": "A biya ku idan Ifiok ya amince da su",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:15"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Get paid when Ifiok approves them",
+  "language": "ig",
+  "value": "Nweta ụgwọ mgbe Ifiok kwadoro ha",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:15"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Give your font a name.",
   "language": "fr",
   "value": "Donnez un nom à votre police.",
@@ -15118,6 +16478,46 @@
   "value": "Gaa na",
   "status": "ai_translated",
   "context": "src/components/design/overlays.tsx:198"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Good",
+  "language": "fr",
+  "value": "Bon",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Good",
+  "language": "pcm",
+  "value": "Good",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Good",
+  "language": "yo",
+  "value": "Dára",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Good",
+  "language": "ha",
+  "value": "Mai kyau",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Good",
+  "language": "ig",
+  "value": "Ọ dị mma",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
  },
  {
   "namespace": "legacy-inline",
@@ -15365,7 +16765,7 @@
   "language": "fr",
   "value": "GRANDE OUVERTURE",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:49"
+  "context": "src/components/auth/AuthShell.tsx:28"
  },
  {
   "namespace": "legacy-inline",
@@ -15373,7 +16773,7 @@
   "language": "pcm",
   "value": "GRAND OPENING",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:49"
+  "context": "src/components/auth/AuthShell.tsx:28"
  },
  {
   "namespace": "legacy-inline",
@@ -15381,7 +16781,7 @@
   "language": "yo",
   "value": "ṢÍṢÍ ILÉ IṢẸ́ ÀJỌYỌ̀",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:49"
+  "context": "src/components/auth/AuthShell.tsx:28"
  },
  {
   "namespace": "legacy-inline",
@@ -15389,7 +16789,7 @@
   "language": "ha",
   "value": "BUDEWA TA MUSAMMAN",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:49"
+  "context": "src/components/auth/AuthShell.tsx:28"
  },
  {
   "namespace": "legacy-inline",
@@ -15397,7 +16797,7 @@
   "language": "ig",
   "value": "MMEGHE NKE UKWUU",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:49"
+  "context": "src/components/auth/AuthShell.tsx:28"
  },
  {
   "namespace": "legacy-inline",
@@ -15921,6 +17321,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Hide password",
+  "language": "fr",
+  "value": "Masquer le mot de passe",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:47"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Hide password",
+  "language": "pcm",
+  "value": "Hide password",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:47"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Hide password",
+  "language": "yo",
+  "value": "Fi ọ̀rọ̀ aṣínà pamọ́",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:47"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Hide password",
+  "language": "ha",
+  "value": "Ɓoye kalmar sirri",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:47"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Hide password",
+  "language": "ig",
+  "value": "zoo okwuntughe",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:47"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Hide this for now",
   "language": "fr",
   "value": "Masquer pour l'instant",
@@ -16198,6 +17638,86 @@
   "value": "Ekwenyere m ka Ifiok kwado NIN m, BVN m na akaụntụ banki m site n'onye mmekọ nkwado ya iji gosipụta onye m bụ maka ịkwụ ụgwọ onye okike.",
   "status": "ai_translated",
   "context": "src/components/creator/views.tsx:260"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "I agree to the",
+  "language": "fr",
+  "value": "J'accepte les",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "I agree to the",
+  "language": "pcm",
+  "value": "I agree to di",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "I agree to the",
+  "language": "yo",
+  "value": "Mo gbà pẹ̀lú",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "I agree to the",
+  "language": "ha",
+  "value": "Na amince da",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "I agree to the",
+  "language": "ig",
+  "value": "Ana m ekwenye na",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "I am a student",
+  "language": "fr",
+  "value": "Je suis étudiant",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:14"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "I am a student",
+  "language": "pcm",
+  "value": "I be student",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:14"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "I am a student",
+  "language": "yo",
+  "value": "Akẹ́kọ̀ọ́ ni mí",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:14"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "I am a student",
+  "language": "ha",
+  "value": "Ni ɗalibi ne",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:14"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "I am a student",
+  "language": "ig",
+  "value": "Abụ m nwa akwụkwọ",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:14"
  },
  {
   "namespace": "legacy-inline",
@@ -16481,6 +18001,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "If {email} has an Ifiok account, a reset link is on its way. It works for 30 minutes.",
+  "language": "fr",
+  "value": "Si {email} correspond à un compte Ifiok, un lien de réinitialisation est en route. Il est valable 30 minutes.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:76"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "If {email} has an Ifiok account, a reset link is on its way. It works for 30 minutes.",
+  "language": "pcm",
+  "value": "If {email} get Ifiok account, reset link don dey come. E go work for 30 minutes.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:76"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "If {email} has an Ifiok account, a reset link is on its way. It works for 30 minutes.",
+  "language": "yo",
+  "value": "Tí {email} bá ní àkáǹtì Ifiok, ìjápọ̀ ìtúntò ti wà lójú ọ̀nà. Ó ṣiṣẹ́ fún ìṣẹ́jú 30.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:76"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "If {email} has an Ifiok account, a reset link is on its way. It works for 30 minutes.",
+  "language": "ha",
+  "value": "Idan {email} yana da asusun Ifiok, hanyar haɗin sake saiti tana kan hanya. Tana aiki na mintuna 30.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:76"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "If {email} has an Ifiok account, a reset link is on its way. It works for 30 minutes.",
+  "language": "ig",
+  "value": "Ọ bụrụ na {email} nwere akaụntụ Ifiok, njikọ nrụgharị na-abịa. Ọ ga-arụ ọrụ nkeji 30.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:76"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "If a letter looks different from the rest, or shows as a box, this font does not include it.",
   "language": "fr",
   "value": "Si une lettre paraît différente des autres, ou s'affiche comme un carré, cette police ne la contient pas.",
@@ -16678,6 +18238,46 @@
   "value": "Ifiok Docs",
   "status": "ai_translated",
   "context": "src/data/apps.ts:70"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Ifiok home",
+  "language": "fr",
+  "value": "Accueil Ifiok",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:18"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Ifiok home",
+  "language": "pcm",
+  "value": "Ifiok home",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:18"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Ifiok home",
+  "language": "yo",
+  "value": "Ojú-ìwé ilé Ifiok",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:18"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Ifiok home",
+  "language": "ha",
+  "value": "Shafin farko na Ifiok",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:18"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Ifiok home",
+  "language": "ig",
+  "value": "Ibe mbụ Ifiok",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:18"
  },
  {
   "namespace": "legacy-inline",
@@ -17561,6 +19161,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Keep me logged in on this device",
+  "language": "fr",
+  "value": "Me garder connecté sur cet appareil",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:56"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Keep me logged in on this device",
+  "language": "pcm",
+  "value": "Keep me logged in for this device",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:56"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Keep me logged in on this device",
+  "language": "yo",
+  "value": "Jẹ́ kí n wà ní ìwọlé lórí ẹ̀rọ yìí",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:56"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Keep me logged in on this device",
+  "language": "ha",
+  "value": "Bar ni a shiga a wannan na’ura",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:56"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Keep me logged in on this device",
+  "language": "ig",
+  "value": "Hapụ m ka m banye n'ngwa a",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:56"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Keep track of your Android devices and raise the alarm.",
   "language": "fr",
   "value": "Suivez vos appareils Android et déclenchez l'alarme.",
@@ -18281,6 +19921,126 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Log in",
+  "language": "fr",
+  "value": "Se connecter",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:57"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Log in",
+  "language": "pcm",
+  "value": "Log in",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:57"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Log in",
+  "language": "yo",
+  "value": "Wọlé",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:57"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Log in",
+  "language": "ha",
+  "value": "Shiga",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:57"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Log in",
+  "language": "ig",
+  "value": "Banye",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:57"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Log in to your designs, orders and earnings.",
+  "language": "fr",
+  "value": "Connectez-vous pour retrouver vos créations, commandes et gains.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:50"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Log in to your designs, orders and earnings.",
+  "language": "pcm",
+  "value": "Log in to see your designs, orders and earnings.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:50"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Log in to your designs, orders and earnings.",
+  "language": "yo",
+  "value": "Wọlé sí àwọn àwòrán, àṣẹ àti owó tí o rí.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:50"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Log in to your designs, orders and earnings.",
+  "language": "ha",
+  "value": "Shiga don ganin zanenku, odarku da kuɗin da kuka samu.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:50"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Log in to your designs, orders and earnings.",
+  "language": "ig",
+  "value": "Banye iji hụ design gị, iwu gị na ego i nwetara.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:50"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Logging in…",
+  "language": "fr",
+  "value": "Connexion…",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:57"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Logging in…",
+  "language": "pcm",
+  "value": "We dey log you in…",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:57"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Logging in…",
+  "language": "yo",
+  "value": "Ó ń wọlé…",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:57"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Logging in…",
+  "language": "ha",
+  "value": "Ana shiga…",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:57"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Logging in…",
+  "language": "ig",
+  "value": "Na-abanye…",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:57"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Logistics · Lagos",
   "language": "fr",
   "value": "Logistique · Lagos",
@@ -18478,6 +20238,86 @@
   "value": "Isi",
   "status": "ai_translated",
   "context": "src/components/design/DesignApp.tsx:230"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Make cards, flyers, ID cards and posters at real print size, then send them to a verified printer around you.",
+  "language": "fr",
+  "value": "Créez des cartes, flyers, cartes d'identité et affiches à la taille réelle d'impression, puis envoyez-les à un imprimeur vérifié près de chez vous.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:21"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Make cards, flyers, ID cards and posters at real print size, then send them to a verified printer around you.",
+  "language": "pcm",
+  "value": "Make cards, flyers, ID cards and posters for correct print size, then send dem go verified printer wey dey around you.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:21"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Make cards, flyers, ID cards and posters at real print size, then send them to a verified printer around you.",
+  "language": "yo",
+  "value": "Ṣe káàdì, ìwé ìpolówó, káàdì ìdánimọ̀ àti páńpẹ́ẹ̀rì ní ìwọ̀n ìtẹ̀wé gidi, lẹ́yìn náà fi wọ́n ránṣẹ́ sí atẹ̀wé tí a ti ṣàyẹ̀wò ní àyíká rẹ.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:21"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Make cards, flyers, ID cards and posters at real print size, then send them to a verified printer around you.",
+  "language": "ha",
+  "value": "Yi katuna, takardun talla, katin shaida da fosta a ainihin girman ɗab’i, sannan ku tura su ga ingantaccen mai bugawa kusa da ku.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:21"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Make cards, flyers, ID cards and posters at real print size, then send them to a verified printer around you.",
+  "language": "ig",
+  "value": "Mee kaadi, flaịa, kaadi ID na posta n'ogo mbipụta ezi, maziga ha onye na-ebipụta e gosipụtara nọ nso gị.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:21"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Make templates",
+  "language": "fr",
+  "value": "Créer des modèles",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:15"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Make templates",
+  "language": "pcm",
+  "value": "Make templates",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:15"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Make templates",
+  "language": "yo",
+  "value": "Ṣe àwòṣe",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:15"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Make templates",
+  "language": "ha",
+  "value": "Yi samfura",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:15"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Make templates",
+  "language": "ig",
+  "value": "Mee template",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:15"
  },
  {
   "namespace": "legacy-inline",
@@ -19921,6 +21761,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "New to Ifiok?",
+  "language": "fr",
+  "value": "Nouveau sur Ifiok ?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:58"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "New to Ifiok?",
+  "language": "pcm",
+  "value": "You be new for Ifiok?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:58"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "New to Ifiok?",
+  "language": "yo",
+  "value": "Ṣé o jẹ́ tuntun ní Ifiok?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:58"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "New to Ifiok?",
+  "language": "ha",
+  "value": "Sabo ne a Ifiok?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:58"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "New to Ifiok?",
+  "language": "ig",
+  "value": "Ị bụ ọhụrụ na Ifiok?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:58"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Next step",
   "language": "fr",
   "value": "Étape suivante",
@@ -20681,6 +22561,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Nothing arrived?",
+  "language": "fr",
+  "value": "Rien reçu ?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:78"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Nothing arrived?",
+  "language": "pcm",
+  "value": "Nothing come?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:78"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Nothing arrived?",
+  "language": "yo",
+  "value": "Kò sí ohun tó dé?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:78"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Nothing arrived?",
+  "language": "ha",
+  "value": "Babu abin da ya zo?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:78"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Nothing arrived?",
+  "language": "ig",
+  "value": "Ọ dịghị ihe bịarutere?",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:78"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Nothing found for “{q}”.",
   "language": "fr",
   "value": "Aucun résultat pour « {q} ».",
@@ -21078,6 +22998,46 @@
   "value": "Kaadị Azụmahịa Okafor Bakes",
   "status": "ai_translated",
   "context": "src/data/creator-app.ts:59"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Okay",
+  "language": "fr",
+  "value": "Moyen",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Okay",
+  "language": "pcm",
+  "value": "Fair",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Okay",
+  "language": "yo",
+  "value": "Bó ti yẹ",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Okay",
+  "language": "ha",
+  "value": "Matsakaici",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Okay",
+  "language": "ig",
+  "value": "Ọ ga-eme",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
  },
  {
   "namespace": "legacy-inline",
@@ -21721,6 +23681,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "or",
+  "language": "fr",
+  "value": "ou",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:17"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "or",
+  "language": "pcm",
+  "value": "or",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:17"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "or",
+  "language": "yo",
+  "value": "tàbí",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:17"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "or",
+  "language": "ha",
+  "value": "ko",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:17"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "or",
+  "language": "ig",
+  "value": "ma ọ bụ",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:17"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Order print",
   "language": "fr",
   "value": "Commander l'impression",
@@ -22158,6 +24158,46 @@
   "value": "Ndị mmekọ",
   "status": "ai_translated",
   "context": "src/data/apps.ts:97"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Password",
+  "language": "fr",
+  "value": "Mot de passe",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:54"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Password",
+  "language": "pcm",
+  "value": "Password",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:54"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Password",
+  "language": "yo",
+  "value": "Ọ̀rọ̀ aṣínà",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:54"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Password",
+  "language": "ha",
+  "value": "Kalmar sirri",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:54"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Password",
+  "language": "ig",
+  "value": "Okwuntughe",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:54"
  },
  {
   "namespace": "legacy-inline",
@@ -22721,6 +24761,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Phone number",
+  "language": "fr",
+  "value": "Numéro de téléphone",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:113"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Phone number",
+  "language": "pcm",
+  "value": "Phone number",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:113"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Phone number",
+  "language": "yo",
+  "value": "Nọ́ńbà fóònù",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:113"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Phone number",
+  "language": "ha",
+  "value": "Lambar waya",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:113"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Phone number",
+  "language": "ig",
+  "value": "Nọmba ekwentị",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:113"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Photo is under 300 DPI at this size",
   "language": "fr",
   "value": "La photo est sous 300 DPI à cette taille",
@@ -22841,6 +24921,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Pick up nearby or get it delivered to your door",
+  "language": "fr",
+  "value": "Récupérez-le à proximité ou faites-vous livrer à domicile",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:25"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Pick up nearby or get it delivered to your door",
+  "language": "pcm",
+  "value": "Go carry am near you or make dem bring am to your door",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:25"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Pick up nearby or get it delivered to your door",
+  "language": "yo",
+  "value": "Lọ gbà á nítòsí tàbí kí a gbé e wá sí ẹnu ọ̀nà rẹ",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:25"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Pick up nearby or get it delivered to your door",
+  "language": "ha",
+  "value": "Ku karɓa a kusa ko a kawo muku har ƙofarku",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:25"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Pick up nearby or get it delivered to your door",
+  "language": "ig",
+  "value": "Jee nata ya nso ma ọ bụ ka e weta ya n'ọnụ ụzọ gị",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:25"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Pick your school from the list, or type its full name.",
   "language": "fr",
   "value": "Choisissez votre école dans la liste, ou saisissez son nom complet.",
@@ -22918,6 +25038,46 @@
   "value": "Obi ụtọ",
   "status": "ai_translated",
   "context": "src/data/fonts.ts:7"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Please accept the terms to continue.",
+  "language": "fr",
+  "value": "Veuillez accepter les conditions pour continuer.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:75"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Please accept the terms to continue.",
+  "language": "pcm",
+  "value": "Abeg accept the terms make you continue.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:75"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Please accept the terms to continue.",
+  "language": "yo",
+  "value": "Jọ̀wọ́ gba àwọn òfin náà láti tẹ̀síwájú.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:75"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Please accept the terms to continue.",
+  "language": "ha",
+  "value": "Da fatan za ku amince da sharuɗɗa don ci gaba.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:75"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Please accept the terms to continue.",
+  "language": "ig",
+  "value": "Biko kwenye na ụkpụrụ ndị a ka ị gaa n'ihu.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:75"
  },
  {
   "namespace": "legacy-inline",
@@ -23721,6 +25881,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Privacy Policy",
+  "language": "fr",
+  "value": "politique de confidentialité",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Privacy Policy",
+  "language": "pcm",
+  "value": "Privacy Policy",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Privacy Policy",
+  "language": "yo",
+  "value": "Ìlànà Àṣírí",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Privacy Policy",
+  "language": "ha",
+  "value": "Manufar Sirri",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Privacy Policy",
+  "language": "ig",
+  "value": "Iwu Nzuzo",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Processing",
   "language": "fr",
   "value": "En cours",
@@ -24201,6 +26401,86 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Prototype: any 6 digits will work.",
+  "language": "fr",
+  "value": "Prototype : n'importe quels 6 chiffres fonctionneront.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:144"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Prototype: any 6 digits will work.",
+  "language": "pcm",
+  "value": "Prototype: any 6 digits go work.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:144"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Prototype: any 6 digits will work.",
+  "language": "yo",
+  "value": "Àpẹẹrẹ ìdánwò: nọ́ńbà mẹ́fà èyíkéyìí ló máa ṣiṣẹ́.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:144"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Prototype: any 6 digits will work.",
+  "language": "ha",
+  "value": "Gwaji: duk lambobi 6 za su yi aiki.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:144"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Prototype: any 6 digits will work.",
+  "language": "ig",
+  "value": "Nnwale: ọnụọgụ 6 ọ bụla ga-arụ ọrụ.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:144"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Prototype: no real account is created or checked here.",
+  "language": "fr",
+  "value": "Prototype : aucun vrai compte n'est créé ni vérifié ici.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:41"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Prototype: no real account is created or checked here.",
+  "language": "pcm",
+  "value": "Prototype: we no dey create or check any real account here.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:41"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Prototype: no real account is created or checked here.",
+  "language": "yo",
+  "value": "Àpẹẹrẹ ìdánwò: a kò ṣí tàbí ṣàyẹ̀wò àkáǹtì gidi kankan níbí.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:41"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Prototype: no real account is created or checked here.",
+  "language": "ha",
+  "value": "Gwaji: ba a ƙirƙira ko duba wani asusu na gaske a nan.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:41"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Prototype: no real account is created or checked here.",
+  "language": "ig",
+  "value": "Nnwale: a naghị emepụta ma ọ bụ lelee akaụntụ n'ezie ebe a.",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:41"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Prototype: nothing is sent. Use any 11 digits.",
   "language": "fr",
   "value": "Prototype : rien n'est envoyé. Saisissez 11 chiffres au choix.",
@@ -24478,6 +26758,46 @@
   "value": "Dị njikere ịrịọ",
   "status": "ai_translated",
   "context": "src/components/creator/views.tsx:301"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Real print sizes, with bleed checked for you",
+  "language": "fr",
+  "value": "Tailles d'impression réelles, avec fond perdu vérifié pour vous",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Real print sizes, with bleed checked for you",
+  "language": "pcm",
+  "value": "Correct print sizes, and we dey check bleed for you",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Real print sizes, with bleed checked for you",
+  "language": "yo",
+  "value": "Ìwọ̀n ìtẹ̀wé gidi, a sì ti ṣàyẹ̀wò bleed fún ọ",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Real print sizes, with bleed checked for you",
+  "language": "ha",
+  "value": "Ainihin girman ɗab’i, tare da duba bleed a madadinku",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Real print sizes, with bleed checked for you",
+  "language": "ig",
+  "value": "Ogo mbipụta ezi, e lerela bleed maka gị",
+  "status": "ai_translated",
+  "context": "src/components/auth/AuthShell.tsx:23"
  },
  {
   "namespace": "legacy-inline",
@@ -25118,6 +27438,126 @@
   "value": "Rịọ ịkwụ ụgwọ",
   "status": "ai_translated",
   "context": "src/components/creator/views.tsx:291"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Resend code",
+  "language": "fr",
+  "value": "Renvoyer le code",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:142"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Resend code",
+  "language": "pcm",
+  "value": "Send code again",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:142"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Resend code",
+  "language": "yo",
+  "value": "Tún fi kóòdù ránṣẹ́",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:142"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Resend code",
+  "language": "ha",
+  "value": "Sake aika lamba",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:142"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Resend code",
+  "language": "ig",
+  "value": "Ziga koodu ọzọ",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:142"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Resend code in {s}s",
+  "language": "fr",
+  "value": "Renvoyer le code dans {s} s",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:142"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Resend code in {s}s",
+  "language": "pcm",
+  "value": "Send code again in {s}s",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:142"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Resend code in {s}s",
+  "language": "yo",
+  "value": "Tún fi kóòdù ránṣẹ́ ní ìṣẹ́jú-àáyá {s}",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:142"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Resend code in {s}s",
+  "language": "ha",
+  "value": "Sake aika lamba cikin daƙiƙa {s}",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:142"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Resend code in {s}s",
+  "language": "ig",
+  "value": "Ziga koodu ọzọ n'ime {s}s",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:142"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Reset your password",
+  "language": "fr",
+  "value": "Réinitialisez votre mot de passe",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:65"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Reset your password",
+  "language": "pcm",
+  "value": "Reset your password",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:65"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Reset your password",
+  "language": "yo",
+  "value": "Tún ọ̀rọ̀ aṣínà rẹ ṣe",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:65"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Reset your password",
+  "language": "ha",
+  "value": "Sake saita kalmar sirrinku",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:65"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Reset your password",
+  "language": "ig",
+  "value": "Megharịa okwuntughe gị",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:65"
  },
  {
   "namespace": "legacy-inline",
@@ -25885,7 +28325,7 @@
   "language": "fr",
   "value": "Samedi 12 juillet · 10 h",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:49"
+  "context": "src/components/auth/AuthShell.tsx:28"
  },
  {
   "namespace": "legacy-inline",
@@ -25893,7 +28333,7 @@
   "language": "pcm",
   "value": "Saturday 12 July · 10am",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:49"
+  "context": "src/components/auth/AuthShell.tsx:28"
  },
  {
   "namespace": "legacy-inline",
@@ -25901,7 +28341,7 @@
   "language": "yo",
   "value": "Àbámẹ́ta 12 July · 10 àárọ̀",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:49"
+  "context": "src/components/auth/AuthShell.tsx:28"
  },
  {
   "namespace": "legacy-inline",
@@ -25909,7 +28349,7 @@
   "language": "ha",
   "value": "Asabar 12 Yuli · 10 na safe",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:49"
+  "context": "src/components/auth/AuthShell.tsx:28"
  },
  {
   "namespace": "legacy-inline",
@@ -25917,7 +28357,7 @@
   "language": "ig",
   "value": "Satọde 12 Julaị · 10 ụtụtụ",
   "status": "ai_translated",
-  "context": "src/components/design/data.ts:49"
+  "context": "src/components/auth/AuthShell.tsx:28"
  },
  {
   "namespace": "legacy-inline",
@@ -27281,6 +29721,86 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Send reset link",
+  "language": "fr",
+  "value": "Envoyer le lien de réinitialisation",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:68"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Send reset link",
+  "language": "pcm",
+  "value": "Send reset link",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:68"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Send reset link",
+  "language": "yo",
+  "value": "Fi ìjápọ̀ ìtúntò ránṣẹ́",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:68"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Send reset link",
+  "language": "ha",
+  "value": "Aika hanyar sake saiti",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:68"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Send reset link",
+  "language": "ig",
+  "value": "Ziga njikọ nrụgharị",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:68"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Sending…",
+  "language": "fr",
+  "value": "Envoi…",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:68"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Sending…",
+  "language": "pcm",
+  "value": "We dey send…",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:68"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Sending…",
+  "language": "yo",
+  "value": "Ó ń ránṣẹ́…",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:68"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Sending…",
+  "language": "ha",
+  "value": "Ana aikawa…",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:68"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Sending…",
+  "language": "ig",
+  "value": "Na-ezipụ…",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:68"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Sent to your account",
   "language": "fr",
   "value": "Envoyé sur votre compte",
@@ -27481,6 +30001,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Show password",
+  "language": "fr",
+  "value": "Afficher le mot de passe",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:47"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Show password",
+  "language": "pcm",
+  "value": "Show password",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:47"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Show password",
+  "language": "yo",
+  "value": "Fi ọ̀rọ̀ aṣínà hàn",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:47"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Show password",
+  "language": "ha",
+  "value": "Nuna kalmar sirri",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:47"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Show password",
+  "language": "ig",
+  "value": "Gosi okwuntughe",
+  "status": "ai_translated",
+  "context": "src/components/auth/parts.tsx:47"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Sidebar",
   "language": "fr",
   "value": "Barre latérale",
@@ -27558,6 +30118,46 @@
   "value": "Debanye aha ma kwado",
   "status": "ai_translated",
   "context": "src/data/creators.ts:31"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Sign up with Google",
+  "language": "fr",
+  "value": "S'inscrire avec Google",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:130"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Sign up with Google",
+  "language": "pcm",
+  "value": "Sign up with Google",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:130"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Sign up with Google",
+  "language": "yo",
+  "value": "Forúkọ sílẹ̀ pẹ̀lú Google",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:130"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Sign up with Google",
+  "language": "ha",
+  "value": "Yi rajista da Google",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:130"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Sign up with Google",
+  "language": "ig",
+  "value": "Debanye aha site na Google",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:130"
  },
  {
   "namespace": "legacy-inline",
@@ -28718,6 +31318,46 @@
   "value": "Story",
   "status": "ai_translated",
   "context": "src/data/creator-app.ts:26"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Strong",
+  "language": "fr",
+  "value": "Fort",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Strong",
+  "language": "pcm",
+  "value": "Strong",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Strong",
+  "language": "yo",
+  "value": "Lágbára",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Strong",
+  "language": "ha",
+  "value": "Mai ƙarfi",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Strong",
+  "language": "ig",
+  "value": "Ọ siri ike",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
  },
  {
   "namespace": "legacy-inline",
@@ -30001,6 +32641,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Terms",
+  "language": "fr",
+  "value": "conditions d'utilisation",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Terms",
+  "language": "pcm",
+  "value": "Terms",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Terms",
+  "language": "yo",
+  "value": "Òfin",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Terms",
+  "language": "ha",
+  "value": "Sharuɗɗa",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Terms",
+  "language": "ig",
+  "value": "Ụkpụrụ Ojiji",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:126"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Text is editable",
   "language": "fr",
   "value": "Le texte est modifiable",
@@ -30278,6 +32958,46 @@
   "value": "Ọrụ Ekele — usoro mmemme",
   "status": "ai_translated",
   "context": "src/components/design/data.ts:52"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "That email does not look right.",
+  "language": "fr",
+  "value": "Cet e-mail ne semble pas correct.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "That email does not look right.",
+  "language": "pcm",
+  "value": "That email no look right.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "That email does not look right.",
+  "language": "yo",
+  "value": "Ímeèlì yẹn kò dà bí èyí tó tọ́.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "That email does not look right.",
+  "language": "ha",
+  "value": "Wannan imel ɗin bai yi daidai ba.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "That email does not look right.",
+  "language": "ig",
+  "value": "Ozi ịntanetị ahụ adịghị ka o kwesịrị.",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:23"
  },
  {
   "namespace": "legacy-inline",
@@ -31321,6 +34041,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Try again",
+  "language": "fr",
+  "value": "Réessayer",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:78"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Try again",
+  "language": "pcm",
+  "value": "Try again",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:78"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Try again",
+  "language": "yo",
+  "value": "Gbìyànjú lẹ́ẹ̀kan sí i",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:78"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Try again",
+  "language": "ha",
+  "value": "Sake gwadawa",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:78"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Try again",
+  "language": "ig",
+  "value": "Nwaa ọzọ",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:78"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Try another word or clear a filter.",
   "language": "fr",
   "value": "Essayez un autre mot ou effacez un filtre.",
@@ -32161,6 +34921,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Use at least 8 characters, with a letter and a number.",
+  "language": "fr",
+  "value": "Utilisez au moins 8 caractères, dont une lettre et un chiffre.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:74"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Use at least 8 characters, with a letter and a number.",
+  "language": "pcm",
+  "value": "Use at least 8 characters, with one letter and one number.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:74"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Use at least 8 characters, with a letter and a number.",
+  "language": "yo",
+  "value": "Lo ọ̀rọ̀ mẹ́jọ tó kéré jù, pẹ̀lú lẹ́tà kan àti nọ́ńbà kan.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:74"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Use at least 8 characters, with a letter and a number.",
+  "language": "ha",
+  "value": "Yi amfani da haruffa 8 aƙalla, tare da harafi da lamba.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:74"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Use at least 8 characters, with a letter and a number.",
+  "language": "ig",
+  "value": "Jiri mkpụrụedemede 8 opekata mpe, nwere mkpụrụedemede na ọnụọgụ.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:74"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Use only fonts you are allowed to share, such as open-source fonts or fonts licensed for templates. List every font you used when you submit. Keep the text editable so others can change the words.",
   "language": "fr",
   "value": "N'utilisez que des polices que vous avez le droit de partager, comme les polices open source ou sous licence pour modèles. Indiquez chaque police utilisée lors de la soumission. Gardez le texte modifiable pour que d'autres puissent changer les mots.",
@@ -32521,6 +35321,46 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "Verify and continue",
+  "language": "fr",
+  "value": "Vérifier et continuer",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:140"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Verify and continue",
+  "language": "pcm",
+  "value": "Verify and continue",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:140"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Verify and continue",
+  "language": "yo",
+  "value": "Fìdí rẹ̀ múlẹ̀, kí o sì tẹ̀síwájú",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:140"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Verify and continue",
+  "language": "ha",
+  "value": "Tabbatar kuma ci gaba",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:140"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Verify and continue",
+  "language": "ig",
+  "value": "Kwado ma gaa n'ihu",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:140"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "Verify now",
   "language": "fr",
   "value": "Vérifier maintenant",
@@ -32718,6 +35558,46 @@
   "value": "Kwenye na ị bụ nwa akwụkwọ",
   "status": "ai_translated",
   "context": "src/components/student/StudentView.tsx:83"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Verify your phone",
+  "language": "fr",
+  "value": "Vérifiez votre téléphone",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:137"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Verify your phone",
+  "language": "pcm",
+  "value": "Verify your phone",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:137"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Verify your phone",
+  "language": "yo",
+  "value": "Fìdí fóònù rẹ múlẹ̀",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:137"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Verify your phone",
+  "language": "ha",
+  "value": "Tabbatar da wayarku",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:137"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Verify your phone",
+  "language": "ig",
+  "value": "Kwado ekwentị gị",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:137"
  },
  {
   "namespace": "legacy-inline",
@@ -33321,6 +36201,86 @@
  },
  {
   "namespace": "legacy-inline",
+  "source": "We send your order updates and the code here.",
+  "language": "fr",
+  "value": "Nous envoyons ici les mises à jour de vos commandes et le code.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:113"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "We send your order updates and the code here.",
+  "language": "pcm",
+  "value": "We go send your order updates and the code here.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:113"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "We send your order updates and the code here.",
+  "language": "yo",
+  "value": "Níbí ni a ó ti fi ìròyìn àṣẹ rẹ àti kóòdù ránṣẹ́.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:113"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "We send your order updates and the code here.",
+  "language": "ha",
+  "value": "Muna aiko muku sabbin bayanan odarku da lambar nan.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:113"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "We send your order updates and the code here.",
+  "language": "ig",
+  "value": "Anyị na-ezipụ gị mmelite iwu gị na koodu ebe a.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:113"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "We sent a 6-digit code to +234 {phone}. Enter it below.",
+  "language": "fr",
+  "value": "Nous avons envoyé un code à 6 chiffres au +234 {phone}. Saisissez-le ci-dessous.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:138"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "We sent a 6-digit code to +234 {phone}. Enter it below.",
+  "language": "pcm",
+  "value": "We don send 6-digit code go +234 {phone}. Put am below.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:138"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "We sent a 6-digit code to +234 {phone}. Enter it below.",
+  "language": "yo",
+  "value": "A fi kóòdù oní-nọ́ńbà mẹ́fà ránṣẹ́ sí +234 {phone}. Tẹ̀ ẹ́ sísàlẹ̀ yìí.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:138"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "We sent a 6-digit code to +234 {phone}. Enter it below.",
+  "language": "ha",
+  "value": "Mun aika lamba mai lambobi 6 zuwa +234 {phone}. Shigar da ita a ƙasa.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:138"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "We sent a 6-digit code to +234 {phone}. Enter it below.",
+  "language": "ig",
+  "value": "Anyị zigara koodu nke ọnụọgụ 6 na +234 {phone}. Tinye ya n'okpuru.",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:138"
+ },
+ {
+  "namespace": "legacy-inline",
   "source": "We will let you know here.",
   "language": "fr",
   "value": "Nous vous préviendrons ici.",
@@ -33358,6 +36318,46 @@
   "value": "Anyị ga-agwa gị ebe a.",
   "status": "ai_translated",
   "context": "src/components/student/StudentView.tsx:220"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Weak",
+  "language": "fr",
+  "value": "Faible",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Weak",
+  "language": "pcm",
+  "value": "Weak",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Weak",
+  "language": "yo",
+  "value": "Kò lágbára",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Weak",
+  "language": "ha",
+  "value": "Mai rauni",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Weak",
+  "language": "ig",
+  "value": "Ọ dịghị ike",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:89"
  },
  {
   "namespace": "legacy-inline",
@@ -33518,6 +36518,46 @@
   "value": "Ngwụsị Izu",
   "status": "ai_translated",
   "context": "src/data/creator-app.ts:63"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Welcome back",
+  "language": "fr",
+  "value": "Bon retour",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:49"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Welcome back",
+  "language": "pcm",
+  "value": "Welcome back",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:49"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Welcome back",
+  "language": "yo",
+  "value": "Káàbọ̀ padà",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:49"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Welcome back",
+  "language": "ha",
+  "value": "Barka da dawowa",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:49"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "Welcome back",
+  "language": "ig",
+  "value": "Nnọọ ọzọ",
+  "status": "ai_translated",
+  "context": "src/components/auth/LoginForm.tsx:49"
  },
  {
   "namespace": "legacy-inline",
@@ -33838,6 +36878,46 @@
   "value": "Gịnị ka ị ga-emepụta taa?",
   "status": "ai_translated",
   "context": "src/components/design/views.tsx:50"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "What will you do first?",
+  "language": "fr",
+  "value": "Que ferez-vous en premier ?",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:99"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "What will you do first?",
+  "language": "pcm",
+  "value": "Wetin you wan do first?",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:99"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "What will you do first?",
+  "language": "yo",
+  "value": "Kí ni o máa kọ́kọ́ ṣe?",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:99"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "What will you do first?",
+  "language": "ha",
+  "value": "Me za ku fara yi?",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:99"
+ },
+ {
+  "namespace": "legacy-inline",
+  "source": "What will you do first?",
+  "language": "ig",
+  "value": "Gịnị ka ị ga-ebu ụzọ mee?",
+  "status": "ai_translated",
+  "context": "src/components/auth/SignupForm.tsx:99"
  },
  {
   "namespace": "legacy-inline",
