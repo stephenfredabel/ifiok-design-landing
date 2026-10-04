@@ -1,121 +1,124 @@
 'use client';
 
-import { ArrowRight, BadgeCheck, Check, ChevronRight, CircleAlert, Download, LayoutGrid, List, Lock, Plus, Search, ShieldCheck, Sparkles, Wallet } from 'lucide-react';
+import { ArrowRight, BadgeCheck, Check, ChevronRight, CircleAlert, Download, LayoutGrid, List, Lock, Plus, Search, Shapes, ShieldCheck, Sparkles, Type as TypeIcon, Wallet } from 'lucide-react';
 import { useMemo, useState } from 'react';
-import { ScrollRow } from '@/components/design/views';
 import { CAMPUSES, FAQ, STANDARDS } from '@/data/creators';
 import {
   BANKS, GROUPS, KINDS, SETTINGS, STATUSES, kindById, naira, type CTemplate, type Entry, type Payout, type Status,
 } from '@/data/creator-app';
 import { CThumb, EDITOR, StatusPill, TCard, type TOps } from './parts';
+import { balances, mask, type Account, type Profile } from './store';
+import type { FontEntry } from '@/data/fonts';
+import { FontStatusPill } from '@/components/fonts/FontStudio';
 
-export type Account = { bank: string; number: string; name: string; verified: boolean };
-export type Profile = { name: string; handle: string; bio: string; campus: string; link: string };
+/* ───────────────────────── Studio + home strip ───────────────────────── */
+type Mine = { templates: CTemplate[]; fonts: FontEntry[]; ledger: Entry[]; account: Account | null };
 
-const sum = (a: Entry[], f: (e: Entry) => boolean) => a.filter(f).reduce((s, e) => s + e.amount, 0);
-export const balances = (ledger: Entry[]) => ({
-  available: sum(ledger, (e) => e.status === 'available'),
-  inPayout: sum(ledger, (e) => e.status === 'requested'),
-  paid: sum(ledger, (e) => e.status === 'paid'),
-  lifetime: sum(ledger, () => true),
-});
-export const mask = (a: Account) => `${a.bank.replace(/\s*\(.*\)/, '')} •••• ${a.number.slice(-4)}`;
-
-/* ───────────────────────── Overview ───────────────────────── */
-const QUICK_IDS = ['card', 'flyer', 'poster', 'banner', 'invite', 'cv', 'certificate', 'ig', 'specimen', 'lettering'];
-
-export function OverviewView({ first, templates, ledger, account, ops, go, newTemplate }: {
-  first: string; templates: CTemplate[]; ledger: Entry[]; account: Account | null; ops: TOps; go: (v: string) => void; newTemplate: (kindId?: string) => void;
-}) {
+const stats = ({ templates, fonts, ledger }: Mine) => {
   const b = balances(ledger);
-  const count = (s: Status) => templates.filter((t) => t.status === s).length;
-  const attention = templates.filter((t) => t.status === 'changes');
+  return {
+    b,
+    approved: templates.filter((t) => t.status === 'approved').length + fonts.filter((f) => f.status === 'approved').length,
+    review: templates.filter((t) => t.status === 'review').length + fonts.filter((f) => f.status === 'review').length,
+    changes: templates.filter((t) => t.status === 'changes').length + fonts.filter((f) => f.status === 'changes').length,
+  };
+};
+
+/** A compact strip on the normal Home screen so creators see their numbers without leaving it. */
+export function CreatorHomeStrip({ mine, go, newTemplate, newFont }: { mine: Mine; go: (v: string) => void; newTemplate: () => void; newFont: () => void }) {
+  const { b, approved, review, changes } = stats(mine);
+  return (
+    <section className="cd-strip" aria-label="Creator studio">
+      <header className="blk-h"><h2>Creator studio</h2><button type="button" className="see" onClick={() => go('studio')}>Open studio <ChevronRight aria-hidden="true" /></button></header>
+      <div className="cd-stats">
+        <button type="button" className="cd-stat gold" onClick={() => go('wallet')}><span>Available</span><b>{naira(b.available)}</b><small>to request</small></button>
+        <button type="button" className="cd-stat" onClick={() => go('ctemplates')}><span>Approved</span><b>{approved}</b><small>templates and fonts</small></button>
+        <button type="button" className="cd-stat" onClick={() => go('ctemplates')}><span>In review</span><b>{review}</b><small>{changes ? `${changes} need changes` : 'waiting on Ifiok'}</small></button>
+      </div>
+      <div className="cd-make">
+        <button type="button" className="act-tile" onClick={newTemplate}><span className="act-ic" aria-hidden="true"><Shapes /></span><span><b>Create a template</b><small>Any design type</small></span></button>
+        <button type="button" className="act-tile" onClick={newFont}><span className="act-ic" aria-hidden="true"><TypeIcon /></span><span><b>Create a font</b><small>Designers click and use it</small></span></button>
+      </div>
+    </section>
+  );
+}
+
+export function StudioView({ mine, first, ops, fontOps, go, newTemplate, newFont }: {
+  mine: Mine; first: string; ops: TOps; fontOps: { open: (id: string) => void }; go: (v: string) => void; newTemplate: () => void; newFont: () => void;
+}) {
+  const { b, approved, review, changes } = stats(mine);
   const toGo = Math.max(0, SETTINGS.minPayout - b.available);
+  const attention = [
+    ...mine.templates.filter((t) => t.status === 'changes').map((t) => ({ id: t.id, name: t.name, kind: 'Template', text: t.notes[t.notes.length - 1]?.text ?? '', open: () => ops.open(t.id) })),
+    ...mine.fonts.filter((f) => f.status === 'changes').map((f) => ({ id: f.id, name: f.family, kind: 'Font', text: f.notes?.[f.notes.length - 1]?.text ?? '', open: () => fontOps.open(f.id) })),
+  ];
+  const recent = [
+    ...mine.templates.map((t) => ({ id: t.id, kind: 'Template' as const, name: t.name, status: t.status, sort: t.updated, open: () => ops.open(t.id) })),
+    ...mine.fonts.map((f) => ({ id: f.id, kind: 'Font' as const, name: f.family, status: (f.status ?? 'draft') as Status, sort: f.updated ?? '', open: () => fontOps.open(f.id) })),
+  ].slice(0, 6);
   return (
     <div className="view">
-      <section className="hero-d">
-        <div className="hero-glow" aria-hidden="true" />
-        <p className="hero-hi">Welcome back, {first}</p>
-        <h1>What will you design today?</h1>
-        <p className="cd-hero-sub">Any kind of template, including font and lettering templates. Submit it and the Ifiok team reviews it.</p>
-        <ScrollRow label="Start a new template">
-          {QUICK_IDS.map((id) => (
-            <button key={id} type="button" role="listitem" className="quick-i" onClick={() => newTemplate(id)}>
-              <span className="quick-ic" aria-hidden="true"><Plus /></span>
-              <span>{kindById(id).label}</span>
-            </button>
-          ))}
-          <button type="button" role="listitem" className="quick-i" onClick={() => newTemplate()}>
-            <span className="quick-ic custom" aria-hidden="true"><Plus /></span>
-            <span>All types</span>
-          </button>
-        </ScrollRow>
+      <header className="view-h"><div><h1>Creator studio</h1><p className="muted">Hi {first}. Make templates and fonts, submit them, and follow your earnings.</p></div></header>
+      <section className="cd-make big">
+        <button type="button" className="cd-make-card" onClick={newTemplate}><span className="act-ic" aria-hidden="true"><Shapes /></span><span><b>Create a template</b><small>Cards, flyers, posters, CVs, social posts, presentations and more. Any design type.</small></span><ArrowRight aria-hidden="true" /></button>
+        <button type="button" className="cd-make-card" onClick={newFont}><span className="act-ic" aria-hidden="true"><TypeIcon /></span><span><b>Create a font</b><small>Upload your font files. Once approved, designers can click it and start using it.</small></span><ArrowRight aria-hidden="true" /></button>
       </section>
-
       <section className="cd-stats" aria-label="Your numbers">
-        <button type="button" className="cd-stat" onClick={() => go('templates')}><span>Approved</span><b>{count('approved')}</b><small>templates</small></button>
-        <button type="button" className="cd-stat" onClick={() => go('templates')}><span>In review</span><b>{count('review')}</b><small>{count('changes') ? `${count('changes')} need changes` : 'waiting on Ifiok'}</small></button>
-        <button type="button" className="cd-stat gold" onClick={() => go('payouts')}><span>Available</span><b>{naira(b.available)}</b><small>to request</small></button>
-        <button type="button" className="cd-stat" onClick={() => go('payouts')}><span>Paid out</span><b>{naira(b.paid)}</b><small>so far</small></button>
+        <button type="button" className="cd-stat" onClick={() => go('ctemplates')}><span>Approved</span><b>{approved}</b><small>templates and fonts</small></button>
+        <button type="button" className="cd-stat" onClick={() => go('ctemplates')}><span>In review</span><b>{review}</b><small>{changes ? `${changes} need changes` : 'waiting on Ifiok'}</small></button>
+        <button type="button" className="cd-stat gold" onClick={() => go('wallet')}><span>Available</span><b>{naira(b.available)}</b><small>to request</small></button>
+        <button type="button" className="cd-stat" onClick={() => go('wallet')}><span>Paid out</span><b>{naira(b.paid)}</b><small>so far</small></button>
       </section>
-
       {attention.length > 0 && (
         <section className="blk">
           <header className="blk-h"><h2>Needs your attention</h2></header>
           <div className="cd-attn">
-            {attention.map((t) => (
-              <button key={t.id} type="button" className="cd-attn-i" onClick={() => ops.open(t.id)}>
+            {attention.map((a) => (
+              <button key={a.id} type="button" className="cd-attn-i" onClick={a.open}>
                 <CircleAlert aria-hidden="true" />
-                <span><b>{t.name}</b><small>{t.notes[t.notes.length - 1]?.text}</small></span>
+                <span><b>{a.kind}: {a.name}</b><small>{a.text}</small></span>
                 <ChevronRight aria-hidden="true" />
               </button>
             ))}
           </div>
         </section>
       )}
-
       <section className="cd-two">
         <div className="cd-card">
-          <p className="cd-kick">Payouts</p>
+          <p className="cd-kick">Earnings</p>
           <h3>{naira(b.available)} available</h3>
-          {!account ? (
-            <p className="muted">Add your payout details to request a payout. It takes about two minutes.</p>
-          ) : toGo > 0 ? (
-            <p className="muted">{naira(toGo)} more until you can request a payout. The minimum is {naira(SETTINGS.minPayout)}.</p>
-          ) : (
-            <p className="muted">You can request a payout now.</p>
-          )}
+          {!mine.account ? <p className="muted">Add your payout details to request a payout. It takes about two minutes.</p> : toGo > 0 ? <p className="muted">{naira(toGo)} more until you can request a payout. The minimum is {naira(SETTINGS.minPayout)}.</p> : <p className="muted">You can request a payout now.</p>}
           <div className="cd-bar" aria-hidden="true"><i style={{ width: `${Math.min(100, (b.available / SETTINGS.minPayout) * 100)}%` }} /></div>
-          <button type="button" className="btn-p" onClick={() => go('payouts')}><Wallet aria-hidden="true" />{account ? 'Open payouts' : 'Set up payouts'}</button>
+          <button type="button" className="btn-p" onClick={() => go('wallet')}><Wallet aria-hidden="true" />{mine.account ? 'Open earnings' : 'Set up payouts'}</button>
         </div>
         <div className="cd-card theme">
           <p className="cd-kick">This month&apos;s theme</p>
           <h3>{SETTINGS.theme.name}</h3>
           <p className="muted">{SETTINGS.theme.blurb}. Enter a template when you submit it. Closes {SETTINGS.theme.closes}.</p>
-          <button type="button" className="btn-s" onClick={() => newTemplate('poster')}><Sparkles aria-hidden="true" />Start a poster</button>
+          <button type="button" className="btn-s" onClick={newTemplate}><Sparkles aria-hidden="true" />Start a template</button>
         </div>
       </section>
-
       <section className="blk">
-        <header className="blk-h"><h2>Your templates</h2><button type="button" className="see" onClick={() => go('templates')}>See all <ChevronRight aria-hidden="true" /></button></header>
-        <div className="rail-scroll">
-          {templates.slice(0, 6).map((t) => <div className="rs-i" key={t.id}><TCard t={t} ops={ops} /></div>)}
-          {templates.length === 0 && <p className="muted">No templates yet. Pick a type above to start one.</p>}
-        </div>
+        <header className="blk-h"><h2>Recent submissions</h2><button type="button" className="see" onClick={() => go('ctemplates')}>See all <ChevronRight aria-hidden="true" /></button></header>
+        <ul className="cd-list">
+          {recent.map((r) => (
+            <li key={r.kind + r.id}><button type="button" className="cd-li-btn" onClick={r.open}><span><b>{r.name}</b><small>{r.kind} · {r.sort}</small></span>{r.kind === 'Font' ? <FontStatusPill s={r.status} /> : <StatusPill status={r.status} />}</button></li>
+          ))}
+        </ul>
       </section>
-
       <section className="blk">
-        <header className="blk-h"><h2>Get approved faster</h2><button type="button" className="see" onClick={() => go('guidelines')}>Guidelines <ChevronRight aria-hidden="true" /></button></header>
-        <div className="cd-tips">
-          {STANDARDS.filter((s) => s.good).map((s) => (<div key={s.t}><Check aria-hidden="true" /><span><b>{s.t}</b><small>{s.p}</small></span></div>))}
+        <header className="blk-h"><h2>Guidelines</h2></header>
+        <div className="cd-std">
+          {STANDARDS.map((s) => (<div key={s.t} className={s.good ? 'good' : 'bad'}><span aria-hidden="true">{s.good ? <Check /> : <CircleAlert />}</span><div><b>{s.t}</b><p>{s.p}</p></div></div>))}
         </div>
+        <p className="muted">Font and lettering templates: use only fonts you may share, and list every font you used. Reviews take {SETTINGS.reviewTime}.</p>
       </section>
     </div>
   );
 }
 
 /* ───────────────────────── Templates ───────────────────────── */
-export function TemplatesView({ templates, ops, newTemplate }: { templates: CTemplate[]; ops: TOps; newTemplate: (kindId?: string) => void }) {
+export function CTemplatesView({ templates, ops, newTemplate }: { templates: CTemplate[]; ops: TOps; newTemplate: (kindId?: string) => void }) {
   const [q, setQ] = useState('');
   const [status, setStatus] = useState<'all' | Status>('all');
   const [kind, setKind] = useState('all');
@@ -283,7 +286,7 @@ export function PayoutsView({ ledger, payouts, account, name, onSaveAccount, onC
   return (
     <div className="view">
       <header className="view-h">
-        <div><h1>Payouts</h1><p className="muted">Your earnings and payments. Only you can see this page.</p></div>
+        <div><h1>Earnings</h1><p className="muted">Your earnings and payments. Only you can see this page.</p></div>
         <button type="button" className="btn-p" onClick={onRequest} disabled={!canRequest} title={reason}><Wallet aria-hidden="true" />Request payout</button>
       </header>
       {reason && <p className="cd-note" role="status"><CircleAlert aria-hidden="true" />{reason} {!account && <button type="button" className="cd-link" onClick={() => setTab('details')}>Set up payouts</button>}</p>}
@@ -322,7 +325,7 @@ export function PayoutsView({ ledger, payouts, account, name, onSaveAccount, onC
           <table className="cd-table">
             <thead><tr><th>Template</th><th>Approved</th><th className="r">Amount</th><th>Status</th></tr></thead>
             <tbody>
-              {ledger.map((e) => (<tr key={e.id}><td>{e.name}</td><td>{e.date}</td><td className="r mono">{naira(e.amount)}</td><td><span className={`cd-chip ${e.status}`}>{e.status === 'available' ? 'Available' : e.status === 'requested' ? 'In payout' : 'Paid'}</span></td></tr>))}
+              {ledger.map((e) => (<tr key={e.id}><td>{e.name}</td><td data-l="Approved">{e.date}</td><td className="r mono">{naira(e.amount)}</td><td><span className={`cd-chip ${e.status}`}>{e.status === 'available' ? 'Available' : e.status === 'requested' ? 'In payout' : 'Paid'}</span></td></tr>))}
               {ledger.length === 0 && <tr><td colSpan={4} className="muted">Nothing yet. Earnings appear here when a template is approved.</td></tr>}
             </tbody>
             <tfoot><tr><td colSpan={2}>Total</td><td className="r mono">{naira(b.lifetime)}</td><td /></tr></tfoot>
@@ -340,7 +343,7 @@ export function PayoutsView({ ledger, payouts, account, name, onSaveAccount, onC
             <table className="cd-table">
               <thead><tr><th>Reference</th><th>Date</th><th className="r">Amount</th><th>Account</th><th>Status</th></tr></thead>
               <tbody>
-                {payouts.map((p) => (<tr key={p.id}><td className="mono">{p.ref}</td><td>{p.date}</td><td className="r mono">{naira(p.amount)}</td><td>{p.account}</td><td><span className={`cd-chip ${p.status}`}>{p.status === 'processing' ? 'Processing' : p.status === 'paid' ? 'Paid' : 'Failed'}</span>{p.status === 'processing' && <button type="button" className="cd-link" onClick={() => onSimulatePaid(p.id)}>Simulate paid</button>}</td></tr>))}
+                {payouts.map((p) => (<tr key={p.id}><td className="mono">{p.ref}</td><td data-l="Date">{p.date}</td><td className="r mono">{naira(p.amount)}</td><td data-l="To">{p.account}</td><td><span className={`cd-chip ${p.status}`}>{p.status === 'processing' ? 'Processing' : p.status === 'paid' ? 'Paid' : 'Failed'}</span>{p.status === 'processing' && <button type="button" className="cd-link" onClick={() => onSimulatePaid(p.id)}>Simulate paid</button>}</td></tr>))}
                 {payouts.length === 0 && <tr><td colSpan={5} className="muted">No payouts yet.</td></tr>}
               </tbody>
             </table>

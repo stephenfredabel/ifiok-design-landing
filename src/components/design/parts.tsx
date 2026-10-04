@@ -57,7 +57,7 @@ export function DesignCard({ d, onOpen, onDuplicate, onDelete }: { d: Design; on
   return (
     <article className="dcard">
       <button type="button" className="dcard-hit" onClick={() => onOpen(d.id)} aria-label={`Open details for ${d.name}`}>
-        <Thumb formatId={d.formatId} accent={d.accent} headline={d.headline} sub={d.sub} />
+        <Thumb formatId={d.formatId} accent={d.accent} headline={d.headline} sub={d.sub} font={d.font} />
       </button>
       <div className="dcard-meta">
         <div className="dcard-top">

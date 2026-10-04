@@ -24,6 +24,14 @@ export const KINDS: TKind[] = [
   { id: 'certificate', group: 'Documents', label: 'Certificate', kind: 'doc', ratio: 1.41, size: 'A4 landscape', printable: true, bounty: 2000 },
   { id: 'ig', group: 'Social', label: 'Instagram post', kind: 'social', ratio: 1, size: '1080 × 1080 px', printable: false, bounty: 1500 },
   { id: 'story', group: 'Social', label: 'Story', kind: 'social', ratio: 0.56, size: '1080 × 1920 px', printable: false, bounty: 1500 },
+  { id: 'present', group: 'Documents', label: 'Presentation', kind: 'doc', ratio: 1.78, size: '16:9 slides', printable: false, bounty: 3000 },
+  { id: 'brochure', group: 'Print', label: 'Brochure', kind: 'flyer', ratio: 0.707, size: 'A4 tri-fold', printable: true, bounty: 3000 },
+  { id: 'menu', group: 'Print', label: 'Restaurant menu', kind: 'flyer', ratio: 0.707, size: 'A4', printable: true, bounty: 2500 },
+  { id: 'greeting', group: 'Print', label: 'Greeting card', kind: 'invite', ratio: 0.714, size: '5 × 7 in', printable: true, bounty: 1500 },
+  { id: 'label', group: 'Print', label: 'Product label', kind: 'sticker', ratio: 1.5, size: '4 × 2.5 in', printable: true, bounty: 1500 },
+  { id: 'logo', group: 'Social', label: 'Logo', kind: 'sticker', ratio: 1, size: 'Square', printable: false, bounty: 3000 },
+  { id: 'wa', group: 'Social', label: 'WhatsApp status', kind: 'social', ratio: 0.56, size: '1080 × 1920 px', printable: false, bounty: 1500 },
+  { id: 'yt', group: 'Social', label: 'YouTube thumbnail', kind: 'banner', ratio: 1.78, size: '1280 × 720 px', printable: false, bounty: 1500 },
   { id: 'specimen', group: 'Font templates', label: 'Type specimen', kind: 'type', ratio: 0.707, size: 'A4', printable: true, bounty: 3000 },
   { id: 'lettering', group: 'Font templates', label: 'Lettering poster', kind: 'type', ratio: 0.707, size: 'A3', printable: true, bounty: 3000 },
   { id: 'pairing', group: 'Font templates', label: 'Font pairing sheet', kind: 'type', ratio: 1.41, size: 'A4 landscape', printable: false, bounty: 2500 },
@@ -61,7 +69,7 @@ export const SAMPLE_TEMPLATES: CTemplate[] = [
 ];
 
 export type EntryStatus = 'available' | 'requested' | 'paid';
-export type Entry = { id: string; templateId: string; name: string; amount: number; date: string; status: EntryStatus; payoutId?: string };
+export type Entry = { id: string; kind?: 'template' | 'font'; templateId: string; name: string; amount: number; date: string; status: EntryStatus; payoutId?: string };
 export type PayoutStatus = 'processing' | 'paid' | 'failed';
 export type Payout = { id: string; ref: string; amount: number; date: string; status: PayoutStatus; account: string };
 

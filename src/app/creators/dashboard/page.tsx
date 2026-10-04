@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import CreatorApp from '@/components/creator/CreatorApp';
+import DesignApp from '@/components/design/DesignApp';
 
 export const metadata: Metadata = {
   title: 'Creator dashboard | Ifiok Creators',
@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function CreatorDashboardPage() {
-  return <CreatorApp />;
+  return <DesignApp creator />;
 }

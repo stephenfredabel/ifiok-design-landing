@@ -1,0 +1,82 @@
+/* Fonts library, font studio and creator-aware dialogs. Scoped to .d-app. */
+.d-app .fn-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.d-app .fn-card { display: flex; flex-direction: column; gap: 10px; padding: 14px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); min-width: 0; }
+.d-app .fn-sample { min-height: 118px; display: flex; align-items: center; padding: 8px 6px; border: 0; border-radius: 12px; background: var(--hover); color: var(--tx); text-align: left; cursor: pointer; overflow: hidden; line-height: 1.12; }
+.d-app .fn-sample span { display: block; max-width: 100%; overflow-wrap: anywhere; }
+.d-app .fn-sample:hover { outline: 2px solid var(--teal); }
+.d-app .fn-meta { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.d-app .fn-meta > div { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.d-app .fn-meta b { font-size: 16px; }
+.d-app .fn-meta small { color: var(--tx2); font-size: 13px; }
+.d-app .fn-marks { display: inline-flex; width: fit-content; font-size: 11.5px; font-weight: 700; color: var(--teal-text); border: 1px solid color-mix(in srgb, var(--teal-text) 45%, transparent); border-radius: 999px; padding: 1px 8px; margin-top: 3px; }
+.d-app .fn-heart { width: 40px; height: 40px; flex: none; display: grid; place-items: center; border: 1px solid var(--line-2); border-radius: 12px; background: transparent; color: var(--tx2); cursor: pointer; }
+.d-app .fn-heart svg { width: 18px; height: 18px; }
+.d-app .fn-heart.on { color: #e0594f; border-color: rgba(224, 89, 79, 0.5); }
+.d-app .fn-heart.on svg { fill: currentColor; }
+.d-app .fn-use { width: 100%; }
+.d-app .fn-type { flex: 1 1 220px; }
+.d-app .fn-panel .fn-spec { padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); display: grid; gap: 8px; width: 100%; overflow: hidden; }
+.d-app .fn-spec p { margin: 0; overflow-wrap: anywhere; line-height: 1.25; font-size: 22px; }
+.d-app .fn-spec p.big { font-size: 56px; line-height: 1.05; }
+.d-app .fn-lb { display: block; font-family: var(--body); font-weight: 700; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tx3); }
+.d-app .fn-styles { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; width: 100%; }
+.d-app .fn-styles li { display: grid; gap: 2px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; font-size: 20px; }
+.d-app .fn-styles small { font-family: var(--body); font-style: normal; font-weight: 600; font-size: 12px; color: var(--tx3); }
+.d-app .fn-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.d-app .fn-tags span { padding: 4px 10px; border: 1px solid var(--line-2); border-radius: 999px; font-size: 13px; color: var(--tx2); }
+.d-app .btn-s.on { color: #e0594f; border-color: rgba(224, 89, 79, 0.5); }
+
+/* font studio */
+.d-app .fn-list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); overflow: hidden; }
+.d-app .fn-list li + li { border-top: 1px solid var(--line); }
+.d-app .fn-row { width: 100%; display: flex; align-items: center; gap: 14px; padding: 12px 14px; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; min-height: 72px; }
+.d-app .fn-row:hover { background: var(--hover); }
+.d-app .fn-row > svg { width: 18px; height: 18px; color: var(--tx3); flex: none; }
+.d-app .fn-row-s { width: 54px; height: 54px; border-radius: 12px; display: grid; place-items: center; background: var(--hover); font-size: 28px; flex: none; }
+.d-app .fn-row-m { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.d-app .fn-row-m b { font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.d-app .fn-row-m small { color: var(--tx2); font-size: 13px; }
+.d-app .fn-dialog { width: min(720px, 100%); }
+.d-app .fn-steps { list-style: none; margin: 0; padding: 12px 20px 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.d-app .fn-steps li { display: flex; flex-direction: column; gap: 6px; font-size: 12px; font-weight: 600; color: var(--tx3); }
+.d-app .fn-steps i { height: 4px; border-radius: 4px; background: var(--line-2); }
+.d-app .fn-steps .done i, .d-app .fn-steps .now i { background: var(--teal); }
+.d-app .fn-steps .now { color: var(--tx); }
+.d-app .fn-form { display: grid; gap: 16px; }
+.d-app .fn-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.d-app .fn-chips button { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 14px; border: 1px solid var(--line-2); border-radius: 999px; background: transparent; color: var(--tx2); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.d-app .fn-chips button svg { width: 15px; height: 15px; }
+.d-app .fn-chips button[aria-pressed="true"] { background: rgba(11, 122, 127, 0.2); border-color: var(--teal); color: var(--teal-text); }
+.d-app .fn-drop { display: flex; align-items: center; gap: 14px; padding: 18px; border: 1.5px dashed var(--line-2); border-radius: 16px; background: var(--bg); cursor: pointer; min-height: 72px; }
+.d-app .fn-drop:hover { border-color: var(--teal); }
+.d-app .fn-drop svg { width: 26px; height: 26px; color: var(--teal-text); flex: none; }
+.d-app .fn-drop span { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.d-app .fn-drop small { color: var(--tx3); font-size: 13px; }
+.d-app .fn-files { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.d-app .fn-files li { display: grid; gap: 10px; padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); min-width: 0; }
+.d-app .fn-file-h { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.d-app .fn-file-h span { display: flex; flex-direction: column; min-width: 0; }
+.d-app .fn-file-h b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.d-app .fn-file-h small { color: var(--tx3); }
+.d-app .icon-x.sm { width: 40px; height: 40px; }
+.d-app .fn-line { font-size: 28px; line-height: 1.2; margin: 0; overflow-wrap: anywhere; }
+.d-app .fn-check-box { display: grid; gap: 10px; padding: 14px; border: 1px solid var(--line); border-radius: 14px; }
+.d-app .fn-radios { display: grid; gap: 8px; border: 0; padding: 0; margin: 0; }
+.d-app .fn-radios button { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 14px; border: 1px solid var(--line-2); border-radius: 14px; background: var(--bg); color: var(--tx); font: inherit; text-align: left; cursor: pointer; min-height: 56px; }
+.d-app .fn-radios small { color: var(--tx2); font-size: 13.5px; }
+.d-app .fn-radios button[aria-checked="true"] { border-color: var(--teal); background: rgba(11, 122, 127, 0.16); box-shadow: 0 0 0 1px var(--teal); }
+.d-app .fn-review { padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
+.d-app .fn-review p { margin: 0; overflow-wrap: anywhere; }
+.d-app .fn-review .big { font-size: 44px; line-height: 1.1; }
+.d-app .fn-foot { flex-wrap: wrap; }
+
+/* chooser + font in the new-design dialog */
+.d-app .nk-list { display: grid; gap: 10px; }
+.d-app .nk { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; align-items: center; padding: 16px; border: 1px solid var(--line-2); border-radius: 16px; background: var(--panel); color: var(--tx); font: inherit; text-align: left; cursor: pointer; min-height: 72px; }
+.d-app .nk:hover { border-color: var(--teal); }
+.d-app .nk b { font-size: 16.5px; grid-column: 1; }
+.d-app .nk span { color: var(--tx2); font-size: 14px; grid-column: 1; }
+.d-app .nk svg { width: 20px; height: 20px; grid-row: 1 / span 2; grid-column: 2; color: var(--tx3); }
+.d-app .nd-font { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 14.5px; color: var(--tx2); margin: 0; }
+.d-app .nd-font span { font-size: 26px; color: var(--tx); }
+.d-app .role-pill { display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: rgba(218, 160, 25, 0.16); color: var(--gold-text); font-size: 12.5px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; margin-left: 4px; }
