@@ -3,9 +3,9 @@ import "./globals.css";
 import { LangProvider } from "@/i18n/LangProvider";
 
 export const metadata: Metadata = {
-  title: "Ifiok Design | Design it. We print it.",
+  title: "Ifiok Design | Design and print with verified printers",
   description:
-    "Design business cards, flyers, ID cards and posters at real print size, see the price in naira while you work, and order delivery across Nigeria.",
+    "Design business cards, flyers, ID cards and posters at real print size, then send them to a verified printer near you and compare prices in naira.",
 };
 
 export const viewport: Viewport = {
