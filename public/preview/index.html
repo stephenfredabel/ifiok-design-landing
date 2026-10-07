@@ -34,22 +34,37 @@
 <main>
   <span class="tag">Design preview</span>
   <h1>Ifiok redesign: clickable preview</h1>
-  <p>This is a static, clickable preview of the Ifiok storefront redesign: the homepage, the cart, and the staff Carts page. It is made from the real pages rendered with sample data, so you can judge layout, colour, light and dark themes, and the main interactions without any server. Pick a view below, then use the bar at the bottom of each page to switch views, change the window width (desktop and tablet), or flip the theme.</p>
+  <p>This is a static, clickable preview of the latest Ifiok redesign: the storefront homepage with the new tablet layout and menu, marketing tiles in the product rows, the cart, the rebuilt checkout, and two pages for Ifiok staff. Every page is the real page rendered with sample data, so you can judge layout, colour, light and dark themes, and the main interactions without any server. Pick a view below, then use the bar at the bottom of each page to switch views, change the window width (desktop, tablet and phone), or flip the theme.</p>
 
-  <h2>Views</h2>
+  <h2>Storefront</h2>
   <ul class="views">
     <li>
       <a class="title" href="viewer.html?v=home&amp;w=1440">Homepage</a>
-      <p>Look at the hero and offers sliders (use the dots and arrows), the collapsible side panels, the product cards (try Add to cart on the PR2 Fixed Mug), the Show more button, and the account menu in the header.</p>
-      <div class="sizes">Open at: <a href="viewer.html?v=home&amp;w=1440">Desktop 1440</a> <a href="viewer.html?v=home&amp;w=1024">Tablet 1024</a> <a href="viewer.html?v=home&amp;w=768">Tablet 768</a> <a href="home.html">Full window</a></div>
+      <p>Compare the three layouts: Desktop 1440 (new header, hero in three columns, trust bar), Tablet 1024 and 768 (header with a hamburger, a shorter slider, trust points in the footer) and Phone 390. <strong>On the tablet widths, open the hamburger</strong> to see the menu drawer: Tab stays inside it, Esc or a click on the dimmed area closes it, and its links only show a "Preview only" note. Look for the <strong>marketing tiles</strong> sitting in the product rows: a card tile ("Startup discounts") as the third item in Quick Prints, and a round tile ("50% off delivery") as the second item in Weekend Special. Also try the slider dots and arrows, Add to cart on a product card, and Show more.</p>
+      <div class="sizes">Open at: <a href="viewer.html?v=home&amp;w=1440">Desktop 1440</a> <a href="viewer.html?v=home&amp;w=1024">Tablet 1024</a> <a href="viewer.html?v=home&amp;w=768">Tablet 768</a> <a href="viewer.html?v=home&amp;w=390">Phone 390</a> <a href="home.html">Full window</a></div>
     </li>
     <li>
       <a class="title" href="viewer.html?v=cart&amp;w=1440">Cart</a>
-      <p>Look at the "Needs options" lines. Press Choose options, or Proceed to Checkout for the guided flow (Product 1 of 2, then 2 of 2), then a "checkout would start here" notice. Quantities and Remove work, and the totals update.</p>
-      <div class="sizes">Open at: <a href="viewer.html?v=cart&amp;w=1440">Desktop 1440</a> <a href="viewer.html?v=cart&amp;w=1024">Tablet 1024</a> <a href="viewer.html?v=cart&amp;w=768">Tablet 768</a> <a href="cart.html">Full window</a></div>
+      <p>Look at the "Needs options" lines and the "From" prices. Press Choose options on a line, or Proceed to Checkout for the guided run (Product 1 of 3, then 2 of 3, then 3 of 3). When every line is set it continues to the checkout. Quantities and Remove work, and the totals update.</p>
+      <div class="sizes">Open at: <a href="viewer.html?v=cart&amp;w=1440">Desktop 1440</a> <a href="viewer.html?v=cart&amp;w=1024">Tablet 1024</a> <a href="viewer.html?v=cart&amp;w=768">Tablet 768</a> <a href="viewer.html?v=cart&amp;w=390">Phone 390</a> <a href="cart.html">Full window</a></div>
     </li>
     <li>
-      <a class="title" href="viewer.html?v=admin-carts&amp;w=1440">Staff: Carts page</a>
+      <a class="title" href="viewer.html?v=checkout&amp;w=1440">Checkout (needs options)</a>
+      <p>The rebuilt checkout. It opens in the "needs options" state: the options card comes first, the summary shows "From" prices, and the main button reads "Choose options to continue" with the lock line under it. Use Choose options on a row, or the main button for the guided run. When the last product is set, the card disappears and the page becomes the ready state with the Place order button and the final total. Place order only shows a "Preview only" note. Try Tablet 768 for the stacked layout.</p>
+      <div class="sizes">Open at: <a href="viewer.html?v=checkout&amp;w=1440">Desktop 1440</a> <a href="viewer.html?v=checkout&amp;w=1024">Tablet 1024</a> <a href="viewer.html?v=checkout&amp;w=768">Tablet 768</a> <a href="viewer.html?v=checkout&amp;w=390">Phone 390</a> <a href="checkout.html">Full window</a></div>
+      <p style="margin-top:8px"><a class="title" style="font-size:15px" href="viewer.html?v=checkout&amp;w=1440&amp;state=ready">Open the checkout already in the ready state</a></p>
+    </li>
+  </ul>
+
+  <h2>Ifiok staff</h2>
+  <ul class="views">
+    <li>
+      <a class="title" href="viewer.html?v=admin-tiles&amp;w=1440">Ifiok staff: Marketing tiles</a>
+      <p>The staff slides editor, on the Mini slider tab. Press Edit on slide 5 (Startup discounts) to open the editor, then use the tools on the left: Copy, Image, Layout, Schedule and Marketing tile. In Marketing tile, switch the shape between Card and Circle and watch the preview change, turn Desktop, Tablet and Phone on or off, and tick collections to place the tile (a Position box appears for each ticked collection). The other slides, saving and publishing are not active. The sample tiles have no photo, so the editor says they are incomplete.</p>
+      <div class="sizes">Open at: <a href="viewer.html?v=admin-tiles&amp;w=1440">Desktop 1440</a> <a href="viewer.html?v=admin-tiles&amp;w=1024">Tablet 1024</a> <a href="viewer.html?v=admin-tiles&amp;w=768">Tablet 768</a> <a href="admin-tiles.html">Full window</a></div>
+    </li>
+    <li>
+      <a class="title" href="viewer.html?v=admin-carts&amp;w=1440">Ifiok staff: Carts</a>
       <p>Look at the list and its filters (Open, Stale, Needs options, All), click one of the first four carts to open the details drawer, then Send reminder to see the modal. The Settings tab has the reminder switches.</p>
       <div class="sizes">Open at: <a href="viewer.html?v=admin-carts&amp;w=1440">Desktop 1440</a> <a href="viewer.html?v=admin-carts&amp;w=1024">Tablet 1024</a> <a href="viewer.html?v=admin-carts&amp;w=768">Tablet 768</a> <a href="admin-carts.html">Full window</a></div>
     </li>
@@ -57,10 +72,11 @@
 
   <h2>Good to know</h2>
   <div class="box">
-    <strong>Everything here is sample data.</strong> The products, carts and customers are made-up test records.
+    <strong>Everything here is sample data.</strong> The products, carts, customers and marketing tiles are made-up test records.
     <ul>
-      <li>Not interactive (shows a "Preview only" note): search, sign-in, checkout, payments, language and app switchers, wishlist, notifications, most links, and saving anything. Nothing is sent or stored.</li>
+      <li>Not interactive (shows a "Preview only" note): search, sign-in, payments and placing an order, language and app switchers, wishlist, notifications, most links, and saving or publishing anything. Nothing is sent or stored.</li>
       <li>Product photos are neutral placeholders; real photos are not part of this preview.</li>
+      <li>On the phone view of the homepage, the hero slider does not move.</li>
       <li>The theme follows your device setting until you change it with the Theme button in the bar.</li>
     </ul>
   </div>
